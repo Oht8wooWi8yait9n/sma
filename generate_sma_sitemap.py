@@ -93,16 +93,21 @@ def fetch_with_retry(session: requests.Session, url: str, method: str = "GET") -
     return None
 
 
+MAX_PDF_SIZE_BYTES = 25 * 1024 * 1024  # 25 MB cap to avoid indexing timeouts / worker hangs
+
+
 def resolve_ntrs_pdf(session: requests.Session, link: str) -> str | None:
-    """Extract citation ID from NTRS link and resolve the direct PDF download URL via official API."""
+    """Extract citation ID from NTRS link and resolve the direct PDF download URL via official API.
+    If PDF is oversized (> 25 MB), falls back to lightweight citation landing page."""
     m = re.search(r'(?:citations/|R=|casi\.ntrs\.nasa\.gov/)(\d{7,11})', link)
     if not m:
         return None
     cid = m.group(1)
+    citation_landing_url = f"https://ntrs.nasa.gov/citations/{cid}"
     api_url = f"https://ntrs.nasa.gov/api/citations/{cid}"
     resp = fetch_with_retry(session, api_url)
     if not resp or resp.status_code != 200:
-        return None
+        return citation_landing_url
     try:
         data = resp.json()
         downloads = data.get("downloads", [])
@@ -111,10 +116,19 @@ def resolve_ntrs_pdf(session: requests.Session, link: str) -> str | None:
                 rel_link = d.get("links", {}).get("pdf") or d.get("links", {}).get("original")
                 if rel_link:
                     pdf_url = f"https://ntrs.nasa.gov{rel_link}"
+                    try:
+                        head_resp = session.head(pdf_url, headers=HEADERS, timeout=10, allow_redirects=True)
+                        cl = head_resp.headers.get("content-length")
+                        if cl and int(cl) > MAX_PDF_SIZE_BYTES:
+                            print(f"    [!] Skipping oversized PDF ({int(cl)/(1024*1024):.1f} MB > 25 MB): {pdf_url}")
+                            print(f"    [+] Replaced with citation landing URL: {citation_landing_url}")
+                            return citation_landing_url
+                    except Exception:
+                        pass
                     return pdf_url
     except Exception:
         pass
-    return None
+    return citation_landing_url
 
 
 def resolve_standards_doc(session: requests.Session, link: str) -> set[str]:
@@ -136,7 +150,7 @@ def resolve_standards_doc(session: requests.Session, link: str) -> set[str]:
     )
     if pub_pdf_match:
         pdf_rel = pub_pdf_match.group(1).split("?")[0].split("#")[0]
-        if "historical" not in pdf_rel.lower():
+        if "historical" not in pdf_rel.lower() and "/tmp/" not in pdf_rel.lower():
             urls.add(urljoin("https://standards.nasa.gov", pdf_rel))
     return urls
 
@@ -209,6 +223,12 @@ def main():
         href = item["href"]
         # Skip external subscription paywalls (doclinkonline.com -> IHS Markit)
         if "doclinkonline.com" in href or "ihs.com" in href:
+            continue
+        # Skip redundant SWEHB root (already indexed in separate workspace)
+        if "swehb.nasa.gov" in href:
+            continue
+        # Skip generic root standards portal
+        if href.rstrip("/") == "https://standards.nasa.gov":
             continue
 
         if "ntrs.nasa.gov" in href:

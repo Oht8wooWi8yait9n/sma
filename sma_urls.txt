@@ -16,7 +16,6 @@ https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&c=8700&s=1F
 https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&c=8000&s=4C
 https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&c=8705&s=6D
 https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&c=8715&s=24
-https://ntrs.nasa.gov/api/citations/20030068423/downloads/20030068423.pdf
 https://ntrs.nasa.gov/api/citations/20090023159/downloads/20090023159.pdf
 https://ntrs.nasa.gov/api/citations/20120001369/downloads/20120001369.pdf
 https://ntrs.nasa.gov/api/citations/20120003291/downloads/20120003291.pdf
@@ -24,6 +23,7 @@ https://ntrs.nasa.gov/api/citations/20120003292/downloads/20120003292.pdf
 https://ntrs.nasa.gov/api/citations/20150015500/downloads/20150015500.pdf
 https://ntrs.nasa.gov/api/citations/20240014019/downloads/SP-20240014019.pdf
 https://ntrs.nasa.gov/api/citations/20240014326/downloads/SP-20240014326.pdf
+https://ntrs.nasa.gov/citations/20030068423
 https://sma.nasa.gov/policies
 https://sma.nasa.gov/policies/all-policies
 https://sma.nasa.gov/policies/policy-status
@@ -104,5 +104,3 @@ https://standards.nasa.gov/standard/nasa/nasa-std-873912
 https://standards.nasa.gov/standard/nasa/nasa-std-87394
 https://standards.nasa.gov/standard/nasa/nasa-std-87395
 https://standards.nasa.gov/standard/nasa/nasa-std-87396
-https://standards.nasa.gov/system/files/tmp/NASA-STD-8719.12_RevsionB_final.pdf
-https://swehb.nasa.gov/
