@@ -60,6 +60,7 @@ https://sma.nasa.gov/sma-disciplines/system-safety
 https://sma.nasa.gov/sma-disciplines/workmanship
 https://standards.nasa.gov/sites/default/files/standards/NASA/A//NASA-STD-871924A.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/A/0/nasa-std-87291a.pdf
+https://standards.nasa.gov/sites/default/files/standards/NASA/A/1/nasa-std-87395A-Change-2.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/A/4/nasa-std-87394a_w_change_4_0.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/B/0/NASA-STD-87398-Revision-B.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/B/0/nasa-std-87396b.pdf
@@ -69,6 +70,7 @@ https://standards.nasa.gov/sites/default/files/standards/NASA/B/2/nasa-std-87391
 https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/nasa-hdbk-873918.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/nasa-hdbk-873919-3.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/nasa-hdbk-873921.pdf
+https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/nasa-nhbk-873919-2.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/nasa-std-873910.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/nasa-std-873914.pdf
 https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/1/nasa-hdbk-870924_with_change_1.pdf
