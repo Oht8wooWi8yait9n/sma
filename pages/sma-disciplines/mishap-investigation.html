@@ -1,0 +1,3399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="https://sma.nasa.gov/"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Mishap Investigation
+</title>
+		<link href="/Content/Images/favicon.ico" rel="shortcut icon" />
+		<link href="/Content/Styles/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_flat_ui_pro.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_navbar.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_toolbox.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_responsiveplaylist.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_custom.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+		<script src="/Content/Scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/Content/Scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="/Content/Scripts/bootstrap.min.js"></script>
+<script src="/Content/Scripts/bootstrap-select.js"></script>
+<script src="/Content/Scripts/bootstrap-switch.js"></script>
+<script src="/Content/Scripts/flatui-checkbox.js"></script>
+<script src="/Content/Scripts/flatui-radio.js"></script>
+<script src="/Content/Scripts/jquery.tagsinput.js"></script>
+<script src="/Content/Scripts/jquery.placeholder.js"></script>
+<script src="/Content/Scripts/jquery.dotdotdot.js"></script>
+<script src="/Content/Scripts/jquery.paging.js"></script>
+<script src="/Content/Scripts/sma-responsiveplaylist.js"></script>
+<script src="/Content/Scripts/sma-jquery.tablesorter.js"></script>
+<script src="/Content/Scripts/application.js"></script>
+<script src="/Content/Scripts/sma.js"></script>
+<script src="/Content/Scripts/sma-likes.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. -->
+		<!--[if lt IE 9]>
+			<script src="/Content/Scripts/html5shiv.js"></script>
+<script src="/Content/Scripts/respond.min.js"></script>
+
+		<![endif]-->
+		<script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GRC" id="_fed_an_ua_tag"></script> 
+	
+	<style type="text/css">
+	#HeaderWrapper {
+		height: 113px;
+	}
+
+	@media (min-width: 1200px) {
+		#HeaderWrapper {
+			height: 193px;
+		}
+	}
+	</style>
+<script type="text/javascript">jQuery(document).ready(function () {
+    jQuery('a[href*=".pdf"]').attr('target', '_blank');
+    jQuery('a[href^="http"]').not('a[href*=".nasa.gov"]').each(function () {
+        if (jQuery(this).parents(".rp_playlist").length == 0) {
+            jQuery(this).attr('target', '_blank');
+        }
+    });
+    jQuery('a[href*="satern.nasa.gov"]').each(function() {
+        jQuery(this).attr('href', 'https://satern.nasa.gov');
+    });
+  
+  jQuery('a[href*=".nasa.gov"]').each(function(){
+	var linkTarget = jQuery(this).attr('target');
+	if (linkTarget == undefined || linkTarget == "") {
+		var linkHref = jQuery(this).attr('href')
+		if ((linkHref.search('sma') != -1 && linkHref.search('nmis') == -1)|| linkHref.search('mailto') != -1 || jQuery(this).parents(".rp_playlist").length > 0) {
+			jQuery(this).attr('target', '_self');
+			}
+		else if (jQuery(this).attr("target") === undefined) {
+			jQuery(this).attr('target', '_blank');
+		}
+	}
+});
+});</script><meta name="Generator" content="Sitefinity 14.4.8152.0 DX" /><link rel="canonical" href="https://sma.nasa.gov/sma-disciplines/mishap-investigation" /><link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nOb-o-hV0f4ju23IUDysEzCN3rFussDAyoaCyf7qMEQsWopHkOKp6NEsHcXB8MVS9b1qxgcvpCgojRolrlwuTK4cJEWRrO2eWV_N9JF16RZI0&amp;t=638840910637275692&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d14.4.8152.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a4fd8513a-4760-4c69-b716-de189eda8de6%3a7a90d6a" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/SMA/App_Themes/SMA/global/readme.css?v=639216412510738967" type="text/css" rel="stylesheet" /><link href="/Content/Styles/sma-discipline-color-maroon.min.css" type="text/css" rel="stylesheet" media="all" /><link href="/Content/Styles/sma-discipline-core.min.css" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid {
+    display: flex;
+    padding: 0;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header {
+    padding-left: 30px;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header a.navbar-brand {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse {
+    flex-grow: 1;
+    overflow: hidden!important;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav {
+    max-width: 100%;
+    display: flex;
+  	justify-content: space-between;
+  	visibility: hidden;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav li a {
+	padding-left: 0;
+	padding-right: 0;
+}</style><style type="text/css" media="all">section[id*="jumbotron"] {
+  background: url('/images/default-source/discipline-pages/mishap-investigation/jumbotronbkg_mishap-new.jpg');
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+section[id*="mishap_columbia"] {
+    background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/images/default-source/discipline-pages/mishap-investigation/columbia/columbia-launch-2.jpg) repeat;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+section[id*="mishap_nmisDatabase"] {
+  background: #ffffff;
+}
+section[id*="_nmisDatabase"] h1 {
+  color: #3d4857;
+}
+section[id*="nmis"] img {
+  margin-top: 40px;
+}
+section[id*="_summaryReport"] img + p {
+  margin-top: 24px;
+}
+section[id*="mishap_faq"] div.well {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+
+#mishap_importantLinks {
+	background: #ffffff!important
+}
+#mishap_significationIncidents a.btn.button-alternate {
+  background: #f2f2f2;
+  color: #162336!important;
+}
+
+#mishap_significationIncidents a.btn.button-alternate:focus,
+#mishap_significationIncidents a.btn.button-alternate:hover,
+#mishap_significationIncidents a.btn.button-alternate:active{
+  background: rgba(202,206,209,.5);
+}
+
+@media(min-width: 1199px) and (max-width: 1399px){
+	.navbar-osma ul.nav.navbar-nav li a {
+        padding-left: 8px;
+        padding-right: 8px;
+	}
+}
+
+
+@media(min-width: 1400px) and (max-width: 1525px) {
+    .navbar-osma ul.nav.navbar-nav li a {
+        padding-left: 15px;
+        padding-right: 15px;
+	}
+}</style><style type="text/css" media="all">/* default text anchor link styling */
+a,
+a:link,
+a:visited,
+a:active {
+  font-weight: 700;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #095960;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 1px dotted #095960;
+}
+a.darkLink:hover,
+a.darkLink:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a.darkLink:focus {
+  outline: 1px dotted #18d8ea;
+}
+/* styline for images on focus */
+a:focus > img {
+  outline: 1px dotted #095960;
+}
+/* nasa affinity styling */
+#hdrNasaAffinity a:focus,
+#hdrNasaAffinity a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* header link styles */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  text-decoration: none;
+}
+h1 a,
+h3 a,
+h5 a,
+h1 a:link,
+h3 a:link,
+h5 a:link,
+h1 a:visited,
+h3 a:visited,
+h5 a:visited,
+h1 a:active,
+h3 a:active,
+h5 a:active,
+h1 a:hover,
+h3 a:hover,
+h5 a:hover,
+h1 a:focus,
+h3 a:focus,
+h5 a:focus {
+  font-weight: 800;
+}
+h2 a,
+h4 a,
+h6 a,
+h2 a:link,
+h4 a:link,
+h6 a:link,
+h2 a:visited,
+h4 a:visited,
+h6 a:visited,
+h2 a:active,
+h4 a:active,
+h6 a:active,
+h2 a:hover,
+h4 a:hover,
+h6 a:hover,
+h2 a:focus,
+h4 a:focus,
+h6 a:focus {
+  font-weight: 100;
+}
+a[class*="btn-sma"],
+a[class*="btn-sma"]:link,
+a[class*="btn-sma"]:visited,
+a[class*="btn-sma"]:active,
+a[class*="btn-sma"]:hover,
+a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  outline: none;
+}
+a[class*="btn-sma-a"],
+a[class*="btn-sma-a"]:link,
+a[class*="btn-sma-a"]:visited,
+a[class*="btn-sma-a"]:active,
+a[class*="btn-sma-a"]:hover,
+a[class*="btn-sma-a"]:focus {
+  color: #162336;
+  outline: none;
+}
+/* navbar link styling */
+#navigationUl a:focus,
+nav[class*="subnavbar"] a:focus {
+  outline: 1px dotted #ffffff;
+}
+a.navbar-brand:focus {
+  outline: 1px dotted #ffffff;
+}
+/* news link styles */
+.liststyle_subtitle > a,
+.subsection_title > a,
+.liststyle_subtitle > a:link,
+.subsection_title > a:link,
+.liststyle_subtitle > a:visited,
+.subsection_title > a:visited,
+.liststyle_subtitle > a:active,
+.subsection_title > a:active,
+.liststyle_subtitle > a:hover,
+.subsection_title > a:hover,
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  font-weight: 800;
+  text-decoration: none;
+}
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  outline: 1px dotted #095960;
+}
+.news_detail + a:focus {
+  border: none;
+}
+/* safety messages styling */
+p.jumbotron_hero > a,
+p.jumbotron_hero > a:link,
+p.jumbotron_hero > a:visited,
+p.jumbotron_hero > a:active {
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+}
+p.jumbotron_hero > a:hover,
+p.jumbotron_hero > a:focus {
+  color: #18d8ea;
+  text-decoration: none;
+}
+.SafetyMessageArticle div[class*="col-sm-2"] a:focus {
+  border: none;
+}
+/* pagingation styling */
+.pagination a,
+.pagination a:link,
+.pagination a:visited,
+.pagination a:active,
+.pagination a:hover,
+.pagination a:focus {
+  text-decoration: none;
+}
+/* dark background link styles */
+footer a,
+#policyStatus a,
+.policy-table a,
+.WhiteTxt a,
+footer a:link,
+#policyStatus a:link,
+.policy-table a:link,
+.WhiteTxt a:link,
+footer a:visited footer a:active,
+footer a:visited #policyStatus a:active,
+footer a:visited .policy-table a:active,
+footer a:visited .WhiteTxt a:active,
+#policyStatus a:visited footer a:active,
+#policyStatus a:visited #policyStatus a:active,
+#policyStatus a:visited .policy-table a:active,
+#policyStatus a:visited .WhiteTxt a:active,
+.policy-table a:visited footer a:active,
+.policy-table a:visited #policyStatus a:active,
+.policy-table a:visited .policy-table a:active,
+.policy-table a:visited .WhiteTxt a:active,
+.WhiteTxt a:visited footer a:active,
+.WhiteTxt a:visited #policyStatus a:active,
+.WhiteTxt a:visited .policy-table a:active,
+.WhiteTxt a:visited .WhiteTxt a:active {
+  font-weight: 700;
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+footer a:hover,
+#policyStatus a:hover,
+.policy-table a:hover,
+.WhiteTxt a:hover,
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a[class*="btn-sma"],
+#policyStatus a[class*="btn-sma"],
+.policy-table a[class*="btn-sma"],
+.WhiteTxt a[class*="btn-sma"],
+footer a[class*="btn-sma"]:link,
+#policyStatus a[class*="btn-sma"]:link,
+.policy-table a[class*="btn-sma"]:link,
+.WhiteTxt a[class*="btn-sma"]:link,
+footer a[class*="btn-sma"]:visited,
+#policyStatus a[class*="btn-sma"]:visited,
+.policy-table a[class*="btn-sma"]:visited,
+.WhiteTxt a[class*="btn-sma"]:visited,
+footer a[class*="btn-sma"]:active,
+#policyStatus a[class*="btn-sma"]:active,
+.policy-table a[class*="btn-sma"]:active,
+.WhiteTxt a[class*="btn-sma"]:active,
+footer a[class*="btn-sma"]:hover,
+#policyStatus a[class*="btn-sma"]:hover,
+.policy-table a[class*="btn-sma"]:hover,
+.WhiteTxt a[class*="btn-sma"]:hover,
+footer a[class*="btn-sma"]:focus,
+#policyStatus a[class*="btn-sma"]:focus,
+.policy-table a[class*="btn-sma"]:focus,
+.WhiteTxt a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer a[class*="btnAdditionalDetails"],
+#policyStatus a[class*="btnAdditionalDetails"],
+.policy-table a[class*="btnAdditionalDetails"],
+.WhiteTxt a[class*="btnAdditionalDetails"],
+footer a[class*="btnAdditionalDetails"]:link,
+#policyStatus a[class*="btnAdditionalDetails"]:link,
+.policy-table a[class*="btnAdditionalDetails"]:link,
+.WhiteTxt a[class*="btnAdditionalDetails"]:link,
+footer a[class*="btnAdditionalDetails"]:visited,
+#policyStatus a[class*="btnAdditionalDetails"]:visited,
+.policy-table a[class*="btnAdditionalDetails"]:visited,
+.WhiteTxt a[class*="btnAdditionalDetails"]:visited,
+footer a[class*="btnAdditionalDetails"]:active,
+#policyStatus a[class*="btnAdditionalDetails"]:active,
+.policy-table a[class*="btnAdditionalDetails"]:active,
+.WhiteTxt a[class*="btnAdditionalDetails"]:active,
+footer a[class*="btnAdditionalDetails"]:hover,
+#policyStatus a[class*="btnAdditionalDetails"]:hover,
+.policy-table a[class*="btnAdditionalDetails"]:hover,
+.WhiteTxt a[class*="btnAdditionalDetails"]:hover,
+footer a[class*="btnAdditionalDetails"]:focus,
+#policyStatus a[class*="btnAdditionalDetails"]:focus,
+.policy-table a[class*="btnAdditionalDetails"]:focus,
+.WhiteTxt a[class*="btnAdditionalDetails"]:focus {
+  color: #162336;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer h1 a,
+#policyStatus h1 a,
+.policy-table h1 a,
+.WhiteTxt h1 a,
+footer h3 a,
+#policyStatus h3 a,
+.policy-table h3 a,
+.WhiteTxt h3 a,
+footer h5 a,
+#policyStatus h5 a,
+.policy-table h5 a,
+.WhiteTxt h5 a,
+footer h1 a:link,
+#policyStatus h1 a:link,
+.policy-table h1 a:link,
+.WhiteTxt h1 a:link,
+footer h3 a:link,
+#policyStatus h3 a:link,
+.policy-table h3 a:link,
+.WhiteTxt h3 a:link,
+footer h5 a:link,
+#policyStatus h5 a:link,
+.policy-table h5 a:link,
+.WhiteTxt h5 a:link,
+footer h1 a:visited,
+#policyStatus h1 a:visited,
+.policy-table h1 a:visited,
+.WhiteTxt h1 a:visited,
+footer h3 a:visited,
+#policyStatus h3 a:visited,
+.policy-table h3 a:visited,
+.WhiteTxt h3 a:visited,
+footer h5 a:visited,
+#policyStatus h5 a:visited,
+.policy-table h5 a:visited,
+.WhiteTxt h5 a:visited,
+footer h1 a:active,
+#policyStatus h1 a:active,
+.policy-table h1 a:active,
+.WhiteTxt h1 a:active,
+footer h3 a:active,
+#policyStatus h3 a:active,
+.policy-table h3 a:active,
+.WhiteTxt h3 a:active,
+footer h5 a:active,
+#policyStatus h5 a:active,
+.policy-table h5 a:active,
+.WhiteTxt h5 a:active {
+  font-weight: 800;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h1 a:hover,
+#policyStatus h1 a:hover,
+.policy-table h1 a:hover,
+.WhiteTxt h1 a:hover,
+footer h3 a:hover,
+#policyStatus h3 a:hover,
+.policy-table h3 a:hover,
+.WhiteTxt h3 a:hover,
+footer h5 a:hover,
+#policyStatus h5 a:hover,
+.policy-table h5 a:hover,
+.WhiteTxt h5 a:hover,
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer h2 a,
+#policyStatus h2 a,
+.policy-table h2 a,
+.WhiteTxt h2 a,
+footer h4 a,
+#policyStatus h4 a,
+.policy-table h4 a,
+.WhiteTxt h4 a,
+footer h6 a,
+#policyStatus h6 a,
+.policy-table h6 a,
+.WhiteTxt h6 a,
+footer h2 a:link,
+#policyStatus h2 a:link,
+.policy-table h2 a:link,
+.WhiteTxt h2 a:link,
+footer h4 a:link,
+#policyStatus h4 a:link,
+.policy-table h4 a:link,
+.WhiteTxt h4 a:link,
+footer h6 a:link,
+#policyStatus h6 a:link,
+.policy-table h6 a:link,
+.WhiteTxt h6 a:link,
+footer h2 a:visited,
+#policyStatus h2 a:visited,
+.policy-table h2 a:visited,
+.WhiteTxt h2 a:visited,
+footer h4 a:visited,
+#policyStatus h4 a:visited,
+.policy-table h4 a:visited,
+.WhiteTxt h4 a:visited,
+footer h6 a:visited,
+#policyStatus h6 a:visited,
+.policy-table h6 a:visited,
+.WhiteTxt h6 a:visited,
+footer h2 a:active,
+#policyStatus h2 a:active,
+.policy-table h2 a:active,
+.WhiteTxt h2 a:active,
+footer h4 a:active,
+#policyStatus h4 a:active,
+.policy-table h4 a:active,
+.WhiteTxt h4 a:active,
+footer h6 a:active,
+#policyStatus h6 a:active,
+.policy-table h6 a:active,
+.WhiteTxt h6 a:active {
+  font-weight: 100;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h2 a:hover,
+#policyStatus h2 a:hover,
+.policy-table h2 a:hover,
+.WhiteTxt h2 a:hover,
+footer h4 a:hover,
+#policyStatus h4 a:hover,
+.policy-table h4 a:hover,
+.WhiteTxt h4 a:hover,
+footer h6 a:hover,
+#policyStatus h6 a:hover,
+.policy-table h6 a:hover,
+.WhiteTxt h6 a:hover,
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a:focus > img,
+#policyStatus a:focus > img,
+.policy-table a:focus > img,
+.WhiteTxt a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* Dropdown styling for megamenu items */
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+  min-width: 650px;
+  left: -200px;
+  padding: 0;
+  color: #3e4856;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:link,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu h5 {
+  margin-bottom: 5px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu div[class*="col-"] {
+  padding: 0;
+  margin: 0;
+}
+.columnLayout {
+  column-width: auto;
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  overflow: hidden;
+}
+.columnLayout a,
+.columnLayout a:link,
+.columnLayout a:visited,
+.columnLayout a:active {
+  display: block;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+  padding: 6px 9px;
+}
+.columnLayout a:hover,
+.columnLayout a:active {
+  background: #f5f5f5;
+  color: #3A5261;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+/* Dropdown styling for non-megamenu items */
+.navbar-inverse .navbar-nav > .open .dropdown-menu {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  text-decoration: none;
+  background: #f5f5f5;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #abbd1a;
+    border-radius: 0;
+  }
+}
+
+footer .tb_pad21 {padding:21px 0 !important}
+
+.fancybox-title-float-wrap .child {
+    white-space: normal;
+}
+
+table .modalPocTable tbody tr.PocCenter { 
+    background-color: white;
+}
+
+table .modalPocTable tbody tr.PocCenter td {
+    font-weight: 700;
+}
+
+div[class*="modal-body"] span.modalBodyName {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 12px;
+}
+
+div[class*="modal-body"] span.modalBodyTitle {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+table.modalPocTable thead,
+table.modalPocTable tbody,
+table.modalPocTable th,
+table.modalPocTable td,
+table.modalPocTable tr,
+display: block;
+}
+table.modalPocTable thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+table.modalPocTable td {
+    position: relative;
+    padding-left: 50%;
+}
+table.modalPocTable td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+table.modalPocTable tbody > tr{
+    padding: 10px;
+}
+table.modalPocTable tbody > tr:nth-child(even),
+table.modalPocTable tbody > tr:nth-child(odd) {
+    border-bottom: 2px solid #ebebeb;
+}
+table.modalPocTable tbody > tr > td{
+    border: none;
+}
+table.modalPocTable tbody tr.PocCenter td {
+    font-weight: 700
+}
+
+.public a.privateLink {
+    color: inherit;
+    pointer-events: none;
+    cursor: default;
+}
+
+.public a.privateLink:hover, .public a.privateLink:focus {
+    text-decoration: none;
+}
+
+.public .privateContent {
+    display: none !important;
+}
+.public .publicContent {
+    display: block;
+}
+
+.publicContent {
+    display: none;
+}
+</style><style type="text/css" media="all">.dropdown-menu.mega-dropdown-menu .tab-container {
+    margin: -10px !important;
+    width: calc(100% + 20px);
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs {
+    background: #cfd3d5;
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li a {
+    border-width: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 15px 20px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:not(.active) a {
+    background: none;
+    color: #798088;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:first-child a {
+    border-top-left-radius: 5px !important;
+}
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:last-child a {
+    border-top-right-radius: 5px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .tab-content {
+    border: none !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"] {
+    background: inherit !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"]:hover {
+    color: #bccd32;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+    min-width: 884px;
+}
+
+#nav-disciplines-organizational ul li a {
+    padding: 0;
+}
+
+
+#nav-disciplines-organizational ul  {
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+#nav-disciplines-organizational .section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #15c2d2;
+    font-size: 1.1em;
+}
+
+#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+}
+#displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}</style><meta name="description" content="NASA conducts mishap investigations in accordance with NASA Procedural Requirements for Mishap Reporting, Investigating, and Recordkeeping." /></head>
+
+<body>
+	<form method="post" action="./mishap-investigation?SMAInsidePortal=true" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSSM" id="ctl06_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6xwa9/tMuDImcRQjHRCjVF+kg6QRjeb8EicTZHjYaQUMIpwjmo08+4tIU1EVy5Bt6nMWsjVtiXc7RfFK0yR9NnMEimB98JetFXFFqFJBC6rn6QpbpbP+ddlqdPWYRadEJNRa4Z43PbCSpJSrYe3LZSQ+ZyctOoTOCLOTj7bKOewADBH5F7kvD9VU5Y5Q9ExaOoL0uPcHky0hcP5uKBzA68tKZqnDys24YMKSAUJ4j7iyrYI0+8w6BqiNvLqYWo4QVHi2K8gqa1z3G+PzPrEDo78BzrwkvAqau9tQ5mCrZVSj/c0yTmr4iv6XGrdsL4+0hTUZ4D0gsIKLrT3Q9krMqv41NFDJDocGJhC6tivGQRWedPmaP9lPM++0i/W8tdrzRBThoIYjS51qV5hDfjUQMbLI5o63OXVS9EdELCQG+4rL1Fo7oKffEYEsYKj9s75F56I7ZjatFDemX0XBq8jKCouDQOWgVNeTNVARNNhmW2eBQM/iYxMf3iSBAqWUJj0GY4BgesXcZVTHAFl6uJPX4pcCAcHuS8sakeYi0ioQvfk17nR3tYFxd8KuY6FMZPraTvR7I2qi2850KxZRZz8kOdkKmo0vVlB1PSFnJht/IirAX1DRgZektUb9f6mKwTvb7zC2x7Qpl2YLGxXoifS3WGvsx5Cu5XkFJANxS8BvlYGlyNa0Gi3aUZkkHMv/uAttue5jvXalN5AmfkPeS3aR/uIKoI2nGg2/w3PCUFqdw036K94ZUiqWTalTAPUP91d4AXt3jxxx8dNpc5nC44H7dHoALsdVuiksjHx46/pXtEwy989SeR/lrcq/mzVQT72nQKdpmcEB3s8VlDpOrtZorA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBeQL9FN26k7qxJmCXVl63Uh07YUPP75L5T8ig6z731I9NnlM7MjDVfOVnbtZyAU3Q2&amp;t=639190689332169432" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQpLQo2tZ2XWouq1So4gOUqY0KKe1EzOsTczU0xRl0n5eKfKyeAF-lJyrOfP3WtQdfN8uQSLy2uvSU1777I-PAjTI39EblEQcoFHdJ1_bkRMRpa7m_oc4zMLhs1EjXu0I2zcA9usuVgRscLWLf7Mojc81&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tYiZUsYt_xBTDhQir-ihv7ursUN-o4YtD6wK-167bi02KVsiSrYELyJM8lAirgk9xpOB-jbgvCBlmslMKNWBK111AaQ3ufAkF5xjVd6E1RNTjL3OSp0WHOd9vXkeF3iSmH-YGRNdMqgV_8y1oSE_CvgtEJWIWZalSP4KO44tgIzg0&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Sm_GGXofLw4C9Eu03fCPHLZnmAADl6c8Pfd7QRMevi3lkRnZYYdiqFNOO-IA-P4JQx4vFkzeq9L0nqitJbrR6rw1GfqJxgArvYeo97z146fon_cWcOn392XvlOA0g4AWyPzIj1kzuYZfZCQH9d6smtOV7OlFTfU15B5dPNShsoef8IHKvSLWio-eklbdrrWz0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pNnY3SPOXobYy0znCWU-ctfe8hwY_yv8qK6nYfdCqnzKZMiUVqn8oRSuarLDMNsnuUjtDm7iqEDiSBU7tL91fWRAn6HTdH1BuRay_IxRQWX4GZvSwbrjHVlDMT5wslhOjHvCBs_yME4F4SvwD9IiGoWwZ03BbYUJxtbQxED7X3KPipztbJf6UvAiH9sgvlaI0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=upAENvmeNxfpBioSkqBc6IhkjY-W-6n-nR3yD9QF_wzNpbbjXHAkEzpOGt_5HnXQMQGmRRMYa7teJ9tNqxZo0VQKKUr1ZTu39M1LIJo2PpPYZrN53sFK7lBrQYmeS5TUtz6yI6n1pBx1FjZHCzgnqZlAyKlEl_R7s9eBJhel8rxwsGOBpCZWSzQmGasXEX1K0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=QjBU5x4YUBggN3iKmsc12WFIGp7xng4Tn9KJHH0Y2ou7W5EgQzC5aKA0TZds1YuN5-VfpomPt0ZSe-82w9lOP9y9eRTN6-Aw1h9QSZMVuaRahyOXx2B_6QgygdKSrIl9IDiflA1MBEq4bRaiY1FffFv-x9UD5138REmcOKlZZYQ1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=tlTynJuwcuOdlotOppqvaL9Cs1bbUHKeURMSxzkBsQPdVl_ot4uEo16sjJxR4vCmbff8zMTIKZd676u7ozjfAyRT5Ctu5lfoSbbZ0cuejj7q77OCjxfhgxdOLkSUeXR3rK8Epcbu8Ot4INgA8UxaaclFAhZO_638n3etsdh8FPTZ4ELalfY6_3wp1BJFnTSs0&amp;t=764b716e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcPFeRGHus1rjoXNGzFNffL9wkKeeh_SeiIvShazIcUcYoZqcsD34qf064unxj4De8mkiZ7Nd1C0wkA4hwlQRwI5c1PfbqPACTzat1Gw8RCSR0&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcRR_RIomFXn-6OTVP7S7UTc4FJDbrgdUVP5cT3hlj7Gqn-oAc5ShKUg97jRJZZi4SHDf1BlDg1EPMpbplBlIl04D9GlhVFaF-fti23eZqMjPJYLhJOjZrUK_QYdhQkU9Kg2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LDxs7tI-ncIIKPgYq3uJynGIAutVQ5Lv09yYMkdUoWTtDIY55WSN2kCFwMjHc56bvoLqeRIH8Pj37QWZnQZ2I1dR12JIfbs3iNC9YGAeIdR-ho_XOLATuOwKX9eIDXDwNzVPDvVXjDuwQufloW1_FQ2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DoEcOmAgUwAjHq4qvvgD1_OJqop35mKZ9LPboo_dHWURaPKavvTd9YfZbhWBf7Bfg4fR-U_9NCE_1jmm_964n1OpivVox-0sgw_50lxYAERSRy_XAMIPmDUG90jLfp8JB6s6g8Xn8xQm1JkWIEtL5hbCgp5ejm3kWY_dVIOr_YlScgHFqAGtf7ilCPocUwDU0&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=yAnkZTEOGwF2GXQ9ANOQMuFcHG-vuIXZJ6NTl-dM8FxT2GJwWXmK7Hx_lTsTckFhjce_4Qlz_ZboXlwF97Pz2u-EWINOvZ10rzvku8A_js7FwXNgjK4qIUtcti26WYmrG13Nnm5BEY1fWZwVTYH5y6J82MqTnh7R9tLSks_ik_Q1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1A68BCF2" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Nm0yGwJAtXQMDOn3g2EGwZSmuQwj6ls52CffED95R0zZtFXS5ej47H2VKclUbR/2NJe3nxLuPcL5S1ZJitT/ANdAboO+2zzdR+kaTKUyBJ8jlsL7U2Zcp4uWRa/K8Bx1lnNRolz/A7gIfzmeGrIFNg==" />
+</div>
+	    
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<a href="#MainWrapper" class="btn" style="display: none;">Skip Navigation</a>
+		<div id="helperDiv1" class="SMAWindowMediaWidth" style="display:none;"></div> <!-- dummy divs to aid in detecting screen width -->
+		<div id="helperDiv2" class="SMAWindowMediaMaxWidth" style="display:none;"></div>
+		<div id="PublicWrapper" class="sfPublicWrapper">
+			<div class="SMAToolboxContent">
+
+				<section id="HeaderWrapper" class="sf_cols">
+					<div id="cpw_headerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<header id="cpw_header" class="sf_colsIn sf_1cols_1in_100">
+							<div id="navigation">
+								<nav class="navbar navbar-inverse navbar-lg navbar-fixed-top" role="navigation">
+									<div class="container-fluid nasa-header">
+										<div id="hdrNasaAffinity" class="row">
+											<div class="col-sm-9 col-xs-12">
+												<a href="https://www.nasa.gov" target="_blank"><img alt="NASA Meatball logo" class="logo" src="/Content/Images/meatball.png"></a>
+												<span>National Aeronautics and Space Administration</span>
+											</div>
+											<div class="col-sm-3 text-right hidden-xs">
+												<span><a href="https://www.nasa.gov" target="_blank">Visit nasa.gov</a></span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse navbar-collapse tabs">
+										<div class="tab-container">
+											<div class="site-toggle">
+												<div class="site-button current">
+													<a href="/" target="_self" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1e787b69-d2a8-65b9-a1a0-ff01003ca228"><img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance"></a>
+												</div>
+												
+												<div class="site-button">
+													<a href="https://nsc.nasa.gov/" target="_self" sfref="[41028969-d2a8-65b9-a1a0-ff05003ca228]bc038969-d2a8-65b9-a1a0-ff05003ca228"><img alt="NASA Safety Center Logo" src="/Content/Images/nsclogo.png"></a>
+												</div>
+												
+											</div>
+											<div id="SMAHeaderSearch" class="navbar-form navbar-right" role="search">
+												<div class="form-group">
+													
+<div id="ContentHeaderSearch_T40EBA3A0054">
+	
+
+<fieldset id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_main" class="sfsearchBox">
+    <input name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchTextBox" type="text" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox" class="sfsearchTxt" />
+    <input type="submit" name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchButton" value="Search" onclick="return false;" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton" class="sfsearchSubmit" />
+</fieldset>
+
+</div>
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container-fluid">
+										<div class="hidden-lg">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+											</button>
+											<a class="navbar-brand" href="/">
+												<img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance" class="img-responsive" />
+											</a>
+										</div>
+										<div class="collapse navbar-collapse" id="navbar-collapse-1">
+											
+
+
+<div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-lg" >
+	
+	
+	
+	
+	<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_navigationUl" class="nav navbar-nav">
+		
+						<li>
+							<a href="/news">News</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl00_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/news/articles">Articles</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/policies">Policies</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/policies/all-policies">All Policies</a>
+							
+						</li>
+					
+						<li>
+							<a href="/policies/policy-status">Policy Status</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines" class="sfSel">SMA Disciplines & Programs</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/accllp">ACCLLP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/aviation-safety">Aviation Operations and Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/fire-protection">Fire Protection</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-factors">Human Factors</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-rating">Human Rating</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/mishap-investigation" class="sfSel">Mishap Investigation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nsrs">NSRS</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection">Planetary Protection</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop">Planetary Protection Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop">SMD Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/webinar-details">Supporting Documents</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall">SMD Workshop Fall</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii">2026 Metagenomics in Spaceflight: Establishing an Implementation Roadmap</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl04_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii">Planetary Protection Workshop II</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl05_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/agenda">Agenda</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion">Metagenomics Technical Interface Meeting: Protocol Critique and Convergence</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl06_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/quality">Quality </a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/risk-management">Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/safety-culture">Safety Culture</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl27_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/safety-culture/safety-culture-survey">Safety Culture Survey</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/smsr">SMSR</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/system-safety">System Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/workmanship">Workmanship</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/vids">Videos</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/vids/allvideos">Video Library</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/feature-videos">Feature Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/safety-message-videos">Safety Message Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/knowledge-bytes">Knowledge Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/policy-bytes">Policy Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/event-videos">Event Videos</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/about">About</a>
+							
+						</li>
+					
+						<li>
+							<a href="/test-page">Test Page</a>
+							
+						</li>
+					
+	</ul>
+</div>
+
+<script type="text/javascript">
+	(function ($) {
+		var navMenu = $("[id$='navigationUl']");
+		var ulElements = navMenu.find("li:has(ul) > a");
+		ulElements.attr("href", "javascript:void(0)");
+		ulElements.addClass("dropdown-toggle");
+		ulElements.attr("data-toggle", "dropdown");
+	})(jQuery);
+</script>
+<div>
+	
+<!-- 2023.3.1616.45 -->
+  <div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-md hidden-sm hidden-xs">
+    <ul class="nav navbar-nav" id="navigationUl">
+      
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">News</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/news/articles">Articles</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/policies/all-policies">All Policies</a></li>
+<li><a href="/policies/policy-status">Policy Status Updates</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+      <li class="dropdown mega-dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown">SMA Disciplines &amp; Programs</a>				
+       <div class="dropdown-menu mega-dropdown-menu bkg_White">
+
+         <div class="col-sm-12 bkg_White" style="border-radius:4px;"><div id="displayABC" class="displayToggleBlock"><ul class="list-unstyled columnLayout"><li><a href="/sma-disciplines/accllp">ACCLLP</a></li><li><a href="/sma-disciplines/aviation-safety">Aviation Safety</a>
+ </li><li><a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+ </li><li><a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+ </li><li><a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+ </li><li><a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+ </li><li><a href="/sma-disciplines/fire-protection">Fire Protection</a>
+ </li><li><a href="/sma-disciplines/human-factors">Human Factors</a>
+ </li><li><a href="/sma-disciplines/human-rating">Human Rating</a>
+ </li><li><a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+ </li><li><a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+ </li><li><a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+ </li><li><a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+ </li><li><a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+ </li><li><a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+ </li><li><a href="/sma-disciplines/nsrs">NSRS</a>
+ </li><li><a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+ </li><li><a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+ </li><li><a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+ </li><li><a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+ </li><li><a href="/sma-disciplines/planetary-protection">Planetary Protection</a></li><li><a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+ </li><li><a href="/sma-disciplines/quality">Quality</a>
+ </li><li><a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+ </li><li><a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+ </li><li><a href="/sma-disciplines/risk-management">Risk Management</a>
+ </li><li><a href="/sma-disciplines/safety-culture">Safety Culture</a>
+ </li><li><a href="/sma-disciplines/smsr">SMSR</a>
+ </li><li><a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+ </li><li><a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a></li><li><a href="/sma-disciplines/system-safety">System Safety</a>
+ </li><li><a href="/sma-disciplines/workmanship">Workmanship</a>
+ </li></ul></div><div style="clear:both;">&nbsp;</div></div><style type="text/css">#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+    }
+    #displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    }
+</style>
+
+       </div>				
+     </li>
+   
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/vids/allvideos">Video Library</a></li><li><a href="/vids/feature-videos">Feature Videos</a></li><li><a href="/vids/knowledge-bytes">Knowledge Bytes</a></li><li><a href="/vids/policy-bytes">Policy Bytes</a></li><li><a href="/vids/event-videos">Event Videos</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+
+      <li><a href='/about'>About</a></li>
+    
+
+
+
+
+    </ul>
+  </div>
+  <script type="text/javascript">
+   (function ($) {
+    var navMenu = $("[id$='navigationUl']");
+    var ulElements = navMenu.find("li:has(ul) > a");
+    ulElements.attr("href", "javascript:void(0)");
+    ulElements.addClass("dropdown-toggle");
+    ulElements.attr("data-toggle", "dropdown");
+
+  })(jQuery);
+
+</script>
+<script type="text/javascript">
+
+  jQuery(document).ready(function(){
+    jQuery('input[name="toggler"]').on("click", function(e){
+      if(jQuery(this).attr("value")=="Topic"){
+        jQuery("#displayABC").hide();
+        jQuery("#displayTopic").show();
+      }
+      if(jQuery(this).attr("value")=="ABC"){
+       jQuery("#displayTopic").hide();
+       jQuery("#displayABC").show();
+     }
+     SMASetMaxHeight(".displayToggleBlock");
+     e.stopPropagation();
+   });
+  });
+</script>
+<input id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+							<div id="toolbox" style="display:none;">
+								
+<script type="text/javascript">(function($) {
+	$(document).ready(function() {
+		var $nav = $(".navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav");
+		$nav.width((function(){
+			var width = $nav.find("li").length * 42;
+			$nav.find("li").each(function() {
+				width += $(this).width() == 0 ? (function(elem) {
+					return $(elem).find("a").text().length * 7;
+				})(this) : $(this).width();
+			});
+			return width;
+		})());
+		$nav.css("visibility", "visible");
+	});
+})(jq);</script><script type="text/javascript">jQuery(document).ready(function(){
+jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+var divname = jQuery(this).attr('href');
+if (divname.match("^#") && jQuery(divname).length < 1){
+jQuery(this).parent().hide();
+}
+});
+});</script>
+							</div>
+						</header>
+					</div>
+				</section>
+
+				<section id="MainWrapper" class="sf_cols">
+					<div id="cpw_mainwrapper" class="sf_colsOut sf_1cols_1_100">
+						<article id="cpw_main" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock hidden-xs hidden-sm hidden-md'><nav class="navbar navbar-osma navbar-fixed-top subnavbar-fixed-top navbar-inverse" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header"> <a href="#cpw_mainwrapper" class="navbar-brand hidden-sm">Mishap Investigation</a> </div>
+<div class="collapse navbar-collapse" id="osma_navbar_collapse">
+<ul class="nav navbar-nav">
+    <li><a href="#mishap_news">News</a></li>
+    <li><a href="#mishap_people">People</a></li>
+    <li><a href="#mishap_learning">Learning</a></li>
+    <li><a href="#mishap_guidance">Guidance</a></li>
+    <li><a href="#mishap_nmisDatabase">NMIS</a></li>
+    <li><a href="#mishap_mpcp">MPCP Software</a></li>
+    <li><a href="#mishap_ncat">NCAT</a></li>
+    <li class="privateContent"><a href="#mishap_columbia">Columbia</a></li>
+    <li class="privateContent"><a href="#mishap_outreach">Outreach</a></li>
+    <li class="privateContent"><a href="#mishap_data">Data</a></li>
+    <li class="privateContent"><a href="#mishap_summaryReport">Reports</a></li>
+    <li><a href="#mishap_significationIncidents">Tools</a></li>
+    <li><a href="#mishap_faq">FAQs</a></li>
+    <li><a href="#mishap_importantLinks">Important Links</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+</div><div class='sfContentBlock subnavSpacer'><!-- jumbotron --> <section id="mishap_jumbotron" data-stellar-background-ratio="0.5">
+<div class="container">
+<div class="row"><!-- title and copy -->
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-7">
+<h1 class="jumbotronTitle">Mishap Investigation</h1>
+<p>Mishap investigations allow NASA to understand the root cause of incidents and make adjustments to prevent recurrence. NASA conducts mishap investigations in accordance with NASA Procedural Requirements for Mishap Reporting, Investigating, and Recordkeeping (NPR&nbsp;<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8621&amp;s=1D" title="" class="" target="">8621.1</a>), which describes the procedure for reporting, investigating and documenting mishaps, close calls and previously unidentified workplace hazards to prevent similar occurrences in the future.</p>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<div class="sf_cols row">
+    <div class="sf_colsOut container tbpad">
+        <div id="cph_main_C023_Col00" class="sf_colsIn"><div class='sfContentBlock'><!-- news / News will be pulled from content module --> <section id="mishap_news">
+<h2 class="sectionTitle"> <a href="/news/articles?taxonomy=categories&amp;propertyName=category&amp;taxon=/mishap-investigation">Mishap Investigation News</a> </h2>
+</section>
+
+</div>
+            <div class="newsslider row col-xs-12">
+                <ul>
+                            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="Mishap Program Highlights 2024 Milestones and Improvements" href="../news/articles/newsitem/2025/02/12/mishap-program-highlights-2024-milestones-and-improvements">
+                            <img src='https://sma.nasa.gov/images/default-source/discipline-pages/mishap-investigation/jumbotronbkg_mishap-new.jpg?sfvrsn=b208c7f8_2&size=600' alt='jumbotronbkg_mishap-new' title='jumbotronbkg_mishap-new' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="Mishap Program Highlights 2024 Milestones and Improvements" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2025/02/12/mishap-program-highlights-2024-milestones-and-improvements">Mishap Program Highlights 2024 Milestones and Improvements</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                February 12, 2025
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" >NASA&rsquo;s Mishap Program ended 2024 with an impressive roster of achievements, improvements and updated resources that the agencywide Mishap community can utilize.</div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList_ctrl0_FullStory" class="btn button-primary" href="../news/articles/newsitem/2025/02/12/mishap-program-highlights-2024-milestones-and-improvements"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="New Agency Tool for Root Cause Analysis: NASA Cause Analysis Tool (NCAT)" href="../news/articles/newsitem/2024/08/09/new-agency-tool-for-root-cause-analysis-nasa-cause-analysis-tool-ncat">
+                            <img src='https://sma.nasa.gov/images/default-source/mishap/ncat-osma-hero.jpg?sfvrsn=32fad1f8_7&size=600' alt='NCAT logo' title='ncat osma hero' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="New Agency Tool for Root Cause Analysis: NASA Cause Analysis Tool (NCAT)" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2024/08/09/new-agency-tool-for-root-cause-analysis-nasa-cause-analysis-tool-ncat">New Agency Tool for Root Cause Analysis: NASA Cause Analysis Tool (NCAT)</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                August 09, 2024
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><div>To support real-time collaboration among personnel conducting Root Cause Analyses, the NASA Safety Center developed a custom web-based application called the NASA Cause Analysis Tool (NCAT).</div></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList_ctrl1_FullStory" class="btn button-primary" href="../news/articles/newsitem/2024/08/09/new-agency-tool-for-root-cause-analysis-nasa-cause-analysis-tool-ncat"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="Improving Mishap Investigations for Human Spaceflight" href="../news/articles/newsitem/2018/11/05/improving-mishap-investigations-for-human-spaceflight">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/humanspaceflightpaper-hero.jpg?sfvrsn=3f8fdf8_0&size=600' alt='Commercial Crew Astronauts' title='Commercial Crew Astronauts' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="Improving Mishap Investigations for Human Spaceflight" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2018/11/05/improving-mishap-investigations-for-human-spaceflight">Improving Mishap Investigations for Human Spaceflight</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                November 05, 2018
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>After each of NASA&rsquo;s major mishaps &mdash; Apollo 1, Challenger and Columbia &mdash; the agency investigated the mishap and applied findings to future flights. As spaceflight became safer with the implementation of the lessons learned, mishap investigations also improved from each experience. With NASA preparing to fly three new crewed space vehicles in the coming years, clear understanding of the Mishap Investigation process with regards to Human Spaceflight and the underlying authorities and legal landscape of these investigations becomes paramount.&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList_ctrl2_FullStory" class="btn button-primary" href="../news/articles/newsitem/2018/11/05/improving-mishap-investigations-for-human-spaceflight"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                </ul>
+            </div>  
+<style type="text/css" media="all">
+  .newsslider ul{position:relative; list-style:none;padding:0;margin:0;}
+ .newsslider ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden;display:none;}
+.newsslider li.bjqs-slide{position:absolute; display:none;}
+.newsslider ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+.newsslider ul.bjqs-controls.v-centered li a{position:absolute;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+.newsslider .bjqs-markers {
+    padding-left: 0;
+  text-align: center;
+  list-style: none;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  z-index: 15;
+ margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;    
+    position: relative;
+    top: auto;
+    right: auto;
+    line-height: 20px;
+}
+.newsslider .bjqs-markers li {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+    margin: 0 0 0 6px;
+  background-color: #a5a5a5;
+  border: none; 
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+.newsslider .bjqs-markers li.active-marker {
+    margin: 0 0 0 6px;
+        height: 20px;
+    width: 20px;
+    background-color: dimgray;
+    
+}
+.newsslider .bjqs-markers li a{
+    display:block;
+    width:100%;
+    color:#a5a5a5;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+  }
+.newsslider .bjqs-markers li.active-marker a{
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    color:dimgray;
+    
+  }
+  
+.newsslider p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+</style>
+<script src="/docs/default-source/default-library/bjqs-1-3.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+   
+ var slidecount = jQuery('div.newsslider>ul>li').length;
+    if(slidecount > 1){
+      SMASetMaxHeight("div.newsslider>ul>li");
+  var slideheight = jQuery('div.newsslider>ul>li').first().height();
+  var slidewidth = jQuery('div.newsslider').width();
+    
+  jQuery('div.newsslider>ul').addClass('bjqs');
+  
+    jQuery('.newsslider').bjqs({
+    animtype      : 'slide',
+    animduration : 500, // how fast the animation are
+    animspeed : 5000,
+    height: slideheight,
+    width: slidewidth,
+    responsive    : true,
+    showcontrols : false,
+    showmarkers : true,
+    randomstart   : false
+          });
+}
+     });
+  jQuery(window).resize(function () {
+    jQuery(".newsslider").css({"height": ""});
+    jQuery(".newsslider .bjqs-wrapper").css({"height": ""});
+    jQuery(".newsslider .bjqs").css({"height": ""});
+    jQuery(".newsslider .bjqs-slide").css({"height": ""});
+     SMASetMaxHeight(".newsslider .bjqs-slide");
+  
+     
+  });</script>
+
+        <input id="ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList_ClientState" name="ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList_ClientState" type="hidden" /><span id="ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList" style="display:none;"></span>
+
+
+
+<span></span>
+        </div>
+    </div>
+</div>
+<div class='sfContentBlock'><!-- people -->
+<section id="mishap_people">
+<div>
+<div>
+<div class="container">
+<div class="row"> <!-- title -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">People</h2>
+</div>
+</div>
+<div class="row"> <!-- bios and pocs -->
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+<a href="#" data-toggle="modal" data-target="#modal_Mishap_Bio_Masters"><img alt="Mike Masters" src="/images/default-source/bio-images/mike-masters.tmb-thumb200.jpg?Culture=en&amp;sfvrsn=7569cdf8_2" class="img-responsive img-circle center-block" data-displaymode="Thumbnail" title="Mike Masters" style="width: 200px; vertical-align: middle;"></a>
+<h3 class="subtitleHeavy"><a href="#" data-toggle="modal" data-target="#modal_Mishap_Bio_Masters">Mike Masters</a></h3>
+<h4 class="subtitleLight">Mishap Investigation Program Executive</h4>
+<p class="text-center">Learn more about Mishap Investigation Program Executive Mike Masters.</p>
+<a href="#" class="btn button-alternate responsiveBtnSpace" data-toggle="modal" data-target="#modal_Mishap_Bio_Masters"><em class="fa fa-user"></em>Read More</a>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center"> <!-- poc -->
+<img alt="" src="/images/default-source/discipline-pages/poc.jpg" class="img-responsive img-circle center-block">
+<h3 class="subtitleHeavy"><a href="https://nasa.sharepoint.com/:x:/r/sites/nmis-user-guide/_layouts/15/Doc.aspx?sourcedoc=%7BF814C3DC-E5F4-4341-9D56-A8E3780E412D%7D&amp;file=Mishap%20Program%20POCs.xlsx&amp;action=default&amp;mobileredirect=true" title="" class="" target="_blank">Points of Contact</a></h3>
+<p class="text-center">For details on contacting a Mishap Investigation Point of Contact (PoC) for your location, click below.</p>
+<a href="https://nasa.sharepoint.com/:x:/r/sites/nmis-user-guide/_layouts/15/Doc.aspx?sourcedoc=%7BF814C3DC-E5F4-4341-9D56-A8E3780E412D%7D&amp;file=Mishap%20Program%20POCs.xlsx&amp;action=default&amp;mobileredirect=true" class="btn button-alternate responsiveBtnSpace" data-toggle="&lt;a" title="" target="_blank">Find Your PoC</a>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- learning --> <section id="mishap_learning">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Learning</h2>
+<a href="https://satern.nasa.gov" class="btn button-primary">Launch SATERN</a>&nbsp;
+<h3 class="subtitleLight">SATERN Courses</h3>
+<table class="table-learning tableML tablesorter" id="learningList">
+    <thead>
+        <tr>
+            <th>Course Title</th>
+            <th>Course Number</th>
+            <th class="nonSort">Buttons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Completing the Investigation and Mishap Report<br>
+            </td>
+            <td>SMA-002-09<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-002-09">SMA-002-09 Details</a></td>
+        </tr>
+        <tr>
+            <td>Introduction to Human Factors in Mishap and Close Call Investigation</td>
+            <td>SMA-001-07</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-001-07">SMA-001-07 Details</a></td>
+        </tr>
+        <tr>
+            <td>Mishap Investigation Board (MIB) Chair Training</td>
+            <td>SMA-002-13</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_IS_Learning_SMA-002-13">SMA-002-13 Details</a></td>
+        </tr>
+        <tr>
+            <td>Mishap Investigation Roles and Responsibilities<br>
+            </td>
+            <td>SMA-002-08<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-002-08">SMA-002-08 Details</a></td>
+        </tr>
+        <tr>
+            <td>NASA Human Factors in Mishap Investigation</td>
+            <td>SMA-002-15</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_IS_Learning_SMA-002-15 ">SMA-002-15 Details</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;NASAHFACS Overview</td>
+            <td>SMA-HQ-WBT-227</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-HQ-WBT-227">SMA-HQ-WBT-227 Details</a></td>
+        </tr>
+        <tr>
+            <td>NASA Interim Response Team Training</td>
+            <td>SMA-002-11</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-002-11">SMA-002-11 Details</a></td>
+        </tr>
+        <tr>
+            <td>Overview of Mishap Investigations<br>
+            </td>
+            <td>SMA-002-07<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-002-07">SMA-002-07 Details</a></td>
+        </tr>
+        <tr>
+            <td>Root Cause Analysis<br>
+            </td>
+            <td>SMA-002-10<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-002-10">SMA-002-10 Details</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;NASA Root Cause Analysis</td>
+            <td>&nbsp;SMA-002-14</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-002-14">SMA-002-14 Details</a></td>
+        </tr>
+        <tr>
+        </tr>
+    </tbody>
+</table>
+<!-- instructor box -->
+<h3 class="subtitleLight">Instructor-Led Courses</h3>
+<div class="well_learning"> <span class="courseTitle">NASA Root Cause Analysis</span> <span class="courseSubTitle">SMA-SAFE-OSMA-4003</span>
+<p>This course provides training on Root Cause Analysis methodology that can be used in both general problem solving and Mishap and Close Call Investigation. It allows students to gain hands-on experience differentiating between events and conditions, identifying cause and effect relationships, discriminating between barriers and controls, constructing a timeline, and constructing Event and Causal Factor Trees. Examples and exercises will be provided from NASA and other government agencies.</p>
+<a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-SAFE-OSMA-4003">SMA-SAFE-OSMA-4003 Details</a><a href="https://satern.nasa.gov" class="btn button-primary">Launch SATERN</a></div>
+<div class="well_learning">
+<div class="well_learning"><span class="courseTitle">NASAHFACS Training and Certification </span> <span class="courseSubTitle">SMA-SAFE-OSMA-4009</span>
+<p>This three-day certification covers the concepts and information necessary to perform Human Factors analyses. It covers how to code Human Factors and mishaps, contribute to the agency database, and use the Human Factors Analysis and Classification System (HFACS) proactively. <br>
+<br>
+*****You must complete the following prerequisite course before registering for this course*****</p>
+<p> NASAHFACS OVERVIEW (SMA-HQ-WBT-227)</p>
+<a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Mishap_Learning_SMA-SAFE-OSMA-4009">SMA-SAFE-OSMA-4009 Details</a><a href="https://satern.nasa.gov" class="btn button-primary">Launch SATERN</a><br>
+</div>
+</div>
+</div>
+<!-- end of container --> </div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- guidance --> <section id="mishap_guidance" data-stellar-background-ratio="0.1">
+<div class="guidanceGradient">
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Policy and Guidance</h2>
+<h3 class="subtitleLight">NASA</h3>
+<div class="well_guidance"> <span class="guidanceTitle">NPR 8621.1</span> <span class="guidanceSubTitle">NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping</span>
+<p>This policy provides requirements to report, investigate and document mishaps, close calls and previously unidentified serious workplace hazards to prevent recurrence of similar accidents.</p>
+<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8621_001D_&amp;page_name=main&amp;search_term=8621" class="btn button-primary" target="_blank" title="">See NPR 8621.1</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><!-- nmis --> <section id="mishap_nmisDatabase">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"> <img src="/images/default-source/discipline-pages/mishap-investigation/nmis.png" alt="NASA Mishap Information Database" class="img-responsive center-block responsiveImgSpace"> </div>
+<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+<h2 class="sectionTitle">NASA Mishap Information System</h2>
+<p>The NASA Mishap Information System (NMIS) is a custom-developed system for capturing mishaps, close calls and hazards, as required in&nbsp;<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8621&amp;s=1C" title="" target="">NPR 8621.1</a>, NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping.</p>
+<a href="https://nsc.nasa.gov/nmis" class="btn button-primary">Learn More About NMIS</a>&nbsp;<a href="https://nmis.sma.nasa.gov/" class="btn button-primary" target="_blank" title="">Log Into NMIS</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><!-- nmis --> <section id="mishap_mpcp" class="bkg_WhiteSmoke">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"> <img src="/images/default-source/discipline-pages/mishap-investigation/mpcp.png?sfvrsn=9204edf8_0" alt="MPCP Logo" class="img-responsive center-block responsiveImgSpace" data-displaymode="Original" title="MPCP Logo"> </div>
+<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+<h2 class="sectionTitle">Mishap Preparedness and Contingency Plan Software</h2>
+<p>The Mishap Preparedness and Contingency Plan (MPCP) software is designed to assist NASA programs and projects in developing Contingency Plans required under <a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8621&amp;s=1C" title="" class="" target="">NPR 8621.1</a>, NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping. Program and project required inputs  relating to mission success, pre-declares, hardware, hazards and key process phases are captured in a structured format with the final product generated in Microsoft Word.</p>
+<a href="https://sma.nasa.gov/mpcp" class="btn button-primary" target="_blank" title="">Log Into MPCP</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><!-- nmis --> <section id="mishap_ncat"
+<div="">
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"> <img src="/images/default-source/default-album/ncat-logo-transparent-2ae79af69d2a865b9a1a0ff0f003ca228.png?sfvrsn=83d1caf8_0" alt="NCAT Logo Transparent 2" class="img-responsive center-block responsiveImgSpace" data-displaymode="Original" title="NCAT Logo Transparent 2" style="vertical-align: middle;">&nbsp;</div>
+<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+<h2 class="sectionTitle">NASA Cause Analysis Tool</h2>
+<p>The NASA Cause Analysis Tool (NCAT) is a custom-developed web application used to collaborate on root cause analyses (RCA). NCAT will support the full mishap investigation process as defined in <a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8621&amp;s=1D">NPR 8621.1</a>, but also makes root cause analysis techniques more accessible for smaller mishap investigations and other use cases, such as assessments.</p>
+<a href="https://nsc.nasa.gov/resources/nasa-cause-analysis-tool" class="btn button-primary" target="_blank" title="">Learn More About NCAT</a>&nbsp;<a href="https://ncat.sma.nasa.gov/" class="btn button-primary" target="_blank" title="">Log Into NCAT</a></div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><section id="mishap_columbia" class="secondaryColor">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Columbia</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<p>On Feb. 1, 2003, after a successful 16-day mission, the Columbia and her crew &mdash; commander Rick Husband; pilot William McCool; mission specialists David Brown, Kalpana Chawla, Michael Anderson, and Laurel Clark; and payload specialist Ilan Ramon &mdash; headed back to Earth. Sixteen minutes from home, the space shuttle broke apart during re-entry into Earth's atmosphere. NASA, other organizations and the public immediately set out to find the crew and remaining pieces of Columbia.</p>
+<p>While NASA needed to study Columbia to learn exactly what happened to the shuttle and return to flight, the agency also knew that the artifacts had a lot to teach others. NASA started the loan program, so others could study her: learning her lessons and advancing science for future generations. This is Columbia's continued mission.</p>
+<a class="btn button-primary" href="/columbia">Visit Columbia: Her Continued Mission Page</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><!-- outreach -->
+<section id="mishap_outreach">
+<div class="container">
+<div class="row"> <!-- title -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Outreach</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-md-6">
+<img alt="Mishap Preparedness Contingency Plan Trifold" src="/images/default-source/discipline-pages/mishap-investigation/outreach_image_trifold.png" class="img-responsive center-block">
+<h3 class="subtitleHeavy">Mishap Preparedness and Contingency Plan Trifolds</h3>
+<p>These trifolds review criteria for Type A-D mishaps and Close Calls, as well as who is responsible for the mishap investigation under particular conditions.</p>
+<div class="btn-group">
+<a type="button" class="btn dropdown-toggle button-alternate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+<ul class="dropdown-menu">
+    <li><a href="https://sma.nasa.gov/docs/default-source/mishaps/artemis_ii_missionmishaptrifold_12-16-25_508.pdf?sfvrsn=e88cd3f8_7" title="" class="" target="_blank">Moon to Mars Artemis II Mission Investigation Jurisdiction Matrix</a></li>
+    <li><a href="/docs/default-source/sma-disciplines-and-programs/mishap-investigation/commercialcrewtrifold_2018_final315da369d2a865b9a1a0ff0f003ca228.pdf?sfvrsn=1cf5c6f8_6" title="Commercial Crew Program Flight Test Mission">Commercial Crew Program Flight Test Mission</a>
+    </li>
+    <li>
+    <a href="/docs/default-source/sma-disciplines-and-programs/mishap-investigation/commercialcrewtrifold_2018_final.pdf?sfvrsn=5c37c7f8_18" title="Commercial Crew Progam">Commercial Crew Program Post-Certification Mission</a>
+    </li>
+    <li><a href="/docs/default-source/sma-disciplines-and-programs/mishap-investigation/iss_privateastronautmission-pam-_trifold_2026.pdf?sfvrsn=ab99d1f8_1" title="International Space Station (ISS) Private Astronaut Mission (PAM)">International Space Station (ISS) Private Astronaut Mission (PAM)</a>  </li>
+    <li><a href="/docs/default-source/sma-disciplines-and-programs/mishap-investigation/orion_mishaptrifold_2019_final.pdf?sfvrsn=5837c7f8_2" title="Multi-Purpose Crew Vehicle Program">Multi-Purpose Crew Vehicle Program</a></li>
+    <li><a href="/docs/default-source/mishaps/crs_commercialresupply_trifold.pdf?sfvrsn=5d60cef8_0" title="Commercial Resupply (CRS)">Commercial Resupply (CRS)</a></li>
+    <li><a href="/docs/default-source/mishaps/iss_mishap_trifold.pdf?sfvrsn=f4b7c8f8_0" title="International Space Station (ISS) Commercial Uncrewed Vehicles">International Space Station (ISS) Commercial Uncrewed Vehicles</a></li>
+    <li><a href="/docs/default-source/sma-disciplines-and-programs/mishap-investigation/sma-hls-ijm-001_bl_hls_mishap_initial_trifold_0418243af6af69d2a865b9a1a0ff0f003ca228.pdf?sfvrsn=175ecaf8_4" title="Human Landing System (HLS) Program Initial Phase Mission">Human Landing System (HLS) Program Initial Phase Mission</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-md-6">
+<img alt="MWARs and Alerts" src="/images/default-source/discipline-pages/mishap-investigation/outreach_image_alerts.png" class="img-responsive center-block">
+<h3 class="subtitleHeavy">MWARs and Alerts</h3>
+<p>Mishap investigation authorities issue a Mishap Warning-Action-Response (MWAR) when their investigations uncover hazards they want to share with the agency. MWARs allow investigators to share safety-critical information before completing the final mishap investigation report.<br>
+<br>
+<a href="https://nsc.nasa.gov/resources/mwars" class="btn button-alternate" target="_blank">See MWARs</a><br>
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-md-6">
+<img alt="Completed Mishap Investigation Reports" src="/images/default-source/discipline-pages/mishap-investigation/outreach_image_statusreport.png" class="img-responsive center-block">
+<h2 class="subtitleHeavy">Completed Mishap Investigation Reports</h2>
+<p>Authorities issue a series of reports throughout the investigation process including Status Reports, Mishap Report Summaries and, when the investigation is complete, a final Mishap Investigation Report that details the findings.</p>
+<a href="https://nsc.nasa.gov/mishaps/mishap-investigations" class="btn button-alternate" target="_blank" title="">See Reports</a>
+</div>
+<div class="col-xs-12 col-md-6">
+<img alt="Mishap video" class="img-responsive center-block" src="/images/default-source/default-album/screenshot-2024-07-25-at-10-51-49-am11fdb069d2a865b9a1a0ff0f003ca228.tmb-small.png?Culture=en&amp;sfvrsn=3c55d5f8_1" data-displaymode="Thumbnail" title="Mishap video" style="padding: 4rem 0px; vertical-align: middle;">&nbsp;<br>
+</div>
+<h3 class="subtitleHeavy">Mishap Reporting Video</h3>
+<div class="col-xs-12 col-md-6">
+<p>NASA strives to create a safe work environment where people feel comfortable communicating safety issues, learn from successes and mistakes, and are confident balancing challenges and risks. However, mishaps and close calls may still occur in any workplace at any moment. This video gives a brief overview of the mishap reporting process.</p>
+<a href="https://sma.nasa.gov/vids/video-item/mishap-investigation-and-reporting" class="btn button-alternate" target="_blank" title="">Watch Mishap Reporting video</a>&nbsp;</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><section id="mishap_data">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Mishap Data</h2>
+<p>NASA employees can request center- or agency-level mishap information from the NASA Safety Center (NSC) based on NASA Mishap Information System data. Simply fill out the form on the NSC website and a team member will be in contact.</p>
+<a type="button" class="btn button-primary" href="https://nsc.nasa.gov/mishaps/mishap-investigations#information" title="" target="_blank">Request Mishap Information</a>&nbsp;</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><!-- reports -->
+<section id="mishap_summaryReport">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 text-center">
+<h2 class="sectionTitle text-center">Annual Mishap Summaries</h2>
+<p>This annual report, published by the NASA Safety Center, looks at the agency&rsquo;s mishaps from the previous year, including injury, illness and damage mishaps, as well as close calls.</p>
+<a href="https://nsc.nasa.gov/resources/annual-reports?tagFilter=mishap-investigation" class="btn button-primary responsiveBtnSpace" target="_blank">See Summaries</a>
+</div>
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 text-center">
+<img src="/images/default-source/discipline-pages/mishap-investigation/annualmishapsummary.png" alt="Annual Mishap Summaries" class="img-responsive center-block">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><section id="mishap_significationIncidents">
+<a class="anchor" id="tools" style="display: block;
+position: relative;
+top: -250px;
+visibility: hidden;"></a>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Flight Safety Office Interactive Tools</h2>
+<p>The Johnson Space Center Safety and Mission Assurance Flight Safety Office<span style="font-size: inherit;">&nbsp;developed a suite of interactive tools to communicate significant safety mishaps and risks in human spaceflight. The tools are intended to raise awareness of past incidents and lessons learned to prevent future mishaps and make missions safer.</span></p>
+<div class="btn-group privateContent">
+<div class="btn-group">
+<a type="button" class="btn dropdown-toggle button-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Launch Interactive Tools
+</a>
+<ul class="dropdown-menu">
+    <li>
+    <a href="/SignificantIncidents">Significant Incidents</a>
+    </li>
+    <li>
+    <a href="/SignificantIncidentsEVA">Significant Incidents: EVA Operations</a>
+    </li>
+    <li>
+    <a href="/SignificantIncidentsUncrewedMissions/">Significant Incidents In Uncrewed Missions</a>
+    </li>
+    <li>
+    <a href="/LaunchVehicle">Launch Vehicle History</a>
+    </li>
+</ul>
+</div>
+<div class="btn-group " style="margin-left:1rem;">
+<a type="button" class="btn dropdown-toggle button-alternate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Download PDF
+</a>
+<ul class="dropdown-menu">
+    <li>
+    <a href="/SignificantIncidents/assets/2024/Significant_Incidents_Report-Spring2024.pdf">Report Spring 2024</a>
+    </li>
+    <li>
+    <a href="/SignificantIncidents/assets/2024/Significant_Incidents_Poster-Spring2024.pdf">Poster Spring 2024</a>
+    </li>
+    <li>
+    <a href="/SignificantIncidents/assets/2024/Significant_Incidents_ZCARD-Spring2024.pdf">Z-Card Spring 2024</a>
+    </li>
+    <li>
+    <a href="/SignificantIncidents/assets/2024/Significant_Incidents_in_EVA_2024.pdf">EVA Operations 2024</a>
+    </li>
+    <li>
+    <a href="/SignificantIncidents/assets/2019/GroundOpsChart_Final_3_27_2019.pdf">Ground Operations 03/19</a>
+    </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- faqs --> <section id="mishap_faq" class="lightGray">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Frequently Asked Questions</h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- questions start here -->
+<ul class="list-unstyled listML" id="questionList">
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question1" aria-expanded="false" aria-controls="question1"><i class="fa fa-caret-right"></i>Who owns NPR 8621.1, NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping?</a></span>
+    <div class="collapse" id="question1">
+    <div class="well"> <span>The Office of Safety and Mission Assurance at NASA Headquarters, specifically the NASA mishap program executive, is the owner of this policy. The Mishap Investigation Support Office at the NASA Safety Center provides administrative, technical and analytical assistance to Mishap Investigation Boards and to the NASA mishap program executive.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question2" aria-expanded="false" aria-controls="question2"><i class="fa fa-caret-right"></i>Who owns the training and tools for Mishap Investigation?</a></span>
+    <div class="collapse" id="question2">
+    <div class="well"> <span>The Office of Safety and Mission Assurance at NASA Headquarters owns the training and tools.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question3" aria-expanded="false" aria-controls="question3"><i class="fa fa-caret-right"></i>Who implements the training for Mishap Investigation?</a></span>
+    <div class="collapse" id="question3">
+    <div class="well"> <span>The Office of Safety and Mission Assurance, with support from the NASA Safety Center, implements training. Supervisors, Safety and Mission Assurance directors, and safety managers should ensure there are sufficient personnel at their sites with the required training.  &ldquo;Introduction to Mishap Investigations&rdquo; in SATERN is required for at least one board member and the ex-officio.</span></div>
+    </div>
+    <div class="collapse" id="question4">
+    <div class="well"> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question5" aria-expanded="false" aria-controls="question5"><i class="fa fa-caret-right"></i>Is course work all it takes to be a &ldquo;trained&rdquo; investigator?</a></span>
+    <div class="collapse" id="question5">
+    <div class="well"> <span>No, but it doesn&rsquo;t hurt. Having served or participated on a Mishap Investigation Board and having a thorough understanding of the NPR 8621.1 also is beneficial.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question6" aria-expanded="false" aria-controls="question6"><i class="fa fa-caret-right"></i>Who manages Mishap Investigation Boards?</a></span>
+    <div class="collapse" id="question6">
+    <div class="well"> <span>The chair appointed to the mishap investigation manages the board.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question7" aria-expanded="false" aria-controls="question7"><i class="fa fa-caret-right"></i>During an investigation, can you interview someone more than one time?</a></span>
+    <div class="collapse" id="question7">
+    <div class="well"> <span>Yes. As the investigation progresses, additional facts may warrant revisiting some key witnesses.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question8" aria-expanded="false" aria-controls="question8"><i class="fa fa-caret-right"></i>Can interviews be recorded?</a></span>
+    <div class="collapse" id="question8">
+    <div class="well"> <span>Yes. The witness must be made aware that he or she is being recorded and asked for consent. NPR 8621.1, Section 3.8 provides additional details on witness statements and confidentiality.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question9" aria-expanded="false" aria-controls="question9"><i class="fa fa-caret-right"></i>Is it permissible to ask about a person&rsquo;s medical history?</a></span>
+    <div class="collapse" id="question9">
+    <div class="well"> <span>Yes, it is permissible to ask about a person&rsquo;s medical history, but this information cannot be released.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question10" aria-expanded="false" aria-controls="question10"><i class="fa fa-caret-right"></i>Should direct quotes from an interviewee be included in the mishap report?</a></span>
+    <div class="collapse" id="question10">
+    <div class="well"> <span>No. Direct quotes could compromise the confidentiality of the witness.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question11" aria-expanded="false" aria-controls="question11"><i class="fa fa-caret-right"></i>Who can attend deliberations of a Mishap Investigation Board (MIB)?</a></span>
+    <div class="collapse" id="question11">
+    <div class="well"> <span>Participation is limited to NASA employees. All board members listed in the appointment letter should participate in deliberations. In addition, consultants do not participate in deliberations (vote on findings) (NPR 8621.1, paragraph 1.4.19 a).</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question12" aria-expanded="false" aria-controls="question12"><i class="fa fa-caret-right"></i>Can a contractor support the creation of the Events and Causal Factor Tree (E&amp;CFT)?</a></span>
+    <div class="collapse" id="question12">
+    <div class="well"> <span>In general, no. The E&amp;CFT should be a product of the MIB, which is comprised of NASA personnel.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question13" aria-expanded="false" aria-controls="question13"><i class="fa fa-caret-right"></i>Why is a weather event classified separately from earthquakes, volcanoes, etc.?</a></span>
+    <div class="collapse" id="question13">
+    <div class="well"> <span>Earthquakes and volcanoes generally are considered to be of a higher severity and of less common frequency than normal or expected seasonal changes in weather.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question14" aria-expanded="false" aria-controls="question14"><i class="fa fa-caret-right"></i>Under what circumstances would upper management change a mishap classification?</a></span>
+    <div class="collapse" id="question14">
+    <div class="well"> <span>Property damage estimates could change and require a change in classification. Also, a high-visibility incident may require an increase.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question15" aria-expanded="false" aria-controls="question15"><i class="fa fa-caret-right"></i>For injuries, why are workdays, not weekdays counted?</a></span>
+    <div class="collapse" id="question15">
+    <div class="well"> <span>This requirement comes from the Occupational Safety and Health Administration listed in 1904.7(b)(3)(iv): </span> <span>&ldquo;How do I count weekends, holidays, or other days the employee would not have worked anyway? You must count the number of calendar days the employee was unable to work as a result of the injury or illness, regardless of whether or not the employee was scheduled to work on those day(s). Weekend days, holidays, vacation days or other days off are included in the total number of days recorded if the employee would not have been able to work on those days because of a work-related injury or illness.&rdquo;</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question16" aria-expanded="false" aria-controls="question16"><i class="fa fa-caret-right"></i>Does the Office of Safety and Mission Assurance (OSMA) verify contractor participation in mishap investigations for a given contract?</a></span>
+    <div class="collapse" id="question16">
+    <div class="well"> <span>There is an ongoing effort to include such language in contracts for NASA contractors.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question17" aria-expanded="false" aria-controls="question17"><i class="fa fa-caret-right"></i>Does the NASA Safety Center (NSC) approve the final mishap report?</a></span>
+    <div class="collapse" id="question17">
+    <div class="well"> <span>No. Approval of final mishap reports and products is the responsibility of the appointing and endorsing officials.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question18" aria-expanded="false" aria-controls="question18"><i class="fa fa-caret-right"></i>What is the notification process for mishaps? Can it be informal?</a></span>
+    <div class="collapse" id="question18">
+    <div class="well"> <span>The notification for all classifications of mishaps and close calls is described in NPR 8621.1, Chapter 3, Initial Response to a Mishap or Close Call.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question19" aria-expanded="false" aria-controls="question19"><i class="fa fa-caret-right"></i>Do all advisors have to be used in an investigation? Do they all sign the report?</a></span>
+    <div class="collapse" id="question19">
+    <div class="well"> <span>If an advisor is listed in the appointment letter, his or her signature also must appear on the final report. Additional support personnel should be acknowledged.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question20" aria-expanded="false" aria-controls="question20"><i class="fa fa-caret-right"></i>Is there any plan to have more than three Mishap Investigation specialists for the agency?</a></span>
+    <div class="collapse" id="question20">
+    <div class="well"> <span>This is being discussed, and the Mishap Investigation Support Office and the agency mishap manager welcome involvement and comment from the mishap community.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question21" aria-expanded="false" aria-controls="question21"><i class="fa fa-caret-right"></i>Do all levels of mishaps (Types A, B, C, D, Close Call) require the same techniques or tools during the investigation, e.g., Root Cause Analysis and E&amp;CFT?</a></span>
+    <div class="collapse" id="question21">
+    <div class="well"> <span>The same techniques and tools can be used for all mishaps. Root Cause Analysis is necessary for all mishaps, but not all elements of the analysis are required to be in the final report.</span></div>
+    </div>
+    <div class="collapse" id="question22">
+    <div class="well"> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question23" aria-expanded="false" aria-controls="question23"><i class="fa fa-caret-right"></i>Do all mishap investigations find a root cause?</a></span>
+    <div class="collapse" id="question23">
+    <div class="well"> <span>No, but they need to attempt to determine if any exist.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question24" aria-expanded="false" aria-controls="question24"><i class="fa fa-caret-right"></i>Can a contributing factor have a root cause?</a></span>
+    <div class="collapse" id="question24">
+    <div class="well"> <span>Yes, but it is a root cause for the contributing factor and should be listed as such.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 1 --> <span><a data-toggle="collapse" href="#question25" aria-expanded="false" aria-controls="question25"><i class="fa fa-caret-right"></i>Who approves Center Mishap Preparedness and Contingency Plans?</a></span>
+    <div class="collapse" id="question25">
+    <div class="well"> <span>The chief, OSMA approves Center Mishap Preparedness and Contingency Plans.</span> </div>
+    </div>
+    </li>
+    <!-- end of question 1 --> </ul>
+    <!-- question end here --> </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+</div><div class='sfContentBlock'><!-- links --> <section id="mishap_importantLinks">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Important Links</h2>
+<dl>
+    <dt><a href="http://www.faa.gov/">Federal Aviation Administration </a></dt>
+    <dd>Information on aircraft, airports, air traffic, data and research, licenses and certificates, regulations and policies, and training and testing</dd>
+</dl>
+<dl>
+    <dt><a href="https://nmis.sma.nasa.gov/">NASA Mishap Information System </a></dt>
+    <dd>Custom-developed system for capturing mishaps, close calls and hazards</dd>
+</dl>
+<dl>
+    <dt><a href="http://www.ntsb.gov/Pages/default.aspx">National Transportation Safety Board </a></dt>
+    <dd>News and events and information on safety advocacy, investigations, disaster assistance and legal</dd>
+</dl>
+<dl>
+    <dt><a href="https://sma.nasa.gov/SignificantIncidents/">Significant Incidents and Close Calls in Human Spaceflight</a></dt>
+    <dd>Dynamic inforgraphic from Johnson Space Center</dd>
+</dl>
+<dt><a href="http://www.csb.gov/">U.S. Chemical Safety Board</a></dt>
+<dd>Investigation information, recommendations, media materials and videos</dd>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div>
+	
+
+
+          
+          <script src="/docs/default-source/javascript/printmodalcombined.js"></script>
+ <script>
+            function printThis(divId,docTitle){
+            if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+    jQuery('#'+divId).printElement({printMode:'popup',pageTitle:docTitle, overrideElementCSS:['/docs/default-source/style-sheets/sma_print.css']});
+}
+else {
+  printJS({printable: divId,type:'html',style:'.hidden-print {display:none!important;}',docTitle: docTitle});
+}
+            }
+          </script>
+          
+          <style>
+            @media print{
+  a[href]:after {
+    content: none !important;
+  }
+              .btn{display:none !important;}
+            
+            .hidden-print{display:none !important;}}</style>
+		
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-002-14' role="dialog" data-modal-url='/mishap_learning_sma-002-14' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-002-14_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA Root Cause Analysis</h4>
+							<h5 class="modal-identity">SMA-002-14</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-002-14_print','Mishap_Learning_SMA-002-14');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-12"><div class="courseInfo"><p>This course provides training on Root Cause Analysis (RCA) methodology that can be used in both general problem solving and mishap and close call investigations. It teaches the Root Cause Analysis methodology and terminology adopted by NASA in August 2003. It allows students to demonstrate their understanding of concepts and tools through examples and exercises, including differentiating between events and conditions, identifying cause and effect relationships, discriminating between barriers and controls, constructing a time line, RCA Fault Tree and Event and Causal Factor Trees.&nbsp;</p><p><strong>Course Number:</strong>&nbsp; SMA-002-14</p><p><strong>Length:</strong>&nbsp; 16 hours</p><p><strong>Audience:&nbsp;</strong>Those who are involved with mishap investigations, including NASA Mishap Investigation Working Group members, mishap investigators, mishap investigation board members, and incident response team members. It also includes engineers, managers, quality assurance professionals and problem solvers.</p></div></div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Bio_Erickson' role="dialog" data-modal-url='/mishap_bio_erickson' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Mishap_Bio_Erickson_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">David Erickson</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Bio_Erickson_print','Mishap_Bio_Erickson');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-3"><span data-sfref="[images%7COpenAccessDataProvider]58c1a869-d2a8-65b9-a1a0-ff0f003ca228" class="sfImageWrapper"><img src="/images/default-source/bio-images/david_erickson.jpg?sfvrsn=5cc0d3f8_2" style="vertical-align:middle;" title="David_Erickson" data-displaymode="Original" alt="David_Erickson" class="img-responsive img-circle center-block" /></span></div><div class="col-sm-9"><h3>David Erickson</h3><h5>Mishap Program specialist, ACCLLP Program</h5><p><span style="background-color:transparent;color:inherit;font-family:inherit;font-size:inherit;text-align:inherit;text-transform:inherit;word-spacing:normal;caret-color:auto;white-space:inherit;">David Erickson is a mishap program specialist in the NASA Safety Center&rsquo;s Mishap Prevention and Organizational Performance (MPOP) Office. In this role, he supports NASA mishap investigations and assists with the development of the new Columbia Learning Center at Kennedy Space Center, along with providing future training opportunities. He is located at Kennedy Space Center.</span></p><p>Erickson&rsquo;s mishap experience includes serving on the NASA Standing Accident Investigation Boards (SAIBs) for multiple high-visibility mishaps. He also served on the Columbia Reconstruction Project at the Reusable Launch Vehicle Hangar.</p><p>Erickson is a six-year veteran of the U.S. Navy where he specialized in the nuclear power field. He worked on NASA&rsquo;s Space Shuttle Program for 11 years and started as an industrial engineer in the United Space Alliance (USA) Industrial Engineering and Human Factors group.</p><p>He contributed to the Lockheed Martin/United Space Alliance team on the winning Crew Exploration Vehicle proposal (which became Orion). He also served as the launch operations safety manager for the United States&rsquo; Return to Flight missions in 2005 and 2006. During the closeout of the Space Shuttle Program, Erickson transitioned to the role of ground systems reliability manager while continuing to support pad launch preparations and post-launch safe-ing through the launch of STS 133 in February of 2011.</p><p>After serving with the Shuttle Program, Erickson was the safety manager for a Missile Defense Agency (MDA) contractor and provided systems safety for vehicle and delivery design, test and flight of MDA targets. He also worked in occupational safety to ensure compliance with the Florida Department of Environmental Protection for multiple L3 companies in the Orlando metro area until his company was purchased by Aerojet Rocketdyne.</p><p>In 2019, Erickson returned to Kennedy Space Center as a contractor and earned a Silver Snoopy Award for activities involving the testing and fueling of Orion at the Multi-Payload Processing Facility for Artemis I in 2022. He also served as the operations lead in the Exploration Ground Systems Safety Division for Artemis processing.</p><p>Erickson earned his Certified Safety Professional designation from the Board of Certified Safety Professionals. He has a bachelor&rsquo;s degree in industrial engineering and a master's degree in industrial safety (now called environmental safety and health).</p><p>A Minnesota native, Erickson has lived in Florida since 2000. He is married and has two adult children who are world travelers.</p></div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Bio_Masters' role="dialog" data-modal-url='/mishap_bio_masters' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Mishap_Bio_Masters_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Mike Masters</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Bio_Masters_print','Mishap_Bio_Masters');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-3"><span data-sfref="[images%7COpenAccessDataProvider]58c1a869-d2a8-65b9-a1a0-ff0f003ca228" class="sfImageWrapper"><img src="/images/default-source/bio-images/mike-masters.jpg?sfvrsn=7569cdf8_1" style="vertical-align:middle;" title="Mike Masters" data-displaymode="Original" alt="Mike Masters" class="img-responsive img-circle center-block" /></span> </div><div class="col-sm-9"><h3>Mike Masters</h3><h5>Mishap Investigation Program Executive, ACCLLP Program Manager</h5><p>Mike Masters is the&nbsp;<a href="https://sma.nasa.gov/sma-disciplines/mishap-investigation" target="_blank" data-sf-ec-immutable="">Mishap Investigation</a>&nbsp;program executive for NASA's Office of Safety and Mission Assurance (OSMA). In this role, he provides advice, support and oversight for NASA mishap investigations.&nbsp;Masters also serves as the program manager for the&nbsp;<a href="https://sma.nasa.gov/sma-disciplines/accllp" target="_blank" data-sf-ec-immutable="">Apollo, Challenger, Columbia, Lessons Learned&nbsp;Program (ACCLLP)</a>&nbsp;and chief of <span style="background-color:initial;font-family:inherit;font-size:inherit;text-align:inherit;text-transform:inherit;word-spacing:normal;caret-color:auto;white-space:inherit;"> the&nbsp;Mishap Prevention and Organizational Performance (MPOP) Office&nbsp;in the NASA Safety Center (NSC), which is part of OSMA</span><span style="background-color:transparent;color:inherit;font-family:inherit;font-size:inherit;text-align:inherit;text-transform:inherit;word-spacing:normal;caret-color:auto;white-space:inherit;">.&nbsp;He is located at Kennedy Space Center.</span></p><p>Prior to this role, Masters served as the chief of the NSC Assessments and Investigations Office. In this role, he was&nbsp; responsible for managing the policy and execution of the agency&rsquo;s Safety and Mission Assurance (SMA) assessments, audits and investigations.</p><p>Mike Masters is the <a href="https://sma.nasa.gov/sma-disciplines/mishap-investigation" data-sf-ec-immutable="">Mishap Investigation</a> program executive in the Mishap Prevention and Organizational Performance Office and&nbsp;the program manager for the <a href="https://sma.nasa.gov/sma-disciplines/accllp" data-sf-ec-immutable="">Apollo, Challenger, Columbia Lessons Learned Program (ACCLLP)</a>. He is located at Kennedy Space Center.</p><p>Prior to this role, Masters served as the chief of Mission Assurance and Program Integration Branch for Exploration Ground Systems (EGS) within SMA at Kennedy. He provided management and supervisory duties to the branch engineering team by providing SMA discipline expertise to all Exploration Systems Division programs, including Space Launch System, Orion and Exploration Ground Systems in support of their move from design and development to operations processing. He strategically focused efforts to define roles and responsibilities and develop a structured, diverse team possessing the strong mission assurance skills required to transition these programs to operations. This shift was successful due to Masters&rsquo; efforts to improve communication inside and outside the EGS SMA Division, grow leadership and technical expertise within the branch, create a streamlined Certificate of Flight Readiness process, and develop and implement a targeted risk-based assessment and mishap/close call investigation process.</p><p>Masters also served as the Source Evaluation Board chairperson for the SMA Support Services III (SMASS III) contract acquisition. The SMASS III contract is a Cost-Plus Fixed Fee contract to provide engineering and technical support services for multiple customers at Kennedy and across NASA. As chair, he successfully navigated the team through the Procurement Development Team phase, Request for Proposals, proposal evaluation, multiple Small Business Association and Government Accountability Office protests, and contract award, while effectively managing day-to-day operations and communications with Kennedy senior management, Headquarters procurement and legal office senior leadership.</p><p>Prior to this, he was the deputy chief of the Commercial Crew Program (CCP) SMA Office, where he supervised day-to-day operations and communications with the SMA Directorate leadership. In this role, he provided guidance and leadership to the SMA CCP team tasked with defining &ldquo;shared assurance&rdquo; and a process for the CCP Risk-Based Analysis, which were designed to strategically share assurance responsibilities between SMA, engineering and the program and tactically target surveillance activities for CCP.</p><p>In addition, Masters was the safety engineering operations lead and acting deputy chief for the Ground System Development and Operations (GSDO) &mdash; now EGS &mdash; SMA Office, where he was responsible for assisting the chief with management of office staff and the development of SMA policies and requirements for the GSDO, CCP and Advanced Exploration Systems (AES). In this role, he led the reorganization of the KSC SMA Directorate to better align with the new programs following the retirement of the space shuttle. Following the reorganization, he transitioned to the lead safety engineer position, responsible for managing all Operational Safety and System Safety analyses in support of the Program Development and Operations Division and AES projects at Kennedy.</p><p>Before these roles, he was the executive management intern for the director of Kennedy, a position that served as a developmental assignment to broaden his understanding of the center&rsquo;s decision-making process and external customers and stakeholders involved in that process. He also previously served as the Kennedy Range Safety lead, where he led a diverse technical team in all center Range Safety activities, including the development, monitoring and implementation of agency Range Safety policies relating to space and sub-orbital launches and landing of space launch vehicles and associated technologies.</p><p>Masters also has experience performing technical and nontechnical engineering evaluations in the form of independent assessments relating to SMA for internal and external customers, including launch vehicle processing, the International Space Station, Constellation program, Launch Services Program and Kennedy institutional facilities.</p><p>Prior to joining NASA, Masters supported Computer Sciences Raytheon, a contractor responsible for launch support to the Eastern Range. Specifically, he supported the application of Eastern Range Safety instrumentation systems during real-time console support of Expendable Launch Vehicle and space shuttle launch operations as a Range Safety coordinator and data processing lead in a variety of Eastern Range Safety instrumentation systems.</p><p>Masters has a Bachelor of Science degree in space sciences from the Florida Institute of Technology. He&rsquo;s taken NASA&rsquo;s &ldquo;Leading Through Influence,&rdquo; &ldquo;Introduction to Mishap Investigations&rdquo; and&nbsp;<a href="https://nsc.nasa.gov/professional-development/safety-and-mission-assurance-technical-excellence-program" data-sf-ec-immutable="">SMA Technical Excellence Program</a>&nbsp;Level 1 training. He has earned multiple awards throughout his career, including the Kennedy Superior Accomplishment Award, Kennedy Group Achievement Award, Group Achievement Honor Award, Gold Dollar Award and Space Flight Awareness Launch Honoree Award.</p><p>Masters is married and has four children. His favorite hobbies are anything that involves his family; he coaches his children in a variety of sports, including baseball, basketball, football, soccer, and golf. He and his family enjoy boating; golfing; and all watersport activities, including paddle boarding, kayaking, fishing and snorkeling.</p></div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade SMA-SAFE-OSMA-4009' id='modal_Mishap_Learning_SMA-SAFE-OSMA-4009' role="dialog" data-modal-url='/mishap_learning_sma-safe-osma-4009' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-SAFE-OSMA-4009_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASAHFACS Training and Certification</h4>
+							<h5 class="modal-identity">SMA-SAFE-OSMA-4009</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-SAFE-OSMA-4009_print','Mishap_Learning_SMA-SAFE-OSMA-4009');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This three-day certification covers the concepts and information necessary to perform Human Factors analyses. It covers how to code Human Factors and mishaps, contribute to the agency database, and use the Human Factors Analysis and Classification System (HFACS) proactively.</p><p>*****You must complete the following prerequisite course before registering for this course*****</p><p>NASAHFACS OVERVIEW (SMA-HQ-WBT-227)</p><p>&nbsp;</p><p><strong>Course Number:</strong>&nbsp; SMA-SAFE-OSMA-4009</p><p><strong>Length:</strong>&nbsp; 24 hours</p><p><strong>Audience:&nbsp;</strong>This course is intended for leads, supervisors and managers in the NASA workforce. This includes civil service employees, contractor employees, students and co-ops, military detailees, IPA assignees, and presidential appointees.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-HQ-WBT-227' role="dialog" data-modal-url='/mishap_learning_sma-hq-wbt-227' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-HQ-WBT-227_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASAHFACS Overview</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-227</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-HQ-WBT-227_print','Mishap_Learning_SMA-HQ-WBT-227');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-12"><div class="courseInfo"><p></p>This course is designed to provide you with an overview of the NASA Human Factors Analysis and Classification System and its methodology.<ul></ul><p><strong>Course Number:</strong>&nbsp; SMA-HQ-WBT-227</p><p><strong>Length:</strong>&nbsp; 0.60 hours</p><p><strong>Audience:&nbsp;</strong>This course is intended for executive level personnel who wish to learn more about the NASAHFACS Program, NASA personnel who want to know more about the NASAHFACS Program prior to certification, the general NASA audience, and HFACS certified personnel who want a refresher or learn about updates.</p></div></div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_hf_guidance_npr-8621-1' role="dialog" data-modal-url='/hf_guidance_npr-8621-1' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_hf_guidance_npr-8621-1_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NPR 8621.1</h4>
+							<h5 class="modal-identity">NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_hf_guidance_npr-8621-1_print','hf_guidance_npr-8621-1');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>NPR 8621.1,&nbsp;NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping provides requirements to report, investigate and document mishaps, close calls and resulting corrective actions to prevent occurrence of similar work-related injury, property damage or mission failure.&nbsp;</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&c=8621&s=1D" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NPR 8621.1
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Table' role="dialog" data-modal-url='/mishap_table' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Mishap_Table_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Mishap Classifications</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Table_print','Mishap_Table');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <table border="0" cellspacing="0" cellpadding="0" class="table table-striped">
+    <thead>
+        <tr>
+            <td>
+            <p align="center"><strong>Classification Level</strong></p>
+            </td>
+            <td width="234">
+            <p align="center"><strong>Property Damage</strong></p>
+            </td>
+            <td width="272">
+            <p align="center"><strong>Injury</strong></p>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+            <p align="center"><strong>Type A Mishap</strong></p>
+            </td>
+            <td width="234" valign="top">
+            <p>Total direct cost of mission failure and property damage of $2,000,000 or more,</p>
+            <p align="center">or</p>
+            <p>Crewed aircraft hull loss,</p>
+            <p align="center">or</p>
+            <p>Unexpected aircraft departure from controlled flight for all aircraft except when departure from controlled flight has been pre-briefed (e.g., upset recovery training, high AOA envelope testing, aerobatics, or OCF for training) or mitigated through the flight test process inherent at each Center.</p>
+            </td>
+            <td width="272" valign="top">
+            <p>Occupational injury or illness resulting in</p>
+            <p>A fatality,</p>
+            <p align="center">or</p>
+            <p>A permanent total disability.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="center"><strong>Type B Mishap</strong></p>
+            </td>
+            <td width="234" valign="top">
+            <p>Total direct cost of mission failure and property damage of at least $500,000, but less than $2,000,000.</p>
+            </td>
+            <td width="272" valign="top">
+            <p>Occupational injury or illness resulting in </p>
+            <p>A permanent partial disability,</p>
+            <p align="center">or</p>
+            <p>Hospitalization for inpatient care of three or more people within 30 workdays of the mishap.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="center"><strong>Type C Mishap</strong></p>
+            </td>
+            <td width="234" valign="top">
+            <p>Total direct cost of mission failure and property damage of at least $50,000, but less than $500,000. </p>
+            </td>
+            <td width="272" valign="top">
+            <p>Nonfatal OSHA-recordable occupational injury or illness resulting in days away from work, or restricted duty, or transfer to another job beyond the day or shift on which it occurred.</p>
+            <p align="center">or</p>
+            <p>Hospitalization for inpatient care of one or two people within 30 workdays of the mishap.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="center"><strong>Type D Mishap</strong></p>
+            </td>
+            <td width="234" valign="top">
+            <p>Total direct cost of mission failure and property damage of at least $20,000, but less than $50,000. </p>
+            </td>
+            <td width="272" valign="top">
+            <p>Nonfatal OSHA-recordable occupational injury or illness that does not meet the definition of a Type C mishap.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="center"><strong>Close Call</strong></p>
+            </td>
+            <td width="234" valign="top">
+            <p>Total direct cost of mission failure and property damage of less than $20,000, but event has the mishap potential using a worst case estimate. </p>
+            </td>
+            <td width="272" valign="top">
+            <p>Injury requiring first aid or less, but event has the mishap potential using a worst case estimate. </p>
+            </td>
+        </tr>
+    </tbody>
+</table> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Contact' role="dialog" data-modal-url='/mishap_contact' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Mishap_Contact_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Mishap Notification Number</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Contact_print','Mishap_Contact');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p><strong>Phone</strong>: 202.358.1414<br>
+</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Piasecki_Contact' role="dialog" data-modal-url='/mishap_piasecki_contact' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Mishap_Piasecki_Contact_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Jerry Piasecki</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Piasecki_Contact_print','Mishap_Piasecki_Contact');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p><strong>Phone</strong>:  321.607.4316 <br>
+<strong>Email</strong>: <a href="mailto:gerald.f.piasecki@nasa.gov" title="" class="" target="">Gerald.F.Piasecki@nasa.gov</a></p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_IS_Learning_SMA-002-15' role="dialog" data-modal-url='/is_learning_sma-002-15' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_IS_Learning_SMA-002-15_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA Human Factors in Mishap Investigation </h4>
+							<h5 class="modal-identity">SMA-002-15</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_IS_Learning_SMA-002-15_print','IS_Learning_SMA-002-15');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course provides students with basic concepts and information necessary to perform Human Factors analyses in mishap and close call investigations. It is an equivalent version of the instructor-led course "Human Factors in Mishap Investigation" (SMA-SAFE-OSMA-4004) and an expansion of the web-based course "Introduction to Human Factors in Mishap and Close Call Investigation" (SMA-001-07). </p>
+<ul> </ul>
+    <p><strong>Course Number</strong>:&nbsp;SMA-002-15</p>
+    <p><strong>Length</strong>: 4.00 hours</p>
+    <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Mishap Investigation Working Group members, mishap investigators, Mishap Investigation Board members, Incident Response Team members, engineers, managers, Quality Assurance professionals and problem solvers.</p>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 15px; top: 12px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: &quot;Trebuchet MS&quot;, &quot;Arial Unicode MS&quot;, Arial, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">This course provides students with basic concepts and information necessary to perform Human Factors analyses in mishap and close call investigations. SMA-002-15 is an equivalent version of the instructor-led course Human Factors in Mishap Investigation (SMA-SAFE-OSMA-4004), and an expansion of the web-based course Introduction to Human Factors in Mishap and Close Call Investigation (SMA-001-07).&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_IS_Learning_SMA-002-13' role="dialog" data-modal-url='/is_learning_sma-002-13' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_IS_Learning_SMA-002-13_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Mishap Investigation Board (MIB) Chair Training </h4>
+							<h5 class="modal-identity">SMA-002-13</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_IS_Learning_SMA-002-13_print','IS_Learning_SMA-002-13');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p> This course is intended to be a practical guide for new MIB chairs on how to lead a successful mishap investigation. It focuses on what an MIB chair needs to know to get an MIB  up and running and provides links to other resources for more detailed information. The course includes video "Knowledge Bytes&rdquo; by experienced MIB chairs in which they share insights and tips on conducting the investigation, understanding and managing group dynamics, common chair &ldquo;traps,&rdquo; and other issues.&nbsp;</p>
+<ul> </ul>
+    <p><strong>Course Number</strong>: SMA-002-13</p>
+    <p><strong>Length</strong>: 4.00 hours</p>
+    <p><strong>Audience</strong>:&nbsp;This course is intended for individuals who have been or may be selected to serve as an MIB chair.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_IS_Learning_SMA-HQ-WBT-212' role="dialog" data-modal-url='/is_learning_sma-hq-wbt-212' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_IS_Learning_SMA-HQ-WBT-212_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Human Performance Improvement Accident Investigation Program</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-212</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_IS_Learning_SMA-HQ-WBT-212_print','IS_Learning_SMA-HQ-WBT-212');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This one-day, customized Human Performance Improvement Workshop is designed to help personnel understand how to learn from the normal variability inherent in high-hazard industries and to narrow the gap between &ldquo;work as planned&rdquo; and &ldquo;work as performed.&rdquo; The focus of the course is on how to avoid mishaps associated with NASA lifting devices.&nbsp;</p>
+<ul> </ul>
+    <p><strong>Course Number</strong>:&nbsp;SMA-HQ-WBT-212</p>
+    <p><strong>Length</strong>: 8.00 hours</p>
+    <p><strong>Audience</strong>:&nbsp;This course is intended for NASA managers and safety professionals, especially in the lifting device area, as well as anybody who works with lifting devices.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-SAFE-OSMA-4003' role="dialog" data-modal-url='/mishap_learning_sma-safe-osma-4003' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-SAFE-OSMA-4003_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA Root Cause Analysis</h4>
+							<h5 class="modal-identity">SMA-SAFE-OSMA-4003</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-SAFE-OSMA-4003_print','Mishap_Learning_SMA-SAFE-OSMA-4003');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"> <div class="col-sm-12"> <div class="courseInfo"> <p> This course provides training on Root Cause Analysis methodology that can be used in both general problem solving and Mishap and Close Call Investigation. It allows students to gain hands-on experience differentiating between events and conditions, identifying cause and effect relationships, discriminating between barriers and controls, constructing a timeline, and constructing Event and Causal Factor Trees. Examples and exercises will be provided from NASA and other government agencies.</p> <p><strong>Course Number:</strong>&nbsp;SMA-SAFE-OSMA-4003</p> <p><strong>Length:</strong>&nbsp; 19.00 hours</p> <p><strong>Audience:</strong>&nbsp;This course is intended for personnel involved with Mishap Investigation, specifically NASA Mishap Investigation Working Group members, mishap investigators, Mishap Investigation Board members, Incident Response Team members, engineers, managers, Quality Assurance professionals and problem solvers.</p> </div> </div> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov/" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-002-11' role="dialog" data-modal-url='/mishap_learning_sma-002-11' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-002-11_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA Interim Response Team Training</h4>
+							<h5 class="modal-identity">SMA-002-11</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-002-11_print','Mishap_Learning_SMA-002-11');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"> <div class="col-sm-12"> <div class="courseInfo"> <p>The primary role of the Interim Response Team (IRT) is to preserve evidence for the Investigating Authority, who will determine the cause of the mishap. &ldquo;NASA Interim Response Team Training&rdquo; is an agency-level introductory course that is intended to supplement center- and program-specific IRT training. The course explains NASA mishap response policies and procedures, how NASA prepares to respond to a mishap, and the roles and responsibilities of key players in a mishap response. The course also provides an overview of what an IRT member needs to know to secure a mishap scene, document the scene and preserve evidence. &nbsp;</p> <p><strong>Course Number:</strong>&nbsp; SMA-002-11</p> <p><strong>Length:</strong>&nbsp; 5.00 hours</p> <p><strong>Audience:</strong>&nbsp;This course is intended for personnel who have been appointed to serve on an IRT or who support mishap investigations at their center or for their program.</p> </div> </div> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov/" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-001-07' role="dialog" data-modal-url='/mishap_learning_sma-001-07' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-001-07_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Introduction to Human Factors in Mishap and Close Call Investigation</h4>
+							<h5 class="modal-identity">SMA-001-07</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-001-07_print','Mishap_Learning_SMA-001-07');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"> <div class="col-sm-12"> <div class="courseInfo"> <p>This course provides an introduction to the basic terms and concepts associated with human factors in Mishap and Close Call Investigation. It defines and explores examples of human events and conditions that cause and contribute to mishaps and close calls. It distinguishes between the four types of human events: 1) correct action, 2) no action, 3) incorrect actions (errors and unsafe acts), and 4) physical or physiological failures and changes in state. This course describes four types of human errors (perception, interpretation, decision making and action execution). It discusses both internal and external performance shaping factors and their contribution to mishaps and close calls. Additionally, it describes barriers, controls and amelioration that can be used to reduce the risks associated with human errors and unsafe acts.</p> <p><strong>Course Number:</strong> SMA-001-07</p> <p><strong>Length:</strong> 3.00 hours</p> <p><strong>Audience:</strong> This course is intended for mishap investigators, human factors engineers, safety professionals, risk managers and management.</p> </div> </div> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov/" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-002-10' role="dialog" data-modal-url='/mishap_learning_sma-002-10' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-002-10_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Root Cause Analysis</h4>
+							<h5 class="modal-identity">SMA-002-10</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-002-10_print','Mishap_Learning_SMA-002-10');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"> <div class="col-sm-12"> <div class="courseInfo"> <p>This course provides a general overview of the NASA Mishap Investigation process.</p> <p>NOTE: This course is one of four needed to fulfill the requirements for introductory training on NASA mishap investigations in accordance with NPR 8621.1. By itself, this course does NOT fulfill NPR 8621.1 training requirements. You must also successfully complete all of the following courses to comply:</p> <ul> <li>SMA-002-07 Overview of Mishap Investigations</li> <li><span style="line-height: 1.4;">SMA-002-08 Mishap Investigation Roles and Responsibilities</span></li> <li>SMA-002-09 Completing the Investigation and Mishap Report</li> </ul> <p><strong>Course Number:</strong>&nbsp; SMA-002-10</p> <p><strong>Length:</strong>&nbsp; 1.50 hours</p> <p><strong>Audience:</strong>&nbsp; This course is intended for Safety and Mission Assurance personnel; mishap investigating authorities, ex officio and advisors; and all NASA employees.</p> </div> </div> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-002-09' role="dialog" data-modal-url='/mishap_learning_sma-002-09' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-002-09_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Completing the Investigation and Mishap Report</h4>
+							<h5 class="modal-identity">SMA-002-09</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-002-09_print','Mishap_Learning_SMA-002-09');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course provides a general overview of the NASA Mishap Investigation process.</p>
+<p>NOTE: This course is one of four needed to fulfill the requirements for introductory training on NASA mishap investigations in accordance with NPR 8621.1. By itself, this course does NOT fulfill NPR 8621.1 training requirements. You must also successfully complete all of the following courses to comply: </p>
+<ul>
+    <li>SMA-002-07 Overview of Mishap Investigations </li>
+    <li>SMA-002-08 Mishap Investigation Roles and Responsibilities </li>
+    <li> SMA-002-10 Root Cause Analysis</li>
+</ul>
+<p><strong>Course Number:</strong>&nbsp; SMA-002-09</p>
+<p><strong>Length:</strong>&nbsp; 1.00 hour</p>
+<p><strong>Audience:&nbsp;</strong>This course is intended for Safety and Mission Assurance personnel; mishap investigating authorities, ex officio and advisors; and all NASA employees.</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-002-08' role="dialog" data-modal-url='/mishap_learning_sma-002-08' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-002-08_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Mishap Investigation Roles and Responsibilities</h4>
+							<h5 class="modal-identity">SMA-002-08</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-002-08_print','Mishap_Learning_SMA-002-08');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"> <div class="col-sm-12"> <div class="courseInfo"> <p>This course provides a general overview of the NASA Mishap Investigation process.</p> <p>NOTE: This course is one of four needed to fulfill the requirements for introductory training on NASA mishap investigations in accordance with NPR 8621.1. By itself, this course does NOT fulfill NPR 8621.1 training requirements. You must also successfully complete all of the following courses to comply: </p> <ul> <li>SMA-002-07 Overview of Mishap Investigations </li> <li>SMA-002-09 Completing the Investigation and Mishap Report </li> <li>SMA-002-10 Root Cause Analysis</li> </ul> <p><strong>Course Number:</strong>&nbsp; SMA-002-08</p> <p><strong>Length:</strong>&nbsp; 1.00 hour</p> <p><strong>Audience:</strong>&nbsp; This course is intended for Safety and Mission Assurance personnel; mishap investigating authorities, ex officio and advisors; and all NASA employees.</p> </div> </div> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov/" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Mishap_Learning_SMA-002-07' role="dialog" data-modal-url='/mishap_learning_sma-002-07' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Mishap_Learning_SMA-002-07_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Overview of Mishap Investigations</h4>
+							<h5 class="modal-identity">SMA-002-07</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Mishap_Learning_SMA-002-07_print','Mishap_Learning_SMA-002-07');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"> <div class="col-sm-12"> <div class="courseInfo"> <p>This course provides a general overview of the NASA Mishap Investigation process.</p> <p>NOTE: This course is one of four needed to fulfill the requirements for introductory training on NASA mishap investigations in accordance with NPR 8621.1. By itself, this course does NOT fulfill NPR 8621.1 training requirements. You must also successfully complete all of the following courses to comply:</p> <ul> <li>SMA-002-08 Mishap Investigation Roles and Responsibilities</li> <li>SMA-002-09 Completing the Investigation and Mishap Report</li> <li>SMA-002-10 Root Cause Analysis</li> </ul> <p><strong>Course Number:</strong> SMA-002-07</p> <p><strong>Length:</strong>&nbsp; 1.50 hours</p> <p><strong>Audience:</strong>&nbsp; This course is intended for Safety and Mission Assurance personnel; mishap investigating authorities, the ex officio and advisors; and all NASA employees.</p> </div> </div> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+          
+          
+	<input id="ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="FooterWrapper" class="sf_cols bkg_TexanBlue" style="height: 145px">
+					<div id="cpw_footerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<input id="SMADateSiteLastUpdated" type="hidden" value="August 6, 2026" />
+						<footer id="cpw_footer" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock'><div class="container tb_pad21"> <!-- meatball image -->
+<div class="col-sm-3 footer_description PowderGreyTxt" style="padding-bottom: 12px;"> <a href="https://www.nasa.gov/" target="_blank"><img src="/content/images/meatball.png" id="nasaMeatball" alt="National Aeronautics and Space Administration" class="img-responsive" style="max-width: 87px;"></a> </div>
+<!-- site details and contact -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+Site Last Updated: <span id="footerDateSiteLastUpdated" style="font-weight: normal;">September 10, 2014</span><br>
+Web Master: <span style="font-weight: normal;"><a href="/contact">Michael Bishop</a></span><br>
+NASA Official: <span style="font-weight: normal;"><a href="/contact">Sallie Keith</a></span><br>
+<a href="/site-map">OSMA Site Map</a>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/" target="_blank">Privacy Policy</a><br>
+<a href="https://www.nasa.gov/FOIA" target="_blank">FOIA</a><br>
+<a href="https://www.nasa.gov/offices/odeo/no-fear-act" target="_blank">No FEAR Act</a><br>
+<a href="https://www.nasa.gov/budgets-plans-and-reports/" target="_blank">Budget &amp; Annual Reports</a><br>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://oig.nasa.gov/" target="_blank">Office of the IG</a><br>
+<a href="https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/" target="_blank">Agency Financial Reports</a><br>
+<a href="/contact">Contact OSMA</a><br>
+<a href="https://www.nasa.gov/accessibility/" target="_blank">Accessibility</a>
+</div>
+</div>
+
+</div>
+						</footer>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		
+	    
+<script type="text/javascript">jQuery(document).ready(function(){
+	jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+		var divname = jQuery(this).attr('href');
+		if (jQuery(divname).length < 1){
+			jQuery(this).parent().hide();
+		}
+	});
+
+});
+
+(function($) {
+    function openModalFromPath() {
+        var path = window.location.pathname;
+        try {
+            path = window.location.pathname.split("/");
+            var modalId = path[path.length - 1];
+            $("[data-modal-url='/" + modalId + "']").each(function () {
+                try {
+                    $(this).modal('show');
+                } catch (e) {
+                    console.debug("Could not open modal with id: " + modald);
+                }
+            });
+        } catch (e) {
+            console.debug("Could not get modal id from path: " + path);
+        }
+    }
+
+	$(document).ready(function() {
+		try {
+			if (window.location.hash.length > 0 && $(window.location.hash).length > 0 && $(window.location.hash).hasClass("modal")) {
+				$(window.location.hash).modal('show');
+			} else {
+				openModalFromPath();
+			}
+		} catch(e) {
+			console.debug("Could not find modal with id: " + window.location.hash);
+		}
+	});
+})(jq);</script>
+	
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script><script type="text/javascript">
+jQuery('#questionList > li > div.collapse').on('shown.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-right fa-caret-down');
+});
+jQuery('#questionList > li > div.collapse').on('hidden.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-down fa-caret-right');
+});
+
+// remove stellar on mobile and tablet devices
+if (jQuery(window).width() <= 1023) {
+    jQuery('section').removeAttr('data-stellar-background-ratio');
+};</script><script type="text/javascript" src="/docs/default-source/javascript/jquery-stellar-min.js"></script><script type="text/javascript" src="/docs/default-source/javascript/stellar_init.js"></script><script type="text/javascript" src="/docs/default-source/javascript/more_less.js"></script><script type="text/javascript" src="/docs/default-source/javascript/readmore.js"></script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45912537-1', 'auto');
+ga('set', 'transport', 'beacon');
+if (document.querySelectorAll('meta[name="OrigDate"]').length > 0) {
+var origDate = document.querySelector('meta[name="OrigDate"]').content;
+if(origDate != ""){ga('set', 'dimension1', origDate);}}
+
+if (document.querySelectorAll('meta[name="GATopic"]').length > 0) {
+    var gaTopic = document.querySelector('meta[name="GATopic"]').content;
+if(gaTopic != ""){ga('set', 'dimension2', gaTopic);}}
+
+if (document.querySelectorAll('meta[name="GAProductType"]').length > 0) {
+    var gaProductType = document.querySelector('meta[name="GAProductType"]').content;
+if(gaProductType != ""){ga('set', 'dimension3', gaProductType);}}
+
+if (document.querySelectorAll('meta[name="GAType"]').length > 0) {
+    var gaType = document.querySelector('meta[name="GAType"]').content;
+if(gaType != ""){ga('set', 'dimension4', gaType);}}
+
+if (document.querySelectorAll('meta[name="GACenter"]').length > 0) {
+    var gaCenter = document.querySelector('meta[name="GACenter"]').content;
+if(gaCenter != ""){ga('set', 'dimension5', gaCenter);}}
+
+if (document.querySelectorAll('meta[name="GAVideos]').length > 0) {
+    var gaVideo = document.querySelector('meta[name="GAVideos"]').content;
+if(gaVideo != ""){ga('set', 'dimension6', gaVideo);}}
+
+if (document.querySelectorAll('meta[name="GAEvents"]').length > 0) {
+    var gaEvent = document.querySelector('meta[name="GAEvents"]').content;
+if(gaEvent != ""){ga('set', 'dimension7', gaEvent);}}
+
+ga('send', 'pageview');
+
+ga(function() {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        ga('send', 'event', {
+            'eventCategory': 'Modal',
+            'eventAction': 'Click',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">window.GAMeasurementId = 'G-KC5NT81F9E';
+(function(window, document, tagType, id) {
+    var f = document.getElementsByTagName(tagType)[0],
+        scriptTag = document.createElement(tagType);
+    scriptTag.async = true;
+    scriptTag.src =
+        'https://www.googletagmanager.com/gtag/js?id=' + id;
+    f.parentNode.insertBefore(scriptTag, f);
+})(window, document, 'script', window.GAMeasurementId);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+(function(measurementId) {
+  gtag('config', measurementId);
+
+  gtag('config', measurementId, {
+    'custom_map': {
+      'dimension1': 'OrigDate',
+      'dimension2': 'Topic',
+      'dimension3': 'ProductType',
+      'dimension4': 'Type',
+      'dimension5': 'Center',
+      'dimension6': 'Videos',
+      'dimension7': 'Events',
+    }
+  });
+
+  function GetMetaData(propertyName) {
+    var metaElement = document.querySelectorAll('meta[name="' + propertyName +'"]');
+    return metaElement.length > 0 ? metaElement[0].content : null;
+  }
+
+  window.GADimensions = {
+    'OrigDate': GetMetaData("OrigDate"),
+    'Topic': GetMetaData("GATopic"),
+    'ProductType': GetMetaData("GAProductType"),
+    'Type': GetMetaData("GAType"),
+    'Center': GetMetaData("GACenter"),
+    'Videos': GetMetaData("GAVideos"),
+    'Events': GetMetaData("GAEvents"),
+  };
+
+  gtag('event', 'pageview', window.GADimensions);
+})(window.GAMeasurementId);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        gtag('event', 'Click', {
+            'eventCategory': 'Modal',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">(function trackOutbounds() {
+	
+	var hitCallbackHandler = function(url,win) {
+	    if (win) {
+		    window.open(url, win);
+	    } else {
+        	window.location.href = url;
+        }
+    };
+    
+    var addEvent = function(el, eventName, handler) {
+    
+		if (el.addEventListener) {
+			el.addEventListener(eventName, handler);
+			} else {
+			el.attachEvent('on' + eventName, function(){
+				handler.call(el);
+		    });
+		}
+	}
+	
+	if (document.getElementsByTagName) {
+		var el = document.getElementsByTagName('a');
+		var getDomain = document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0];
+		
+		// Look thru each a element
+		for (var i=0; i < el.length;i++) {
+		
+			// Extract it's href attribute
+			var href = (typeof(el[i].getAttribute('href')) == 'string' ) ? el[i].getAttribute('href') : '';
+			
+			// Query the href for the top level domain (xxxxx.com)
+			var myDomain = href.match(getDomain);
+			
+			// If link is outbound and is not to this domain	
+			if ((href.match(/^(https?:|\/\/)/i)  && !myDomain) || href.match(/^mailto\:/i)) {
+			
+				// Add an event to click
+				addEvent(el[i],'click', function(e) {
+					var url = this.getAttribute('href'), win = (typeof(this.getAttribute('target')) == 'string') ? this.getAttribute('target') : '';
+							
+							console.log ("add event", url);
+					// Log even to Analytics, once done, go to the link
+					ga('send', 'event', 'outbound', 'click', url,
+						{'hitCallback': hitCallbackHandler(url,win)},
+						{'nonInteraction': 1}
+					);
+					
+					e.preventDefault();
+				});
+			}
+		}
+	}
+})();
+</script><script type="text/javascript">jq(document).ready(function() {
+	$(".mega-dropdown-menu .nav-tabs a").click(function(e) {
+		e.preventDefault();
+		jq(this).tab('show');
+		e.stopPropagation();
+	});
+
+	jQuery("#nav-disciplines-organizational li").sort(function(a, b) {
+		var an = jQuery(a).find("a").text(),
+		bn = jQuery(b).find("a").text();
+
+		if(an > bn) {
+			return 1;
+		}
+		if(an < bn) {
+			return -1;
+		}
+		return 0;
+	}).clone().appendTo(jQuery("#displayABC ul"));
+});</script><script type="text/javascript" src="/Content/Scripts/video.ga.js?ver=1"></script>
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl06_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=14.4.8152.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:4fd8513a-4760-4c69-b716-de189eda8de6:7a90d6a';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"disableSuggestions":true,"indexCatalogue":"combined-indexes-5-16-19","language":null,"minSuggestLength":3,"resultsUrl":"/search","searchButton":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton"),"searchTextBox":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox"),"siteId":"118a9c25-c36c-4108-8a7e-aa18cc03ebda","suggestionFields":"Title,Content","suggestionsRoute":"/restapi/search/suggestions"}, null, null, $get("ContentHeaderSearch_T40EBA3A0054"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentNavigation$ctl00$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$C024$newsFrontendList$ctl00$ctl00$NewsList","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList_ItemsContainer","DataService":{}}},"_virtualItemCount":3,"clientStateFieldID":"ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_C024_newsFrontendList_ctl00_ctl00_NewsList"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Web.UI.UserPreferences, {"_timeOffset":"0","_userBrowserSettingsForCalculatingDates":true,"timeZoneDisplayName":"UTC","timeZoneId":"UTC"}, null, null);
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$ctl02$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":19,"clientStateFieldID":"ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

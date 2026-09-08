@@ -1,0 +1,3233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="https://sma.nasa.gov/"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Metrology and Calibration
+</title>
+		<link href="/Content/Images/favicon.ico" rel="shortcut icon" />
+		<link href="/Content/Styles/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_flat_ui_pro.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_navbar.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_toolbox.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_responsiveplaylist.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_custom.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+		<script src="/Content/Scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/Content/Scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="/Content/Scripts/bootstrap.min.js"></script>
+<script src="/Content/Scripts/bootstrap-select.js"></script>
+<script src="/Content/Scripts/bootstrap-switch.js"></script>
+<script src="/Content/Scripts/flatui-checkbox.js"></script>
+<script src="/Content/Scripts/flatui-radio.js"></script>
+<script src="/Content/Scripts/jquery.tagsinput.js"></script>
+<script src="/Content/Scripts/jquery.placeholder.js"></script>
+<script src="/Content/Scripts/jquery.dotdotdot.js"></script>
+<script src="/Content/Scripts/jquery.paging.js"></script>
+<script src="/Content/Scripts/sma-responsiveplaylist.js"></script>
+<script src="/Content/Scripts/sma-jquery.tablesorter.js"></script>
+<script src="/Content/Scripts/application.js"></script>
+<script src="/Content/Scripts/sma.js"></script>
+<script src="/Content/Scripts/sma-likes.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. -->
+		<!--[if lt IE 9]>
+			<script src="/Content/Scripts/html5shiv.js"></script>
+<script src="/Content/Scripts/respond.min.js"></script>
+
+		<![endif]-->
+		<script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GRC" id="_fed_an_ua_tag"></script> 
+	
+	<style type="text/css">
+	#HeaderWrapper {
+		height: 113px;
+	}
+
+	@media (min-width: 1200px) {
+		#HeaderWrapper {
+			height: 193px;
+		}
+	}
+	</style>
+<script type="text/javascript">jQuery(document).ready(function () {
+    jQuery('a[href*=".pdf"]').attr('target', '_blank');
+    jQuery('a[href^="http"]').not('a[href*=".nasa.gov"]').each(function () {
+        if (jQuery(this).parents(".rp_playlist").length == 0) {
+            jQuery(this).attr('target', '_blank');
+        }
+    });
+    jQuery('a[href*="satern.nasa.gov"]').each(function() {
+        jQuery(this).attr('href', 'https://satern.nasa.gov');
+    });
+  
+  jQuery('a[href*=".nasa.gov"]').each(function(){
+	var linkTarget = jQuery(this).attr('target');
+	if (linkTarget == undefined || linkTarget == "") {
+		var linkHref = jQuery(this).attr('href')
+		if ((linkHref.search('sma') != -1 && linkHref.search('nmis') == -1)|| linkHref.search('mailto') != -1 || jQuery(this).parents(".rp_playlist").length > 0) {
+			jQuery(this).attr('target', '_self');
+			}
+		else if (jQuery(this).attr("target") === undefined) {
+			jQuery(this).attr('target', '_blank');
+		}
+	}
+});
+});</script><meta name="Generator" content="Sitefinity 14.4.8152.0 DX" /><link rel="canonical" href="https://sma.nasa.gov/sma-disciplines/metrology-and-calibration" /><link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nOb-o-hV0f4ju23IUDysEzCN3rFussDAyoaCyf7qMEQsWopHkOKp6NEsHcXB8MVS9b1qxgcvpCgojRolrlwuTK4cJEWRrO2eWV_N9JF16RZI0&amp;t=638840910637275692&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d14.4.8152.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a4fd8513a-4760-4c69-b716-de189eda8de6%3a7a90d6a" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/SMA/App_Themes/SMA/global/readme.css?v=639216412510738967" type="text/css" rel="stylesheet" /><link href="/Content/Styles/sma-discipline-core.min.css" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid {
+    display: flex;
+    padding: 0;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header {
+    padding-left: 30px;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header a.navbar-brand {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse {
+    flex-grow: 1;
+    overflow: hidden!important;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav {
+    max-width: 100%;
+    display: flex;
+  	justify-content: space-between;
+  	visibility: hidden;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav li a {
+	padding-left: 0;
+	padding-right: 0;
+}</style><style type="text/css" media="all">section[id*="jumbotron"] {
+  background: url('/images/default-source/discipline-pages/metcal/jumbotronbkg_metcal.jpg');
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+section[id*="calibrationDb"] {
+  color: #ffffff;
+}
+
+.error {
+  display: none;
+}
+.error_show {
+  color: #e84545;
+  font-size: 12.03007519px;
+  font-weight: 600;
+}
+input.invalid,
+textarea.invalid,
+select.invalid {
+  border: 2px solid #e84545;
+}
+input.valid,
+textarea.valid,
+select.valid {
+  border: 2px solid #abbd1a;
+}
+
+section[id*="calibrationDb"] p+p {
+    margin-top: 15px !important;
+}
+
+section[id*="calibrationDb"] p {
+    margin: 0 0 15px !important;
+}
+
+
+#metcal_submitQuestion > .container > .row > .col-lg-5, 
+#metcal_submitQuestion > .container > .row > .col-lg-12 {
+  display: none;
+}
+
+#metcal_submitQuestion > .container > .row > .col-lg-7{
+width: 100%;
+}
+
+#metcal_submitQuestion > .container {
+  padding: 0;
+  width: 100%;
+}</style><style type="text/css" media="all">/* default text anchor link styling */
+a,
+a:link,
+a:visited,
+a:active {
+  font-weight: 700;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #095960;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 1px dotted #095960;
+}
+a.darkLink:hover,
+a.darkLink:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a.darkLink:focus {
+  outline: 1px dotted #18d8ea;
+}
+/* styline for images on focus */
+a:focus > img {
+  outline: 1px dotted #095960;
+}
+/* nasa affinity styling */
+#hdrNasaAffinity a:focus,
+#hdrNasaAffinity a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* header link styles */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  text-decoration: none;
+}
+h1 a,
+h3 a,
+h5 a,
+h1 a:link,
+h3 a:link,
+h5 a:link,
+h1 a:visited,
+h3 a:visited,
+h5 a:visited,
+h1 a:active,
+h3 a:active,
+h5 a:active,
+h1 a:hover,
+h3 a:hover,
+h5 a:hover,
+h1 a:focus,
+h3 a:focus,
+h5 a:focus {
+  font-weight: 800;
+}
+h2 a,
+h4 a,
+h6 a,
+h2 a:link,
+h4 a:link,
+h6 a:link,
+h2 a:visited,
+h4 a:visited,
+h6 a:visited,
+h2 a:active,
+h4 a:active,
+h6 a:active,
+h2 a:hover,
+h4 a:hover,
+h6 a:hover,
+h2 a:focus,
+h4 a:focus,
+h6 a:focus {
+  font-weight: 100;
+}
+a[class*="btn-sma"],
+a[class*="btn-sma"]:link,
+a[class*="btn-sma"]:visited,
+a[class*="btn-sma"]:active,
+a[class*="btn-sma"]:hover,
+a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  outline: none;
+}
+a[class*="btn-sma-a"],
+a[class*="btn-sma-a"]:link,
+a[class*="btn-sma-a"]:visited,
+a[class*="btn-sma-a"]:active,
+a[class*="btn-sma-a"]:hover,
+a[class*="btn-sma-a"]:focus {
+  color: #162336;
+  outline: none;
+}
+/* navbar link styling */
+#navigationUl a:focus,
+nav[class*="subnavbar"] a:focus {
+  outline: 1px dotted #ffffff;
+}
+a.navbar-brand:focus {
+  outline: 1px dotted #ffffff;
+}
+/* news link styles */
+.liststyle_subtitle > a,
+.subsection_title > a,
+.liststyle_subtitle > a:link,
+.subsection_title > a:link,
+.liststyle_subtitle > a:visited,
+.subsection_title > a:visited,
+.liststyle_subtitle > a:active,
+.subsection_title > a:active,
+.liststyle_subtitle > a:hover,
+.subsection_title > a:hover,
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  font-weight: 800;
+  text-decoration: none;
+}
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  outline: 1px dotted #095960;
+}
+.news_detail + a:focus {
+  border: none;
+}
+/* safety messages styling */
+p.jumbotron_hero > a,
+p.jumbotron_hero > a:link,
+p.jumbotron_hero > a:visited,
+p.jumbotron_hero > a:active {
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+}
+p.jumbotron_hero > a:hover,
+p.jumbotron_hero > a:focus {
+  color: #18d8ea;
+  text-decoration: none;
+}
+.SafetyMessageArticle div[class*="col-sm-2"] a:focus {
+  border: none;
+}
+/* pagingation styling */
+.pagination a,
+.pagination a:link,
+.pagination a:visited,
+.pagination a:active,
+.pagination a:hover,
+.pagination a:focus {
+  text-decoration: none;
+}
+/* dark background link styles */
+footer a,
+#policyStatus a,
+.policy-table a,
+.WhiteTxt a,
+footer a:link,
+#policyStatus a:link,
+.policy-table a:link,
+.WhiteTxt a:link,
+footer a:visited footer a:active,
+footer a:visited #policyStatus a:active,
+footer a:visited .policy-table a:active,
+footer a:visited .WhiteTxt a:active,
+#policyStatus a:visited footer a:active,
+#policyStatus a:visited #policyStatus a:active,
+#policyStatus a:visited .policy-table a:active,
+#policyStatus a:visited .WhiteTxt a:active,
+.policy-table a:visited footer a:active,
+.policy-table a:visited #policyStatus a:active,
+.policy-table a:visited .policy-table a:active,
+.policy-table a:visited .WhiteTxt a:active,
+.WhiteTxt a:visited footer a:active,
+.WhiteTxt a:visited #policyStatus a:active,
+.WhiteTxt a:visited .policy-table a:active,
+.WhiteTxt a:visited .WhiteTxt a:active {
+  font-weight: 700;
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+footer a:hover,
+#policyStatus a:hover,
+.policy-table a:hover,
+.WhiteTxt a:hover,
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a[class*="btn-sma"],
+#policyStatus a[class*="btn-sma"],
+.policy-table a[class*="btn-sma"],
+.WhiteTxt a[class*="btn-sma"],
+footer a[class*="btn-sma"]:link,
+#policyStatus a[class*="btn-sma"]:link,
+.policy-table a[class*="btn-sma"]:link,
+.WhiteTxt a[class*="btn-sma"]:link,
+footer a[class*="btn-sma"]:visited,
+#policyStatus a[class*="btn-sma"]:visited,
+.policy-table a[class*="btn-sma"]:visited,
+.WhiteTxt a[class*="btn-sma"]:visited,
+footer a[class*="btn-sma"]:active,
+#policyStatus a[class*="btn-sma"]:active,
+.policy-table a[class*="btn-sma"]:active,
+.WhiteTxt a[class*="btn-sma"]:active,
+footer a[class*="btn-sma"]:hover,
+#policyStatus a[class*="btn-sma"]:hover,
+.policy-table a[class*="btn-sma"]:hover,
+.WhiteTxt a[class*="btn-sma"]:hover,
+footer a[class*="btn-sma"]:focus,
+#policyStatus a[class*="btn-sma"]:focus,
+.policy-table a[class*="btn-sma"]:focus,
+.WhiteTxt a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer a[class*="btnAdditionalDetails"],
+#policyStatus a[class*="btnAdditionalDetails"],
+.policy-table a[class*="btnAdditionalDetails"],
+.WhiteTxt a[class*="btnAdditionalDetails"],
+footer a[class*="btnAdditionalDetails"]:link,
+#policyStatus a[class*="btnAdditionalDetails"]:link,
+.policy-table a[class*="btnAdditionalDetails"]:link,
+.WhiteTxt a[class*="btnAdditionalDetails"]:link,
+footer a[class*="btnAdditionalDetails"]:visited,
+#policyStatus a[class*="btnAdditionalDetails"]:visited,
+.policy-table a[class*="btnAdditionalDetails"]:visited,
+.WhiteTxt a[class*="btnAdditionalDetails"]:visited,
+footer a[class*="btnAdditionalDetails"]:active,
+#policyStatus a[class*="btnAdditionalDetails"]:active,
+.policy-table a[class*="btnAdditionalDetails"]:active,
+.WhiteTxt a[class*="btnAdditionalDetails"]:active,
+footer a[class*="btnAdditionalDetails"]:hover,
+#policyStatus a[class*="btnAdditionalDetails"]:hover,
+.policy-table a[class*="btnAdditionalDetails"]:hover,
+.WhiteTxt a[class*="btnAdditionalDetails"]:hover,
+footer a[class*="btnAdditionalDetails"]:focus,
+#policyStatus a[class*="btnAdditionalDetails"]:focus,
+.policy-table a[class*="btnAdditionalDetails"]:focus,
+.WhiteTxt a[class*="btnAdditionalDetails"]:focus {
+  color: #162336;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer h1 a,
+#policyStatus h1 a,
+.policy-table h1 a,
+.WhiteTxt h1 a,
+footer h3 a,
+#policyStatus h3 a,
+.policy-table h3 a,
+.WhiteTxt h3 a,
+footer h5 a,
+#policyStatus h5 a,
+.policy-table h5 a,
+.WhiteTxt h5 a,
+footer h1 a:link,
+#policyStatus h1 a:link,
+.policy-table h1 a:link,
+.WhiteTxt h1 a:link,
+footer h3 a:link,
+#policyStatus h3 a:link,
+.policy-table h3 a:link,
+.WhiteTxt h3 a:link,
+footer h5 a:link,
+#policyStatus h5 a:link,
+.policy-table h5 a:link,
+.WhiteTxt h5 a:link,
+footer h1 a:visited,
+#policyStatus h1 a:visited,
+.policy-table h1 a:visited,
+.WhiteTxt h1 a:visited,
+footer h3 a:visited,
+#policyStatus h3 a:visited,
+.policy-table h3 a:visited,
+.WhiteTxt h3 a:visited,
+footer h5 a:visited,
+#policyStatus h5 a:visited,
+.policy-table h5 a:visited,
+.WhiteTxt h5 a:visited,
+footer h1 a:active,
+#policyStatus h1 a:active,
+.policy-table h1 a:active,
+.WhiteTxt h1 a:active,
+footer h3 a:active,
+#policyStatus h3 a:active,
+.policy-table h3 a:active,
+.WhiteTxt h3 a:active,
+footer h5 a:active,
+#policyStatus h5 a:active,
+.policy-table h5 a:active,
+.WhiteTxt h5 a:active {
+  font-weight: 800;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h1 a:hover,
+#policyStatus h1 a:hover,
+.policy-table h1 a:hover,
+.WhiteTxt h1 a:hover,
+footer h3 a:hover,
+#policyStatus h3 a:hover,
+.policy-table h3 a:hover,
+.WhiteTxt h3 a:hover,
+footer h5 a:hover,
+#policyStatus h5 a:hover,
+.policy-table h5 a:hover,
+.WhiteTxt h5 a:hover,
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer h2 a,
+#policyStatus h2 a,
+.policy-table h2 a,
+.WhiteTxt h2 a,
+footer h4 a,
+#policyStatus h4 a,
+.policy-table h4 a,
+.WhiteTxt h4 a,
+footer h6 a,
+#policyStatus h6 a,
+.policy-table h6 a,
+.WhiteTxt h6 a,
+footer h2 a:link,
+#policyStatus h2 a:link,
+.policy-table h2 a:link,
+.WhiteTxt h2 a:link,
+footer h4 a:link,
+#policyStatus h4 a:link,
+.policy-table h4 a:link,
+.WhiteTxt h4 a:link,
+footer h6 a:link,
+#policyStatus h6 a:link,
+.policy-table h6 a:link,
+.WhiteTxt h6 a:link,
+footer h2 a:visited,
+#policyStatus h2 a:visited,
+.policy-table h2 a:visited,
+.WhiteTxt h2 a:visited,
+footer h4 a:visited,
+#policyStatus h4 a:visited,
+.policy-table h4 a:visited,
+.WhiteTxt h4 a:visited,
+footer h6 a:visited,
+#policyStatus h6 a:visited,
+.policy-table h6 a:visited,
+.WhiteTxt h6 a:visited,
+footer h2 a:active,
+#policyStatus h2 a:active,
+.policy-table h2 a:active,
+.WhiteTxt h2 a:active,
+footer h4 a:active,
+#policyStatus h4 a:active,
+.policy-table h4 a:active,
+.WhiteTxt h4 a:active,
+footer h6 a:active,
+#policyStatus h6 a:active,
+.policy-table h6 a:active,
+.WhiteTxt h6 a:active {
+  font-weight: 100;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h2 a:hover,
+#policyStatus h2 a:hover,
+.policy-table h2 a:hover,
+.WhiteTxt h2 a:hover,
+footer h4 a:hover,
+#policyStatus h4 a:hover,
+.policy-table h4 a:hover,
+.WhiteTxt h4 a:hover,
+footer h6 a:hover,
+#policyStatus h6 a:hover,
+.policy-table h6 a:hover,
+.WhiteTxt h6 a:hover,
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a:focus > img,
+#policyStatus a:focus > img,
+.policy-table a:focus > img,
+.WhiteTxt a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* Dropdown styling for megamenu items */
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+  min-width: 650px;
+  left: -200px;
+  padding: 0;
+  color: #3e4856;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:link,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu h5 {
+  margin-bottom: 5px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu div[class*="col-"] {
+  padding: 0;
+  margin: 0;
+}
+.columnLayout {
+  column-width: auto;
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  overflow: hidden;
+}
+.columnLayout a,
+.columnLayout a:link,
+.columnLayout a:visited,
+.columnLayout a:active {
+  display: block;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+  padding: 6px 9px;
+}
+.columnLayout a:hover,
+.columnLayout a:active {
+  background: #f5f5f5;
+  color: #3A5261;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+/* Dropdown styling for non-megamenu items */
+.navbar-inverse .navbar-nav > .open .dropdown-menu {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  text-decoration: none;
+  background: #f5f5f5;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #abbd1a;
+    border-radius: 0;
+  }
+}
+
+footer .tb_pad21 {padding:21px 0 !important}
+
+.fancybox-title-float-wrap .child {
+    white-space: normal;
+}
+
+table .modalPocTable tbody tr.PocCenter { 
+    background-color: white;
+}
+
+table .modalPocTable tbody tr.PocCenter td {
+    font-weight: 700;
+}
+
+div[class*="modal-body"] span.modalBodyName {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 12px;
+}
+
+div[class*="modal-body"] span.modalBodyTitle {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+table.modalPocTable thead,
+table.modalPocTable tbody,
+table.modalPocTable th,
+table.modalPocTable td,
+table.modalPocTable tr,
+display: block;
+}
+table.modalPocTable thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+table.modalPocTable td {
+    position: relative;
+    padding-left: 50%;
+}
+table.modalPocTable td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+table.modalPocTable tbody > tr{
+    padding: 10px;
+}
+table.modalPocTable tbody > tr:nth-child(even),
+table.modalPocTable tbody > tr:nth-child(odd) {
+    border-bottom: 2px solid #ebebeb;
+}
+table.modalPocTable tbody > tr > td{
+    border: none;
+}
+table.modalPocTable tbody tr.PocCenter td {
+    font-weight: 700
+}
+
+.public a.privateLink {
+    color: inherit;
+    pointer-events: none;
+    cursor: default;
+}
+
+.public a.privateLink:hover, .public a.privateLink:focus {
+    text-decoration: none;
+}
+
+.public .privateContent {
+    display: none !important;
+}
+.public .publicContent {
+    display: block;
+}
+
+.publicContent {
+    display: none;
+}
+</style><style type="text/css" media="all">.dropdown-menu.mega-dropdown-menu .tab-container {
+    margin: -10px !important;
+    width: calc(100% + 20px);
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs {
+    background: #cfd3d5;
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li a {
+    border-width: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 15px 20px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:not(.active) a {
+    background: none;
+    color: #798088;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:first-child a {
+    border-top-left-radius: 5px !important;
+}
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:last-child a {
+    border-top-right-radius: 5px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .tab-content {
+    border: none !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"] {
+    background: inherit !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"]:hover {
+    color: #bccd32;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+    min-width: 884px;
+}
+
+#nav-disciplines-organizational ul li a {
+    padding: 0;
+}
+
+
+#nav-disciplines-organizational ul  {
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+#nav-disciplines-organizational .section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #15c2d2;
+    font-size: 1.1em;
+}
+
+#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+}
+#displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}</style><link href="/Content/Styles/sma-discipline-color-goldenrod.min.css" type="text/css" rel="stylesheet" media="all" /><meta name="description" content="The mission of the Metrology and Calibration Program is to ensure the accuracy and reliability of measurements for NASA safety and mission success." /></head>
+
+<body>
+	<form method="post" action="./metrology-and-calibration?SMAInsidePortal=true" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSSM" id="ctl06_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Q9YSkg8DMk33fPRtkcXBciXvo2aJpH4/izUEXj/NpofBcWoUBj0KGuosxP4p1hUeQJ0TEzjTRoNnibE3z8VC6gqL3RTWEHjmzjeqyvWri+aDtvDI6p3WDNlfgXLlnVjHPgtUcIvBoYrqC/kiJrPLa2LLY56KELe5UN5AHLxBhvHHT0CxVdNVFBLP1EaRaQKQJk9Iz2uIhrDC3ripBZokrxrGoD/JB9//loGJME4Uko6sPjYQPxB4ORspBjx2vpe0Zd/Yyuf6WAILjOVNflw968zdMulqaNOhdJCzN0oeiFyGqKokweajPWojIY/9AH7KOZm+UZFJvIGyaQnB1w3DxUUkFDjvcx6b1/W8U1wQoCPwCqJLJd/fDcpOaJWT0Vjv9gKUpEmcIkY4eSgeGxLssj+oaT8CuE9TFScSf5o5xr+NuCZR2x1O24saN5XhSI4R4wB3G3VfuICHejaF0VExrNOvgLTLozThvIG6bXT+Xc0rG8Ku/uP+oj9ckRg50Ae5r5ESIhttto848UlJcDLKzFO0YVIH4iuCKYDjYbwMNajpyQqEhr8v6zXdNdlI6CpJv7yvRpfGeGpixJrU1qwMLlrOWZ/dcXRBoHXrvmuWr+MnkfJXIQhPjgY8sFlA38h2zxyMUNjTfdQqMokqYw+gUt5jjVDw6YNS6RGaePV3ZCbW2o91j/l2lmROlrhxVHqLpjHrYJKcyveBkE24V+9bt01DuJ3EZTz8QaqTNFh3PzfXxk8q0HbEEyb+s/aw8XjLBMgI/e0bWAfJqhmhjkWD/+ucvO0If7eTtkDWGEG0FG3n/veWO6xl35OgZ3lzFfG0Gce2iD8uLbE54hnHXOwUmw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBeQL9FN26k7qxJmCXVl63Uh07YUPP75L5T8ig6z731I9NnlM7MjDVfOVnbtZyAU3Q2&amp;t=639190689332169432" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQpLQo2tZ2XWouq1So4gOUqY0KKe1EzOsTczU0xRl0n5eKfKyeAF-lJyrOfP3WtQdfN8uQSLy2uvSU1777I-PAjTI39EblEQcoFHdJ1_bkRMRpa7m_oc4zMLhs1EjXu0I2zcA9usuVgRscLWLf7Mojc81&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tYiZUsYt_xBTDhQir-ihv7ursUN-o4YtD6wK-167bi02KVsiSrYELyJM8lAirgk9xpOB-jbgvCBlmslMKNWBK111AaQ3ufAkF5xjVd6E1RNTjL3OSp0WHOd9vXkeF3iSmH-YGRNdMqgV_8y1oSE_CvgtEJWIWZalSP4KO44tgIzg0&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Sm_GGXofLw4C9Eu03fCPHLZnmAADl6c8Pfd7QRMevi3lkRnZYYdiqFNOO-IA-P4JQx4vFkzeq9L0nqitJbrR6rw1GfqJxgArvYeo97z146fon_cWcOn392XvlOA0g4AWyPzIj1kzuYZfZCQH9d6smtOV7OlFTfU15B5dPNShsoef8IHKvSLWio-eklbdrrWz0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pNnY3SPOXobYy0znCWU-ctfe8hwY_yv8qK6nYfdCqnzKZMiUVqn8oRSuarLDMNsnuUjtDm7iqEDiSBU7tL91fWRAn6HTdH1BuRay_IxRQWX4GZvSwbrjHVlDMT5wslhOjHvCBs_yME4F4SvwD9IiGoWwZ03BbYUJxtbQxED7X3KPipztbJf6UvAiH9sgvlaI0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=upAENvmeNxfpBioSkqBc6IhkjY-W-6n-nR3yD9QF_wzNpbbjXHAkEzpOGt_5HnXQMQGmRRMYa7teJ9tNqxZo0VQKKUr1ZTu39M1LIJo2PpPYZrN53sFK7lBrQYmeS5TUtz6yI6n1pBx1FjZHCzgnqZlAyKlEl_R7s9eBJhel8rxwsGOBpCZWSzQmGasXEX1K0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=QjBU5x4YUBggN3iKmsc12WFIGp7xng4Tn9KJHH0Y2ou7W5EgQzC5aKA0TZds1YuN5-VfpomPt0ZSe-82w9lOP9y9eRTN6-Aw1h9QSZMVuaRahyOXx2B_6QgygdKSrIl9IDiflA1MBEq4bRaiY1FffFv-x9UD5138REmcOKlZZYQ1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=tlTynJuwcuOdlotOppqvaL9Cs1bbUHKeURMSxzkBsQPdVl_ot4uEo16sjJxR4vCmbff8zMTIKZd676u7ozjfAyRT5Ctu5lfoSbbZ0cuejj7q77OCjxfhgxdOLkSUeXR3rK8Epcbu8Ot4INgA8UxaaclFAhZO_638n3etsdh8FPTZ4ELalfY6_3wp1BJFnTSs0&amp;t=764b716e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcPFeRGHus1rjoXNGzFNffL9wkKeeh_SeiIvShazIcUcYoZqcsD34qf064unxj4De8mkiZ7Nd1C0wkA4hwlQRwI5c1PfbqPACTzat1Gw8RCSR0&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcRR_RIomFXn-6OTVP7S7UTc4FJDbrgdUVP5cT3hlj7Gqn-oAc5ShKUg97jRJZZi4SHDf1BlDg1EPMpbplBlIl04D9GlhVFaF-fti23eZqMjPJYLhJOjZrUK_QYdhQkU9Kg2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LDxs7tI-ncIIKPgYq3uJynGIAutVQ5Lv09yYMkdUoWTtDIY55WSN2kCFwMjHc56bvoLqeRIH8Pj37QWZnQZ2I1dR12JIfbs3iNC9YGAeIdR-ho_XOLATuOwKX9eIDXDwNzVPDvVXjDuwQufloW1_FQ2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DoEcOmAgUwAjHq4qvvgD1_OJqop35mKZ9LPboo_dHWURaPKavvTd9YfZbhWBf7Bfg4fR-U_9NCE_1jmm_964n1OpivVox-0sgw_50lxYAERSRy_XAMIPmDUG90jLfp8JB6s6g8Xn8xQm1JkWIEtL5hbCgp5ejm3kWY_dVIOr_YlScgHFqAGtf7ilCPocUwDU0&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=yAnkZTEOGwF2GXQ9ANOQMuFcHG-vuIXZJ6NTl-dM8FxT2GJwWXmK7Hx_lTsTckFhjce_4Qlz_ZboXlwF97Pz2u-EWINOvZ10rzvku8A_js7FwXNgjK4qIUtcti26WYmrG13Nnm5BEY1fWZwVTYH5y6J82MqTnh7R9tLSks_ik_Q1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EA006B93" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="tzDOr5LNtQKLEg9+L0F/iqZRohOc/HgDlSSqx7OMNqZiRig45zhREDu/TV6GAMLXAwsqHuxBzTeLSlf2Z0XwQUmEthhssF5jGzJHft/tbDZU1rrm0atbaGmIw9xj56+wH7lCHLjBcEX3JPLUOMCwS6+BJS9wehdxVniSa05rD/TAwgcFo/gQKLhbI/fmp5o3R9xv1EvphI2ixfp0D+jKFFWkbvGt+7hgGSi4TLt38NNrDLspasn9ml+kqlAFjci/dLZg5uTC8ccX+32lcO8Df3q+V8GXP6eDThR37N/n5+kriOaLRkYAZpEbtWP2K9secq4oAhpH/O6Mq9KI1168AgwD3eCxXVlwda3GI79PzM5dqswhhTw15Rl+b/OCWIyXo5GyTlIjqkvNdXjOWcIsocDG4/37N7Q2TSZzMfLfuOlbB1q3S9FwUTOr7zkYbPAwpYcAFBHehf3euRrgJ40BIvfpHdEWvEOTxn7b6geYBbSsR59Nhgh3W3d6hJMbTzR/OM1qqGywntqWc/fx40E5yQY6EBmFDKp/WjfXH/IZQ8hd94h7+8jKq8+9rBo9KIJgQSPjpPwGwQOm579GHKvSBcSMC4YuqK/S7p1xcsmIeBFCxeTAGZgmO+R5a8/40ylIc1BWkkOgAb/ypulX/VA7GUG9/BBz+OIaeMz8y26PeW2ECrQZwOek9CQCHssipFef" />
+</div>
+	    
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<a href="#MainWrapper" class="btn" style="display: none;">Skip Navigation</a>
+		<div id="helperDiv1" class="SMAWindowMediaWidth" style="display:none;"></div> <!-- dummy divs to aid in detecting screen width -->
+		<div id="helperDiv2" class="SMAWindowMediaMaxWidth" style="display:none;"></div>
+		<div id="PublicWrapper" class="sfPublicWrapper">
+			<div class="SMAToolboxContent">
+
+				<section id="HeaderWrapper" class="sf_cols">
+					<div id="cpw_headerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<header id="cpw_header" class="sf_colsIn sf_1cols_1in_100">
+							<div id="navigation">
+								<nav class="navbar navbar-inverse navbar-lg navbar-fixed-top" role="navigation">
+									<div class="container-fluid nasa-header">
+										<div id="hdrNasaAffinity" class="row">
+											<div class="col-sm-9 col-xs-12">
+												<a href="https://www.nasa.gov" target="_blank"><img alt="NASA Meatball logo" class="logo" src="/Content/Images/meatball.png"></a>
+												<span>National Aeronautics and Space Administration</span>
+											</div>
+											<div class="col-sm-3 text-right hidden-xs">
+												<span><a href="https://www.nasa.gov" target="_blank">Visit nasa.gov</a></span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse navbar-collapse tabs">
+										<div class="tab-container">
+											<div class="site-toggle">
+												<div class="site-button current">
+													<a href="/" target="_self" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1e787b69-d2a8-65b9-a1a0-ff01003ca228"><img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance"></a>
+												</div>
+												
+												<div class="site-button">
+													<a href="https://nsc.nasa.gov/" target="_self" sfref="[41028969-d2a8-65b9-a1a0-ff05003ca228]bc038969-d2a8-65b9-a1a0-ff05003ca228"><img alt="NASA Safety Center Logo" src="/Content/Images/nsclogo.png"></a>
+												</div>
+												
+											</div>
+											<div id="SMAHeaderSearch" class="navbar-form navbar-right" role="search">
+												<div class="form-group">
+													
+<div id="ContentHeaderSearch_T40EBA3A0054">
+	
+
+<fieldset id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_main" class="sfsearchBox">
+    <input name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchTextBox" type="text" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox" class="sfsearchTxt" />
+    <input type="submit" name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchButton" value="Search" onclick="return false;" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton" class="sfsearchSubmit" />
+</fieldset>
+
+</div>
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container-fluid">
+										<div class="hidden-lg">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+											</button>
+											<a class="navbar-brand" href="/">
+												<img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance" class="img-responsive" />
+											</a>
+										</div>
+										<div class="collapse navbar-collapse" id="navbar-collapse-1">
+											
+
+
+<div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-lg" >
+	
+	
+	
+	
+	<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_navigationUl" class="nav navbar-nav">
+		
+						<li>
+							<a href="/news">News</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl00_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/news/articles">Articles</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/policies">Policies</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/policies/all-policies">All Policies</a>
+							
+						</li>
+					
+						<li>
+							<a href="/policies/policy-status">Policy Status</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines" class="sfSel">SMA Disciplines & Programs</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/accllp">ACCLLP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/aviation-safety">Aviation Operations and Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/fire-protection">Fire Protection</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-factors">Human Factors</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-rating">Human Rating</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/metrology-and-calibration" class="sfSel">Metrology and Calibration</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nsrs">NSRS</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection">Planetary Protection</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop">Planetary Protection Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop">SMD Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/webinar-details">Supporting Documents</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall">SMD Workshop Fall</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii">2026 Metagenomics in Spaceflight: Establishing an Implementation Roadmap</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl04_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii">Planetary Protection Workshop II</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl05_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/agenda">Agenda</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion">Metagenomics Technical Interface Meeting: Protocol Critique and Convergence</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl06_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/quality">Quality </a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/risk-management">Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/safety-culture">Safety Culture</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl27_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/safety-culture/safety-culture-survey">Safety Culture Survey</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/smsr">SMSR</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/system-safety">System Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/workmanship">Workmanship</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/vids">Videos</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/vids/allvideos">Video Library</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/feature-videos">Feature Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/safety-message-videos">Safety Message Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/knowledge-bytes">Knowledge Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/policy-bytes">Policy Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/event-videos">Event Videos</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/about">About</a>
+							
+						</li>
+					
+						<li>
+							<a href="/test-page">Test Page</a>
+							
+						</li>
+					
+	</ul>
+</div>
+
+<script type="text/javascript">
+	(function ($) {
+		var navMenu = $("[id$='navigationUl']");
+		var ulElements = navMenu.find("li:has(ul) > a");
+		ulElements.attr("href", "javascript:void(0)");
+		ulElements.addClass("dropdown-toggle");
+		ulElements.attr("data-toggle", "dropdown");
+	})(jQuery);
+</script>
+<div>
+	
+<!-- 2023.3.1616.45 -->
+  <div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-md hidden-sm hidden-xs">
+    <ul class="nav navbar-nav" id="navigationUl">
+      
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">News</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/news/articles">Articles</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/policies/all-policies">All Policies</a></li>
+<li><a href="/policies/policy-status">Policy Status Updates</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+      <li class="dropdown mega-dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown">SMA Disciplines &amp; Programs</a>				
+       <div class="dropdown-menu mega-dropdown-menu bkg_White">
+
+         <div class="col-sm-12 bkg_White" style="border-radius:4px;"><div id="displayABC" class="displayToggleBlock"><ul class="list-unstyled columnLayout"><li><a href="/sma-disciplines/accllp">ACCLLP</a></li><li><a href="/sma-disciplines/aviation-safety">Aviation Safety</a>
+ </li><li><a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+ </li><li><a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+ </li><li><a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+ </li><li><a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+ </li><li><a href="/sma-disciplines/fire-protection">Fire Protection</a>
+ </li><li><a href="/sma-disciplines/human-factors">Human Factors</a>
+ </li><li><a href="/sma-disciplines/human-rating">Human Rating</a>
+ </li><li><a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+ </li><li><a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+ </li><li><a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+ </li><li><a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+ </li><li><a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+ </li><li><a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+ </li><li><a href="/sma-disciplines/nsrs">NSRS</a>
+ </li><li><a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+ </li><li><a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+ </li><li><a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+ </li><li><a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+ </li><li><a href="/sma-disciplines/planetary-protection">Planetary Protection</a></li><li><a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+ </li><li><a href="/sma-disciplines/quality">Quality</a>
+ </li><li><a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+ </li><li><a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+ </li><li><a href="/sma-disciplines/risk-management">Risk Management</a>
+ </li><li><a href="/sma-disciplines/safety-culture">Safety Culture</a>
+ </li><li><a href="/sma-disciplines/smsr">SMSR</a>
+ </li><li><a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+ </li><li><a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a></li><li><a href="/sma-disciplines/system-safety">System Safety</a>
+ </li><li><a href="/sma-disciplines/workmanship">Workmanship</a>
+ </li></ul></div><div style="clear:both;">&nbsp;</div></div><style type="text/css">#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+    }
+    #displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    }
+</style>
+
+       </div>				
+     </li>
+   
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/vids/allvideos">Video Library</a></li><li><a href="/vids/feature-videos">Feature Videos</a></li><li><a href="/vids/knowledge-bytes">Knowledge Bytes</a></li><li><a href="/vids/policy-bytes">Policy Bytes</a></li><li><a href="/vids/event-videos">Event Videos</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+
+      <li><a href='/about'>About</a></li>
+    
+
+
+
+
+    </ul>
+  </div>
+  <script type="text/javascript">
+   (function ($) {
+    var navMenu = $("[id$='navigationUl']");
+    var ulElements = navMenu.find("li:has(ul) > a");
+    ulElements.attr("href", "javascript:void(0)");
+    ulElements.addClass("dropdown-toggle");
+    ulElements.attr("data-toggle", "dropdown");
+
+  })(jQuery);
+
+</script>
+<script type="text/javascript">
+
+  jQuery(document).ready(function(){
+    jQuery('input[name="toggler"]').on("click", function(e){
+      if(jQuery(this).attr("value")=="Topic"){
+        jQuery("#displayABC").hide();
+        jQuery("#displayTopic").show();
+      }
+      if(jQuery(this).attr("value")=="ABC"){
+       jQuery("#displayTopic").hide();
+       jQuery("#displayABC").show();
+     }
+     SMASetMaxHeight(".displayToggleBlock");
+     e.stopPropagation();
+   });
+  });
+</script>
+<input id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+							<div id="toolbox" style="display:none;">
+								
+<script type="text/javascript">(function($) {
+	$(document).ready(function() {
+		var $nav = $(".navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav");
+		$nav.width((function(){
+			var width = $nav.find("li").length * 42;
+			$nav.find("li").each(function() {
+				width += $(this).width() == 0 ? (function(elem) {
+					return $(elem).find("a").text().length * 7;
+				})(this) : $(this).width();
+			});
+			return width;
+		})());
+		$nav.css("visibility", "visible");
+	});
+})(jq);</script><script type="text/javascript">jQuery(document).ready(function(){
+jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+var divname = jQuery(this).attr('href');
+if (divname.match("^#") && jQuery(divname).length < 1){
+jQuery(this).parent().hide();
+}
+});
+});</script>
+							</div>
+						</header>
+					</div>
+				</section>
+
+				<section id="MainWrapper" class="sf_cols">
+					<div id="cpw_mainwrapper" class="sf_colsOut sf_1cols_1_100">
+						<article id="cpw_main" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock SMAPrivateViewOnly hidden-xs hidden-sm hidden-md'><!-- sub navigation --> <nav class="navbar navbar-osma navbar-fixed-top subnavbar-fixed-top navbar-inverse" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header"> <a href="#cpw_mainwrapper" class="navbar-brand hidden-sm">Metrology and Calibration</a> </div>
+<div class="collapse navbar-collapse" id="osma_navbar_collapse">
+<ul class="nav navbar-nav">
+    <li><a href="#metcal_news">News</a></li>
+    <li><a href="#metcal_people">People</a></li>
+    <li><a href="#metcal_learning">Learning</a></li>
+    <li><a href="#metcal_guidance">Guidance</a></li>
+    <li><a href="#metcal_submitQuestion">Submit a Question</a></li>
+    <li><a href="#metcal_documents">Documents</a></li>
+    <li><a href="#metcal_importantLinks">Important Links</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+</div><div class='sfContentBlock subnavSpacer'><!-- jumbotron --> <section id="metcal_jumbotron" data-stellar-background-ratio="0.5">
+<div class="container">
+<div class="row"><!-- title and copy -->
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-7">
+<h1 class="jumbotronTitle">Metrology and Calibration</h1>
+<p>The mission of NASA&rsquo;s Metrology and Calibration Program is to ensure the accuracy and reliability of measurements considered essential for NASA safety and mission success, including the selection, calibration and use of Measuring and Test Equipment (MTE) for measurement applications that affect safety and mission success. Metrology, defined as the science of measurement, encompasses the controls and requirements necessary to ensure adequate measurement quality and provide measurement assurance. Calibration is an integral part of those measurement controls and is vital to ensuring the continued adequacy of MTE for its intended use.</p>
+<p>The Metrology and Calibration Program also collaborates with industry and other government agencies in the development of Metrology and Calibration standards, guidance documents and best practices.&nbsp;</p>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<div class="sf_cols row">
+    <div class="sf_colsOut container tbpad">
+        <div id="cph_main_C003_Col00" class="sf_colsIn"><div class='sfContentBlock'><!-- news / News will be pulled from content module --> <section id="metcal_news">
+<h2 class="sectionTitle"> <a href="/news/articles?taxonomy=categories&amp;propertyName=category&amp;taxon=/metrology-and-calibration">Metrology and Calibration News</a> </h2>
+</section>
+
+</div>
+            <div class="newsslider row col-xs-12">
+                <ul>
+                            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="Metrology and Calibration Working Group Sets Calibration Policies at Annual Meeting" href="../news/articles/newsitem/2025/08/20/metrology-and-calibration-working-group-sets-calibration-policies-at-annual-meeting">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/newsfeed-workinggroups-mcwg-poster.jpg?sfvrsn=f7ff1ef8_4&size=600' alt='Working Groups: Metrology and Calibration' title='Working Groups: Metrology and Calibration' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="Metrology and Calibration Working Group Sets Calibration Policies at Annual Meeting" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2025/08/20/metrology-and-calibration-working-group-sets-calibration-policies-at-annual-meeting">Metrology and Calibration Working Group Sets Calibration Policies at Annual Meeting</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                August 20, 2025
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" >NASA&rsquo;s Metrology and Calibration Working Group (MCWG) in the Office of Safety and Mission Assurance (OSMA) convened its annual Technical Interface Meeting on July 25, 2025, at Glenn Research Center. Held in conjunction with the 2025&nbsp;<a href="https://ncsli.org/" data-sf-ec-immutable="">National Conference of Standards Laboratories International</a>&nbsp;(NCSLI) Metrology Workshop and Symposium, this gathering brought together metrologists and calibration professionals from across NASA&rsquo;s centers.</div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ctrl0_FullStory" class="btn button-primary" href="../news/articles/newsitem/2025/08/20/metrology-and-calibration-working-group-sets-calibration-policies-at-annual-meeting"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="NASA STD 8739.12 Revision Overview" href="../news/articles/newsitem/2024/12/02/nasa-std-8739-12-revision-overview">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/metrology-and-calibration-database.jpg?sfvrsn=a4511af8_0&size=600' alt='Metrology and Calibration Database' title='Metrology and Calibration Database' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="NASA STD 8739.12 Revision Overview" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2024/12/02/nasa-std-8739-12-revision-overview">NASA STD 8739.12 Revision Overview</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                December 02, 2024
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>Revision A of <a href="https://standards.nasa.gov/sites/default/files/standards/NASA/Revision/0/NASA-STD-873912A.pdf" title="" class="" target="">NASA STD 8739.12</a>, Metrology and Calibration took effect November 21, 2024. The standard provides uniform Metrology and Calibration requirements for processes, procedures, practices and methods that are endorsed as standard for NASA applications. This update marks the first revision since the document&rsquo;s initial release in 2018.</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ctrl1_FullStory" class="btn button-primary" href="../news/articles/newsitem/2024/12/02/nasa-std-8739-12-revision-overview"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="Does Your Measuring and Test Equipment Have the Right Stuff?" href="../news/articles/newsitem/2024/10/08/does-your-measuring-and-test-equipment-have-the-right-stuff">
+                            <img src='https://sma.nasa.gov/images/default-source/news/metrology_1.png?sfvrsn=f0d4d4f8_0&size=600' alt='metrology_1' title='metrology_1' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="Does Your Measuring and Test Equipment Have the Right Stuff?" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2024/10/08/does-your-measuring-and-test-equipment-have-the-right-stuff">Does Your Measuring and Test Equipment Have the Right Stuff?</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                October 08, 2024
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>Have you ever wondered if your current method for testing and measuring data is as accurate and efficient as it could be? Find out now in SATERN.</p>
+<p>The NASA Safety Center (NSC) released two new courses about selecting, maintaining and using Measuring and Test Equipment (MTE) devices aimed at improving measurement data reliability and accuracy throughout the mission lifecycle.</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ctrl2_FullStory" class="btn button-primary" href="../news/articles/newsitem/2024/10/08/does-your-measuring-and-test-equipment-have-the-right-stuff"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="MCWG Holds Hybrid Technical Interchange Meeting" href="../news/articles/newsitem/2022/07/13/mcwg-holds-hybrid-technical-interchange-meeting">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/hero48d8a869d2a865b9a1a0ff0f003ca228.png?sfvrsn=6570cdf8_0&size=600' alt='MCWG on Chincoteague Island' title='MCWG on Chincoteague Island' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="MCWG Holds Hybrid Technical Interchange Meeting" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2022/07/13/mcwg-holds-hybrid-technical-interchange-meeting">MCWG Holds Hybrid Technical Interchange Meeting</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                July 13, 2022
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>The Metrology and Calibration (MetCal) Working Group (MCWG) held its annual Technical Interchange Meeting (TIM) April 25-28, 2022, at NASA Wallops Flight Facility. Agency MetCal representatives, calibration laboratory managers, metrologists and other experts from associated fields across all of NASA&rsquo;s 10 field centers, and two component centers, met in-person and virtually at this hybrid event to discuss technical challenges, best practices and improvements related to the agency&rsquo;s MetCal program.&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ctrl3_FullStory" class="btn button-primary" href="../news/articles/newsitem/2022/07/13/mcwg-holds-hybrid-technical-interchange-meeting"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="NASA’s Continued Use of PJVS for Calibrations Ensures Peak Accuracy" href="../news/articles/newsitem/2021/03/19/nasa-s-continued-use-of-pjvs-for-calibrations-ensures-peak-accuracy">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/pjvs.jpg?sfvrsn=9301af8_0&size=600' alt='PJVS' title='PJVS' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="NASA’s Continued Use of PJVS for Calibrations Ensures Peak Accuracy" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2021/03/19/nasa-s-continued-use-of-pjvs-for-calibrations-ensures-peak-accuracy">NASA’s Continued Use of PJVS for Calibrations Ensures Peak Accuracy</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                March 19, 2021
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>NASA uses the Programmable Josephson Voltage Standard (PJVS) to ensure the agency&rsquo;s calibrations include the most accurate voltage measurement with the lowest measurement uncertainty possible.&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ctrl4_FullStory" class="btn button-primary" href="../news/articles/newsitem/2021/03/19/nasa-s-continued-use-of-pjvs-for-calibrations-ensures-peak-accuracy"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                </ul>
+            </div>  
+<style type="text/css" media="all">
+  .newsslider ul{position:relative; list-style:none;padding:0;margin:0;}
+ .newsslider ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden;display:none;}
+.newsslider li.bjqs-slide{position:absolute; display:none;}
+.newsslider ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+.newsslider ul.bjqs-controls.v-centered li a{position:absolute;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+.newsslider .bjqs-markers {
+    padding-left: 0;
+  text-align: center;
+  list-style: none;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  z-index: 15;
+ margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;    
+    position: relative;
+    top: auto;
+    right: auto;
+    line-height: 20px;
+}
+.newsslider .bjqs-markers li {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+    margin: 0 0 0 6px;
+  background-color: #a5a5a5;
+  border: none; 
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+.newsslider .bjqs-markers li.active-marker {
+    margin: 0 0 0 6px;
+        height: 20px;
+    width: 20px;
+    background-color: dimgray;
+    
+}
+.newsslider .bjqs-markers li a{
+    display:block;
+    width:100%;
+    color:#a5a5a5;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+  }
+.newsslider .bjqs-markers li.active-marker a{
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    color:dimgray;
+    
+  }
+  
+.newsslider p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+</style>
+<script src="/docs/default-source/default-library/bjqs-1-3.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+   
+ var slidecount = jQuery('div.newsslider>ul>li').length;
+    if(slidecount > 1){
+      SMASetMaxHeight("div.newsslider>ul>li");
+  var slideheight = jQuery('div.newsslider>ul>li').first().height();
+  var slidewidth = jQuery('div.newsslider').width();
+    
+  jQuery('div.newsslider>ul').addClass('bjqs');
+  
+    jQuery('.newsslider').bjqs({
+    animtype      : 'slide',
+    animduration : 500, // how fast the animation are
+    animspeed : 5000,
+    height: slideheight,
+    width: slidewidth,
+    responsive    : true,
+    showcontrols : false,
+    showmarkers : true,
+    randomstart   : false
+          });
+}
+     });
+  jQuery(window).resize(function () {
+    jQuery(".newsslider").css({"height": ""});
+    jQuery(".newsslider .bjqs-wrapper").css({"height": ""});
+    jQuery(".newsslider .bjqs").css({"height": ""});
+    jQuery(".newsslider .bjqs-slide").css({"height": ""});
+     SMASetMaxHeight(".newsslider .bjqs-slide");
+  
+     
+  });</script>
+
+        <input id="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ClientState" name="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ClientState" type="hidden" /><span id="ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList" style="display:none;"></span>
+
+
+
+<span></span>
+        </div>
+    </div>
+</div>
+<div class='sfContentBlock'><!-- people --> <section id="metcal_people">
+<div>
+<div>
+<div class="container">
+<div class="row"> <!-- title -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">People</h2>
+</div>
+</div>
+<div class="row"> <!-- bios and pocs -->
+<div class="col-xs-12 col-sm-6 text-center">
+<img alt="placeholder" src="/images/default-source/bio-images/placeholder.png?sfvrsn=d2ff18f8_14" class="img-responsive img-circle center-block" title="Placeholder" data-displaymode="Original">
+<h3 class="subtitleHeavy">Jaime Day</h3>
+<h4 class="subtitleLight">Metrology and Calibration Manager</h4>
+&nbsp;</div>
+<div class="col-xs-12 col-sm-6 text-center"> <!-- poc --><a href="#" data-toggle="modal" data-target="#modal_MetCal_PoCTable"><img alt="" src="/images/default-source/discipline-pages/poc.jpg" title="PoCs" class="img-responsive img-circle center-block"></a>
+<h3 class="subtitleHeavy"><a href="#" data-toggle="modal" data-target="#modal_MetCal_PoCTable">Points of Contact</a></h3>
+<p class="text-center">For details on contacting a Metrology and Calibration Point of Contact (PoC) for your location, click below.</p>
+<a href="#" class="btn button-alternate responsiveBtnSpace" data-toggle="modal" data-target="#modal_MetCal_PoCTable"><em class="fa fa-users"></em> Find Your PoC</a> </div>
+</div>
+<div class="row"> <!-- working group box -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="well_primary">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4">
+<h3 class="subtitleHeavy">Metrology and Calibration Working Group</h3>
+<p>The Metrology and Calibration Working Group (MCWG) was established in accordance with the provisions of NPD 8730.1, Metrology and Calibration, to provide a forum to promote agency-wide standardization and cooperative action on problems of management, coordination and operation of NASA center Metrology and Calibration programs. The MCWG is comprised of representatives from each of the NASA centers.</p>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8"><span data-sfref="[images|OpenAccessDataProvider]0a678569-d2a8-65b9-a1a0-ff01003ca228" class="sfImageWrapper"><img alt="MetCal Working Group" src="/images/default-source/discipline-pages/metcal/metcal_wg.jpg?sfvrsn=d3cee0f8_8" class="img-responsive center-block" displaymode="Original" title="MetCal Working Group"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- learning --> <section id="metcal_learning">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Learning</h2>
+<a href="https://satern.nasa.gov" class="btn button-primary">Launch SATERN</a>&nbsp;
+<h3 class="subtitleLight">SATERN Courses</h3>
+<table class="table-learning tableML tablesorter" id="learningList1">
+    <thead>
+        <tr>
+            <th>Course Title</th>
+            <th>Course Number</th>
+            <th class="nonSort">Buttons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>4:1 Test Accuracy Ratio for Compliance with ANSI/NCSL Z540.1-1994 (R2002) Sub-Clause 10.2 B<br>
+            </td>
+            <td>SMA-HQ-WBT-217</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-HQ-WBT-217">SMA-HQ-WBT-217 Details</a></td>
+        </tr>
+        <tr>
+            <td>Handling, Transport, Storage, &amp; Shipping of Measuring &amp; Test Equipment<br>
+            </td>
+            <td>SMA-HQ-WBT-107<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-HQ-WBT-107">SMA-HQ-WBT-107 Details</a></td>
+        </tr>
+        <tr>
+            <td>More Than a Sticker: The Importance of Calibrating Measuring and Test Equipment</td>
+            <td>SMA-HQ-WBT-106</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-HQ-WBT-106">SMA-HQ-WBT-106 Details</a></td>
+        </tr>
+        <tr>
+            <td>Measurement Decision Risk</td>
+            <td>SMA-QE-WBT-343</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-QE-WBT-343">SMA-QE-WBT-343 Details</a></td>
+        </tr>
+        <tr>
+            <td>Measurement Uncertainty Analysis</td>
+            <td>SMA-QE-WBT-342</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-QE-WBT-342">SMA-QE-WBT-342 Details</a></td>
+        </tr>
+        <tr>
+            <td>Metrology and the Consequences of Bad Measurement Decisions</td>
+            <td>SMA-QE-WBT-148</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-QE-WBT-148">SMA-QE-WBT-148 Details</a></td>
+        </tr>
+        <tr>
+            <td>NASA Metrology and Calibration Program Requirements Overview</td>
+            <td>SMA-HQ-WBT-103</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-HQ-WBT-103">SMA-HQ-WBT-103 Details</a></td>
+        </tr>
+        <tr>
+            <td>Programmable Josephson Voltage Standard (PJVS)<br>
+            </td>
+            <td>SMA-HQ-WBT-102<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-HQ-WBT-102">SMA-HQ-WBT-102 Details</a></td>
+        </tr>
+        <tr>
+            <td>Measuring and Test Equipment Selection</td>
+            <td>SMA-HQ-WBT-111</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-HQ-WBT-111">SMA-HQ-WBT-111 Details</a></td>
+        </tr>
+        <tr>
+            <td>Measuring and Test Equipment Use</td>
+            <td>SMA-HQ-WBT-112</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Learning_SMA-HQ-WBT-112">SMA-HQ-WBT-112 Details</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- end of container --> </div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- guidance --> <section id="metcal_guidance" data-stellar-background-ratio="0.5">
+<div class="guidanceGradient">
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Policy and Guidance</h2>
+<h3 class="subtitleLight">NASA</h3>
+<table class="table-guidance tableML tablesorter" id="guidanceTable1">
+    <thead>
+        <tr>
+            <th>Policy</th>
+            <th>Title</th>
+            <th class="nonSort">Buttons</th>
+            <th class="nonSort">Buttons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>NPR 8735.2</td>
+            <td>Hardware Quality Assurance Program Requirements for Programs and Projects&nbsp;</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Guidance_NPR-8735-2">NPR-8735.2 Details</a></td>
+            <td><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8735_002C_&amp;page_name=main" title="" class="btn button-primary" target="_blank">See NPR 8735.2</a></td>
+        </tr>
+        <tr>
+            <td>NASA-STD-8739.12</td>
+            <td>Metrology and Calibration</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Guidance_NASA-STD-8739-12">NASA-STD-8739.12 Details</a></td>
+            <td><a href="https://standards.nasa.gov/standard/nasa/nasa-std-873912 " class="btn button-primary" title="" target="">See NASA-STD-8739.12</a></td>
+        </tr>
+        <tr>
+            <td>NASA-HDBK-8739.19-2</td>
+            <td>NASA Measurement Quality Assurance Handbook, Annex 2</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Guidance_NASA-HDBK-8739-19">NASA-HDBK-8739.19-2 Details</a></td>
+            <td><a href="https://standards.nasa.gov/standard/nasa/nasa-hdbk-873919-2" class="btn button-primary" title="" target="">See NASA-HDBK-8739.19-2</a></td>
+        </tr>
+        <tr>
+            <td>NASA-HDBK-8739.19-3</td>
+            <td>NASA Measurement Quality Assurance Handbook, Annex 3</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Guidance_NASA-HDBK-8739-19-3">NASA-HDBK-8739.19-3 Details</a></td>
+            <td><a href="https://standards.nasa.gov/standard/nasa/nasa-hdbk-873919-3" class="btn button-primary" title="" target="">See NASA-HDBK-8739.19-3</a></td>
+        </tr>
+        <tr>
+            <td>NASA-HDBK-8739.19-4</td>
+            <td>NASA Measurement Quality Assurance Handbook, Annex 4</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_MetCal_Guidance_NASA-HDBK-8739-19-4">NASA-HDBK-8739.19-4 Details</a></td>
+            <td><a href="https://standards.nasa.gov/standard/nasa/nasa-hdbk-873919-4" class="btn button-primary" title="" target="">See NASA-HDBK-8739.19-4</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<div class="sf_cols row">
+    <div class="sf_colsOut container tbpad">
+        <div id="cph_main_C019_Col00" class="sf_colsIn">
+
+<div class="sf_cols row">
+	<div class="sf_colsOut col-xs-12">
+		<div id="cph_main_C023_Col00" class="sf_colsIn sf_1cols_1in_100"><div class='sfContentBlock'><h2 class="sectionTitle">Submit a Question</h2>
+
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="sf_cols row">
+	<div class="sf_colsOut col-sm-7">
+		<div id="cph_main_C020_Col00" class="sf_colsIn sf_2cols_1in_58">
+
+<section class="bkg_White" id="metcal_submitQuestion">
+    <div class="container">
+        <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                   <h2 class="sectionTitle">Submit a Question</h2> 
+              </div>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                  <div class="panel panel-default">
+                       <div class="panel-heading">
+                            <h3 class="panel-title">Question Details</h3> 
+                       </div> 
+                      <div class="panel-body">
+                            <div class="row">
+                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <div class="form-group"> <label for="txtName">Name</label> <input name="ctl00$cph_main$C014$txtName" type="text" id="txtName" class="form-control" placeholder="e.g, John Smith" /> <span class="error">First and last name are required</span> </div>
+    <div class="form-group"> <label for="txtEmail">Email Address</label> <input name="ctl00$cph_main$C014$txtEmail" id="txtEmail" class="form-control" type="email" placeholder="e.g., John.Smith@nasa.gov" /> <span class="error">A valid email address is required</span> </div>
+    </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                     <div class="form-group"> <label for="txtPhone">Phone</label> <input name="ctl00$cph_main$C014$txtPhone" id="txtPhone" class="form-control" type="tel" placeholder="e.g., 1.800.555.6272" /> <span class="error">This field is required</span> </div>
+    <div class="form-group"> <label for="selectCenter">Center or Facility</label> <select name="ctl00$cph_main$C014$selectCenter" id="selectCenter" class="form-control">
+	<option value="default">-- Choose Center --</option>
+	<option value="ARC">Ames Research Center</option>
+	<option value="AFRC">Armstrong Flight Research Center</option>
+	<option value="GRC">Glenn Research Center</option>
+	<option value="GSFC">Goddard Space Flight Center</option>
+	<option value="Goddard Institute of Space Studies">Goddard Institute of Space Studies</option>
+	<option value="IV&amp;V">IV&amp;V Facility</option>
+	<option value="JPL">Jet Propulsion Laboratory</option>
+	<option value="JSC">Johnson Space Center</option>
+	<option value="KSC">Kennedy Space Center</option>
+	<option value="LRC">Langley Research Center</option>
+	<option value="MSFC">Marshall Space Flight Center</option>
+	<option value="Michoud Assembly Facility">Michoud Assembly Facility</option>
+	<option value="NESC">NASA Engineering and Safety Center</option>
+	<option value="HQ">NASA Headquarters</option>
+	<option value="NSC">NASA Safety Center</option>
+	<option value="NSSC">NASA Shared Services Center</option>
+	<option value="Plum Brook Station">Plum Brook Station</option>
+	<option value="SSC">Stennis Space Center</option>
+	<option value="Wallops Flight Facility">Wallops Flight Facility</option>
+	<option value="White Sands Test Facility">White Sands Test Facility</option>
+
+</select> <span class="error">Please choose a center</span> </div>
+                                    </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="form-group"> <label for="Question">Question</label> <textarea name="ctl00$cph_main$C014$Question" rows="6" cols="20" id="Question" class="form-control">
+</textarea> <span class="error">This field is required</span> </div>
+    <a id="btnSubmit" class="btn button-primary" href="javascript:__doPostBack(&#39;ctl00$cph_main$C014$btnSubmit&#39;,&#39;&#39;)">Submit Question</a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                  <p>Have a question about Metrology and Calibration, such as what services the program offers or the capabilities of the NASA labs? The NASA Metrology and Calibration Program Office wants to help. Submit questions here!</p>
+                  <p>Program Manager Kenny Mathews or someone from his team will respond to your question within two weeks. If you need more immediate assistance, please contact one of the Points of Contact in the above People section.</p>
+                 </div>
+</div>
+</div>
+</section>
+
+</div>
+	</div>
+	<div class="sf_colsOut col-sm-5">
+		<div id="cph_main_C020_Col01" class="sf_colsIn sf_2cols_2in_42"><div class='sfContentBlock'><p>Have a question about Metrology and Calibration, such as what services the program offers or the capabilities of the NASA labs? The NASA Metrology and Calibration Program Office wants to help. Submit questions here!</p>
+<p>Program Manager Jaime Day or someone from her team will respond to your question within two weeks. If you need more immediate assistance, please contact one of the Points of Contact in the above People section.</p>
+
+</div></div>
+	</div>
+</div>
+        </div>
+    </div>
+</div>
+<div class='sfContentBlock SMAPrivateViewOnly'><section id="metcal_documents" class="darkBlue">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Documents and Guidelines</h2>
+<dl>
+    <dt>
+    <p><a href="/docs/default-source/sma-disciplines-and-programs/metcal/overview-of-nasa-s-shared-pjvs-final-002-508.pdf?sfvrsn=b9ccc6f8_4" title="Overview of NASA's Shared PJVS" target="_blank">Overview of NASA's Shared PJVS</a><span style="font-weight: 400;">&nbsp;</span></p>
+    </dt>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- links --> <section id="metcal_importantLinks">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Important Links</h2>
+<div id="linkList">
+<dl>
+    <dt><a href="https://www.bipm.org/en/" title="" class="" target="_blank">Bureau International des Poids et Mesures</a></dt>
+    <dd>Information on worldwide metrology, international equivalence, measurement units, services, publications and meetings</dd>
+</dl>
+<dl>
+    <dt><a href="http://ilac.org/" title="" class="" target="_blank">ILAC</a></dt>
+    <dd>The International Laboratory Accreditation Cooperation website</dd>
+</dl>
+<dl>
+    <dt><a href="http://www.nist.gov/" title="" class="" target="_blank">National Institute of Standards and Technology</a></dt>
+    <dd>News, publications, project information and details on collaborative opportunities</dd>
+</dl>
+<dl>
+    <dt><a href="http://www.ncsli.org/" title="" class="" target="_blank">NCSL International</a></dt>
+    <dd>Department information, membership details, a store with publications, conference and event information, and more</dd>
+</dl>
+<dl>
+    <dt><a href="https://www.oiml.org/en" title="" class="" target="_blank">Organisation Internationale de M&eacute;trologie L&eacute;gale</a></dt>
+    <dd>International Organization of Legal Metrology: publications, structure details, certificates, events, technical work and more</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div>
+	
+
+
+          
+          <script src="/docs/default-source/javascript/printmodalcombined.js"></script>
+ <script>
+            function printThis(divId,docTitle){
+            if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+    jQuery('#'+divId).printElement({printMode:'popup',pageTitle:docTitle, overrideElementCSS:['/docs/default-source/style-sheets/sma_print.css']});
+}
+else {
+  printJS({printable: divId,type:'html',style:'.hidden-print {display:none!important;}',docTitle: docTitle});
+}
+            }
+          </script>
+          
+          <style>
+            @media print{
+  a[href]:after {
+    content: none !important;
+  }
+              .btn{display:none !important;}
+            
+            .hidden-print{display:none !important;}}</style>
+		
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-HQ-WBT-112' role="dialog" data-modal-url='/metcal_learning_sma-hq-wbt-112' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-HQ-WBT-112_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Measuring and Test Equipment Use</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-112</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-HQ-WBT-112_print','MetCal_Learning_SMA-HQ-WBT-112');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course is designed to give you with an overview of how to use measuring and test equipment, or MTE. It will identify sound practices for MTE use and help you to interpret calibration data sheets. Learning proper use of MTE devices will ensure that the measurement data they provide are high quality data that can be used with confidence.
+</p><p><strong>Course Number:</strong>&nbsp;SMA-HQ-WBT-112</p><p><strong>Length:</strong>&nbsp;0.77 hours</p><p><strong>Audience:</strong>&nbsp;Personnel who request measuring and test equipment to be procured; measurement process and procedure designers; Quality Assurance personnel observing or approving a measurement processes or results; QE professionals; Safety and Mission Assurance personnel; MTE end users and technicians</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-HQ-WBT-111' role="dialog" data-modal-url='/metcal_learning_sma-hq-wbt-111' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-HQ-WBT-111_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Measuring and Test Equipment Selection</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-111</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-HQ-WBT-111_print','MetCal_Learning_SMA-HQ-WBT-111');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p></p><p>This course is designed to provide the learner with an overview of measuring and test equipment, or MTE. It will help the learner to select measuring and test equipment that is fit for the purpose they intend. It will also further their understanding of instrument specifications and how to clearly define measurands and quantities to be measured.
+</p><p><strong>Course Number:</strong>&nbsp;SMA-HQ-WBT-111</p><p><strong>Length:</strong>&nbsp;1.00 hours</p><p><strong>Audience:</strong>&nbsp;Personnel who request measuring and test equipment to be procured; measurement process and procedure designers; Quality Assurance personnel observing or approving a measurement processes or results; QE professionals; Safety and Mission Assurance personnel; MTE end users and technicians</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Guidance_NPR-8735-2' role="dialog" data-modal-url='/metcal_guidance_npr-8735-2' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Guidance_NPR-8735-2_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NPR 8735.2</h4>
+							<h5 class="modal-identity">Hardware Quality Assurance Program Requirements for Programs and Projects</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Guidance_NPR-8735-2_print','MetCal_Guidance_NPR-8735-2');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>The purpose of this directive is to provide the accepted standard for quality management requirements that is used, in whole or in part, to ensure the effective and consistent implementation of quality assurance programs for NASA's missions.
+</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8735_002C_&page_name=main" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NPR 8735.2
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-HQ-WBT-107' role="dialog" data-modal-url='/metcal_learning_sma-hq-wbt-107' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-HQ-WBT-107_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Handling, Transport, Storage, & Shipping of Measuring & Test Equipment</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-107</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-HQ-WBT-107_print','MetCal_Learning_SMA-HQ-WBT-107');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course provides an overview of the proper physical handling, transport, storage and shipping of Measuring and Test Equipment (MTE) to ensure it will continue to meet its accuracy specifications.</p>
+<p><strong>Course</strong>: SMA-HQ-WBT-107<strong></strong></p>
+<p><strong>Length</strong>: 1.00 hour</p>
+<p><strong>Audience</strong>: This course is intended for program, project and center personnel that use, handle, transport, store and ship MTE. This includes engineers, technicians, personnel that provide Quality oversight, and logistics and transportation personnel.</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Quality_Learning_SMA-HQ-WBT-103' role="dialog" data-modal-url='/quality_learning_sma-hq-wbt-103' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_Quality_Learning_SMA-HQ-WBT-103_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA Metrology and Calibration Program Requirements Overview</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-103</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Quality_Learning_SMA-HQ-WBT-103_print','Quality_Learning_SMA-HQ-WBT-103');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course provides an introduction to, and overview of, the requirements levied by the NASA Metrology and Calibration program.</p>
+<p><strong>Course</strong>: SMA-HQ-WBT-103<strong></strong></p>
+<p><strong>Length</strong>: 1.00 hour</p>
+<p><strong>Audience</strong>: This course is intended for NASA program, project, and center managers and engineers, as well as Safety and Mission Assurance personnel</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-HQ-WBT-103' role="dialog" data-modal-url='/metcal_learning_sma-hq-wbt-103' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-HQ-WBT-103_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA Metrology and Calibration Program Requirements Overview</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-103</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-HQ-WBT-103_print','MetCal_Learning_SMA-HQ-WBT-103');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course provides an introduction to, and overview of, the requirements levied by the NASA Metrology and Calibration program.</p>
+<p><strong>Course</strong>: SMA-HQ-WBT-103<strong></strong></p>
+<p><strong>Length</strong>: 1.00 hour</p>
+<p><strong>Audience</strong>: This course is intended for NASA program, project, and center managers and engineers, as well as Safety and Mission Assurance personnel</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-HQ-WBT-106' role="dialog" data-modal-url='/metcal_learning_sma-hq-wbt-106' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-HQ-WBT-106_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">More Than a Sticker: The Importance of Calibrating Measuring and Test Equipment</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-106</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-HQ-WBT-106_print','MetCal_Learning_SMA-HQ-WBT-106');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course teaches participants how to define calibration; recognize the benefits of calibration, including why it is necessary; describe why Measuring and Test Equipment (MTE) must be calibrated on a periodic basis; and identify what can go wrong with calibrated MTE.</p>
+<p><strong>Course</strong>: SMA-HQ-WBT-106<strong></strong></p>
+<p><strong>Length</strong>: 1.00 hour</p>
+<p><strong>Audience</strong>: This course is intended for anyone who is part of an organization using or calibrating MTE in the support of NASA programs, projects and Centers. This includes managers, engineers, technicians and personnel that provide Quality and safety oversight.</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Guidance_NASA-STD-8739-12' role="dialog" data-modal-url='/metcal_guidance_nasa-std-8739-12' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Guidance_NASA-STD-8739-12_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA-STD-8739.12</h4>
+							<h5 class="modal-identity">Metrology and Calibration</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Guidance_NASA-STD-8739-12_print','MetCal_Guidance_NASA-STD-8739-12');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>The purpose of this NASA Technical Standard is to ensure the accuracy of measurements affecting safety and mission success through the proper selection, calibration and use of Measuring and Test Equipment.<br>
+</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://standards.nasa.gov/standard/nasa/nasa-std-873912" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NASA-STD-8739.12
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Guidance_NASA-HDBK-8739-19-4' role="dialog" data-modal-url='/metcal_guidance_nasa-hdbk-8739-19-4' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Guidance_NASA-HDBK-8739-19-4_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA-HDBK-8739.19-4</h4>
+							<h5 class="modal-identity">NASA Measurement Quality Assurance Handbook, Annex 4</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Guidance_NASA-HDBK-8739-19-4_print','MetCal_Guidance_NASA-HDBK-8739-19-4');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This annex provides principles and methods for the analysis and management of Measurement Decision Risk in the calibration of measurement systems and testing of end items. The methods and principles described support agency objectives for assuring measurement accuracy and are applicable for use in all NASA functions for which measurements and decisions based on measurements are involved.
+</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://standards.nasa.gov/standard/nasa/nasa-hdbk-873919-4" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NASA-HDBK-8739.19-4
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Guidance_NASA-HDBK-8739-19-3' role="dialog" data-modal-url='/metcal_guidance_nasa-hdbk-8739-13' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Guidance_NASA-HDBK-8739-19-3_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA-HDBK-8739.19-3</h4>
+							<h5 class="modal-identity">NASA Measurement Quality Assurance Handbook, Annex 3</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Guidance_NASA-HDBK-8739-19-3_print','MetCal_Guidance_NASA-HDBK-8739-19-3');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This annex provides principles and methods for the analysis and management of the uncertainty that exists in measurements. The principles and methods described support agency objectives for assuring measurement accuracy and are applicable for use in all NASA functions for which measurements and decisions based on measurements are involved.
+</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://standards.nasa.gov/standard/nasa/nasa-hdbk-873919-3" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NASA-HDBK-8739.19-3
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-HQ-WBT-102' role="dialog" data-modal-url='/metcal_learning_sma-hq-wbt-102' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-HQ-WBT-102_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">PROGRAMMABLE JOSEPHSON VOLTAGE STANDARD (PJVS)</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-102</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-HQ-WBT-102_print','MetCal_Learning_SMA-HQ-WBT-102');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course provides an overview of the theory and operation of the NASA Programmable Josephson Voltage Standard (PJVS), addresses safety concerns when working with the PJVS, and demonstrates the NASA procedure for handling and operating the PJVS.</p>
+<p><strong>Course Number:</strong>&nbsp;SMA-HQ-WBT-102</p>
+<p><strong>Length:</strong>&nbsp;40.00 hours</p>
+<p><strong>Audience:</strong>&nbsp;This course is intended for c<span style="line-height: 1.4;">alibration laboratory personnel approved to operate the PJVS to perform calibrations of DC voltage reference standards.</span></p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Guidance_NASA-HDBK-8739-19' role="dialog" data-modal-url='/metcal_guidance_nasa-hdbk-8739-19' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Guidance_NASA-HDBK-8739-19_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA-HDBK-8739.19-2</h4>
+							<h5 class="modal-identity">NASA Measurement Quality Assurance Handbook, Annex 2</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Guidance_NASA-HDBK-8739-19_print','MetCal_Guidance_NASA-HDBK-8739-19');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This annex provides principles and methods for the analysis and management of the uncertainty that exists in measurements. The principles and methods described support agency objectives for assuring measurement accuracy and are applicable for use in all NASA functions for which measurements and decisions based on measurements are involved.
+</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://standards.nasa.gov/standard/nasa/nasa-hdbk-873919-2" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NASA-HDBK-8739.19-2
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-QE-WBT-343' role="dialog" data-modal-url='/metcal_learning_sma-qe-wbt-343' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-QE-WBT-343_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">MEASUREMENT DECISION RISK</h4>
+							<h5 class="modal-identity">SMA-QE-WBT-343</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-QE-WBT-343_print','MetCal_Learning_SMA-QE-WBT-343');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course covers analysis and management of measurement decision theory using risk analysis methods and procedures referenced in NASA Measurement Quality Assurance Handbook &mdash; Annex 4, NASA-HDBK-8739.19-4, Estimation and Evaluation of Measurement Decision Risk. </p>
+<p><strong>Course Number:</strong> SMA-QE-WBT-343</p>
+<p><strong>Length:</strong> 8.00 hours</p>
+<p><strong>Audience:</strong> This course is intended for Safety and Mission Assurance engineers and specialists.</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-QE-WBT-342' role="dialog" data-modal-url='/metcal_learning_sma-qe-wbt-342' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-QE-WBT-342_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">MEASUREMENT UNCERTAINTY ANALYSIS</h4>
+							<h5 class="modal-identity">SMA-QE-WBT-342</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-QE-WBT-342_print','MetCal_Learning_SMA-QE-WBT-342');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course discusses methods of evaluating and expressing uncertainty in measurement referenced in NASA Measurement Quality Assurance Handbook &mdash; Annex 3, NASA-HDBK-8739.19-3, Measurement Uncertainty Analysis Principles and Methods. </p>
+<p><strong>Course Number:</strong> SMA-QE-WBT-342</p>
+<p><strong>Length:</strong> 8.00 hours</p>
+<p><strong>Audience:</strong> This course is intended for Safety and Mission Assurance engineers and specialists.</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-QE-WBT-148' role="dialog" data-modal-url='/metcal_learning_sma-qe-wbt-148' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-QE-WBT-148_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">METROLOGY AND THE CONSEQUENCES OF MEASUREMENT DECISIONS</h4>
+							<h5 class="modal-identity">SMA-QE-WBT-148</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-QE-WBT-148_print','MetCal_Learning_SMA-QE-WBT-148');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>This course demonstrates metrology&rsquo;s influence throughout the life cycle and then, through factual case studies, illustrates the negative consequences when one or more of metrology&rsquo;s elements fail. </p>
+<p><strong>Course Number:</strong> SMA-QE-WBT-148</p>
+<p><strong>Length:</strong> 1.00 hour</p>
+<p><strong>Audience:</strong> This course is intended for anyone in Safety and Mission Assurance who is interested in measurement and making good decisions.</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_PoCTable' role="dialog" data-modal-url='/metcal_poctable' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_MetCal_PoCTable_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Metrology and Calibration Points of Contact</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_PoCTable_print','MetCal_PoCTable');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-12"><p>Every NASA center has a Metrology and Calibration Point of Contact (PoC). For more information, contact the PoC at your center.</p><table class="table modalPocTable k-table"><thead><tr><th>Name</th><th>Email Address</th></tr></thead><tbody><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">&nbsp;</td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Office of Safety and Mission Assurance</td></tr><!-- end of office title -->
+ <tr><td>Jaime Day</td><td><a href="mailto:Jaime.J.Day@nasa.gov">Jaime.J.Day@nasa.gov</a></td></tr><tr class="PocCenter"><td colspan="2">Ames Research Center</td></tr><!-- end of office title -->
+ <tr><td>Damon Flansburg</td><td><a href="mailto:Damon.Flansburg@nasa.gov">Damon.Flansburg@nasa.gov</a></td></tr><tr class="PocCenter"><td colspan="2">Armstrong Flight Research Center</td></tr><!-- end of office title -->
+ <tr><td>April Torres</td><td><a target="_blank" href="mailto:april.c.torres@nasa.gov">April.C.Torres@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Glenn Research Center</td></tr><!-- end of office title -->
+ <tr><td>Rick Flaisig</td><td><a href="mailto:richard.m.flaisig@nasa.gov">Richard.M.Flaisig@nasa.gov</a></td></tr><tr class="PocCenter"><td colspan="2">Goddard Space Flight Center</td></tr><!-- end of office title -->
+ <tr><td>Aaron Bush</td><td><a target="_blank" href="mailto:james.a.bush@nasa.gov">James.A.Bush@nasa.gov&nbsp;</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Jet Propulsion Laboratory</td></tr><!-- end of office title -->
+ <tr><td>Matthew Gean*</td><td><a href="mailto:Matthew.C.Gean@jpl.nasa.gov " title="" target="" data-sf-ec-immutable="">Matthew.C.Gean@jpl.nasa.gov </a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Johnson Space Center</td></tr><!-- end of office title -->
+ <tr><td>Shedrick Armstrong&nbsp;</td><td><a href="mailto:shedrick.d.armstrong@nasa.gov">Shedrick.D.Armstrong@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Kennedy Space Center</td></tr><!-- end of office title -->
+ <tr><td>Nicholas Spangler</td><td><a href="mailto:Nicholas.B.Spangler@nasa.gov">Nicholas.B.Spangler@nasa.gov</a><br /></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Langley Research Center</td></tr><!-- end of office title -->
+ <tr><td>Jaime Day</td><td><a href="mailto:Jaime.J.Day@nasa.gov">Jaime.J.Day@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Marshall Space Flight Center</td></tr><!-- end of office title -->
+ <tr><td>Kirk Foster*</td><td><a href="mailto:Gary.W.Kennedy@nasa.gov">Kirk.R.Foster@nasa.gov</a></td></tr><tr class="PocCenter"><td colspan="2">Michoud Assembly Facility</td></tr><!-- end of office title -->
+ <tr><td>David Failla</td><td><a href="mailto:David.P.Failla@nasa.gov " title="" target="" data-sf-ec-immutable="">David.P.Failla@nasa.gov </a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Stennis Space Center</td></tr><!-- end of office title -->
+ <tr><td>Jonathan Dickey&nbsp;</td><td><a href="mailto:Bruce.R.Farner@nasa.gov"></a><a href="mailto:jonathan.c.dickey@nasa.gov">Jonathan.C.Dickey@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Wallops Flight Facility</td></tr><!-- end of office title -->
+ <tr><td>Julio C. Diaz Perez</td><td><a href="mailto:Julio.C.DiazPerez@nasa.gov">Julio.C.DiazPerez@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">White Sands Test Facility</td></tr><!-- end of office title -->
+ <tr><td>Darrell Shoup</td><td><a href="mailto:Darrell.L.Shoup@nasa.gov">Darrell.L.Shoup@nasa.gov</a><br /></td></tr></tbody></table><small>* Support Services Contractor</small>
+ </div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_MetCal_Learning_SMA-HQ-WBT-217' role="dialog" data-modal-url='/metcal_learning_sma-hq-wbt-217' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_MetCal_Learning_SMA-HQ-WBT-217_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">4:1 Test Accuracy Ratio for Compliance with ANSI/NCSL Z540.1-1994 (R2002) Sub-Clause 10.2 B</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-217</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_MetCal_Learning_SMA-HQ-WBT-217_print','MetCal_Learning_SMA-HQ-WBT-217');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-12">
+<div class="courseInfo">
+<p>ANSI/NCSL Z540.1-1994 (R2002), Calibration Laboratories and Measuring and Test Equipment &ndash; General Requirements [Z540.1] includes a requirement for calibration procedures to have a minimum Test Accuracy Ratio (TAR) of 4:1. This course includes an overview of the TAR, the formulas for calculating a TAR and examples of TAR calculations. The course also covers the calculation and use of guard-bands for calibrations in which the 4:1 TAR cannot be achieved.</p>
+<p><strong>Course</strong>: SMA-HQ-WBT-217<strong></strong></p>
+<p><strong>Length</strong>: 2.00 hours</p>
+<p><strong>Audience</strong>: This course is intended for personnel responsible for the calibration of Measuring and Test Equipment and for anyone responsible for managing or auditing those calibration activities.</p>
+</div>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+          
+          
+	<input id="ctl00_cph_main_ctl10_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_cph_main_ctl10_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_cph_main_ctl10_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="FooterWrapper" class="sf_cols bkg_TexanBlue" style="height: 145px">
+					<div id="cpw_footerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<input id="SMADateSiteLastUpdated" type="hidden" value="August 6, 2026" />
+						<footer id="cpw_footer" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock'><div class="container tb_pad21"> <!-- meatball image -->
+<div class="col-sm-3 footer_description PowderGreyTxt" style="padding-bottom: 12px;"> <a href="https://www.nasa.gov/" target="_blank"><img src="/content/images/meatball.png" id="nasaMeatball" alt="National Aeronautics and Space Administration" class="img-responsive" style="max-width: 87px;"></a> </div>
+<!-- site details and contact -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+Site Last Updated: <span id="footerDateSiteLastUpdated" style="font-weight: normal;">September 10, 2014</span><br>
+Web Master: <span style="font-weight: normal;"><a href="/contact">Michael Bishop</a></span><br>
+NASA Official: <span style="font-weight: normal;"><a href="/contact">Sallie Keith</a></span><br>
+<a href="/site-map">OSMA Site Map</a>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/" target="_blank">Privacy Policy</a><br>
+<a href="https://www.nasa.gov/FOIA" target="_blank">FOIA</a><br>
+<a href="https://www.nasa.gov/offices/odeo/no-fear-act" target="_blank">No FEAR Act</a><br>
+<a href="https://www.nasa.gov/budgets-plans-and-reports/" target="_blank">Budget &amp; Annual Reports</a><br>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://oig.nasa.gov/" target="_blank">Office of the IG</a><br>
+<a href="https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/" target="_blank">Agency Financial Reports</a><br>
+<a href="/contact">Contact OSMA</a><br>
+<a href="https://www.nasa.gov/accessibility/" target="_blank">Accessibility</a>
+</div>
+</div>
+
+</div>
+						</footer>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		
+	    
+<script type="text/javascript">jQuery(document).ready(function(){
+	jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+		var divname = jQuery(this).attr('href');
+		if (jQuery(divname).length < 1){
+			jQuery(this).parent().hide();
+		}
+	});
+
+});
+
+(function($) {
+    function openModalFromPath() {
+        var path = window.location.pathname;
+        try {
+            path = window.location.pathname.split("/");
+            var modalId = path[path.length - 1];
+            $("[data-modal-url='/" + modalId + "']").each(function () {
+                try {
+                    $(this).modal('show');
+                } catch (e) {
+                    console.debug("Could not open modal with id: " + modald);
+                }
+            });
+        } catch (e) {
+            console.debug("Could not get modal id from path: " + path);
+        }
+    }
+
+	$(document).ready(function() {
+		try {
+			if (window.location.hash.length > 0 && $(window.location.hash).length > 0 && $(window.location.hash).hasClass("modal")) {
+				$(window.location.hash).modal('show');
+			} else {
+				openModalFromPath();
+			}
+		} catch(e) {
+			console.debug("Could not find modal with id: " + window.location.hash);
+		}
+	});
+})(jq);</script>
+	
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script><script type="text/javascript">
+jQuery('#questionList > li > div.collapse').on('shown.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-right fa-caret-down');
+});
+jQuery('#questionList > li > div.collapse').on('hidden.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-down fa-caret-right');
+});
+
+// remove stellar on mobile and tablet devices
+if (jQuery(window).width() <= 1023) {
+    jQuery('section').removeAttr('data-stellar-background-ratio');
+};</script><script type="text/javascript" src="/docs/default-source/javascript/jquery-stellar-min.js"></script><script type="text/javascript" src="/docs/default-source/javascript/stellar_init.js"></script><script type="text/javascript" src="/docs/default-source/javascript/more_less.js"></script><script type="text/javascript" src="/docs/default-source/javascript/readmore.js"></script><script type="text/javascript">function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+// start of script
+jQuery(document).ready(function(){
+				jQuery('#btnSubmit').click(function(){
+					var isValid = true;
+					
+                                        if (!(/\w+\s+\w+/.test(jQuery('#txtName').val()))) {
+							jQuery('#txtName').addClass('invalid');
+							jQuery('#txtName + span.error').removeClass('error').addClass('error_show');
+							isValid = false;
+					}
+                                  	else{
+                                        jQuery('#txtName').removeClass('invalid');
+					jQuery('#txtName + span.error_show').removeClass('error_show').addClass('error');
+					}
+                                  
+					if (!isEmail(jQuery('#txtEmail').val()))  {
+							jQuery('#txtEmail').addClass('invalid');
+							jQuery('#txtEmail + span.error').removeClass('error').addClass('error_show');
+							isValid = false;
+					}
+                                        else{
+					jQuery('#txtEmail').removeClass('invalid');
+					jQuery('#txtEmail + span.error_show').removeClass('error_show').addClass('error');
+					}
+					if (jQuery('#txtPhone').val().length == 0) {
+							jQuery('#txtPhone').addClass('invalid');
+							jQuery('#txtPhone + span.error').removeClass('error').addClass('error_show');
+							isValid = false;;
+					}
+                                        else{
+					jQuery('#txtPhone').removeClass('invalid');
+					jQuery('#txtPhone + span.error_show').removeClass('error_show').addClass('error');
+					}
+					if (jQuery('#selectCenter').val() == 'default'){
+							jQuery('#selectCenter').addClass('invalid');
+							jQuery('#selectCenter + span.error').removeClass('error').addClass('error_show');
+							isValid = false;
+					}
+                                  	else{
+					jQuery('#selectCenter').removeClass('invalid');
+					jQuery('#selectCenter + span.error_show').removeClass('error_show').addClass('error');
+					}
+					if (jQuery('#Question').val().length == 0) {
+							jQuery('#Question').addClass('invalid');
+							jQuery('#Question + span.error').removeClass('error').addClass('error_show');
+							isValid = false;;
+					}
+                                  	else{
+					jQuery('#Question').removeClass('invalid');
+					jQuery('#Question + span.error_show').removeClass('error_show').addClass('error');
+					}
+					return isValid;
+				});
+  
+			  jQuery('#selectCenter').change(function(){
+			    jQuery('#selectCenter option[value="default"]').attr('disabled','disabled');
+			  });
+			});</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45912537-1', 'auto');
+ga('set', 'transport', 'beacon');
+if (document.querySelectorAll('meta[name="OrigDate"]').length > 0) {
+var origDate = document.querySelector('meta[name="OrigDate"]').content;
+if(origDate != ""){ga('set', 'dimension1', origDate);}}
+
+if (document.querySelectorAll('meta[name="GATopic"]').length > 0) {
+    var gaTopic = document.querySelector('meta[name="GATopic"]').content;
+if(gaTopic != ""){ga('set', 'dimension2', gaTopic);}}
+
+if (document.querySelectorAll('meta[name="GAProductType"]').length > 0) {
+    var gaProductType = document.querySelector('meta[name="GAProductType"]').content;
+if(gaProductType != ""){ga('set', 'dimension3', gaProductType);}}
+
+if (document.querySelectorAll('meta[name="GAType"]').length > 0) {
+    var gaType = document.querySelector('meta[name="GAType"]').content;
+if(gaType != ""){ga('set', 'dimension4', gaType);}}
+
+if (document.querySelectorAll('meta[name="GACenter"]').length > 0) {
+    var gaCenter = document.querySelector('meta[name="GACenter"]').content;
+if(gaCenter != ""){ga('set', 'dimension5', gaCenter);}}
+
+if (document.querySelectorAll('meta[name="GAVideos]').length > 0) {
+    var gaVideo = document.querySelector('meta[name="GAVideos"]').content;
+if(gaVideo != ""){ga('set', 'dimension6', gaVideo);}}
+
+if (document.querySelectorAll('meta[name="GAEvents"]').length > 0) {
+    var gaEvent = document.querySelector('meta[name="GAEvents"]').content;
+if(gaEvent != ""){ga('set', 'dimension7', gaEvent);}}
+
+ga('send', 'pageview');
+
+ga(function() {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        ga('send', 'event', {
+            'eventCategory': 'Modal',
+            'eventAction': 'Click',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">window.GAMeasurementId = 'G-KC5NT81F9E';
+(function(window, document, tagType, id) {
+    var f = document.getElementsByTagName(tagType)[0],
+        scriptTag = document.createElement(tagType);
+    scriptTag.async = true;
+    scriptTag.src =
+        'https://www.googletagmanager.com/gtag/js?id=' + id;
+    f.parentNode.insertBefore(scriptTag, f);
+})(window, document, 'script', window.GAMeasurementId);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+(function(measurementId) {
+  gtag('config', measurementId);
+
+  gtag('config', measurementId, {
+    'custom_map': {
+      'dimension1': 'OrigDate',
+      'dimension2': 'Topic',
+      'dimension3': 'ProductType',
+      'dimension4': 'Type',
+      'dimension5': 'Center',
+      'dimension6': 'Videos',
+      'dimension7': 'Events',
+    }
+  });
+
+  function GetMetaData(propertyName) {
+    var metaElement = document.querySelectorAll('meta[name="' + propertyName +'"]');
+    return metaElement.length > 0 ? metaElement[0].content : null;
+  }
+
+  window.GADimensions = {
+    'OrigDate': GetMetaData("OrigDate"),
+    'Topic': GetMetaData("GATopic"),
+    'ProductType': GetMetaData("GAProductType"),
+    'Type': GetMetaData("GAType"),
+    'Center': GetMetaData("GACenter"),
+    'Videos': GetMetaData("GAVideos"),
+    'Events': GetMetaData("GAEvents"),
+  };
+
+  gtag('event', 'pageview', window.GADimensions);
+})(window.GAMeasurementId);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        gtag('event', 'Click', {
+            'eventCategory': 'Modal',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">(function trackOutbounds() {
+	
+	var hitCallbackHandler = function(url,win) {
+	    if (win) {
+		    window.open(url, win);
+	    } else {
+        	window.location.href = url;
+        }
+    };
+    
+    var addEvent = function(el, eventName, handler) {
+    
+		if (el.addEventListener) {
+			el.addEventListener(eventName, handler);
+			} else {
+			el.attachEvent('on' + eventName, function(){
+				handler.call(el);
+		    });
+		}
+	}
+	
+	if (document.getElementsByTagName) {
+		var el = document.getElementsByTagName('a');
+		var getDomain = document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0];
+		
+		// Look thru each a element
+		for (var i=0; i < el.length;i++) {
+		
+			// Extract it's href attribute
+			var href = (typeof(el[i].getAttribute('href')) == 'string' ) ? el[i].getAttribute('href') : '';
+			
+			// Query the href for the top level domain (xxxxx.com)
+			var myDomain = href.match(getDomain);
+			
+			// If link is outbound and is not to this domain	
+			if ((href.match(/^(https?:|\/\/)/i)  && !myDomain) || href.match(/^mailto\:/i)) {
+			
+				// Add an event to click
+				addEvent(el[i],'click', function(e) {
+					var url = this.getAttribute('href'), win = (typeof(this.getAttribute('target')) == 'string') ? this.getAttribute('target') : '';
+							
+							console.log ("add event", url);
+					// Log even to Analytics, once done, go to the link
+					ga('send', 'event', 'outbound', 'click', url,
+						{'hitCallback': hitCallbackHandler(url,win)},
+						{'nonInteraction': 1}
+					);
+					
+					e.preventDefault();
+				});
+			}
+		}
+	}
+})();
+</script><script type="text/javascript">jq(document).ready(function() {
+	$(".mega-dropdown-menu .nav-tabs a").click(function(e) {
+		e.preventDefault();
+		jq(this).tab('show');
+		e.stopPropagation();
+	});
+
+	jQuery("#nav-disciplines-organizational li").sort(function(a, b) {
+		var an = jQuery(a).find("a").text(),
+		bn = jQuery(b).find("a").text();
+
+		if(an > bn) {
+			return 1;
+		}
+		if(an < bn) {
+			return -1;
+		}
+		return 0;
+	}).clone().appendTo(jQuery("#displayABC ul"));
+});</script><script type="text/javascript" src="/Content/Scripts/video.ga.js?ver=1"></script>
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl06_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=14.4.8152.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:4fd8513a-4760-4c69-b716-de189eda8de6:7a90d6a';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"disableSuggestions":true,"indexCatalogue":"combined-indexes-5-16-19","language":null,"minSuggestLength":3,"resultsUrl":"/search","searchButton":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton"),"searchTextBox":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox"),"siteId":"118a9c25-c36c-4108-8a7e-aa18cc03ebda","suggestionFields":"Title,Content","suggestionsRoute":"/restapi/search/suggestions"}, null, null, $get("ContentHeaderSearch_T40EBA3A0054"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentNavigation$ctl00$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$C005$newsFrontendList$ctl00$ctl00$NewsList","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_C005_newsFrontendList_ctl00_ctl00_NewsList"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Web.UI.UserPreferences, {"_timeOffset":"0","_userBrowserSettingsForCalculatingDates":true,"timeZoneDisplayName":"UTC","timeZoneId":"UTC"}, null, null);
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$ctl10$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_ctl10_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":17,"clientStateFieldID":"ctl00_cph_main_ctl10_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_ctl10_ctl00_ctl00_dynamicContentListView"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

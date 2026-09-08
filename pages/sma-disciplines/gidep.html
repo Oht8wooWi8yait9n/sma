@@ -1,0 +1,2730 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="https://sma.nasa.gov/"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	NASA Advisories and GIDEP
+</title>
+		<link href="/Content/Images/favicon.ico" rel="shortcut icon" />
+		<link href="/Content/Styles/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_flat_ui_pro.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_navbar.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_toolbox.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_responsiveplaylist.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_custom.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+		<script src="/Content/Scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/Content/Scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="/Content/Scripts/bootstrap.min.js"></script>
+<script src="/Content/Scripts/bootstrap-select.js"></script>
+<script src="/Content/Scripts/bootstrap-switch.js"></script>
+<script src="/Content/Scripts/flatui-checkbox.js"></script>
+<script src="/Content/Scripts/flatui-radio.js"></script>
+<script src="/Content/Scripts/jquery.tagsinput.js"></script>
+<script src="/Content/Scripts/jquery.placeholder.js"></script>
+<script src="/Content/Scripts/jquery.dotdotdot.js"></script>
+<script src="/Content/Scripts/jquery.paging.js"></script>
+<script src="/Content/Scripts/sma-responsiveplaylist.js"></script>
+<script src="/Content/Scripts/sma-jquery.tablesorter.js"></script>
+<script src="/Content/Scripts/application.js"></script>
+<script src="/Content/Scripts/sma.js"></script>
+<script src="/Content/Scripts/sma-likes.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. -->
+		<!--[if lt IE 9]>
+			<script src="/Content/Scripts/html5shiv.js"></script>
+<script src="/Content/Scripts/respond.min.js"></script>
+
+		<![endif]-->
+		<script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GRC" id="_fed_an_ua_tag"></script> 
+	
+	<style type="text/css">
+	#HeaderWrapper {
+		height: 113px;
+	}
+
+	@media (min-width: 1200px) {
+		#HeaderWrapper {
+			height: 193px;
+		}
+	}
+	</style>
+<script type="text/javascript">jQuery(document).ready(function () {
+    jQuery('a[href*=".pdf"]').attr('target', '_blank');
+    jQuery('a[href^="http"]').not('a[href*=".nasa.gov"]').each(function () {
+        if (jQuery(this).parents(".rp_playlist").length == 0) {
+            jQuery(this).attr('target', '_blank');
+        }
+    });
+    jQuery('a[href*="satern.nasa.gov"]').each(function() {
+        jQuery(this).attr('href', 'https://satern.nasa.gov');
+    });
+  
+  jQuery('a[href*=".nasa.gov"]').each(function(){
+	var linkTarget = jQuery(this).attr('target');
+	if (linkTarget == undefined || linkTarget == "") {
+		var linkHref = jQuery(this).attr('href')
+		if ((linkHref.search('sma') != -1 && linkHref.search('nmis') == -1)|| linkHref.search('mailto') != -1 || jQuery(this).parents(".rp_playlist").length > 0) {
+			jQuery(this).attr('target', '_self');
+			}
+		else if (jQuery(this).attr("target") === undefined) {
+			jQuery(this).attr('target', '_blank');
+		}
+	}
+});
+});</script><meta name="Generator" content="Sitefinity 14.4.8152.0 DX" /><link rel="canonical" href="https://sma.nasa.gov/sma-disciplines/gidep" /><link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nOb-o-hV0f4ju23IUDysEzCN3rFussDAyoaCyf7qMEQsWopHkOKp6NEsHcXB8MVS9b1qxgcvpCgojRolrlwuTK4cJEWRrO2eWV_N9JF16RZI0&amp;t=638840910637275692&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d14.4.8152.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a4fd8513a-4760-4c69-b716-de189eda8de6%3a7a90d6a" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/SMA/App_Themes/SMA/global/readme.css?v=639216412510738967" type="text/css" rel="stylesheet" /><link href="/Content/Styles/sma-discipline-color-teal.min.css" type="text/css" rel="stylesheet" media="all" /><link href="/Content/Styles/sma-discipline-core.min.css" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid {
+    display: flex;
+    padding: 0;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header {
+    padding-left: 30px;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header a.navbar-brand {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse {
+    flex-grow: 1;
+    overflow: hidden!important;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav {
+    max-width: 100%;
+    display: flex;
+  	justify-content: space-between;
+  	visibility: hidden;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav li a {
+	padding-left: 0;
+	padding-right: 0;
+}</style><style type="text/css" media="all">section[id*="jumbotron"] {
+  background: #000000 url("/images/default-source/discipline-pages/gidep/jumbotronbkg_gidep.jpg");
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+section[id*="benefits"] .table-secondary {
+  margin-top: 10px;
+}
+section[id*="benefits"] .table-secondary > thead > tr {
+  background-color: #085057;
+}
+</style><style type="text/css" media="all">/* default text anchor link styling */
+a,
+a:link,
+a:visited,
+a:active {
+  font-weight: 700;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #095960;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 1px dotted #095960;
+}
+a.darkLink:hover,
+a.darkLink:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a.darkLink:focus {
+  outline: 1px dotted #18d8ea;
+}
+/* styline for images on focus */
+a:focus > img {
+  outline: 1px dotted #095960;
+}
+/* nasa affinity styling */
+#hdrNasaAffinity a:focus,
+#hdrNasaAffinity a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* header link styles */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  text-decoration: none;
+}
+h1 a,
+h3 a,
+h5 a,
+h1 a:link,
+h3 a:link,
+h5 a:link,
+h1 a:visited,
+h3 a:visited,
+h5 a:visited,
+h1 a:active,
+h3 a:active,
+h5 a:active,
+h1 a:hover,
+h3 a:hover,
+h5 a:hover,
+h1 a:focus,
+h3 a:focus,
+h5 a:focus {
+  font-weight: 800;
+}
+h2 a,
+h4 a,
+h6 a,
+h2 a:link,
+h4 a:link,
+h6 a:link,
+h2 a:visited,
+h4 a:visited,
+h6 a:visited,
+h2 a:active,
+h4 a:active,
+h6 a:active,
+h2 a:hover,
+h4 a:hover,
+h6 a:hover,
+h2 a:focus,
+h4 a:focus,
+h6 a:focus {
+  font-weight: 100;
+}
+a[class*="btn-sma"],
+a[class*="btn-sma"]:link,
+a[class*="btn-sma"]:visited,
+a[class*="btn-sma"]:active,
+a[class*="btn-sma"]:hover,
+a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  outline: none;
+}
+a[class*="btn-sma-a"],
+a[class*="btn-sma-a"]:link,
+a[class*="btn-sma-a"]:visited,
+a[class*="btn-sma-a"]:active,
+a[class*="btn-sma-a"]:hover,
+a[class*="btn-sma-a"]:focus {
+  color: #162336;
+  outline: none;
+}
+/* navbar link styling */
+#navigationUl a:focus,
+nav[class*="subnavbar"] a:focus {
+  outline: 1px dotted #ffffff;
+}
+a.navbar-brand:focus {
+  outline: 1px dotted #ffffff;
+}
+/* news link styles */
+.liststyle_subtitle > a,
+.subsection_title > a,
+.liststyle_subtitle > a:link,
+.subsection_title > a:link,
+.liststyle_subtitle > a:visited,
+.subsection_title > a:visited,
+.liststyle_subtitle > a:active,
+.subsection_title > a:active,
+.liststyle_subtitle > a:hover,
+.subsection_title > a:hover,
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  font-weight: 800;
+  text-decoration: none;
+}
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  outline: 1px dotted #095960;
+}
+.news_detail + a:focus {
+  border: none;
+}
+/* safety messages styling */
+p.jumbotron_hero > a,
+p.jumbotron_hero > a:link,
+p.jumbotron_hero > a:visited,
+p.jumbotron_hero > a:active {
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+}
+p.jumbotron_hero > a:hover,
+p.jumbotron_hero > a:focus {
+  color: #18d8ea;
+  text-decoration: none;
+}
+.SafetyMessageArticle div[class*="col-sm-2"] a:focus {
+  border: none;
+}
+/* pagingation styling */
+.pagination a,
+.pagination a:link,
+.pagination a:visited,
+.pagination a:active,
+.pagination a:hover,
+.pagination a:focus {
+  text-decoration: none;
+}
+/* dark background link styles */
+footer a,
+#policyStatus a,
+.policy-table a,
+.WhiteTxt a,
+footer a:link,
+#policyStatus a:link,
+.policy-table a:link,
+.WhiteTxt a:link,
+footer a:visited footer a:active,
+footer a:visited #policyStatus a:active,
+footer a:visited .policy-table a:active,
+footer a:visited .WhiteTxt a:active,
+#policyStatus a:visited footer a:active,
+#policyStatus a:visited #policyStatus a:active,
+#policyStatus a:visited .policy-table a:active,
+#policyStatus a:visited .WhiteTxt a:active,
+.policy-table a:visited footer a:active,
+.policy-table a:visited #policyStatus a:active,
+.policy-table a:visited .policy-table a:active,
+.policy-table a:visited .WhiteTxt a:active,
+.WhiteTxt a:visited footer a:active,
+.WhiteTxt a:visited #policyStatus a:active,
+.WhiteTxt a:visited .policy-table a:active,
+.WhiteTxt a:visited .WhiteTxt a:active {
+  font-weight: 700;
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+footer a:hover,
+#policyStatus a:hover,
+.policy-table a:hover,
+.WhiteTxt a:hover,
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a[class*="btn-sma"],
+#policyStatus a[class*="btn-sma"],
+.policy-table a[class*="btn-sma"],
+.WhiteTxt a[class*="btn-sma"],
+footer a[class*="btn-sma"]:link,
+#policyStatus a[class*="btn-sma"]:link,
+.policy-table a[class*="btn-sma"]:link,
+.WhiteTxt a[class*="btn-sma"]:link,
+footer a[class*="btn-sma"]:visited,
+#policyStatus a[class*="btn-sma"]:visited,
+.policy-table a[class*="btn-sma"]:visited,
+.WhiteTxt a[class*="btn-sma"]:visited,
+footer a[class*="btn-sma"]:active,
+#policyStatus a[class*="btn-sma"]:active,
+.policy-table a[class*="btn-sma"]:active,
+.WhiteTxt a[class*="btn-sma"]:active,
+footer a[class*="btn-sma"]:hover,
+#policyStatus a[class*="btn-sma"]:hover,
+.policy-table a[class*="btn-sma"]:hover,
+.WhiteTxt a[class*="btn-sma"]:hover,
+footer a[class*="btn-sma"]:focus,
+#policyStatus a[class*="btn-sma"]:focus,
+.policy-table a[class*="btn-sma"]:focus,
+.WhiteTxt a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer a[class*="btnAdditionalDetails"],
+#policyStatus a[class*="btnAdditionalDetails"],
+.policy-table a[class*="btnAdditionalDetails"],
+.WhiteTxt a[class*="btnAdditionalDetails"],
+footer a[class*="btnAdditionalDetails"]:link,
+#policyStatus a[class*="btnAdditionalDetails"]:link,
+.policy-table a[class*="btnAdditionalDetails"]:link,
+.WhiteTxt a[class*="btnAdditionalDetails"]:link,
+footer a[class*="btnAdditionalDetails"]:visited,
+#policyStatus a[class*="btnAdditionalDetails"]:visited,
+.policy-table a[class*="btnAdditionalDetails"]:visited,
+.WhiteTxt a[class*="btnAdditionalDetails"]:visited,
+footer a[class*="btnAdditionalDetails"]:active,
+#policyStatus a[class*="btnAdditionalDetails"]:active,
+.policy-table a[class*="btnAdditionalDetails"]:active,
+.WhiteTxt a[class*="btnAdditionalDetails"]:active,
+footer a[class*="btnAdditionalDetails"]:hover,
+#policyStatus a[class*="btnAdditionalDetails"]:hover,
+.policy-table a[class*="btnAdditionalDetails"]:hover,
+.WhiteTxt a[class*="btnAdditionalDetails"]:hover,
+footer a[class*="btnAdditionalDetails"]:focus,
+#policyStatus a[class*="btnAdditionalDetails"]:focus,
+.policy-table a[class*="btnAdditionalDetails"]:focus,
+.WhiteTxt a[class*="btnAdditionalDetails"]:focus {
+  color: #162336;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer h1 a,
+#policyStatus h1 a,
+.policy-table h1 a,
+.WhiteTxt h1 a,
+footer h3 a,
+#policyStatus h3 a,
+.policy-table h3 a,
+.WhiteTxt h3 a,
+footer h5 a,
+#policyStatus h5 a,
+.policy-table h5 a,
+.WhiteTxt h5 a,
+footer h1 a:link,
+#policyStatus h1 a:link,
+.policy-table h1 a:link,
+.WhiteTxt h1 a:link,
+footer h3 a:link,
+#policyStatus h3 a:link,
+.policy-table h3 a:link,
+.WhiteTxt h3 a:link,
+footer h5 a:link,
+#policyStatus h5 a:link,
+.policy-table h5 a:link,
+.WhiteTxt h5 a:link,
+footer h1 a:visited,
+#policyStatus h1 a:visited,
+.policy-table h1 a:visited,
+.WhiteTxt h1 a:visited,
+footer h3 a:visited,
+#policyStatus h3 a:visited,
+.policy-table h3 a:visited,
+.WhiteTxt h3 a:visited,
+footer h5 a:visited,
+#policyStatus h5 a:visited,
+.policy-table h5 a:visited,
+.WhiteTxt h5 a:visited,
+footer h1 a:active,
+#policyStatus h1 a:active,
+.policy-table h1 a:active,
+.WhiteTxt h1 a:active,
+footer h3 a:active,
+#policyStatus h3 a:active,
+.policy-table h3 a:active,
+.WhiteTxt h3 a:active,
+footer h5 a:active,
+#policyStatus h5 a:active,
+.policy-table h5 a:active,
+.WhiteTxt h5 a:active {
+  font-weight: 800;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h1 a:hover,
+#policyStatus h1 a:hover,
+.policy-table h1 a:hover,
+.WhiteTxt h1 a:hover,
+footer h3 a:hover,
+#policyStatus h3 a:hover,
+.policy-table h3 a:hover,
+.WhiteTxt h3 a:hover,
+footer h5 a:hover,
+#policyStatus h5 a:hover,
+.policy-table h5 a:hover,
+.WhiteTxt h5 a:hover,
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer h2 a,
+#policyStatus h2 a,
+.policy-table h2 a,
+.WhiteTxt h2 a,
+footer h4 a,
+#policyStatus h4 a,
+.policy-table h4 a,
+.WhiteTxt h4 a,
+footer h6 a,
+#policyStatus h6 a,
+.policy-table h6 a,
+.WhiteTxt h6 a,
+footer h2 a:link,
+#policyStatus h2 a:link,
+.policy-table h2 a:link,
+.WhiteTxt h2 a:link,
+footer h4 a:link,
+#policyStatus h4 a:link,
+.policy-table h4 a:link,
+.WhiteTxt h4 a:link,
+footer h6 a:link,
+#policyStatus h6 a:link,
+.policy-table h6 a:link,
+.WhiteTxt h6 a:link,
+footer h2 a:visited,
+#policyStatus h2 a:visited,
+.policy-table h2 a:visited,
+.WhiteTxt h2 a:visited,
+footer h4 a:visited,
+#policyStatus h4 a:visited,
+.policy-table h4 a:visited,
+.WhiteTxt h4 a:visited,
+footer h6 a:visited,
+#policyStatus h6 a:visited,
+.policy-table h6 a:visited,
+.WhiteTxt h6 a:visited,
+footer h2 a:active,
+#policyStatus h2 a:active,
+.policy-table h2 a:active,
+.WhiteTxt h2 a:active,
+footer h4 a:active,
+#policyStatus h4 a:active,
+.policy-table h4 a:active,
+.WhiteTxt h4 a:active,
+footer h6 a:active,
+#policyStatus h6 a:active,
+.policy-table h6 a:active,
+.WhiteTxt h6 a:active {
+  font-weight: 100;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h2 a:hover,
+#policyStatus h2 a:hover,
+.policy-table h2 a:hover,
+.WhiteTxt h2 a:hover,
+footer h4 a:hover,
+#policyStatus h4 a:hover,
+.policy-table h4 a:hover,
+.WhiteTxt h4 a:hover,
+footer h6 a:hover,
+#policyStatus h6 a:hover,
+.policy-table h6 a:hover,
+.WhiteTxt h6 a:hover,
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a:focus > img,
+#policyStatus a:focus > img,
+.policy-table a:focus > img,
+.WhiteTxt a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* Dropdown styling for megamenu items */
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+  min-width: 650px;
+  left: -200px;
+  padding: 0;
+  color: #3e4856;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:link,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu h5 {
+  margin-bottom: 5px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu div[class*="col-"] {
+  padding: 0;
+  margin: 0;
+}
+.columnLayout {
+  column-width: auto;
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  overflow: hidden;
+}
+.columnLayout a,
+.columnLayout a:link,
+.columnLayout a:visited,
+.columnLayout a:active {
+  display: block;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+  padding: 6px 9px;
+}
+.columnLayout a:hover,
+.columnLayout a:active {
+  background: #f5f5f5;
+  color: #3A5261;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+/* Dropdown styling for non-megamenu items */
+.navbar-inverse .navbar-nav > .open .dropdown-menu {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  text-decoration: none;
+  background: #f5f5f5;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #abbd1a;
+    border-radius: 0;
+  }
+}
+
+footer .tb_pad21 {padding:21px 0 !important}
+
+.fancybox-title-float-wrap .child {
+    white-space: normal;
+}
+
+table .modalPocTable tbody tr.PocCenter { 
+    background-color: white;
+}
+
+table .modalPocTable tbody tr.PocCenter td {
+    font-weight: 700;
+}
+
+div[class*="modal-body"] span.modalBodyName {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 12px;
+}
+
+div[class*="modal-body"] span.modalBodyTitle {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+table.modalPocTable thead,
+table.modalPocTable tbody,
+table.modalPocTable th,
+table.modalPocTable td,
+table.modalPocTable tr,
+display: block;
+}
+table.modalPocTable thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+table.modalPocTable td {
+    position: relative;
+    padding-left: 50%;
+}
+table.modalPocTable td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+table.modalPocTable tbody > tr{
+    padding: 10px;
+}
+table.modalPocTable tbody > tr:nth-child(even),
+table.modalPocTable tbody > tr:nth-child(odd) {
+    border-bottom: 2px solid #ebebeb;
+}
+table.modalPocTable tbody > tr > td{
+    border: none;
+}
+table.modalPocTable tbody tr.PocCenter td {
+    font-weight: 700
+}
+
+.public a.privateLink {
+    color: inherit;
+    pointer-events: none;
+    cursor: default;
+}
+
+.public a.privateLink:hover, .public a.privateLink:focus {
+    text-decoration: none;
+}
+
+.public .privateContent {
+    display: none !important;
+}
+.public .publicContent {
+    display: block;
+}
+
+.publicContent {
+    display: none;
+}
+</style><style type="text/css" media="all">.dropdown-menu.mega-dropdown-menu .tab-container {
+    margin: -10px !important;
+    width: calc(100% + 20px);
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs {
+    background: #cfd3d5;
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li a {
+    border-width: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 15px 20px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:not(.active) a {
+    background: none;
+    color: #798088;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:first-child a {
+    border-top-left-radius: 5px !important;
+}
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:last-child a {
+    border-top-right-radius: 5px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .tab-content {
+    border: none !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"] {
+    background: inherit !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"]:hover {
+    color: #bccd32;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+    min-width: 884px;
+}
+
+#nav-disciplines-organizational ul li a {
+    padding: 0;
+}
+
+
+#nav-disciplines-organizational ul  {
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+#nav-disciplines-organizational .section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #15c2d2;
+    font-size: 1.1em;
+}
+
+#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+}
+#displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}</style><meta name="description" content="The Government-Industry Data Exchange Program (GIDEP) is an information-sharing program between the U.S. government, Canadian government and industry." /><meta name="keywords" content="GIDEP" /></head>
+
+<body>
+	<form method="post" action="./gidep?SMAInsidePortal=true" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSSM" id="ctl06_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="nN9l4QsysIsQG9QfVXi6FMzkPSPaW/G0hA3p0fCLGkUL91bpB6n65SZ7YNAjTqovPK9yN2kyadFlGxWDvTHu5LkyjeYvs4/7LnEkd1l09q6WQzbnfUa7kvm7C59af8louF2oMMD0UyE8Dab7BRq4IvQNJVhjVxO5ee5BnIVIFRWEgLXU0dnKtr3ejgFYLUHu9j2cjTiseOjJQaZTsZe9tXML4eIDI34IJiOqXDVr4vQtA3Otbf8MHwy0o+6TBA24/uHBL7LCv3eW9R7xBvACrOaqLvzkeMMCINi2tX4zUQ6eXvo0T9/45ix9i6bXSTOzBrSNJpnUUY6DGCWutRwCFAmNpCXMJYdOAWAO2TSQgMw0h4T1aidKI0kkdqtMbu3bZVW1UpMLI9ZUrLT5k3H5aaeK9ZPcEsRW84l7bzoZQNzitkzOekTFyy+k97Va8SEsyAu/jyz0nbM5ppbjJksOUVnp+TZpay9gw5VPhIYhDMY7fDiZwlktzXcy+yJoEJgmM7L6ofTKh2uexhRihpnxWRuUUT+59nF9ri9l2fZYfhrMBzUYUVuwhkkIbGDAnSx1iJvIsbeR5Ikhm3Fhyfq3rcxuGfDHAA2uqFbbm9npevrkxldnHHsQxbrFxLxThRedjKYXlgNOkk7uZrc0Ibgg7cro5eD+GEjBDCZtATdr5zUDnG21nuwZ6+V25+QwtQI6bGD2DRZgFc78j+VMh4RL7UmyuXs6hiTAr97/EHNjnLvu85v8GPUwdLIzM4Ps4Sg/rFkzoUBN2AVx5dBIOSE3kFjTbOGF0tEj/Y+fbK1ARvxtOMU0WB0/Ti6YPNyR+8XwiXiPu1ipoyVeG1LLJriEPg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBeQL9FN26k7qxJmCXVl63Uh07YUPP75L5T8ig6z731I9NnlM7MjDVfOVnbtZyAU3Q2&amp;t=639190689332169432" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQpLQo2tZ2XWouq1So4gOUqY0KKe1EzOsTczU0xRl0n5eKfKyeAF-lJyrOfP3WtQdfN8uQSLy2uvSU1777I-PAjTI39EblEQcoFHdJ1_bkRMRpa7m_oc4zMLhs1EjXu0I2zcA9usuVgRscLWLf7Mojc81&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tYiZUsYt_xBTDhQir-ihv7ursUN-o4YtD6wK-167bi02KVsiSrYELyJM8lAirgk9xpOB-jbgvCBlmslMKNWBK111AaQ3ufAkF5xjVd6E1RNTjL3OSp0WHOd9vXkeF3iSmH-YGRNdMqgV_8y1oSE_CvgtEJWIWZalSP4KO44tgIzg0&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Sm_GGXofLw4C9Eu03fCPHLZnmAADl6c8Pfd7QRMevi3lkRnZYYdiqFNOO-IA-P4JQx4vFkzeq9L0nqitJbrR6rw1GfqJxgArvYeo97z146fon_cWcOn392XvlOA0g4AWyPzIj1kzuYZfZCQH9d6smtOV7OlFTfU15B5dPNShsoef8IHKvSLWio-eklbdrrWz0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pNnY3SPOXobYy0znCWU-ctfe8hwY_yv8qK6nYfdCqnzKZMiUVqn8oRSuarLDMNsnuUjtDm7iqEDiSBU7tL91fWRAn6HTdH1BuRay_IxRQWX4GZvSwbrjHVlDMT5wslhOjHvCBs_yME4F4SvwD9IiGoWwZ03BbYUJxtbQxED7X3KPipztbJf6UvAiH9sgvlaI0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=upAENvmeNxfpBioSkqBc6IhkjY-W-6n-nR3yD9QF_wzNpbbjXHAkEzpOGt_5HnXQMQGmRRMYa7teJ9tNqxZo0VQKKUr1ZTu39M1LIJo2PpPYZrN53sFK7lBrQYmeS5TUtz6yI6n1pBx1FjZHCzgnqZlAyKlEl_R7s9eBJhel8rxwsGOBpCZWSzQmGasXEX1K0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=QjBU5x4YUBggN3iKmsc12WFIGp7xng4Tn9KJHH0Y2ou7W5EgQzC5aKA0TZds1YuN5-VfpomPt0ZSe-82w9lOP9y9eRTN6-Aw1h9QSZMVuaRahyOXx2B_6QgygdKSrIl9IDiflA1MBEq4bRaiY1FffFv-x9UD5138REmcOKlZZYQ1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=tlTynJuwcuOdlotOppqvaL9Cs1bbUHKeURMSxzkBsQPdVl_ot4uEo16sjJxR4vCmbff8zMTIKZd676u7ozjfAyRT5Ctu5lfoSbbZ0cuejj7q77OCjxfhgxdOLkSUeXR3rK8Epcbu8Ot4INgA8UxaaclFAhZO_638n3etsdh8FPTZ4ELalfY6_3wp1BJFnTSs0&amp;t=764b716e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcPFeRGHus1rjoXNGzFNffL9wkKeeh_SeiIvShazIcUcYoZqcsD34qf064unxj4De8mkiZ7Nd1C0wkA4hwlQRwI5c1PfbqPACTzat1Gw8RCSR0&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcRR_RIomFXn-6OTVP7S7UTc4FJDbrgdUVP5cT3hlj7Gqn-oAc5ShKUg97jRJZZi4SHDf1BlDg1EPMpbplBlIl04D9GlhVFaF-fti23eZqMjPJYLhJOjZrUK_QYdhQkU9Kg2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LDxs7tI-ncIIKPgYq3uJynGIAutVQ5Lv09yYMkdUoWTtDIY55WSN2kCFwMjHc56bvoLqeRIH8Pj37QWZnQZ2I1dR12JIfbs3iNC9YGAeIdR-ho_XOLATuOwKX9eIDXDwNzVPDvVXjDuwQufloW1_FQ2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DoEcOmAgUwAjHq4qvvgD1_OJqop35mKZ9LPboo_dHWURaPKavvTd9YfZbhWBf7Bfg4fR-U_9NCE_1jmm_964n1OpivVox-0sgw_50lxYAERSRy_XAMIPmDUG90jLfp8JB6s6g8Xn8xQm1JkWIEtL5hbCgp5ejm3kWY_dVIOr_YlScgHFqAGtf7ilCPocUwDU0&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=yAnkZTEOGwF2GXQ9ANOQMuFcHG-vuIXZJ6NTl-dM8FxT2GJwWXmK7Hx_lTsTckFhjce_4Qlz_ZboXlwF97Pz2u-EWINOvZ10rzvku8A_js7FwXNgjK4qIUtcti26WYmrG13Nnm5BEY1fWZwVTYH5y6J82MqTnh7R9tLSks_ik_Q1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0AEB3733" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="K7sBzNyYX+FbddPFeIf/9bA8PEKGLOBUlF127VKnTT18ckl4FBqcC/30YzROiGwYdUgOQvcmeZdM/D2tw40QNbtnOnykH5T5/Iz11zQ99h6YfsQwuJyyLuOsjDftgFcCRTaFmx7zVwaRBlM6DZ1oGQ==" />
+</div>
+	    
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<a href="#MainWrapper" class="btn" style="display: none;">Skip Navigation</a>
+		<div id="helperDiv1" class="SMAWindowMediaWidth" style="display:none;"></div> <!-- dummy divs to aid in detecting screen width -->
+		<div id="helperDiv2" class="SMAWindowMediaMaxWidth" style="display:none;"></div>
+		<div id="PublicWrapper" class="sfPublicWrapper">
+			<div class="SMAToolboxContent">
+
+				<section id="HeaderWrapper" class="sf_cols">
+					<div id="cpw_headerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<header id="cpw_header" class="sf_colsIn sf_1cols_1in_100">
+							<div id="navigation">
+								<nav class="navbar navbar-inverse navbar-lg navbar-fixed-top" role="navigation">
+									<div class="container-fluid nasa-header">
+										<div id="hdrNasaAffinity" class="row">
+											<div class="col-sm-9 col-xs-12">
+												<a href="https://www.nasa.gov" target="_blank"><img alt="NASA Meatball logo" class="logo" src="/Content/Images/meatball.png"></a>
+												<span>National Aeronautics and Space Administration</span>
+											</div>
+											<div class="col-sm-3 text-right hidden-xs">
+												<span><a href="https://www.nasa.gov" target="_blank">Visit nasa.gov</a></span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse navbar-collapse tabs">
+										<div class="tab-container">
+											<div class="site-toggle">
+												<div class="site-button current">
+													<a href="/" target="_self" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1e787b69-d2a8-65b9-a1a0-ff01003ca228"><img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance"></a>
+												</div>
+												
+												<div class="site-button">
+													<a href="https://nsc.nasa.gov/" target="_self" sfref="[41028969-d2a8-65b9-a1a0-ff05003ca228]bc038969-d2a8-65b9-a1a0-ff05003ca228"><img alt="NASA Safety Center Logo" src="/Content/Images/nsclogo.png"></a>
+												</div>
+												
+											</div>
+											<div id="SMAHeaderSearch" class="navbar-form navbar-right" role="search">
+												<div class="form-group">
+													
+<div id="ContentHeaderSearch_T40EBA3A0054">
+	
+
+<fieldset id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_main" class="sfsearchBox">
+    <input name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchTextBox" type="text" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox" class="sfsearchTxt" />
+    <input type="submit" name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchButton" value="Search" onclick="return false;" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton" class="sfsearchSubmit" />
+</fieldset>
+
+</div>
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container-fluid">
+										<div class="hidden-lg">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+											</button>
+											<a class="navbar-brand" href="/">
+												<img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance" class="img-responsive" />
+											</a>
+										</div>
+										<div class="collapse navbar-collapse" id="navbar-collapse-1">
+											
+
+
+<div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-lg" >
+	
+	
+	
+	
+	<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_navigationUl" class="nav navbar-nav">
+		
+						<li>
+							<a href="/news">News</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl00_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/news/articles">Articles</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/policies">Policies</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/policies/all-policies">All Policies</a>
+							
+						</li>
+					
+						<li>
+							<a href="/policies/policy-status">Policy Status</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines" class="sfSel">SMA Disciplines & Programs</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/accllp">ACCLLP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/aviation-safety">Aviation Operations and Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/fire-protection">Fire Protection</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-factors">Human Factors</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-rating">Human Rating</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/gidep" class="sfSel">NASA Advisories and GIDEP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nsrs">NSRS</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection">Planetary Protection</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop">Planetary Protection Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop">SMD Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/webinar-details">Supporting Documents</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall">SMD Workshop Fall</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii">2026 Metagenomics in Spaceflight: Establishing an Implementation Roadmap</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl04_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii">Planetary Protection Workshop II</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl05_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/agenda">Agenda</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion">Metagenomics Technical Interface Meeting: Protocol Critique and Convergence</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl06_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/quality">Quality </a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/risk-management">Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/safety-culture">Safety Culture</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl27_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/safety-culture/safety-culture-survey">Safety Culture Survey</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/smsr">SMSR</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/system-safety">System Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/workmanship">Workmanship</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/vids">Videos</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/vids/allvideos">Video Library</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/feature-videos">Feature Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/safety-message-videos">Safety Message Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/knowledge-bytes">Knowledge Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/policy-bytes">Policy Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/event-videos">Event Videos</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/about">About</a>
+							
+						</li>
+					
+						<li>
+							<a href="/test-page">Test Page</a>
+							
+						</li>
+					
+	</ul>
+</div>
+
+<script type="text/javascript">
+	(function ($) {
+		var navMenu = $("[id$='navigationUl']");
+		var ulElements = navMenu.find("li:has(ul) > a");
+		ulElements.attr("href", "javascript:void(0)");
+		ulElements.addClass("dropdown-toggle");
+		ulElements.attr("data-toggle", "dropdown");
+	})(jQuery);
+</script>
+<div>
+	
+<!-- 2023.3.1616.45 -->
+  <div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-md hidden-sm hidden-xs">
+    <ul class="nav navbar-nav" id="navigationUl">
+      
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">News</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/news/articles">Articles</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/policies/all-policies">All Policies</a></li>
+<li><a href="/policies/policy-status">Policy Status Updates</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+      <li class="dropdown mega-dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown">SMA Disciplines &amp; Programs</a>				
+       <div class="dropdown-menu mega-dropdown-menu bkg_White">
+
+         <div class="col-sm-12 bkg_White" style="border-radius:4px;"><div id="displayABC" class="displayToggleBlock"><ul class="list-unstyled columnLayout"><li><a href="/sma-disciplines/accllp">ACCLLP</a></li><li><a href="/sma-disciplines/aviation-safety">Aviation Safety</a>
+ </li><li><a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+ </li><li><a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+ </li><li><a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+ </li><li><a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+ </li><li><a href="/sma-disciplines/fire-protection">Fire Protection</a>
+ </li><li><a href="/sma-disciplines/human-factors">Human Factors</a>
+ </li><li><a href="/sma-disciplines/human-rating">Human Rating</a>
+ </li><li><a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+ </li><li><a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+ </li><li><a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+ </li><li><a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+ </li><li><a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+ </li><li><a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+ </li><li><a href="/sma-disciplines/nsrs">NSRS</a>
+ </li><li><a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+ </li><li><a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+ </li><li><a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+ </li><li><a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+ </li><li><a href="/sma-disciplines/planetary-protection">Planetary Protection</a></li><li><a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+ </li><li><a href="/sma-disciplines/quality">Quality</a>
+ </li><li><a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+ </li><li><a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+ </li><li><a href="/sma-disciplines/risk-management">Risk Management</a>
+ </li><li><a href="/sma-disciplines/safety-culture">Safety Culture</a>
+ </li><li><a href="/sma-disciplines/smsr">SMSR</a>
+ </li><li><a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+ </li><li><a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a></li><li><a href="/sma-disciplines/system-safety">System Safety</a>
+ </li><li><a href="/sma-disciplines/workmanship">Workmanship</a>
+ </li></ul></div><div style="clear:both;">&nbsp;</div></div><style type="text/css">#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+    }
+    #displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    }
+</style>
+
+       </div>				
+     </li>
+   
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/vids/allvideos">Video Library</a></li><li><a href="/vids/feature-videos">Feature Videos</a></li><li><a href="/vids/knowledge-bytes">Knowledge Bytes</a></li><li><a href="/vids/policy-bytes">Policy Bytes</a></li><li><a href="/vids/event-videos">Event Videos</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+
+      <li><a href='/about'>About</a></li>
+    
+
+
+
+
+    </ul>
+  </div>
+  <script type="text/javascript">
+   (function ($) {
+    var navMenu = $("[id$='navigationUl']");
+    var ulElements = navMenu.find("li:has(ul) > a");
+    ulElements.attr("href", "javascript:void(0)");
+    ulElements.addClass("dropdown-toggle");
+    ulElements.attr("data-toggle", "dropdown");
+
+  })(jQuery);
+
+</script>
+<script type="text/javascript">
+
+  jQuery(document).ready(function(){
+    jQuery('input[name="toggler"]').on("click", function(e){
+      if(jQuery(this).attr("value")=="Topic"){
+        jQuery("#displayABC").hide();
+        jQuery("#displayTopic").show();
+      }
+      if(jQuery(this).attr("value")=="ABC"){
+       jQuery("#displayTopic").hide();
+       jQuery("#displayABC").show();
+     }
+     SMASetMaxHeight(".displayToggleBlock");
+     e.stopPropagation();
+   });
+  });
+</script>
+<input id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+							<div id="toolbox" style="display:none;">
+								
+<script type="text/javascript">(function($) {
+	$(document).ready(function() {
+		var $nav = $(".navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav");
+		$nav.width((function(){
+			var width = $nav.find("li").length * 42;
+			$nav.find("li").each(function() {
+				width += $(this).width() == 0 ? (function(elem) {
+					return $(elem).find("a").text().length * 7;
+				})(this) : $(this).width();
+			});
+			return width;
+		})());
+		$nav.css("visibility", "visible");
+	});
+})(jq);</script><script type="text/javascript">jQuery(document).ready(function(){
+jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+var divname = jQuery(this).attr('href');
+if (divname.match("^#") && jQuery(divname).length < 1){
+jQuery(this).parent().hide();
+}
+});
+});</script>
+							</div>
+						</header>
+					</div>
+				</section>
+
+				<section id="MainWrapper" class="sf_cols">
+					<div id="cpw_mainwrapper" class="sf_colsOut sf_1cols_1_100">
+						<article id="cpw_main" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock'><!-- sub navigation -->
+<nav class="navbar navbar-osma navbar-fixed-top subnavbar-fixed-top navbar-inverse" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+<a href="#cpw_mainwrapper" class="navbar-brand">GIDEP</a>
+</div>
+<div class="collapse navbar-collapse" id="osma_navbar_collapse">
+<ul class="nav navbar-nav">
+    <li><a href="#gidep_news">News</a></li>
+    <li><a href="#gidep_people">People</a></li>
+    <li><a href="#gidep_learning">Learning</a></li>
+    <li><a href="#gidep_guidance">Guidance</a></li>
+    <li><a href="#gidep_outreach">Outreach</a></li>
+    <li><a href="#gidep_benefits">Benefits</a></li>
+    <li><a href="#gidep_definitions">Definitions</a></li>
+    <li><a href="#gidep_importantLinks">Important Links</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+</div><div class='sfContentBlock subnavSpacer'><!-- jumbotron -->
+<section id="gidep_jumbotron" data-stellar-background-ratio="0.5">
+<div class="container">
+<div class="row"><!-- title and copy -->
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-7">
+<h1 class="jumbotronTitle">NASA Advisories and GIDEP</h1>
+<p>The Government-Industry Data Exchange Program (GIDEP) is a cooperative information-sharing program between the U.S. government, Canadian government and industry participants.</p>
+<p>GIDEP members exchange significant problem and nonconforming item data for three main reasons: </p>
+<ol>
+    <li>To increase systems&rsquo; safety, reliability and readiness, and to reduce systems development, production and ownership costs</li>
+    <li>To ensure that only reliable and conforming parts, material and software are in use on all government programs</li>
+    <li>To avoid the use of counterfeit, known-problem or discontinued parts and materials</li>
+</ol>
+<p>The unintended use of problem or nonconforming products or material in NASA spacecraft, aircraft, facilities and equipment can compromise NASA's mission; result in unanticipated replacement, repair or maintenance costs; and jeopardize safety. </p>
+<p>Participation in GIDEP assists users in improving the availability, reliability, maintainability, quality and safety of their systems and equipment. This information may result in the significant prevention of unplanned expenditures or equipment and system malfunctions, elimination of duplicate efforts and, more importantly, reduced injuries and saved lives.</p>
+<p>Since GIDEP's inception, participants have reported over $2.1 billion in prevention of unplanned expenditures. That means without GIDEP, participants&nbsp;<em>potentially</em>&nbsp;could have realized additional expenses of over $2.1 billion. Specifically, NASA has a reported cost avoidance of over $950K.</p>
+<a href="/docs/default-source/sma-disciplines-and-programs/GIDEP/gidep_overview.pdf" class="btn button-primary"><i class="fa fa-file-pdf-o"></i> Overview Presentation</a>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<div class="sf_cols row">
+    <div class="sf_colsOut container tbpad">
+        <div id="cph_main_C005_Col00" class="sf_colsIn"><div class='sfContentBlock'><!-- news / News will be pulled from content module -->
+<section id="gidep_news">
+<h2 class="sectionTitle"><a href="/news/articles?taxonomy=categories&amp;propertyName=category&amp;taxon=/gidep">NASA Advisories and GIDEP News</a></h2>
+</section>
+
+</div>
+            <div class="newsslider row col-xs-12">
+                <ul>
+                            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="GIDEP Helps You to “Know Your Part”" href="../news/articles/newsitem/2025/02/20/gidep-helps-you-to-know-your-part">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/newsfeed-gidep-poster.jpeg?sfvrsn=4ec81ef8_4&size=600' alt='GIDEP' title='GIDEP' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="GIDEP Helps You to “Know Your Part”" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2025/02/20/gidep-helps-you-to-know-your-part">GIDEP Helps You to “Know Your Part”</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                February 20, 2025
+                            </span>
+                            <span class='news_detail_category SMANewsFullCategories PostDateCategorySeparator'><a title='Quality' href='/news/articles?taxonomy=topics&propertyName=Disciplines&taxon=quality'>Quality</a><a title='Reliability and Maintainability' href='/news/articles?taxonomy=topics&propertyName=Disciplines&taxon=reliability-and-maintainability'>, Reliability and Maintainability</a></span>
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>The Government-Industry Data Exchange Program&rsquo;s &ldquo;Know Your Part&rdquo; campaign promotes this valuable tool to NASA engineers and procurement professionals to ensure that we use the best parts on our spacecraft and technology.</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ctrl0_FullStory" class="btn button-primary" href="../news/articles/newsitem/2025/02/20/gidep-helps-you-to-know-your-part"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="GIDEP Database Updated with NASA Help" href="../news/articles/newsitem/2025/02/20/gidep-database-updated-with-nasa-help">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/software-assurance---hi-res.png?sfvrsn=b500fbf8_0&size=600' alt='Software Assurance' title='Software Assurance' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="GIDEP Database Updated with NASA Help" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2025/02/20/gidep-database-updated-with-nasa-help">GIDEP Database Updated with NASA Help</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                February 20, 2025
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ctrl1_FullStory" class="btn button-primary" href="../news/articles/newsitem/2025/02/20/gidep-database-updated-with-nasa-help"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="NASA and JAXA Sign Alert Sharing Agreement " href="../news/articles/newsitem/2018/10/02/nasa-and-jaxa-sign-alert-sharing-agreement">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/alert2.jpg?sfvrsn=780ff2f8_0&size=600' alt='Alert' title='Alert' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="NASA and JAXA Sign Alert Sharing Agreement " data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2018/10/02/nasa-and-jaxa-sign-alert-sharing-agreement">NASA and JAXA Sign Alert Sharing Agreement </a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                October 02, 2018
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>NASA and the Japan Aerospace Exploration Agency (JAXA) signed a bilateral agreement that enables both space agencies to share non-public alert information. The international partners agreed upon a protocol to share unrestricted NASA Advisories and JAXA Shinraisei Gijutsu Jouhou (or JAXA problem advisories).&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ctrl2_FullStory" class="btn button-primary" href="../news/articles/newsitem/2018/10/02/nasa-and-jaxa-sign-alert-sharing-agreement"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="GIDEP NPR Revision D Now in Effect" href="../news/articles/newsitem/2018/09/24/gidep-npr-revision-d-now-in-effect">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/gidep.jpg?sfvrsn=3739f2f8_0&size=600' alt='GIDEP' title='GIDEP' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="GIDEP NPR Revision D Now in Effect" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2018/09/24/gidep-npr-revision-d-now-in-effect">GIDEP NPR Revision D Now in Effect</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                September 24, 2018
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>NPR 8735.1 Revision D, Exchange of Problem Data Using NASA Advisories and the Government-Industry Data Exchange Program went into effect July 29, 2018.&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ctrl3_FullStory" class="btn button-primary" href="../news/articles/newsitem/2018/09/24/gidep-npr-revision-d-now-in-effect"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="New System Receives and Searches NASA Advisories and GIDEP Notices" href="../news/articles/newsitem/2016/10/31/new-system-receives-searches-nasa-advisories-gidep-notices">
+                            <img src='https://sma.nasa.gov/images/default-source/discipline-pages/gidep/nanadarts86458769d2a865b9a1a0ff05003ca228.jpg?sfvrsn=abede2f8_0&size=600' alt='NANADARTS' title='NANADARTS' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="New System Receives and Searches NASA Advisories and GIDEP Notices" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2016/10/31/new-system-receives-searches-nasa-advisories-gidep-notices">New System Receives and Searches NASA Advisories and GIDEP Notices</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                October 31, 2016
+                            </span>
+                            <span class='news_detail_category SMANewsFullCategories PostDateCategorySeparator'><a title='Science and Technology' href='/news/articles?taxonomy=types&propertyName=Types&taxon=science-and-technology-type'>Science and Technology</a></span>
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>Want to search for NASA Advisories, Government-Industry Data Exchange Program (GIDEP)&nbsp;Notices and other similar documents on your own?</p>
+<p>Up until now, if you wanted to search GIDEP, you either needed your own account or had to contact your center GIDEP representative. Now, if you are within the NASA firewall, you can search for GIDEP Notices and NASA Advisories yourself.&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ctrl4_FullStory" class="btn button-primary" href="../news/articles/newsitem/2016/10/31/new-system-receives-searches-nasa-advisories-gidep-notices"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                </ul>
+            </div>  
+<style type="text/css" media="all">
+  .newsslider ul{position:relative; list-style:none;padding:0;margin:0;}
+ .newsslider ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden;display:none;}
+.newsslider li.bjqs-slide{position:absolute; display:none;}
+.newsslider ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+.newsslider ul.bjqs-controls.v-centered li a{position:absolute;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+.newsslider .bjqs-markers {
+    padding-left: 0;
+  text-align: center;
+  list-style: none;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  z-index: 15;
+ margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;    
+    position: relative;
+    top: auto;
+    right: auto;
+    line-height: 20px;
+}
+.newsslider .bjqs-markers li {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+    margin: 0 0 0 6px;
+  background-color: #a5a5a5;
+  border: none; 
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+.newsslider .bjqs-markers li.active-marker {
+    margin: 0 0 0 6px;
+        height: 20px;
+    width: 20px;
+    background-color: dimgray;
+    
+}
+.newsslider .bjqs-markers li a{
+    display:block;
+    width:100%;
+    color:#a5a5a5;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+  }
+.newsslider .bjqs-markers li.active-marker a{
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    color:dimgray;
+    
+  }
+  
+.newsslider p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+</style>
+<script src="/docs/default-source/default-library/bjqs-1-3.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+   
+ var slidecount = jQuery('div.newsslider>ul>li').length;
+    if(slidecount > 1){
+      SMASetMaxHeight("div.newsslider>ul>li");
+  var slideheight = jQuery('div.newsslider>ul>li').first().height();
+  var slidewidth = jQuery('div.newsslider').width();
+    
+  jQuery('div.newsslider>ul').addClass('bjqs');
+  
+    jQuery('.newsslider').bjqs({
+    animtype      : 'slide',
+    animduration : 500, // how fast the animation are
+    animspeed : 5000,
+    height: slideheight,
+    width: slidewidth,
+    responsive    : true,
+    showcontrols : false,
+    showmarkers : true,
+    randomstart   : false
+          });
+}
+     });
+  jQuery(window).resize(function () {
+    jQuery(".newsslider").css({"height": ""});
+    jQuery(".newsslider .bjqs-wrapper").css({"height": ""});
+    jQuery(".newsslider .bjqs").css({"height": ""});
+    jQuery(".newsslider .bjqs-slide").css({"height": ""});
+     SMASetMaxHeight(".newsslider .bjqs-slide");
+  
+     
+  });</script>
+
+        <input id="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ClientState" name="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ClientState" type="hidden" /><span id="ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList" style="display:none;"></span>
+
+
+
+<span></span>
+        </div>
+    </div>
+</div>
+<div class='sfContentBlock'><!-- people -->
+<section id="gidep_people">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<!-- title -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">People</h2>
+</div>
+</div>
+<div class="row">
+<!-- working group box -->
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="well_primary responsiveWellSpace">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3 class="subtitleHeavy">GIDEP Working Group</h3>
+<p>Primary responsibilities of the NASA Government-Industry Data Exchange Program (GIDEP) Working Group are to</p>
+<ul>
+    <li>Develop, document and implement center processes to identify how GIDEP Notices and NASA Advisories are to be processed and retained</li>
+    <li>Ensure that GIDEP Notice and NASA Advisory documentation is maintained and archived in accordance with the requirements of NPR 1441.1, NASA Records Retention Schedules, or for five years following the end of operations, whichever is shortest</li>
+    <li>Review all NASA-generated GIDEP Notices and NASA Advisories at their respective center or facility for completeness and accuracy before signing and releasing to GIDEP or the NASA Advisory System in GIDEP</li>
+    <li>Distribute GIDEP Notices and NASA Advisories in accordance with their Center's process</li>
+    <li>Provide assistance for the implementation of NPR 7500.1C, Program and Project Life Cycle Logistics Support Policy</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- bios and pocs -->
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+<img alt="" src="/images/default-source/bio-images/placeholder.png?sfvrsn=d2ff18f8_14" class="img-responsive img-circle center-block">
+<h3 class="subtitleHeavy">Pamela Branch</h3>
+<h4 class="subtitleLight">Program Manager</h4>
+<!-- 
+<a href="#" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_Bio_Loewy"><img alt="" src="/images/default-source/bio-images/bill-loewy.jpeg" class="img-responsive img-circle center-block"></a>
+<h3 class="subtitleHeavy"><a href="#" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_Bio_Loewy">Bill Loewy</a></h3>
+<h4 class="subtitleLight">GIDEP Manager</h4>
+<p class="text-center">Learn more about GIDEP Manager Bill Loewy.</p>
+<a href="#" class="btn button-alternate responsiveBtnSpace" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_Bio_Loewy">
+<i class="fa fa-user"></i> Read More
+</a>
+-->
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+<!-- poc --><a href="#" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_PoCTable"><img alt="" src="/images/default-source/discipline-pages/poc.jpg" class="img-responsive img-circle center-block"></a>
+<h3 class="subtitleHeavy"><a href="#" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_PoCTable">Points of Contact</a></h3>
+<p class="text-center">For details on contacting a GIDEP Point of Contact (PoC) for your location, click below.</p>
+<a href="#" class="btn button-alternate" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_PoCTable">
+<i class="fa fa-users"></i> Find Your PoC
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- learning -->
+<section id="gidep_learning">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Learning</h2>
+<p>The Agency NASA Advisory/GIDEP Program has training for the various users of the implementation tools. There is training for users required to implement and perform and/or coordinate an impact assessment at their centers. The training provides guidance for how to obtain access through the flow of final disposition closure. It identifies features of the tool that capture and address no usage, usage with impact and/or no impact, delegate (subject matter expert) technical evaluation, and other tool features to make the overall process effective and efficient. </p>
+<p>Training is available for users, Center Coordinators, required responders and information-only recipients on how to use NASA tools NARS and NANADARTS to implement the NASA process and procedures.&nbsp; Recommended training:&nbsp;<br>
+</p>
+<ul>
+    <li>Center Coordinators training at these websites:
+    <ul>
+        <li><strong>NARS &ndash; <a href="https://nars.nasa.gov/" title="" class="" target="_blank">https://nars.nasa.gov</a></strong></li>
+        <li><strong>NANADARTS &ndash; <a href="https://nanadarts.nasa.gov/Dashboard" title="" class="" target="_blank">www.nanadarts.nasa.gov</a></strong></li>
+    </ul>
+    </li>
+    <li><span style="font-size: inherit;">Reference</span>
+    <ul>
+        <li><span style="font-size: inherit;">FAQ</span></li>
+        <li>Step-by-step pictorials</li>
+        <li>How to get access</li>
+    </ul>
+    </li>
+    <li>Required Responders users training</li>
+    <li>"Information Only" users training</li>
+</ul>
+<p>For further information, contact your respective Center Coordinator or send an email to&nbsp;<a href="mailto:hq-nanadarts-admin@mail.nasa.gov">HQ-NANADARTS-Admin</a>. </p>
+<p>SATERN courses developed to provide general information and guidance of the NASA processes are:</p>
+<ul>
+    <li>SMA-QE-WBT-365, GIDEP Overview</li>
+    <li>SMA- HQ-WBT-101, Overview of the NASA ALERT SYSTEM</li>
+</ul>
+<p>These courses are planned to be combined into one course for NASA engineers and specialists to better enhance employee knowledge.&nbsp;</p>
+<h3 class="subtitleLight">SATERN Courses</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="well_learning">
+<span class="courseTitle">GIDEP Overview</span>
+<span class="courseSubTitle">SMA-QE-WBT-365</span>
+<p>This training will provide general information and guidance concerning the NASA processes for the documentation and exchange of significant nonconformance, problem and concern data. It will enable the learner to recognize and understand the basic concepts of the Government-Industry Data Exchange Program (GIDEP) and the NASA Advisory System.</p>
+<a href="#" class="btn button-alternate" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_Learning_SMA-QE-WBT-365">SMA-QE-WBT-365 Details</a>
+<a href="https://satern.nasa.gov/" class="btn button-primary">Launch SATERN</a>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="well_learning">
+<span class="courseTitle">Overview of the NASA Alert System &ndash; GIDEP and NASA Advisories</span>
+<span class="courseSubTitle">SMA-HQ-WBT-101</span>
+<p>This course provides an introduction to the Government-Industry Data Exchange Program (GIDEP), its databases, products and services. It also discusses NASA Advisories &mdash; what they are, how they&rsquo;re used and the information they contain.</p>
+<a href="#" class="btn button-alternate" target="_blank" data-toggle="modal" data-target="#modal_GIDEP_Learning_SMA-HQ-WBT-101">SMA-HQ-WBT-101 Details</a>
+<a href="https://satern.nasa.gov/" class="btn button-primary">Launch SATERN</a>
+</div>
+</div>
+</div>
+</div>
+<!-- end of container -->
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- learning -->
+<section id="gidep_learning">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Tools<span style="font-weight: 400; font-size: 13px; color: rgb(110, 112, 113);"></span></h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="well_learning">
+<span class="courseTitle">NASA Advisory Reporting System (NARS)</span>
+&nbsp;
+<p>NASA&rsquo;s tool for generating and archiving NASA Advisories &mdash; the NASA Advisory Reporting System (NARS) developed at the Johnson Space Center&nbsp;&mdash; is used agency-wide. It&rsquo;s a web-based system that automates and streamlines the Advisory process instead of using paper copies and manually created emails. NASA Advisories/GIDEP notices notify programs and projects of issues or concerns with parts, materials, specifications, safety, etc. that could affect safety and mission success.</p>
+<p><span style="font-size: inherit;">These notices are distributed agency-wide to all centers for projects and programs for impact assessment. NARS enables center coordinators to search existing advisories, author and route draft Advisories for review and approval, upload attachments (e.g., photos, spreadsheets and test reports) and publish reports. All NASA centers use </span><a href="http://www.nars.nasa.gov/" style="font-size: inherit);">www.nars.nasa.gov</a><span style="font-size: inherit;"> for generating NASA Advisories in accordance with NPR 8735.1, Exchange of Problem Data Using NASA Advisories and the Government-Industry Data Exchange Program (GIDEP).&nbsp;</span></p>
+<p><span style="font-size: inherit;">NARS interfaces with the NASA Advisory Notice and Alerts Distribution and Response Tracking System (NANADARTS) to allow anyone within the NASA firewall access to real-time searches, NASA Advisories, other similar documents and data to make informed decisions for mission success.</span></p>
+<a href="https://nars.nasa.gov/" class="btn button-primary" title="" target="_blank">Launch NARS</a>&nbsp;</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="well_learning">
+<span class="courseTitle">NASA Advisories, Notices and Alerts Distribution and Response Tracking System (NANADARTS)</span>
+&nbsp;
+<p>The NASA Advisory, Notices and Alerts Distribution and Response Tracking System (NANADARTS), a custom-built system developed by Johnson Space Center, allows NASA and contractor employees to perform real-time searches of NASA Advisories (dating back to 1990), as well as recent GIDEP Notices and similar documents. The system is tablet- and smartphone-compatible and is modular to allow administrators to develop and add new features as needed. </p>
+<p><span style="font-size: inherit;">NASA Advisories reside in the NASA Advisory Reporting System (NARS), which integrates seamlessly with NANADARTS. NANADARTS sends agency-wide notifications, ensuring everyone is aware of all nonconforming parts, materials, specifications, software, safety and hardware that could pose risks to agency programs and projects.&nbsp;</span></p>
+<p><span style="font-size: inherit;">NASA NPR 8735.1, Exchange of Problem Data Using NASA Advisories and the Government-Industry Data Exchange Program (GIDEP)&nbsp;mandates closed-loop reporting for programs and projects. The agency receives GIDEP notifications of nonconformances reported on products such as electronic parts, fasteners and fire extinguishers. These notices are released to the NASA programs and projects for evaluation to determine whether these notices are germane to their NASA project. Each center has processes for mitigating risk, but, typically, when an issue is identified, the program or project creates a report and coordinates response, even for safety situations.&nbsp;</span></p>
+<p><span style="font-size: inherit;">NANADARTS captures documents from other organizations, such as the Missile Defense Agency, Mishap Warning-Action-Response, international partners and others. These organizations document nonconformances, and sharing data nationally and internationally is beneficial for all recipients. Anyone in the NASA domain who is a U.S. citizen can apply for access to the program through the NASA Access Management System and perform a search for part numbers, CAGE codes and/or other attributes to identify associated nonconformances.</span></p>
+<p><span style="font-size: inherit;">NANADARTS streamlines the closed-loop reporting process. It provides agency-wide impact reports to show senior management the number of documents processed along with the cost avoidance achieved from GIDEP participation. The sharing of relevant and applicable knowledge throughout the NASA community saves not only money but possibly missions and lives. NANADARTS creates uniformity across all centers, providing data availability to every NASA employee.</span></p>
+<a href="https://nanadarts.nasa.gov/" class="btn button-primary" title="" target="_blank">Launch NANADARTS</a>&nbsp;</div>
+</div>
+</div>
+</div>
+<!-- end of container -->
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- guidance -->
+<section id="gidep_guidance" data-stellar-background-ratio="0.5">
+<div class="guidanceGradient">
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Policy and Guidance</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="well_guidance responsiveWellSpace">
+<span class="guidanceTitle">NPR 8735.1D</span>
+<span class="guidanceSubTitle">Exchange of Problem Data Using NASA Advisories and the Government-Industry Data Exchange Program (GIDEP)</span>
+<p>The NASA Procedural Requirements, NPR 8735.1D Exchange of Problem Data Using NASA Advisories and the Government-Industry Data Exchange Program (GIDEP) is the directive which establishes general requirements and procedures for NASAs&rsquo; implementation. </p>
+<p><em>Note</em>: NPR 8735.1Rev E, is in the release final review. Revision E will incorporate recommendations from the process working group, Center Coordinators, recommendations from the AIO assessment regarding policy and execution language, changes from the OSMA Publish Group to &ldquo;lean&rdquo; the document, reducing the "how to" implementation and allowing a path for closed-loop reporting for Institutional Safety with training attendees.</p>
+<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8735&amp;s=1C" class="btn button-primary" target="_blank">See NPR 8735.1D</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><section id="gidep_outreach">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h2 class="sectionTitle">Outreach</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+<img src="/images/default-source/discipline-pages/gidep/gidep-brochure.png">
+<h2 class="subtitleHeavy">Brochure</h2>
+<a href="/docs/default-source/sma-disciplines-and-programs/GIDEP/gidep-brochure.pdf" class="btn button-alternate"><i class="fa fa-file-pdf-o"></i> Download</a>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+<img src="/images/default-source/discipline-pages/gidep/gidep-sticker.png">
+<h2 class="subtitleHeavy">Sticker</h2>
+<a href="/docs/default-source/sma-disciplines-and-programs/GIDEP/gidep-sticker.pdf" class="btn button-alternate"><i class="fa fa-file-pdf-o"></i> Download</a>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><section id="gidep_benefits">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h2 class="sectionTitle">Benefits</h2>
+<p>Participation in the Government-Industry Data Exchange Program (GIDEP) assists users in improving the availability, reliability, maintainability, quality and safety of their systems and equipment. This information may result in the significant prevention of unplanned expenditures or equipment and system malfunctions, elimination of duplicate efforts and, more importantly, reduced injuries and saved lives.</p>
+<p>Since GIDEP's inception, participants have reported over $2.1 billion in prevention of unplanned expenditures. That means without GIDEP, participants&nbsp;<em>potentially</em>&nbsp;could have realized additional expenses of over $2.1 billion. Specifically, NASA has a reported cost avoidance of over $950K.</p>
+<table class="table table-secondary">
+    <thead>
+        <tr>
+            <th class="text-center"><strong>FY 2017&nbsp; &nbsp;&nbsp;</strong></th>
+            <th class="text-center"><strong>FY 2018&nbsp; &nbsp;&nbsp;</strong></th>
+            <th class="text-center">FY 2019</th>
+            <th class="text-center">FY 2020</th>
+            <th class="text-center">FY 2021</th>
+            <th class="text-center">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="text-center">$395,590</td>
+            <td class="text-center">$85,830</td>
+            <td class="text-center">$362,254</td>
+            <td class="text-center">$61,100</td>
+            <td class="text-center">$48,137</td>
+            <td class="text-center">$952,908</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- definitions -->
+<section id="gidep_definitions">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Definitions</h1>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<!-- questions start here -->
+<ul class="list-unstyled" id="questionList">
+    <li><!-- question 1 -->
+    <span><a data-toggle="collapse" href="#question1" aria-expanded="false" aria-controls="question1"><i class="fa fa-caret-right"></i> Diminishing Manufacturing Sources and Material Shortages Bulletins</a></span>
+    <div class="collapse" id="question1">
+    <div class="well">
+    <span>A part manufacturer announcement that a part or a production line will be discontinued</span>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 1 -->
+    <li><!-- question 2 -->
+    <span><a data-toggle="collapse" href="#question2" aria-expanded="false" aria-controls="question2"><i class="fa fa-caret-right"></i> Engineering Data</a></span>
+    <div class="collapse" id="question2">
+    <div class="well">
+    <span>Technical reports on research materials, quality assessments, engineering tests, evaluations and qualification tests, parts and materials specifications, manufacturing, design, process controls, solder-ability data, and other related engineering data on parts, components, materials and processes</span>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 2 -->
+    <li><!-- question 3 -->
+    <span><a data-toggle="collapse" href="#question3" aria-expanded="false" aria-controls="question3"><i class="fa fa-caret-right"></i> Failure Experience Data</a></span>
+    <div class="collapse" id="question3">
+    <div class="well">
+    <span>Objective failure information as a result of Government-Industry Data Exchange Program Alerts, Safe Alerts, Problem Advisories, and Agency Action Notices which notify users of nonconforming parts, components, chemicals, processes and materials, and of safety and hazardous situations</span>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 3 -->
+    <li><!-- question 4 -->
+    <span><a data-toggle="collapse" href="#question4" aria-expanded="false" aria-controls="question4"><i class="fa fa-caret-right"></i> Metrology and Calibration Data</a></span>
+    <div class="collapse" id="question4">
+    <div class="well">
+    <ul>
+        <li>Calibration procedures and technical manuals for test and inspection equipment</li>
+        <li>Detailed calibration procedures</li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 4 -->
+    <li><!-- question 5 -->
+    <span><a data-toggle="collapse" href="#question5" aria-expanded="false" aria-controls="question5"><i class="fa fa-caret-right"></i> NASA Advisories</a></span>
+    <div class="collapse" id="question5">
+    <div class="well">
+    <ul>
+        <li>NASA document for exchanging significant parts, materials, and safety problems or concerns among NASA activities</li>
+        <li>NASA maintains a database for reporting nonconforming data or items unique to NASA. Similar to Government-Industry Data Exchange Program Notices, NASA Advisories communicate NASA-specific information within the agency.</li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 5 -->
+    <li><!-- question 6 -->
+    <span><a data-toggle="collapse" href="#question6" aria-expanded="false" aria-controls="question6"><i class="fa fa-caret-right"></i> Nonconforming and Suspect Counterfeit Parts Data</a></span>
+    <div class="collapse" id="question6">
+    <div class="well">
+    <span>The Government-Industry Data Exchange Program (GIDEP) contains information on equipment, parts and assemblies that are suspected to be counterfeit. GIDEP members provide fact-based reports on items received, which, after visual inspections and in many cases extensive testing and analysis, are suspected to be counterfeit.</span>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 6 -->
+    <li><!-- question 7 -->
+    <span><a data-toggle="collapse" href="#question7" aria-expanded="false" aria-controls="question7"><i class="fa fa-caret-right"></i> Product Information Data</a></span>
+    <div class="collapse" id="question7">
+    <div class="well">
+    <span>Notices on parts, components and materials for which the attributes have been changed by the manufacturer</span>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 7 -->
+    <li><!-- question 8 -->
+    <span><a data-toggle="collapse" href="#question8" aria-expanded="false" aria-controls="question8"><i class="fa fa-caret-right"></i> Reliability and Maintainability (R&amp;M) Data</a></span>
+    <div class="collapse" id="question8">
+    <div class="well">
+    <ul>
+        <li>Failure-rate, failure-mode and replacement-rate data on parts, components and subsystems based upon field performance and demonstration tests of equipment, subsystems and systems</li>
+        <li>R&amp;M theories, methodologies, techniques, practices and procedures such as prediction techniques, failure modes and effects analyses, mathematical models, and reliability growth plans</li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <!-- end of question 8 -->
+</ul>
+<!-- question end here -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- links -->
+<section id="gidep_importantLinks" class="">
+<div id="" class="">
+<div id="" class="">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Important Links</h2>
+<div id="linkList">
+<dl>
+    <dt></dt>
+    <p><a href="https://nars.nasa.gov" title="" class="" target="_blank"><strong>NASA Advisory Reporting System (NARS)</strong></a></p>
+    <p><a href="https://nanadarts.nasa.gov/" title="" target="_blank" class=""><strong>NASA Advisories, Notices and Alerts Distribution and Response Tracking System (NANADARTS)</strong></a></p>
+    <div><a href="https://www.gidep.org/home" title="" class="" target="_blank" style="font-size: inherit;"><strong>Government-Industry Data Exchange Program (GIDEP)</strong></a></div>
+    <p>&nbsp;</p>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div>
+	
+
+
+          
+          <script src="/docs/default-source/javascript/printmodalcombined.js"></script>
+ <script>
+            function printThis(divId,docTitle){
+            if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+    jQuery('#'+divId).printElement({printMode:'popup',pageTitle:docTitle, overrideElementCSS:['/docs/default-source/style-sheets/sma_print.css']});
+}
+else {
+  printJS({printable: divId,type:'html',style:'.hidden-print {display:none!important;}',docTitle: docTitle});
+}
+            }
+          </script>
+          
+          <style>
+            @media print{
+  a[href]:after {
+    content: none !important;
+  }
+              .btn{display:none !important;}
+            
+            .hidden-print{display:none !important;}}</style>
+		
+<div tabindex="-1" class='modal fade ' id='modal_GIDEP_Learning_SMA-HQ-WBT-101' role="dialog" data-modal-url='/gidep_learning_sma-hq-wbt-101' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_GIDEP_Learning_SMA-HQ-WBT-101_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Overview of the NASA Alert System – GIDEP and NASA Advisories</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-101</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_GIDEP_Learning_SMA-HQ-WBT-101_print','GIDEP_Learning_SMA-HQ-WBT-101');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course provides an introduction to the Government-Industry Data Exchange Program (GIDEP), its databases, products and services. It also discusses NASA Advisories &mdash; what they are, how they&rsquo;re used and the information they contain.</p>
+<p><b>Course Number:</b>&nbsp;SMA-HQ-WBT-101</p>
+<p><b>Length:</b>&nbsp;1.00 hour</p>
+<p><b>Audience:&nbsp;</b>This course is intended for all Safety and Mission Assurance civil servants and contractors.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_GIDEP_Learning_SMA-QE-WBT-365' role="dialog" data-modal-url='/gidep_learning_sma-qe-wbt-365' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_GIDEP_Learning_SMA-QE-WBT-365_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">GIDEP Overview</h4>
+							<h5 class="modal-identity">SMA-QE-WBT-365</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_GIDEP_Learning_SMA-QE-WBT-365_print','GIDEP_Learning_SMA-QE-WBT-365');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This training will provide general information and guidance concerning the NASA processes for the documentation and exchange of significant non-conformance, problem and concern data. It will enable the learner to recognize and understand the basic concepts of the Government-Industry Data Exchange Program (GIDEP) and the NASA Advisory System.</p>
+<p><strong>Course Number:</strong>&nbsp;SMA-QE-WBT-365</p>
+<p><strong>Length:&nbsp;</strong>3.00 hours</p>
+<p><strong>Audience:&nbsp;</strong>This course is intended for Safety and Mission Assurance engineers and specialists.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_GIDEP_PoCTable' role="dialog" data-modal-url='/gidep_poctable' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_GIDEP_PoCTable_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">GIDEP Points of Contact</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_GIDEP_PoCTable_print','GIDEP_PoCTable');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-12"><p>Each NASA center has a point of contact (POC) responsible for the implementation of the NASA Advisory/Government-Industry Data Exchange Program (GIDEP)&nbsp;process at their respective center. Below is the listing of those center coordinators, primary and back-up, along with their contact data. If assistance is required and you are unable to contact the center coordinator, contact the agency coordinator at <a href="mailto:HQ-NANADARTS-Admin@mail.nasa.gov">HQ-NANADARTS-Admin@mail.nasa.gov</a>.</p><table class="table modalPocTable k-table"><thead><tr><th data-role="resizable">Name</th><th>Email Address</th></tr></thead><tbody><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>HQ - Office of Safety and Mission Assurance</strong></td></tr><!-- end of office title -->
+ <tr><td>Pamela Branch</td><td><a href="mailto:Pam.Branch-1@nasa.gov">Pam.Branch-1@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Ames Research Center</strong></td></tr><!-- end of office title -->
+ <tr><td>Jacqueline Nelson</td><td><a href="mailto:Jacqueline.D.Nelson@nasa.gov">Jacqueline.D.Nelson@nasa.gov</a></td></tr><tr><td>Dale Schreck</td><td><a href="mailto:Dale.E.Schreck@nasa.gov">Dale.E.Schreck@nasa.gov</a><br /></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Armstrong Flight Research Center</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>John Takas</strong></td><td><a href="mailto:John.Takas@nasa.gov">John.Takas@nasa.gov</a></td></tr><tr><td>Alan Wallace</td><td><a href="mailto:Alan.P.Wallace@nasa.gov">Alan.P.Wallace@nasa.gov</a></td></tr><tr><td>Gustavo Carreno IV</td><td><a href="mailto:Gustavo.Carreno.iv@nasa.gov">Gustavo.Carreno.iv@nasa.gov</a></td></tr><tr><td>Brandt Grimes</td><td><a href="mailto:Brandt.A.Grimes@nasa.gov">Brandt.A.Grimes@nasa.gov</a><br /></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Glenn Research Center</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Martin Bradish</strong></td><td><a href="mailto:Martin.a.bradish@nasa.gov">Martin.A.Bradish@nasa.gov</a></td></tr><tr><td>Douglas Edsey</td><td><a href="mailto:Douglas.A.Edsey@nasa.gov">Douglas.A.Edsey@nasa.gov</a><br /></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Goddard Space Flight Center</strong></td></tr><tr><td><strong>Thomas Miccolis</strong></td><td><a href="mailto:Tom.miccolis@nasa.gov">Tom.Miccolis@nasa.gov</a></td></tr><tr><td>Edward Rutkowski</td><td><a href="mailto:Edward.Rutkowski-1@nasa.gov">Edward.Rutkowski-1@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Jet Propulsion Laboratory</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Jennifer Hill</strong></td><td><a href="mailto:Jennifer.R.Hill@jpl.nasa.gov">Jennifer.R.Hill@jpl.nasa.gov</a><br /></td></tr><tr><td>Seth Gordon</td><td><a href="mailto:Seth.w.gordon@jpl.nasa.gov">Seth.W.Gordon@jpl.nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Johnson Space Center</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Pamela Branch</strong></td><td><a href="mailto:Pam.Branch-1@nasa.gov">Pam.Branch-1@nasa.gov</a></td></tr><tr><td>Shedrick Armstrong</td><td><a href="mailto:Shedrick.d.armstrong@nasa.gov">Shedrick.D.Armstrong@nasa.gov</a><br /></td></tr><!-- office title here -->
+ <tr><td>Rebecca Rucka&nbsp;<br /></td><td><a href="mailto:Rebecca.j.rucka@nasa.gov">Rebecca.J.Rucka@nasa.gov</a><br /></td></tr><tr class="PocCenter"><td colspan="2"><strong>Kennedy Space Center</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Isabelle Labbe</strong></td><td><a href="mailto:Isabelle.s.labbe@nasa.gov">Isabelle.S.Labbe@nasa.gov</a></td></tr><tr><td>Ricky Clark</td><td><a href="mailto:Ricky.l.clark-3@nasa.gov">Ricky.L.Clark-3@nasa.gov</a></td></tr><tr><td>Kevin Stewart</td><td><a href="mailto:Kevin.w.stewart@nasa.gov">Kevin.W.Stewart@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Langley Research Center</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Ronald Long</strong></td><td><a href="mailto:Ronald.R.Long@nasa.gov">Ronald.R.Long@nasa.gov</a><br /></td></tr><tr><td>Duane Pettit</td><td><a href="mailto:Duane.H.Pettit@nasa.gov">Duane.H.Pettit@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Marshall Space Flight Center</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Jason Perry</strong></td><td><a href="mailto:Jason.perry@nasa.gov">Jason.Perry@nasa.gov</a></td></tr><tr><td>David Brown&nbsp;</td><td><a href="mailto:David.c.brown-1@nasa.gov">David.C.Brown-1@nasa.gov</a></td></tr><!-- office title here -->
+ <tr><td>Kimberly Carmean</td><td><a href="mailto:Kim.Carmean@nasa.gov">Kim.Carmean@nasa.gov</a><br /></td></tr><tr><td>Jason Karnes</td><td><a href="mailto:Jason.m.karnes@nasa.gov">Jason.M.Karnes@nasa.gov</a></td></tr><!-- end of office title --><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>Stennis Space Center</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Mike Rewis</strong></td><td><a href="mailto:Mike.J.Rewis@nasa.gov">Mike.J.Rewis@nasa.gov</a></td></tr><tr><td>Chen-Wei William Wu</td><td><a href="mailto:Chen-wei.w.wu@nasa.gov">Chen-Wei.W.Wu@nasa.gov</a></td></tr><tr><td>Lottie Howell</td><td><a href="mailto:Lottie.howell@nasa.gov">Lottie.Howell@nasa.gov</a></td></tr><tr><td>Kevin Cognevich</td><td><a href="mailto:Kevin.b.cognevich@nasa.gov">Kevin.B.Cognevich@nasa.gov</a></td></tr><tr><td>Willard Gallagher</td><td><a href="mailto:Willard.k.gallagher@nasa.gov">Willard.K.Gallagher@nasa.gov</a></td></tr><tr><td><strong>Wallops Flight Center</strong></td><td>&nbsp;</td></tr><tr><td><strong>Thomas Miccolis</strong></td><td><a href="mailto:Tom.miccolis@nasa.gov">Tom.Miccolis@nasa.gov</a></td></tr><tr><td>Kathy Donoghue</td><td><a href="mailto:Kathy.a.donoghue@nasa.gov">Kathy.A.Donoghue@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2"><strong>White Sands Test Facility</strong></td></tr><!-- end of office title -->
+ <tr><td><strong>Donald Henderson</strong></td><td><a href="mailto:Donald.j.henderson@nasa.gov">Donald.J.Henderson@nasa.gov</a></td></tr><tr><td>Joe Armendariz</td><td><a href="mailto:Joe.armendariz@nasa.gov">Joe.Armendariz@nasa.gov</a><br /></td></tr><tr><td>Kyleigh B. Smelser</td><td><a href="mailto:Kyleigh.smelser@nasa.gov">Kyleigh.Smelser@nasa.gov</a>&nbsp;&nbsp;</td></tr></tbody></table><strong><em>Note: Primary contact denoted in bold</em></strong>
+ </div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_GIDEP_Bio_Loewy' role="dialog" data-modal-url='/gidep_bio_loewy' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_GIDEP_Bio_Loewy_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Bill Loewy</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_GIDEP_Bio_Loewy_print','GIDEP_Bio_Loewy');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row">
+<div class="col-sm-3"> <span data-sfref="[images|OpenAccessDataProvider]69288169-d2a8-65b9-a1a0-ff01003ca228" class="sfImageWrapper"> <span data-sfref="[images|OpenAccessDataProvider]4bd67e69-d2a8-65b9-a1a0-ff01003ca228" class="sfImageWrapper"><img src="/images/default-source/bio-images/bill-loewy.jpeg?sfvrsn=687e1bf8_2" class="img-responsive img-circle center-block" alt="Bill Loewy" displaymode="Original" title="Bill Loewy"></span> </span> </div>
+<div class="col-sm-9">
+<h3>Bill Loewy</h3>
+<h5>GIDEP Manager</h5>
+<p>Bill Loewy hails from Rockville, Maryland, and has been a Maryland resident for most of his life. A graduate of Robert E. Peary High School, Loewy joined the United States Air Force where he served at the Pentagon, the 3rd&nbsp;Combat Communications Group, and Tinker Air Force in Oklahoma City, Oklahoma, where he maintained and repaired electronic communications equipment. Loewy attended the University of Maryland in the computer studies field. After various positions in the computer networking industry, Loewy came to work at NASA Headquarters Office of Safety and Mission Assurance as a local area network manager. Most recently, Loewy has been the program lead for NASA&rsquo;s Government-Industry Data Exchange Program (GIDEP). In this role, Loewy has initiated the &ldquo;Know Your Part&rdquo; campaign, an outreach effort to raise awareness of GIDEP throughout NASA.</p>
+<p>In his spare time, Loewy enjoys travel, antique automobiles and traditional film photography.</p>
+</div>
+</div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+          
+          
+	<input id="ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="FooterWrapper" class="sf_cols bkg_TexanBlue" style="height: 145px">
+					<div id="cpw_footerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<input id="SMADateSiteLastUpdated" type="hidden" value="August 6, 2026" />
+						<footer id="cpw_footer" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock'><div class="container tb_pad21"> <!-- meatball image -->
+<div class="col-sm-3 footer_description PowderGreyTxt" style="padding-bottom: 12px;"> <a href="https://www.nasa.gov/" target="_blank"><img src="/content/images/meatball.png" id="nasaMeatball" alt="National Aeronautics and Space Administration" class="img-responsive" style="max-width: 87px;"></a> </div>
+<!-- site details and contact -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+Site Last Updated: <span id="footerDateSiteLastUpdated" style="font-weight: normal;">September 10, 2014</span><br>
+Web Master: <span style="font-weight: normal;"><a href="/contact">Michael Bishop</a></span><br>
+NASA Official: <span style="font-weight: normal;"><a href="/contact">Sallie Keith</a></span><br>
+<a href="/site-map">OSMA Site Map</a>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/" target="_blank">Privacy Policy</a><br>
+<a href="https://www.nasa.gov/FOIA" target="_blank">FOIA</a><br>
+<a href="https://www.nasa.gov/offices/odeo/no-fear-act" target="_blank">No FEAR Act</a><br>
+<a href="https://www.nasa.gov/budgets-plans-and-reports/" target="_blank">Budget &amp; Annual Reports</a><br>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://oig.nasa.gov/" target="_blank">Office of the IG</a><br>
+<a href="https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/" target="_blank">Agency Financial Reports</a><br>
+<a href="/contact">Contact OSMA</a><br>
+<a href="https://www.nasa.gov/accessibility/" target="_blank">Accessibility</a>
+</div>
+</div>
+
+</div>
+						</footer>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		
+	    
+<script type="text/javascript">jQuery(document).ready(function(){
+	jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+		var divname = jQuery(this).attr('href');
+		if (jQuery(divname).length < 1){
+			jQuery(this).parent().hide();
+		}
+	});
+
+});
+
+(function($) {
+    function openModalFromPath() {
+        var path = window.location.pathname;
+        try {
+            path = window.location.pathname.split("/");
+            var modalId = path[path.length - 1];
+            $("[data-modal-url='/" + modalId + "']").each(function () {
+                try {
+                    $(this).modal('show');
+                } catch (e) {
+                    console.debug("Could not open modal with id: " + modald);
+                }
+            });
+        } catch (e) {
+            console.debug("Could not get modal id from path: " + path);
+        }
+    }
+
+	$(document).ready(function() {
+		try {
+			if (window.location.hash.length > 0 && $(window.location.hash).length > 0 && $(window.location.hash).hasClass("modal")) {
+				$(window.location.hash).modal('show');
+			} else {
+				openModalFromPath();
+			}
+		} catch(e) {
+			console.debug("Could not find modal with id: " + window.location.hash);
+		}
+	});
+})(jq);</script>
+	
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script><script type="text/javascript">
+jQuery('#questionList > li > div.collapse').on('shown.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-right fa-caret-down');
+});
+jQuery('#questionList > li > div.collapse').on('hidden.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-down fa-caret-right');
+});
+
+// remove stellar on mobile and tablet devices
+if (jQuery(window).width() <= 1023) {
+    jQuery('section').removeAttr('data-stellar-background-ratio');
+};</script><script type="text/javascript" src="/docs/default-source/javascript/jquery-stellar-min.js"></script><script type="text/javascript" src="/docs/default-source/javascript/stellar_init.js"></script><script type="text/javascript" src="/docs/default-source/javascript/more_less.js"></script><script type="text/javascript" src="/docs/default-source/javascript/readmore.js"></script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45912537-1', 'auto');
+ga('set', 'transport', 'beacon');
+if (document.querySelectorAll('meta[name="OrigDate"]').length > 0) {
+var origDate = document.querySelector('meta[name="OrigDate"]').content;
+if(origDate != ""){ga('set', 'dimension1', origDate);}}
+
+if (document.querySelectorAll('meta[name="GATopic"]').length > 0) {
+    var gaTopic = document.querySelector('meta[name="GATopic"]').content;
+if(gaTopic != ""){ga('set', 'dimension2', gaTopic);}}
+
+if (document.querySelectorAll('meta[name="GAProductType"]').length > 0) {
+    var gaProductType = document.querySelector('meta[name="GAProductType"]').content;
+if(gaProductType != ""){ga('set', 'dimension3', gaProductType);}}
+
+if (document.querySelectorAll('meta[name="GAType"]').length > 0) {
+    var gaType = document.querySelector('meta[name="GAType"]').content;
+if(gaType != ""){ga('set', 'dimension4', gaType);}}
+
+if (document.querySelectorAll('meta[name="GACenter"]').length > 0) {
+    var gaCenter = document.querySelector('meta[name="GACenter"]').content;
+if(gaCenter != ""){ga('set', 'dimension5', gaCenter);}}
+
+if (document.querySelectorAll('meta[name="GAVideos]').length > 0) {
+    var gaVideo = document.querySelector('meta[name="GAVideos"]').content;
+if(gaVideo != ""){ga('set', 'dimension6', gaVideo);}}
+
+if (document.querySelectorAll('meta[name="GAEvents"]').length > 0) {
+    var gaEvent = document.querySelector('meta[name="GAEvents"]').content;
+if(gaEvent != ""){ga('set', 'dimension7', gaEvent);}}
+
+ga('send', 'pageview');
+
+ga(function() {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        ga('send', 'event', {
+            'eventCategory': 'Modal',
+            'eventAction': 'Click',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">window.GAMeasurementId = 'G-KC5NT81F9E';
+(function(window, document, tagType, id) {
+    var f = document.getElementsByTagName(tagType)[0],
+        scriptTag = document.createElement(tagType);
+    scriptTag.async = true;
+    scriptTag.src =
+        'https://www.googletagmanager.com/gtag/js?id=' + id;
+    f.parentNode.insertBefore(scriptTag, f);
+})(window, document, 'script', window.GAMeasurementId);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+(function(measurementId) {
+  gtag('config', measurementId);
+
+  gtag('config', measurementId, {
+    'custom_map': {
+      'dimension1': 'OrigDate',
+      'dimension2': 'Topic',
+      'dimension3': 'ProductType',
+      'dimension4': 'Type',
+      'dimension5': 'Center',
+      'dimension6': 'Videos',
+      'dimension7': 'Events',
+    }
+  });
+
+  function GetMetaData(propertyName) {
+    var metaElement = document.querySelectorAll('meta[name="' + propertyName +'"]');
+    return metaElement.length > 0 ? metaElement[0].content : null;
+  }
+
+  window.GADimensions = {
+    'OrigDate': GetMetaData("OrigDate"),
+    'Topic': GetMetaData("GATopic"),
+    'ProductType': GetMetaData("GAProductType"),
+    'Type': GetMetaData("GAType"),
+    'Center': GetMetaData("GACenter"),
+    'Videos': GetMetaData("GAVideos"),
+    'Events': GetMetaData("GAEvents"),
+  };
+
+  gtag('event', 'pageview', window.GADimensions);
+})(window.GAMeasurementId);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        gtag('event', 'Click', {
+            'eventCategory': 'Modal',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">(function trackOutbounds() {
+	
+	var hitCallbackHandler = function(url,win) {
+	    if (win) {
+		    window.open(url, win);
+	    } else {
+        	window.location.href = url;
+        }
+    };
+    
+    var addEvent = function(el, eventName, handler) {
+    
+		if (el.addEventListener) {
+			el.addEventListener(eventName, handler);
+			} else {
+			el.attachEvent('on' + eventName, function(){
+				handler.call(el);
+		    });
+		}
+	}
+	
+	if (document.getElementsByTagName) {
+		var el = document.getElementsByTagName('a');
+		var getDomain = document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0];
+		
+		// Look thru each a element
+		for (var i=0; i < el.length;i++) {
+		
+			// Extract it's href attribute
+			var href = (typeof(el[i].getAttribute('href')) == 'string' ) ? el[i].getAttribute('href') : '';
+			
+			// Query the href for the top level domain (xxxxx.com)
+			var myDomain = href.match(getDomain);
+			
+			// If link is outbound and is not to this domain	
+			if ((href.match(/^(https?:|\/\/)/i)  && !myDomain) || href.match(/^mailto\:/i)) {
+			
+				// Add an event to click
+				addEvent(el[i],'click', function(e) {
+					var url = this.getAttribute('href'), win = (typeof(this.getAttribute('target')) == 'string') ? this.getAttribute('target') : '';
+							
+							console.log ("add event", url);
+					// Log even to Analytics, once done, go to the link
+					ga('send', 'event', 'outbound', 'click', url,
+						{'hitCallback': hitCallbackHandler(url,win)},
+						{'nonInteraction': 1}
+					);
+					
+					e.preventDefault();
+				});
+			}
+		}
+	}
+})();
+</script><script type="text/javascript">jq(document).ready(function() {
+	$(".mega-dropdown-menu .nav-tabs a").click(function(e) {
+		e.preventDefault();
+		jq(this).tab('show');
+		e.stopPropagation();
+	});
+
+	jQuery("#nav-disciplines-organizational li").sort(function(a, b) {
+		var an = jQuery(a).find("a").text(),
+		bn = jQuery(b).find("a").text();
+
+		if(an > bn) {
+			return 1;
+		}
+		if(an < bn) {
+			return -1;
+		}
+		return 0;
+	}).clone().appendTo(jQuery("#displayABC ul"));
+});</script><script type="text/javascript" src="/Content/Scripts/video.ga.js?ver=1"></script>
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl06_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=14.4.8152.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:4fd8513a-4760-4c69-b716-de189eda8de6:7a90d6a';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"disableSuggestions":true,"indexCatalogue":"combined-indexes-5-16-19","language":null,"minSuggestLength":3,"resultsUrl":"/search","searchButton":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton"),"searchTextBox":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox"),"siteId":"118a9c25-c36c-4108-8a7e-aa18cc03ebda","suggestionFields":"Title,Content","suggestionsRoute":"/restapi/search/suggestions"}, null, null, $get("ContentHeaderSearch_T40EBA3A0054"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentNavigation$ctl00$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$C006$newsFrontendList$ctl00$ctl00$NewsList","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_C006_newsFrontendList_ctl00_ctl00_NewsList"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Web.UI.UserPreferences, {"_timeOffset":"0","_userBrowserSettingsForCalculatingDates":true,"timeZoneDisplayName":"UTC","timeZoneId":"UTC"}, null, null);
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$ctl02$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":4,"clientStateFieldID":"ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_ctl02_ctl00_ctl00_dynamicContentListView"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

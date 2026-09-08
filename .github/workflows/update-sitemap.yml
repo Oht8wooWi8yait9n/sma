@@ -31,14 +31,14 @@ jobs:
         run: |
           python generate_sma_sitemap.py
 
-      - name: Commit and push updated sitemap
+      - name: Commit and push updated sitemap & pre-rendered pages
         run: |
           git config user.name "Aaron Sells"
           git config user.email "aaron.b.sells@nasa.gov"
-          git add sma_sitemap.xml sma_urls.txt
+          git add pages/ sma_sitemap.xml sma_urls.txt sma_direct_sitemap.xml sma_direct_urls.txt
           if git diff --staged --quiet; then
             echo "No changes in NASA SMA sitemap. Skipping commit."
           else
-            git commit -m "chore(sitemap): weekly automated NASA SMA policies synchronization [skip ci]"
+            git commit -m "chore(sync): weekly automated NASA SMA policies & mirrors update [skip ci]"
             git push origin main
           fi

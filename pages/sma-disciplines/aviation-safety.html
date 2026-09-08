@@ -1,0 +1,3093 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="https://sma.nasa.gov/"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Aviation Operations and Safety
+</title>
+		<link href="/Content/Images/favicon.ico" rel="shortcut icon" />
+		<link href="/Content/Styles/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_flat_ui_pro.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_navbar.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_toolbox.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_responsiveplaylist.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_custom.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+		<script src="/Content/Scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/Content/Scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="/Content/Scripts/bootstrap.min.js"></script>
+<script src="/Content/Scripts/bootstrap-select.js"></script>
+<script src="/Content/Scripts/bootstrap-switch.js"></script>
+<script src="/Content/Scripts/flatui-checkbox.js"></script>
+<script src="/Content/Scripts/flatui-radio.js"></script>
+<script src="/Content/Scripts/jquery.tagsinput.js"></script>
+<script src="/Content/Scripts/jquery.placeholder.js"></script>
+<script src="/Content/Scripts/jquery.dotdotdot.js"></script>
+<script src="/Content/Scripts/jquery.paging.js"></script>
+<script src="/Content/Scripts/sma-responsiveplaylist.js"></script>
+<script src="/Content/Scripts/sma-jquery.tablesorter.js"></script>
+<script src="/Content/Scripts/application.js"></script>
+<script src="/Content/Scripts/sma.js"></script>
+<script src="/Content/Scripts/sma-likes.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. -->
+		<!--[if lt IE 9]>
+			<script src="/Content/Scripts/html5shiv.js"></script>
+<script src="/Content/Scripts/respond.min.js"></script>
+
+		<![endif]-->
+		<script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GRC" id="_fed_an_ua_tag"></script> 
+	
+	<style type="text/css">
+	#HeaderWrapper {
+		height: 113px;
+	}
+
+	@media (min-width: 1200px) {
+		#HeaderWrapper {
+			height: 193px;
+		}
+	}
+	</style>
+<script type="text/javascript">jQuery(document).ready(function () {
+    jQuery('a[href*=".pdf"]').attr('target', '_blank');
+    jQuery('a[href^="http"]').not('a[href*=".nasa.gov"]').each(function () {
+        if (jQuery(this).parents(".rp_playlist").length == 0) {
+            jQuery(this).attr('target', '_blank');
+        }
+    });
+    jQuery('a[href*="satern.nasa.gov"]').each(function() {
+        jQuery(this).attr('href', 'https://satern.nasa.gov');
+    });
+  
+  jQuery('a[href*=".nasa.gov"]').each(function(){
+	var linkTarget = jQuery(this).attr('target');
+	if (linkTarget == undefined || linkTarget == "") {
+		var linkHref = jQuery(this).attr('href')
+		if ((linkHref.search('sma') != -1 && linkHref.search('nmis') == -1)|| linkHref.search('mailto') != -1 || jQuery(this).parents(".rp_playlist").length > 0) {
+			jQuery(this).attr('target', '_self');
+			}
+		else if (jQuery(this).attr("target") === undefined) {
+			jQuery(this).attr('target', '_blank');
+		}
+	}
+});
+});</script><meta name="Generator" content="Sitefinity 14.4.8152.0 DX" /><link rel="canonical" href="https://sma.nasa.gov/sma-disciplines/aviation-safety" /><link href="/Sitefinity/WebsiteTemplates/SMA/App_Themes/SMA/global/readme.css?v=639216412510738967" type="text/css" rel="stylesheet" /><link href="/Content/Styles/sma-discipline-color-teal.min.css" type="text/css" rel="stylesheet" media="all" /><link href="/Content/Styles/sma-discipline-core.min.css" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid {
+    display: flex;
+    padding: 0;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header {
+    padding-left: 30px;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header a.navbar-brand {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse {
+    flex-grow: 1;
+    overflow: hidden!important;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav {
+    max-width: 100%;
+    display: flex;
+  	justify-content: space-between;
+  	visibility: hidden;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav li a {
+	padding-left: 0;
+	padding-right: 0;
+}</style><style type="text/css" media="all">section[id="aviationSafetyUAS_jumbotron"] {
+  background: #000000 url('/images/default-source/discipline-pages/aviation-safety/jumbotronbkg_aviationsafetyuas.jpg');
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+#aviationSafetyUAS_video {
+  background: #FFF !important;
+  background-color: #FFF !important;
+}
+section[id="aviationSafety_suas"] {
+  background: #000000 url('/images/default-source/discipline-pages/aviation-safety/jumbotron_suas.jpg');
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+.slideshow > li:nth-child(1) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_001.jpg") no-repeat center center fixed;
+  animation-delay: 0s;
+}
+.slideshow > li:nth-child(2) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_002.jpg") no-repeat center center fixed;
+  animation-delay: 6s;
+}
+.slideshow > li:nth-child(3) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_003.jpg") no-repeat center center fixed;
+  animation-delay: 12s;
+}
+.slideshow > li:nth-child(4) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_004.jpg") no-repeat center center fixed;
+  animation-delay: 18s;
+}
+.slideshow > li:nth-child(5) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_005.jpg") no-repeat center center fixed;
+  animation-delay: 24s;
+}
+.slideshow > li:nth-child(6) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_006.jpg") no-repeat center center fixed;
+  animation-delay: 30s;
+}
+.slideshow > li:nth-child(7) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_007.jpg") no-repeat center center fixed;
+  animation-delay: 36s;
+}
+.slideshow > li:nth-child(8) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_008.jpg") no-repeat center center fixed;
+  animation-delay: 42s;
+}
+.slideshow > li:nth-child(9) {
+  background: #000000 url("/images/default-source/discipline-pages/aviation-safety/slideshow_009.jpg") no-repeat center center fixed;
+  animation-delay: 48s;
+}
+.insideBox ul li {
+  animation: imageAnimation 56s linear infinite 0s;
+}
+h2.sectionTitle + p + ul {
+  margin-top: 15px;
+}
+section[id*="suas"] h1,
+section[id*="suas"] h2,
+section[id*="suas"] h3,
+section[id*="suas"] h4,
+section[id*="suas"] h5,
+section[id*="suas"] h6,
+section[id*="suas"] p,
+section[id*="suas"] small,
+section[id*="suas"] ul,
+section[id*="suas"] ul > li,
+section[id*="suas"] ol,
+section[id*="suas"] ol > li {
+  color: #ffffff;
+}
+</style><style type="text/css" media="all">/* default text anchor link styling */
+a,
+a:link,
+a:visited,
+a:active {
+  font-weight: 700;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #095960;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 1px dotted #095960;
+}
+a.darkLink:hover,
+a.darkLink:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a.darkLink:focus {
+  outline: 1px dotted #18d8ea;
+}
+/* styline for images on focus */
+a:focus > img {
+  outline: 1px dotted #095960;
+}
+/* nasa affinity styling */
+#hdrNasaAffinity a:focus,
+#hdrNasaAffinity a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* header link styles */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  text-decoration: none;
+}
+h1 a,
+h3 a,
+h5 a,
+h1 a:link,
+h3 a:link,
+h5 a:link,
+h1 a:visited,
+h3 a:visited,
+h5 a:visited,
+h1 a:active,
+h3 a:active,
+h5 a:active,
+h1 a:hover,
+h3 a:hover,
+h5 a:hover,
+h1 a:focus,
+h3 a:focus,
+h5 a:focus {
+  font-weight: 800;
+}
+h2 a,
+h4 a,
+h6 a,
+h2 a:link,
+h4 a:link,
+h6 a:link,
+h2 a:visited,
+h4 a:visited,
+h6 a:visited,
+h2 a:active,
+h4 a:active,
+h6 a:active,
+h2 a:hover,
+h4 a:hover,
+h6 a:hover,
+h2 a:focus,
+h4 a:focus,
+h6 a:focus {
+  font-weight: 100;
+}
+a[class*="btn-sma"],
+a[class*="btn-sma"]:link,
+a[class*="btn-sma"]:visited,
+a[class*="btn-sma"]:active,
+a[class*="btn-sma"]:hover,
+a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  outline: none;
+}
+a[class*="btn-sma-a"],
+a[class*="btn-sma-a"]:link,
+a[class*="btn-sma-a"]:visited,
+a[class*="btn-sma-a"]:active,
+a[class*="btn-sma-a"]:hover,
+a[class*="btn-sma-a"]:focus {
+  color: #162336;
+  outline: none;
+}
+/* navbar link styling */
+#navigationUl a:focus,
+nav[class*="subnavbar"] a:focus {
+  outline: 1px dotted #ffffff;
+}
+a.navbar-brand:focus {
+  outline: 1px dotted #ffffff;
+}
+/* news link styles */
+.liststyle_subtitle > a,
+.subsection_title > a,
+.liststyle_subtitle > a:link,
+.subsection_title > a:link,
+.liststyle_subtitle > a:visited,
+.subsection_title > a:visited,
+.liststyle_subtitle > a:active,
+.subsection_title > a:active,
+.liststyle_subtitle > a:hover,
+.subsection_title > a:hover,
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  font-weight: 800;
+  text-decoration: none;
+}
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  outline: 1px dotted #095960;
+}
+.news_detail + a:focus {
+  border: none;
+}
+/* safety messages styling */
+p.jumbotron_hero > a,
+p.jumbotron_hero > a:link,
+p.jumbotron_hero > a:visited,
+p.jumbotron_hero > a:active {
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+}
+p.jumbotron_hero > a:hover,
+p.jumbotron_hero > a:focus {
+  color: #18d8ea;
+  text-decoration: none;
+}
+.SafetyMessageArticle div[class*="col-sm-2"] a:focus {
+  border: none;
+}
+/* pagingation styling */
+.pagination a,
+.pagination a:link,
+.pagination a:visited,
+.pagination a:active,
+.pagination a:hover,
+.pagination a:focus {
+  text-decoration: none;
+}
+/* dark background link styles */
+footer a,
+#policyStatus a,
+.policy-table a,
+.WhiteTxt a,
+footer a:link,
+#policyStatus a:link,
+.policy-table a:link,
+.WhiteTxt a:link,
+footer a:visited footer a:active,
+footer a:visited #policyStatus a:active,
+footer a:visited .policy-table a:active,
+footer a:visited .WhiteTxt a:active,
+#policyStatus a:visited footer a:active,
+#policyStatus a:visited #policyStatus a:active,
+#policyStatus a:visited .policy-table a:active,
+#policyStatus a:visited .WhiteTxt a:active,
+.policy-table a:visited footer a:active,
+.policy-table a:visited #policyStatus a:active,
+.policy-table a:visited .policy-table a:active,
+.policy-table a:visited .WhiteTxt a:active,
+.WhiteTxt a:visited footer a:active,
+.WhiteTxt a:visited #policyStatus a:active,
+.WhiteTxt a:visited .policy-table a:active,
+.WhiteTxt a:visited .WhiteTxt a:active {
+  font-weight: 700;
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+footer a:hover,
+#policyStatus a:hover,
+.policy-table a:hover,
+.WhiteTxt a:hover,
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a[class*="btn-sma"],
+#policyStatus a[class*="btn-sma"],
+.policy-table a[class*="btn-sma"],
+.WhiteTxt a[class*="btn-sma"],
+footer a[class*="btn-sma"]:link,
+#policyStatus a[class*="btn-sma"]:link,
+.policy-table a[class*="btn-sma"]:link,
+.WhiteTxt a[class*="btn-sma"]:link,
+footer a[class*="btn-sma"]:visited,
+#policyStatus a[class*="btn-sma"]:visited,
+.policy-table a[class*="btn-sma"]:visited,
+.WhiteTxt a[class*="btn-sma"]:visited,
+footer a[class*="btn-sma"]:active,
+#policyStatus a[class*="btn-sma"]:active,
+.policy-table a[class*="btn-sma"]:active,
+.WhiteTxt a[class*="btn-sma"]:active,
+footer a[class*="btn-sma"]:hover,
+#policyStatus a[class*="btn-sma"]:hover,
+.policy-table a[class*="btn-sma"]:hover,
+.WhiteTxt a[class*="btn-sma"]:hover,
+footer a[class*="btn-sma"]:focus,
+#policyStatus a[class*="btn-sma"]:focus,
+.policy-table a[class*="btn-sma"]:focus,
+.WhiteTxt a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer a[class*="btnAdditionalDetails"],
+#policyStatus a[class*="btnAdditionalDetails"],
+.policy-table a[class*="btnAdditionalDetails"],
+.WhiteTxt a[class*="btnAdditionalDetails"],
+footer a[class*="btnAdditionalDetails"]:link,
+#policyStatus a[class*="btnAdditionalDetails"]:link,
+.policy-table a[class*="btnAdditionalDetails"]:link,
+.WhiteTxt a[class*="btnAdditionalDetails"]:link,
+footer a[class*="btnAdditionalDetails"]:visited,
+#policyStatus a[class*="btnAdditionalDetails"]:visited,
+.policy-table a[class*="btnAdditionalDetails"]:visited,
+.WhiteTxt a[class*="btnAdditionalDetails"]:visited,
+footer a[class*="btnAdditionalDetails"]:active,
+#policyStatus a[class*="btnAdditionalDetails"]:active,
+.policy-table a[class*="btnAdditionalDetails"]:active,
+.WhiteTxt a[class*="btnAdditionalDetails"]:active,
+footer a[class*="btnAdditionalDetails"]:hover,
+#policyStatus a[class*="btnAdditionalDetails"]:hover,
+.policy-table a[class*="btnAdditionalDetails"]:hover,
+.WhiteTxt a[class*="btnAdditionalDetails"]:hover,
+footer a[class*="btnAdditionalDetails"]:focus,
+#policyStatus a[class*="btnAdditionalDetails"]:focus,
+.policy-table a[class*="btnAdditionalDetails"]:focus,
+.WhiteTxt a[class*="btnAdditionalDetails"]:focus {
+  color: #162336;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer h1 a,
+#policyStatus h1 a,
+.policy-table h1 a,
+.WhiteTxt h1 a,
+footer h3 a,
+#policyStatus h3 a,
+.policy-table h3 a,
+.WhiteTxt h3 a,
+footer h5 a,
+#policyStatus h5 a,
+.policy-table h5 a,
+.WhiteTxt h5 a,
+footer h1 a:link,
+#policyStatus h1 a:link,
+.policy-table h1 a:link,
+.WhiteTxt h1 a:link,
+footer h3 a:link,
+#policyStatus h3 a:link,
+.policy-table h3 a:link,
+.WhiteTxt h3 a:link,
+footer h5 a:link,
+#policyStatus h5 a:link,
+.policy-table h5 a:link,
+.WhiteTxt h5 a:link,
+footer h1 a:visited,
+#policyStatus h1 a:visited,
+.policy-table h1 a:visited,
+.WhiteTxt h1 a:visited,
+footer h3 a:visited,
+#policyStatus h3 a:visited,
+.policy-table h3 a:visited,
+.WhiteTxt h3 a:visited,
+footer h5 a:visited,
+#policyStatus h5 a:visited,
+.policy-table h5 a:visited,
+.WhiteTxt h5 a:visited,
+footer h1 a:active,
+#policyStatus h1 a:active,
+.policy-table h1 a:active,
+.WhiteTxt h1 a:active,
+footer h3 a:active,
+#policyStatus h3 a:active,
+.policy-table h3 a:active,
+.WhiteTxt h3 a:active,
+footer h5 a:active,
+#policyStatus h5 a:active,
+.policy-table h5 a:active,
+.WhiteTxt h5 a:active {
+  font-weight: 800;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h1 a:hover,
+#policyStatus h1 a:hover,
+.policy-table h1 a:hover,
+.WhiteTxt h1 a:hover,
+footer h3 a:hover,
+#policyStatus h3 a:hover,
+.policy-table h3 a:hover,
+.WhiteTxt h3 a:hover,
+footer h5 a:hover,
+#policyStatus h5 a:hover,
+.policy-table h5 a:hover,
+.WhiteTxt h5 a:hover,
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer h2 a,
+#policyStatus h2 a,
+.policy-table h2 a,
+.WhiteTxt h2 a,
+footer h4 a,
+#policyStatus h4 a,
+.policy-table h4 a,
+.WhiteTxt h4 a,
+footer h6 a,
+#policyStatus h6 a,
+.policy-table h6 a,
+.WhiteTxt h6 a,
+footer h2 a:link,
+#policyStatus h2 a:link,
+.policy-table h2 a:link,
+.WhiteTxt h2 a:link,
+footer h4 a:link,
+#policyStatus h4 a:link,
+.policy-table h4 a:link,
+.WhiteTxt h4 a:link,
+footer h6 a:link,
+#policyStatus h6 a:link,
+.policy-table h6 a:link,
+.WhiteTxt h6 a:link,
+footer h2 a:visited,
+#policyStatus h2 a:visited,
+.policy-table h2 a:visited,
+.WhiteTxt h2 a:visited,
+footer h4 a:visited,
+#policyStatus h4 a:visited,
+.policy-table h4 a:visited,
+.WhiteTxt h4 a:visited,
+footer h6 a:visited,
+#policyStatus h6 a:visited,
+.policy-table h6 a:visited,
+.WhiteTxt h6 a:visited,
+footer h2 a:active,
+#policyStatus h2 a:active,
+.policy-table h2 a:active,
+.WhiteTxt h2 a:active,
+footer h4 a:active,
+#policyStatus h4 a:active,
+.policy-table h4 a:active,
+.WhiteTxt h4 a:active,
+footer h6 a:active,
+#policyStatus h6 a:active,
+.policy-table h6 a:active,
+.WhiteTxt h6 a:active {
+  font-weight: 100;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h2 a:hover,
+#policyStatus h2 a:hover,
+.policy-table h2 a:hover,
+.WhiteTxt h2 a:hover,
+footer h4 a:hover,
+#policyStatus h4 a:hover,
+.policy-table h4 a:hover,
+.WhiteTxt h4 a:hover,
+footer h6 a:hover,
+#policyStatus h6 a:hover,
+.policy-table h6 a:hover,
+.WhiteTxt h6 a:hover,
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a:focus > img,
+#policyStatus a:focus > img,
+.policy-table a:focus > img,
+.WhiteTxt a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* Dropdown styling for megamenu items */
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+  min-width: 650px;
+  left: -200px;
+  padding: 0;
+  color: #3e4856;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:link,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu h5 {
+  margin-bottom: 5px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu div[class*="col-"] {
+  padding: 0;
+  margin: 0;
+}
+.columnLayout {
+  column-width: auto;
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  overflow: hidden;
+}
+.columnLayout a,
+.columnLayout a:link,
+.columnLayout a:visited,
+.columnLayout a:active {
+  display: block;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+  padding: 6px 9px;
+}
+.columnLayout a:hover,
+.columnLayout a:active {
+  background: #f5f5f5;
+  color: #3A5261;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+/* Dropdown styling for non-megamenu items */
+.navbar-inverse .navbar-nav > .open .dropdown-menu {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  text-decoration: none;
+  background: #f5f5f5;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #abbd1a;
+    border-radius: 0;
+  }
+}
+
+footer .tb_pad21 {padding:21px 0 !important}
+
+.fancybox-title-float-wrap .child {
+    white-space: normal;
+}
+
+table .modalPocTable tbody tr.PocCenter { 
+    background-color: white;
+}
+
+table .modalPocTable tbody tr.PocCenter td {
+    font-weight: 700;
+}
+
+div[class*="modal-body"] span.modalBodyName {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 12px;
+}
+
+div[class*="modal-body"] span.modalBodyTitle {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+table.modalPocTable thead,
+table.modalPocTable tbody,
+table.modalPocTable th,
+table.modalPocTable td,
+table.modalPocTable tr,
+display: block;
+}
+table.modalPocTable thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+table.modalPocTable td {
+    position: relative;
+    padding-left: 50%;
+}
+table.modalPocTable td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+table.modalPocTable tbody > tr{
+    padding: 10px;
+}
+table.modalPocTable tbody > tr:nth-child(even),
+table.modalPocTable tbody > tr:nth-child(odd) {
+    border-bottom: 2px solid #ebebeb;
+}
+table.modalPocTable tbody > tr > td{
+    border: none;
+}
+table.modalPocTable tbody tr.PocCenter td {
+    font-weight: 700
+}
+
+.public a.privateLink {
+    color: inherit;
+    pointer-events: none;
+    cursor: default;
+}
+
+.public a.privateLink:hover, .public a.privateLink:focus {
+    text-decoration: none;
+}
+
+.public .privateContent {
+    display: none !important;
+}
+.public .publicContent {
+    display: block;
+}
+
+.publicContent {
+    display: none;
+}
+</style><style type="text/css" media="all">.dropdown-menu.mega-dropdown-menu .tab-container {
+    margin: -10px !important;
+    width: calc(100% + 20px);
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs {
+    background: #cfd3d5;
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li a {
+    border-width: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 15px 20px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:not(.active) a {
+    background: none;
+    color: #798088;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:first-child a {
+    border-top-left-radius: 5px !important;
+}
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:last-child a {
+    border-top-right-radius: 5px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .tab-content {
+    border: none !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"] {
+    background: inherit !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"]:hover {
+    color: #bccd32;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+    min-width: 884px;
+}
+
+#nav-disciplines-organizational ul li a {
+    padding: 0;
+}
+
+
+#nav-disciplines-organizational ul  {
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+#nav-disciplines-organizational .section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #15c2d2;
+    font-size: 1.1em;
+}
+
+#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+}
+#displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}</style><meta name="description" content="Aviation Operations and Safety ensures mission success and preserves human and material resources by eliminating and mitigating hazards." /><meta name="keywords" content="aviation safety, aviation, safety, aircraft, aircraft safety, flight, flight safety, system training, mission safety, investigation, mishap investigation, aeronautics, aeronautics safety, osma, nasa, flight standards, aviation standards, airplane performance, aircrew resource management, aircraft accident investigation, aviation safety management systems, asms, basics of aviation" /></head>
+
+<body>
+	<form method="post" action="./aviation-safety?SMAInsidePortal=true" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSSM" id="ctl06_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="JL4ZGNCPBESLMRdDalt5/Oj9/L2lils42vKbM5aonbv5A4eLbx4Q5YSZYjYB2TEX0rM+3HiosCwCiioCj5psc1/qTt+P3mMI+dAg2H8BBTQElGTn87oxKq+ofYaG6gve0IdupqmA+NXOd38w2bKol3BBqg9PggeWeauvmqYiN74G3BRU41DdmiA9jDo1fikBS5Vhd6UEomYUWtpKPz8hQJ7wZcGFNNy4vEcWEFj0d+6aKAZtg/6kPSANPC2v08gISLb1A9U90tyoAJXOvaQw7pvmSN3hjdTHOTsAbIZvnJEP08TSWVo2aeTSogvoL42hyR8GMR4BVlVQ68mHJCtGFKGfUVRofmb3PBgKMLrdBbKPsNQ7YJ9YtKojRFSh3yWAkNOAseyNzqaCslGuTmD1pGOoI/4b3UR1tAHcDiL9FhP22g++glhGBTOeSXDUcd8OncvPTXjF/95u9QjhgcoV6IBsk7WVP4UV8bW3qHpir4mIf2tZF5Xl+IGq6r63wl9xsP/gq9VAlJnVx1v1WdhSW40x2GphK9mGrl47Vx5ksZfwmq5ygacQgro8WjlXzJybRC/UhkpObfyEy6JaaFZSphNHYxIM1DW46ceeemHrvVY=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBeQL9FN26k7qxJmCXVl63Uh07YUPP75L5T8ig6z731I9NnlM7MjDVfOVnbtZyAU3Q2&amp;t=639190689332169432" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQpLQo2tZ2XWouq1So4gOUqY0KKe1EzOsTczU0xRl0n5eKfKyeAF-lJyrOfP3WtQdfN8uQSLy2uvSU1777I-PAjTI39EblEQcoFHdJ1_bkRMRpa7m_oc4zMLhs1EjXu0I2zcA9usuVgRscLWLf7Mojc81&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tYiZUsYt_xBTDhQir-ihv7ursUN-o4YtD6wK-167bi02KVsiSrYELyJM8lAirgk9xpOB-jbgvCBlmslMKNWBK111AaQ3ufAkF5xjVd6E1RNTjL3OSp0WHOd9vXkeF3iSmH-YGRNdMqgV_8y1oSE_CvgtEJWIWZalSP4KO44tgIzg0&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Sm_GGXofLw4C9Eu03fCPHLZnmAADl6c8Pfd7QRMevi3lkRnZYYdiqFNOO-IA-P4JQx4vFkzeq9L0nqitJbrR6rw1GfqJxgArvYeo97z146fon_cWcOn392XvlOA0g4AWyPzIj1kzuYZfZCQH9d6smtOV7OlFTfU15B5dPNShsoef8IHKvSLWio-eklbdrrWz0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pNnY3SPOXobYy0znCWU-ctfe8hwY_yv8qK6nYfdCqnzKZMiUVqn8oRSuarLDMNsnuUjtDm7iqEDiSBU7tL91fWRAn6HTdH1BuRay_IxRQWX4GZvSwbrjHVlDMT5wslhOjHvCBs_yME4F4SvwD9IiGoWwZ03BbYUJxtbQxED7X3KPipztbJf6UvAiH9sgvlaI0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=upAENvmeNxfpBioSkqBc6IhkjY-W-6n-nR3yD9QF_wzNpbbjXHAkEzpOGt_5HnXQMQGmRRMYa7teJ9tNqxZo0VQKKUr1ZTu39M1LIJo2PpPYZrN53sFK7lBrQYmeS5TUtz6yI6n1pBx1FjZHCzgnqZlAyKlEl_R7s9eBJhel8rxwsGOBpCZWSzQmGasXEX1K0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=QjBU5x4YUBggN3iKmsc12WFIGp7xng4Tn9KJHH0Y2ou7W5EgQzC5aKA0TZds1YuN5-VfpomPt0ZSe-82w9lOP9y9eRTN6-Aw1h9QSZMVuaRahyOXx2B_6QgygdKSrIl9IDiflA1MBEq4bRaiY1FffFv-x9UD5138REmcOKlZZYQ1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=tlTynJuwcuOdlotOppqvaL9Cs1bbUHKeURMSxzkBsQPdVl_ot4uEo16sjJxR4vCmbff8zMTIKZd676u7ozjfAyRT5Ctu5lfoSbbZ0cuejj7q77OCjxfhgxdOLkSUeXR3rK8Epcbu8Ot4INgA8UxaaclFAhZO_638n3etsdh8FPTZ4ELalfY6_3wp1BJFnTSs0&amp;t=764b716e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcPFeRGHus1rjoXNGzFNffL9wkKeeh_SeiIvShazIcUcYoZqcsD34qf064unxj4De8mkiZ7Nd1C0wkA4hwlQRwI5c1PfbqPACTzat1Gw8RCSR0&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcRR_RIomFXn-6OTVP7S7UTc4FJDbrgdUVP5cT3hlj7Gqn-oAc5ShKUg97jRJZZi4SHDf1BlDg1EPMpbplBlIl04D9GlhVFaF-fti23eZqMjPJYLhJOjZrUK_QYdhQkU9Kg2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LDxs7tI-ncIIKPgYq3uJynGIAutVQ5Lv09yYMkdUoWTtDIY55WSN2kCFwMjHc56bvoLqeRIH8Pj37QWZnQZ2I1dR12JIfbs3iNC9YGAeIdR-ho_XOLATuOwKX9eIDXDwNzVPDvVXjDuwQufloW1_FQ2&amp;t=2fee8f3f" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EB26E647" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Vaw8nadogmAIe7vsHiyefj5CGnIyBZE61TUO/LxcioLmBuiVhqMtCvbrxfUNQ7ff0MgcRMSZEvPkOdXhsySZDYixxxww7NOOGECI5xVktXTbYLPFaYI6koZgG8IiuDGy8oMzwu2+hET6aBpj07cwcQ==" />
+</div>
+	    
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<a href="#MainWrapper" class="btn" style="display: none;">Skip Navigation</a>
+		<div id="helperDiv1" class="SMAWindowMediaWidth" style="display:none;"></div> <!-- dummy divs to aid in detecting screen width -->
+		<div id="helperDiv2" class="SMAWindowMediaMaxWidth" style="display:none;"></div>
+		<div id="PublicWrapper" class="sfPublicWrapper">
+			<div class="SMAToolboxContent">
+
+				<section id="HeaderWrapper" class="sf_cols">
+					<div id="cpw_headerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<header id="cpw_header" class="sf_colsIn sf_1cols_1in_100">
+							<div id="navigation">
+								<nav class="navbar navbar-inverse navbar-lg navbar-fixed-top" role="navigation">
+									<div class="container-fluid nasa-header">
+										<div id="hdrNasaAffinity" class="row">
+											<div class="col-sm-9 col-xs-12">
+												<a href="https://www.nasa.gov" target="_blank"><img alt="NASA Meatball logo" class="logo" src="/Content/Images/meatball.png"></a>
+												<span>National Aeronautics and Space Administration</span>
+											</div>
+											<div class="col-sm-3 text-right hidden-xs">
+												<span><a href="https://www.nasa.gov" target="_blank">Visit nasa.gov</a></span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse navbar-collapse tabs">
+										<div class="tab-container">
+											<div class="site-toggle">
+												<div class="site-button current">
+													<a href="/" target="_self" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1e787b69-d2a8-65b9-a1a0-ff01003ca228"><img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance"></a>
+												</div>
+												
+												<div class="site-button">
+													<a href="https://nsc.nasa.gov/" target="_self" sfref="[41028969-d2a8-65b9-a1a0-ff05003ca228]bc038969-d2a8-65b9-a1a0-ff05003ca228"><img alt="NASA Safety Center Logo" src="/Content/Images/nsclogo.png"></a>
+												</div>
+												
+											</div>
+											<div id="SMAHeaderSearch" class="navbar-form navbar-right" role="search">
+												<div class="form-group">
+													
+<div id="ContentHeaderSearch_T40EBA3A0054">
+	
+
+<fieldset id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_main" class="sfsearchBox">
+    <input name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchTextBox" type="text" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox" class="sfsearchTxt" />
+    <input type="submit" name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchButton" value="Search" onclick="return false;" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton" class="sfsearchSubmit" />
+</fieldset>
+
+</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container-fluid">
+										<div class="hidden-lg">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+											</button>
+											<a class="navbar-brand" href="/">
+												<img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance" class="img-responsive" />
+											</a>
+										</div>
+										<div class="collapse navbar-collapse" id="navbar-collapse-1">
+											
+
+
+<div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-lg" >
+	
+	
+	
+	
+	<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_navigationUl" class="nav navbar-nav">
+		
+						<li>
+							<a href="/news">News</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl00_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/news/articles">Articles</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/policies">Policies</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/policies/all-policies">All Policies</a>
+							
+						</li>
+					
+						<li>
+							<a href="/policies/policy-status">Policy Status</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines" class="sfSel">SMA Disciplines & Programs</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/accllp">ACCLLP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/aviation-safety" class="sfSel">Aviation Operations and Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/fire-protection">Fire Protection</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-factors">Human Factors</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-rating">Human Rating</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nsrs">NSRS</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection">Planetary Protection</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop">Planetary Protection Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop">SMD Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/webinar-details">Supporting Documents</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall">SMD Workshop Fall</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii">2026 Metagenomics in Spaceflight: Establishing an Implementation Roadmap</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl04_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii">Planetary Protection Workshop II</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl05_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/agenda">Agenda</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion">Metagenomics Technical Interface Meeting: Protocol Critique and Convergence</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl06_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/quality">Quality </a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/risk-management">Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/safety-culture">Safety Culture</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl27_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/safety-culture/safety-culture-survey">Safety Culture Survey</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/smsr">SMSR</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/system-safety">System Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/workmanship">Workmanship</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/vids">Videos</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/vids/allvideos">Video Library</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/feature-videos">Feature Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/safety-message-videos">Safety Message Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/knowledge-bytes">Knowledge Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/policy-bytes">Policy Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/event-videos">Event Videos</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/about">About</a>
+							
+						</li>
+					
+						<li>
+							<a href="/test-page">Test Page</a>
+							
+						</li>
+					
+	</ul>
+</div>
+
+<script type="text/javascript">
+	(function ($) {
+		var navMenu = $("[id$='navigationUl']");
+		var ulElements = navMenu.find("li:has(ul) > a");
+		ulElements.attr("href", "javascript:void(0)");
+		ulElements.addClass("dropdown-toggle");
+		ulElements.attr("data-toggle", "dropdown");
+	})(jQuery);
+</script>
+<div>
+	
+<!-- 2023.3.1616.45 -->
+  <div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-md hidden-sm hidden-xs">
+    <ul class="nav navbar-nav" id="navigationUl">
+      
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">News</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/news/articles">Articles</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/policies/all-policies">All Policies</a></li>
+<li><a href="/policies/policy-status">Policy Status Updates</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+      <li class="dropdown mega-dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown">SMA Disciplines &amp; Programs</a>				
+       <div class="dropdown-menu mega-dropdown-menu bkg_White">
+
+         <div class="col-sm-12 bkg_White" style="border-radius:4px;"><div id="displayABC" class="displayToggleBlock"><ul class="list-unstyled columnLayout"><li><a href="/sma-disciplines/accllp">ACCLLP</a></li><li><a href="/sma-disciplines/aviation-safety">Aviation Safety</a>
+ </li><li><a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+ </li><li><a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+ </li><li><a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+ </li><li><a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+ </li><li><a href="/sma-disciplines/fire-protection">Fire Protection</a>
+ </li><li><a href="/sma-disciplines/human-factors">Human Factors</a>
+ </li><li><a href="/sma-disciplines/human-rating">Human Rating</a>
+ </li><li><a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+ </li><li><a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+ </li><li><a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+ </li><li><a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+ </li><li><a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+ </li><li><a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+ </li><li><a href="/sma-disciplines/nsrs">NSRS</a>
+ </li><li><a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+ </li><li><a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+ </li><li><a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+ </li><li><a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+ </li><li><a href="/sma-disciplines/planetary-protection">Planetary Protection</a></li><li><a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+ </li><li><a href="/sma-disciplines/quality">Quality</a>
+ </li><li><a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+ </li><li><a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+ </li><li><a href="/sma-disciplines/risk-management">Risk Management</a>
+ </li><li><a href="/sma-disciplines/safety-culture">Safety Culture</a>
+ </li><li><a href="/sma-disciplines/smsr">SMSR</a>
+ </li><li><a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+ </li><li><a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a></li><li><a href="/sma-disciplines/system-safety">System Safety</a>
+ </li><li><a href="/sma-disciplines/workmanship">Workmanship</a>
+ </li></ul></div><div style="clear:both;">&nbsp;</div></div><style type="text/css">#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+    }
+    #displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    }
+</style>
+
+       </div>				
+     </li>
+   
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/vids/allvideos">Video Library</a></li><li><a href="/vids/feature-videos">Feature Videos</a></li><li><a href="/vids/knowledge-bytes">Knowledge Bytes</a></li><li><a href="/vids/policy-bytes">Policy Bytes</a></li><li><a href="/vids/event-videos">Event Videos</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+
+      <li><a href='/about'>About</a></li>
+    
+
+
+
+
+    </ul>
+  </div>
+  <script type="text/javascript">
+   (function ($) {
+    var navMenu = $("[id$='navigationUl']");
+    var ulElements = navMenu.find("li:has(ul) > a");
+    ulElements.attr("href", "javascript:void(0)");
+    ulElements.addClass("dropdown-toggle");
+    ulElements.attr("data-toggle", "dropdown");
+
+  })(jQuery);
+
+</script>
+<script type="text/javascript">
+
+  jQuery(document).ready(function(){
+    jQuery('input[name="toggler"]').on("click", function(e){
+      if(jQuery(this).attr("value")=="Topic"){
+        jQuery("#displayABC").hide();
+        jQuery("#displayTopic").show();
+      }
+      if(jQuery(this).attr("value")=="ABC"){
+       jQuery("#displayTopic").hide();
+       jQuery("#displayABC").show();
+     }
+     SMASetMaxHeight(".displayToggleBlock");
+     e.stopPropagation();
+   });
+  });
+</script>
+<input id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+							<div id="toolbox" style="display:none;">
+								
+<script type="text/javascript">(function($) {
+	$(document).ready(function() {
+		var $nav = $(".navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav");
+		$nav.width((function(){
+			var width = $nav.find("li").length * 42;
+			$nav.find("li").each(function() {
+				width += $(this).width() == 0 ? (function(elem) {
+					return $(elem).find("a").text().length * 7;
+				})(this) : $(this).width();
+			});
+			return width;
+		})());
+		$nav.css("visibility", "visible");
+	});
+})(jq);</script><script type="text/javascript">jQuery(document).ready(function(){
+jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+var divname = jQuery(this).attr('href');
+if (divname.match("^#") && jQuery(divname).length < 1){
+jQuery(this).parent().hide();
+}
+});
+});</script>
+							</div>
+						</header>
+					</div>
+				</section>
+
+				<section id="MainWrapper" class="sf_cols">
+					<div id="cpw_mainwrapper" class="sf_colsOut sf_1cols_1_100">
+						<article id="cpw_main" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock hidden-xs hidden-sm hidden-md'><!-- sub navigation --> <nav class="navbar navbar-osma navbar-fixed-top subnavbar-fixed-top navbar-inverse hidden-md hidden-sm hidden-xs" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header"> <a href="#cpw_mainwrapper" class="navbar-brand hidden-sm">Aviation Operations and Safety</a> </div>
+<div class="collapse navbar-collapse" id="osma_navbar_collapse">
+<ul class="nav navbar-nav">
+    <!--<li><a href="#aviationSafety_news">News</a></li>-->
+    <li><a href="#aviationSafety_people">People</a></li>
+    <li><a href="#aviationSafety_learning">Learning</a></li>
+    <li><a href="#aviationSafety_guidance">Guidance</a></li>
+    <li><a href="#aviationSafety_training">Training</a></li>
+    <li><a href="#aviationSafety_suas">sUAS</a></li>
+    <li><a href="#aviationSafety_awards">Awards</a></li>
+    <li><a href="#aviationSafety_importantLinks">Important Links</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+</div><div class='sfContentBlock'><!-- jumbotron --> <span class="subnavSpacer" style="display: block; clear: both;"></span> <section id="aviationSafety_jumbotron">
+<div class="outsideBox">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-7">
+<div class="contentContainer">
+<h1 class="jumbotronTitle">Aviation Operations and Safety</h1>
+<p>The Aviation Operations and Safety Program ensures mission success and preserves human and material resources by preventing damage and injury through the elimination or mitigation of hazards. The center Aviation Safety Officers (ASOs) serve as the center's focal point for Aviation Safety and also are responsible for managing the center's Aviation Safety Program. These ASOs are assigned in the center&rsquo;s Flight Operations departments and work with the center&rsquo;s Safety and Mission Assurance (SMA) organizations when needed.</p>
+<p>As stated in NPR 7900.4, NASA Aircraft Operations Management, &ldquo;NASA's major involvement in aeronautics dictates a commitment to aviation safety, not only through the Aviation Safety Program but also in all technology programs.&rdquo;</p>
+<p>The chief of SMA has delegated management of the NASA Aviation Safety Program to the Headquarters&rsquo; Aircraft Management Division.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="insideBox">
+<ul class="list-unstyled slideshow">
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+    <li data-stellar-background-ratio="0.5"><span></span></li>
+</ul>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><section id="aviationSafety_people">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">People</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="well_primary responsiveWellSpace">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3 class="subtitleHeavy">Aviation Safety Officers Working Group</h3>
+<p>The center Aviation Safety Officers (ASOs) serve as each center's Point of Contact for Aviation Safety and are responsible for managing the center's Aviation Safety Program. </p>
+<p>Find information regarding the Aircraft Operations, Maintenance, Commercial Aviation Services and Safety Working Groups on the&nbsp;<a href="https://nasa.sharepoint.com/sites/OSMA-ISMD/SitePages/AviationSafetyAndOperations.aspx" title="" target="_blank">ISMD Portal</a>&nbsp;(for internal NASA access only).</p>
+<span data-sfref="[images|OpenAccessDataProvider]33008469-d2a8-65b9-a1a0-ff01003ca228" class="sfImageWrapper"><img src="/images/default-source/discipline-pages/aviation-safety/face-to-face-lax-ops-visit.jpg?sfvrsn=3cffd0f8_2" class="img-responsive center-block" alt="Aviation Safety Working Group" data-displaymode="Original" style="vertical-align: middle;" title="Aviation Safety Working Group"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- bios and pocs -->
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center"><a href="#" data-toggle="modal" data-target="#modal_Aviation_Bio_Posada"><img alt="Hernan_Posada" src="/images/default-source/bio-images/hernan_posada.tmb-thumb200.jpg?Culture=en&amp;sfvrsn=98ffd0f8_1" class="img-responsive img-circle center-block" title="Hernan_Posada" data-displaymode="Thumbnail" style="vertical-align: middle;"></a>
+<h3 class="subtitleHeavy"><a href="#" data-toggle="modal" data-target="#modal_Aviation_Bio_Posada">Hernan Posada</a></h3>
+<h4 class="subtitleLight">Aviation Operations and Safety Program Liaison</h4>
+<p class="text-center">Learn more about Aviation Operations and Safety Program Liaison Hernan Posada.</p>
+<a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Aviation_Bio_Posada"><em class="fa fa fa-user"></em> Read More</a>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+<a href="#" data-toggle="modal" data-target="#modal_Aviation_PoCTable"><img alt="" src="/images/default-source/discipline-pages/poc.jpg" class="img-responsive img-circle center-block"></a>
+<h3 class="subtitleHeavy"><a href="#" data-toggle="modal" data-target="#modal_Aviation_POCTable">Points of Contact</a></h3>
+<p class="text-center">For details on contacting an Aviation Safety Point of Contact (PoC) for your location, click below.</p>
+<a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_Aviation_POCTable"><em class="fa fa-users"></em> Find Your PoC</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- learning --> <section id="aviationSafety_learning">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Learning</h1>
+<a href="https://satern.nasa.gov" class="btn button-primary">Launch SATERN</a> <span class="courseType">SATERN Courses</span>
+<table class="table-learning tableML tablesorter" id="learningList1">
+    <thead>
+        <tr>
+            <th>Course Title</th>
+            <th>Course Number</th>
+            <th class="nonSort">Buttons&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Basics of Aviation</td>
+            <td>SMA-AS-WBT-100</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-WBT-100">SMA-AS-WBT-100 Details</a></td>
+        </tr>
+        <tr>
+            <td>Commercial Aircraft Safety Assessment and 1309 Design Analysis</td>
+            <td>SMA-AS-EXTW-301</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTW-301">SMA-AS-EXTW-301 Details</a></td>
+        </tr>
+        <tr>
+            <td>Human Factors in Aviation Maintenance / Maintenance Resource Management (MRM)</td>
+            <td>SMA-HQ-WBT-223<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-HQ-WBT-223">SMA-HQ-WBT-223 Details</a></td>
+        </tr>
+        <tr>
+            <td>Range Safety Orientation - Web-Based</td>
+            <td>SMA-AS-WBT-410</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-WBT-410">SMA-AS-WBT-410 Details</a></td>
+        </tr>
+    </tbody>
+</table>
+<!-- instructor box -->
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3 class="subtitleLight">Instructor-Led Courses</h3>
+<table class="table-learning tableML tablesorter" id="learningList2">
+    <thead>
+        <tr>
+            <th>Course Title</th>
+            <th>Course Number</th>
+            <th class="nonSort"><span class="hidden-xs hidden-sm hidden-md hidden-lg">Buttons</span>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Aircraft Accident Investigation</td>
+            <td>SMA-AS-EXTI-303</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-303">SMA-AS-EXTI-303 Details</a></td>
+        </tr>
+        <tr>
+            <td>Aircrew Resource Management</td>
+            <td>JSC-SAFE-NSTC-026P</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_JSC-SAFE-NSTC-026P">JSC-SAFE-NSTC-026P Details</a></td>
+        </tr>
+        <tr>
+            <td>Aviation Safety Management Systems (ASMS)<br>
+            </td>
+            <td>SMA-AS-EXTI-201<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-201">SMA-AS-EXTI-201 Details</a></td>
+        </tr>
+        <tr>
+            <td>Conceptual Design Of Unmanned Aircraft Systems</td>
+            <td>SMA-AS-EXTI-401</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-401">SMA-AS-EXTI-401Details</a></td>
+        </tr>
+        <tr>
+            <td>Digital Flight Control Systems: Analysis And Design</td>
+            <td>SMA-AS-EXTI-403</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-403">SMA-AS-EXTI-403 Details</a></td>
+        </tr>
+        <tr>
+            <td>FAA Certification Procedures And Airworthiness Requirements</td>
+            <td>SMA-AS-EXTI-205</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-205">SMA-AS-EXTI-205 Details</a></td>
+        </tr>
+        <tr>
+            <td>Flight Test Principles And Practices</td>
+            <td>SMA-AS-EXTI-204</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-204">SMA-AS-EXTI-204 Details</a></td>
+        </tr>
+        <tr>
+            <td>Gas Turbine Engine Accident Investigation</td>
+            <td>SMA-AS-EXTI-305</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-305">SMA-AS-EXTI-305 Details</a></td>
+        </tr>
+        <tr>
+            <td>Human Factors in Aviation Safety<br>
+            </td>
+            <td>SMA-AS-EXTI-304<br>
+            </td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-304">SMA-AS-EXTI-304 Details</a></td>
+        </tr>
+        <tr>
+            <td>Performance Flight Testing II</td>
+            <td>SMA-AS-EXTI-302</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-302">SMA-AS-EXTI-302 Details</a></td>
+        </tr>
+        <tr>
+            <td>Principles of Aeroelasticity</td>
+            <td>SMA-AS-EXTI-404</td>
+            <td><a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_AS_Learning_SMA-AS-EXTI-404">SMA-AS-EXTI-404 Details</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end of container --> </div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><section id="aviationSafety_guidance" data-stellar-background-ratio="0.5">
+<div class="guidanceGradient">
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Policy and Guidance</h2>
+<h3 class="subtitleLight">NASA</h3>
+<table class="table-guidance tableML tablesorter" id="guidanceTable1">
+    <colgroup> <col> <col> <col> <col> </colgroup>
+    <thead>
+        <tr>
+            <th>Policy</th>
+            <th>Title</th>
+            <th class="nonSort">Buttons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>NPR 7900.3, Chapter 6<br>
+            </td>
+            <td>Aircraft Operations Management, Aviation Safety<br>
+            </td>
+            <td><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=7900&amp;s=3D" class="btn button-primary" target="_blank" title="">See NPR 7900.3</a></td>
+        </tr>
+        <tr>
+            <td>NPR 8621.1</td>
+            <td>NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping</td>
+            <td><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8621&amp;s=1D" class="btn button-primary" target="_blank" title="">See NPR 8621.1</a></td>
+        </tr>
+        <tr>
+            <td>NPR 8715.1, Chapter 10<br>
+            </td>
+            <td>NASA General Safety Program Requirements, Aviation Safety<br>
+            </td>
+            <td><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8715_001B_&amp;page_name=Chapter10" class="btn button-primary" target="_blank" title="">See NPR 8715.1</a></td>
+        </tr>
+        <tr>
+            <td>NPD 7900.4<br>
+            </td>
+            <td>NASA Aircraft Operations Management Directive<br>
+            </td>
+            <td><a href="http://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&amp;c=7900&amp;s=4E" class="btn button-primary" target="_blank" title="">See NPD 7900.4</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3 class="subtitleLight">Non-NASA</h3>
+<div class="well_guidance responsiveWellSpace"> <span class="guidanceTitle">41 CFR 102-33</span> <span class="guidanceSubTitle">Management of Government Aircraft</span>
+<p>This policy from the General Services Administration covers what standards NASA should establish or require for Aviation Safety management. It requires that NASA implement the following: "<span style="line-height: 1.4;">By June 30, 2015, a Safety Management System (SMS) that complies with the FAA&rsquo;s [Federal Aviation Administration's] current Advisory Circular that addresses Safety Management Systems (SMS) or an equivalent internationally recognized SMS standard."</span></p>
+<a href="https://www.ecfr.gov/current/title-41/subtitle-C/chapter-102/subchapter-B/part-102-33" class="btn button-primary" target="_blank" title="">See 41 CFR 102-33</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><section id="aviationSafety_importantLinks">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>Important Links</h1>
+<div id="linkList">
+<dl>
+    <dt> NASA Resources:</dt>
+    <ul>
+        <li><a href="https://www.nasa.gov/aeronautics-research/" title="" class="" target="_blank">Aeronautics Research</a></li>
+        <li><a href="https://www.nasa.gov/aeronautics/" title="" class="" target="_blank">Let's Fly! Aeronautics</a></li>
+        <li><a href="https://www.nasa.gov/wp-content/uploads/2021/05/fs-075-afrc-07-19.pdf?emrc=ac2e2d" title="" class="" target="">NASA Armstrong Fact Sheet: Unmanned Aircraft Systems Integration in the National Airspace System</a></li>
+        <li><a href="https://www.nasa.gov/directorates/armd/" title="" class="" target="_blank">NASA Aeronautics Research Mission Directorate</a></li>
+        <li><a href="https://www.nasa.gov/nasa-advisory-council-aeronautics-committee/" title="" class="" target="_blank">NASA Advisory Council Aeronautics Committee</a></li>
+        <li><a href="https://www.nasa.gov/aeronautics/aircraft/" title="" class="" target="_blank">NASA Aircraft</a></li>
+        <li><a href="https://www.nasa.gov/aeronautics/ultra-efficient-aviation/" title="" class="" target="_blank">Ultra-Efficient Aviation<strong>&nbsp;</strong></a></li>
+    </ul>
+</dl>
+<dl>
+    <dt> <a href="http://www.aiaa.org/">American Institute of Aeronautics and Astronautics</a> </dt>
+    <dd>Events; publications; information on memberships, the community, education and careers; and public policy information relevant to the aerospace community</dd>
+</dl>
+<dl>
+    <dt><a href="https://www.usahas.com/about.html" title="" class="" target="_blank">U.S. Air Force Avian Hazard Advisory System</a></dt>
+    <dd>AHAS uses three different products to assess the risk of a bird strike for 13,831 different polygons used by the Air Force</dd>
+</dl>
+<dl>
+    <dt><a href="https://aviation-safety.net/" title="" class="" target="_blank"><strong>Aviation Safety Network</strong></a></dt>
+    <dd>The Flight Safety Foundation's Aviation Safety Network (ASN) provides up-to-date, complete and reliable authoritative information on airliner accidents and safety issues</dd>
+</dl>
+<dl>
+    <dt><a href="https://www.faa.gov/newsroom/aviation-voluntary-reporting-programs-1" title="" class="" target="_blank"><strong>Aviation Voluntary Reporting Programs, FAA</strong></a></dt>
+    <dd>The FAA's&nbsp;continuing mission is to provide the safest, most efficient aerospace system in the world<br>
+    </dd>
+</dl>
+<dl>
+    <dt><a href="http://www.safetystanddown.com/">Bombardier Safety Standdown</a> </dt>
+    <dd>The site includes a knowledge center, aviation experts and advisors, safety award details, and seminar information</dd>
+</dl>
+<dl>
+    <dt><a href="https://www.gsa.gov/policy-regulations/policy/aviation-management-policy/interagency-committee-for-aviation-policy-icap">Interagency Committee for Aviation Policy</a></dt>
+    <dd>General Services Administration site for the committee</dd>
+</dl>
+<dl>
+    <dt> <a href="http://www.sfte.org/">Society of Flight Test Engineers</a> </dt>
+    <dd>Website for the society of engineers engaged with flight testing of aerospace vehicles</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div>
+	
+
+
+          
+          <script src="/docs/default-source/javascript/printmodalcombined.js"></script>
+ <script>
+            function printThis(divId,docTitle){
+            if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+    jQuery('#'+divId).printElement({printMode:'popup',pageTitle:docTitle, overrideElementCSS:['/docs/default-source/style-sheets/sma_print.css']});
+}
+else {
+  printJS({printable: divId,type:'html',style:'.hidden-print {display:none!important;}',docTitle: docTitle});
+}
+            }
+          </script>
+          
+          <style>
+            @media print{
+  a[href]:after {
+    content: none !important;
+  }
+              .btn{display:none !important;}
+            
+            .hidden-print{display:none !important;}}</style>
+		
+<div tabindex="-1" class='modal fade ' id='modal_Aviation_Bio_Posada' role="dialog" data-modal-url='/aviation_bio_posada' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Aviation_Bio_Posada_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Hernan Posada</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Aviation_Bio_Posada_print','Aviation_Bio_Posada');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-3"><img src="/images/default-source/bio-images/hernan_posada.jpg?sfvrsn=98ffd0f8_1" style="vertical-align:middle;" title="Hernan Posada" data-displaymode="Original" alt="Hernan Posada" class="img-responsive img-circle center-block" />&nbsp;
+ </div><div class="col-sm-9"><h3>Hernan Posada</h3><h5>Aviation Operations and Safety Program Liaison</h5><p>Hernan Posada is an Aviation Safety Officer and liaison to the Aviation Operations and Safety Program for the Office of Safety and Mission Assurance. He's also an&nbsp;Unmanned Aircraft System research pilot for Ames Research Center and Armstrong Flight Research Center.</p><p>Posada joined NASA in October 2005 and is one of several pilots who operate NASA&rsquo;s&nbsp;<a href="https://www.nasa.gov/aeronautics/global-hawk-uas/" target="_blank" data-sf-ec-immutable="">Global Hawk</a>&nbsp;high-altitude aircraft and small remotely piloted aircraft. He also flies NASA&rsquo;s&nbsp; <a href="https://www.nasa.gov/centers-and-facilities/armstrong/b200-king-air/" target="_blank" data-sf-ec-immutable="" data-sf-marked="">B200 King Air</a>&nbsp;and <a href="https://www.nasa.gov/aeronautics/t-34c-mission-support-aircraft/" target="_blank" data-sf-marked="" data-sf-ec-immutable="">Beechcraft T34C</a>&nbsp;mission support aircraft.</p><p>Prior to its retirement from NASA, Posada flew the<a href="https://www.nasa.gov/aeronautics/nasa-flight-tests-new-ads-b-device-on-ikhana-uas/" target="_blank" data-sf-ec-immutable="">&nbsp;</a>MQ-9 Ikhana, which carried instruments for environmental Earth science studies and was used for advanced aircraft systems research and technology development. He led a team of pilots during all aspects of Ikhana development and research flight operations, including training of all NASA pilots who flew the aircraft. He determined training objectives and standards, evaluated aircrew performance and was a subject-matter expert for development of the ground station and command and control communication system used to fly the aircraft.</p><p>Posada began his employment in the aviation industry in 1989, servicing corporate and general aviation aircraft at Van Nuys Airport in California, and moving up to flying positions. He became a line mechanic and pilot for American Aviation at Van Nuys in 1992. In 1995, Posada began flying a fixed-wing aircraft for Jetcopters Inc., a Los Angeles traffic and aerial news organization.</p><p>Posada joined General Atomics Aeronautical Systems Inc., San Diego, in August 1996. He piloted a number of unmanned aerial vehicles, traveling worldwide. He has more than 20 years of experience flying the MQ-1 Predator A and MQ-9 Predator B aircraft, including more than 1,000 hours as an instructor pilot.</p><p>Posada earned a Bachelor of Science in aerospace engineering technology from Northrop University, Los Angeles. He also holds an Airframe and Powerplant certificate from Glendale College in California. He has an Airline Transport Pilot rating for multi-engine aircraft and a commercial certificate for single-engine airplanes. Posada has accumulated more than 15,000 hours in piloted and remotely piloted aircraft.</p></div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_hf_guidance_npr-8621-1' role="dialog" data-modal-url='/hf_guidance_npr-8621-1' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_hf_guidance_npr-8621-1_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NPR 8621.1</h4>
+							<h5 class="modal-identity">NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_hf_guidance_npr-8621-1_print','hf_guidance_npr-8621-1');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>NPR 8621.1,&nbsp;NASA Procedural Requirements for Mishap and Close Call Reporting, Investigating, and Recordkeeping provides requirements to report, investigate and document mishaps, close calls and resulting corrective actions to prevent occurrence of similar work-related injury, property damage or mission failure.&nbsp;</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&c=8621&s=1D" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NPR 8621.1
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-HQ-WBT-223' role="dialog" data-modal-url='/as_learning_sma-hq-wbt-223' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-HQ-WBT-223_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Human Factors in Aviation Maintenance / Maintenance Resource Management (MRM)</h4>
+							<h5 class="modal-identity">SMA-HQ-WBT-223</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-HQ-WBT-223_print','AS_Learning_SMA-HQ-WBT-223');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course provides an overview of how Human Factors can affect aviation maintenance outcomes. It provides recommendations for fostering a positive Safety Culture and also offers some case studies of mishaps and close calls that occurred when maintenance safety procedures were circumvented.</p>
+<ul> </ul>
+    <p><strong>Course</strong>:&nbsp;SMA-HQ-WBT-223</p>
+    <p><strong>Length</strong>: 2.00 hours</p>
+    <p><strong>Audience</strong>:&nbsp;This course is intended for all NASA aviation maintenance personnel.</p>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Guidance NPD 8700.1' role="dialog" data-modal-url='/guidance-npd-8700.1' aria-hidden="true">
+					<div class='modal-dialog modal-sm'>
+						<div class="modal-content" id='modal_Guidance NPD 8700.1_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA Policy for Safety and Mission Success </h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Guidance NPD 8700.1_print','Guidance NPD 8700.1');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       This policy outlines NASA's responsibilities to assure acceptable levels of flight crew safety and mission success risk.&nbsp; 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-WBT-410' role="dialog" data-modal-url='/as_learning_sma-as-wbt-410' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-WBT-410_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Range Safety Orientation - Web-Based</h4>
+							<h5 class="modal-identity">SMA-AS-WBT-410</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-WBT-410_print','AS_Learning_SMA-AS-WBT-410');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program (STEP), is designed to give the NASA senior, program,and project managers an understanding of the Range Safety mission, associated policies and requirements, and NASA roles and responsibilities. It defines and discusses the major elements of Range Safety (flight analysis, flight termination systems, range operations), and briefly addresses associated Range Safety topics such as ground safety, frequency management and Uninhabited Aerial Vehicles. It is designed to inform the audience of the services offered by the Range Safety organization, present timeframes that allow adequate interface with Range Safety during program and project startup and design to minimize potential delays and costs, and recommend ways of making the working relationship with Range Safety most beneficial for the range user.&nbsp;</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-WBT-410</p> <p><strong>Length</strong>: 14.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for students of STEP Level 4 for Aviation Safety.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 185px; width: 1px; height: 1px;"> <table class="table-learning tableML" id="learningList" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; width: 1140px; max-width: 100%; color: rgb(255, 255, 255); margin-bottom: 28px; line-height: 26px; background-color: rgb(21, 35, 53);"> <tbody style="box-sizing: border-box;"> <tr class="" style="box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(7, 11, 16); background: rgb(25, 42, 64);"> <td style="box-sizing: border-box; padding: 8px 8px 12px; vertical-align: middle; width: 228px;">SMA-AS-WBT-410</td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 185px; width: 1px; height: 1px;"> <table class="table-learning tableML" id="learningList" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; width: 1140px; max-width: 100%; color: rgb(255, 255, 255); margin-bottom: 28px; line-height: 26px; background-color: rgb(21, 35, 53);"> <tbody style="box-sizing: border-box;"> <tr class="" style="box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(7, 11, 16); background: rgb(25, 42, 64);"> <td style="box-sizing: border-box; padding: 8px 8px 12px; vertical-align: middle; width: 228px;">SMA-AS-WBT-410</td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-305' role="dialog" data-modal-url='/as_learning_sma-as-exti-305' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-305_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Gas Turbine Engine Accident Investigation</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-305</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-305_print','AS_Learning_SMA-AS-EXTI-305');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, is a&nbsp;specialized accident investigation course directed to fixed-wing turbojet and turboprop as well as turbine-powered rotary wing aircraft. The course examines specific turbine engine investigation methods and provides technical information in the related area of material factors. This is a fundamental accident investigation course. Individuals with many years of engine investigations may find this course too basic. It is assumed that the attendee has a basic understanding of jet engines.&nbsp;</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-305</p> <p><strong>Length</strong>: 36.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety Officers.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_JSC-SAFE-NSTC-026P' role="dialog" data-modal-url='/as_learning_sma-safe-nstc-026p' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_JSC-SAFE-NSTC-026P_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Aircrew Resource Management</h4>
+							<h5 class="modal-identity">JSC-SAFE-NSTC-026P</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_JSC-SAFE-NSTC-026P_print','AS_Learning_JSC-SAFE-NSTC-026P');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program,&nbsp;is a spin-off of the NASA Safety Training Center's "Crew Resource Management" course tailored for NASA aircrew members. It directly addresses the human factors issues that most often cause problems during aircrew interaction. No one who works on a crew, especially in a high-stress activity such as flight, is immune to these effects. "Aircrew Resource Management" deals with interpersonal relations by providing awareness of the human factors problems that too often result in mishaps. It offers recommendations and procedures for eliminating these problems; with an emphasis on safety risk assessment, aircrew coordination and decision-making in crisis situations. It is preferable that a team experiences the course as a group, if possible. This course is modularized, and individual modules may be taught singly or in combination with other modules on a case-by-case basis.</p>
+<ul> </ul>
+    <p><strong>Course</strong>:&nbsp;JSC-SAFE-NSTC-026P</p>
+    <p><strong>Length</strong>: 18.00 hours</p>
+    <p><strong>Audience</strong>:&nbsp;This course is intended for NASA aircrews and associated personnel.</p>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;">
+    <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);">
+        <tbody>
+            <tr style="empty-cells: show; font-size: 11px;">
+                <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-303' role="dialog" data-modal-url='/as_learning_sma-as-exti-303' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-303_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Aircraft Accident Investigation</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-303</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-303_print','AS_Learning_SMA-AS-EXTI-303');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>The course, part of the Safety and Mission Assurance Technical Excellence Program, is designed for individuals who have limited investigation experience. All aspects of the investigation process are addressed, starting with preparation for investigation through report writing. It covers National Transportation Safety Board and International procedures. Investigative techniques are examined with emphasis on fixed wing investigation. Data collection, wreckage reconstruction and cause analysis also are studied.&nbsp;</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-303</p> <p><strong>Length</strong>: 76.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety Officers.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-404' role="dialog" data-modal-url='/as_learning_sma-as-exti-404' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-404_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Principles of Aeroelasticity</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-404</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-404_print','AS_Learning_SMA-AS-EXTI-404');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program,&nbsp;provides an in-depth understanding of aeroelastic behavior for aerospace systems. It also explores aeroelastic phenomena, structural dynamics and fluid-structure-control interaction, and &nbsp;examines practical issues such as ground and flight test.</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-404</p> <p><strong>Length</strong>: 33.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety engineers.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-302' role="dialog" data-modal-url='/sma-as-exti-302' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-302_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Performance Flight Testing II</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-302</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-302_print','AS_Learning_SMA-AS-EXTI-302');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, supplements basic performance flight test theory, aimed at evaluations of turbine and jet powered aircraft. It includes an intensive overview of the methods used to make performance evaluations of jet aircraft, and emphasis is placed on supersonic aerodynamics and turbine/jet engine theory.</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-302</p> <p><strong>Length</strong>: 40.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety engineers.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-204' role="dialog" data-modal-url='/as_learning_-sma-as-exti-204' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-204_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Flight Test Principles And Practices</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-204_print','AS_Learning_SMA-AS-EXTI-204');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, covers introduction to flight test process, principles and practices. Engineering principles and their application to the flight testing of aircraft also are covered.</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-204</p> <p><strong>Length</strong>: 35.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety engineers.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 159px; width: 1px; height: 1px;"> <table class="table-learning tableML" id="learningList" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; width: 1140px; max-width: 100%; color: rgb(255, 255, 255); margin-bottom: 28px; line-height: 26px; background-color: rgb(21, 35, 53);"> <tbody style="box-sizing: border-box;"> <tr class="" style="box-sizing: border-box; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(7, 11, 16); background: rgb(25, 42, 64);"> <td style="box-sizing: border-box; padding: 8px 8px 12px; vertical-align: middle; width: 228px;">SMA-AS-EXTI-204</td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-205' role="dialog" data-modal-url='/as_learning_sma-as-exti-205' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-205_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">FAA Certification Procedures And Airworthiness Requirements</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-205 </h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-205_print','AS_Learning_SMA-AS-EXTI-205');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, is an overview of Federal Aviation Administration functions and requirements applicable to type design approval, production approval, airworthiness approval and continued airworthiness associated with military-procured commercial derivative aircraft and products.&nbsp;</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-205&nbsp;</p> <p><strong>Length</strong>: 21.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety engineers.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Conceptual approach to overall design of Unmanned Aircraft Systems (UAS) includes concepts of operations, communications, payloads, control stations, air vehicles and support. Includes requirements and architecture development, initial sizing and conceptual level parametric and spreadsheet assessment of major system elements.</span></td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-403' role="dialog" data-modal-url='/as_learning_sma-as-exti-403' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-403_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Digital Flight Control Systems: Analysis And Design</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-403</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-403_print','AS_Learning_SMA-AS-EXTI-403');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, presents a set of classical and modern flight control analysis and design tools.</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-403</p> <p><strong>Length</strong>: 35.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety engineers.</p> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">Overview of airplane performance and prediction, performance applications, certification standards and the effects of stability and control on performance.&nbsp;</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">This course presents a set of classical and modern flight control analysis and design tools. These tools will be combined to form a design process that will enable the development of flight control systems that are implementable in &ldquo;real world&rdquo; vehicles. These techniques will be used to design typical aeronautical vehicles&rsquo; lateral and longitudinal controllers.</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">This course presents a set of classical and modern flight control analysis and design tools. These tools will be combined to form a design process that will enable the development of flight control systems that are implementable in &ldquo;real world&rdquo; vehicles. These techniques will be used to design typical aeronautical vehicles&rsquo; lateral and longitudinal controllers.</span></td> </tr> </tbody> </table> </div> <div class="telerik_paste_container" style="border-width: 0px; position: absolute; overflow: hidden; margin: 0px; padding: 0px; left: 3px; top: 37px; width: 1px; height: 1px;"> <table class="tableWithActionButtons expandCollapseContent" border="0" summary="Item Description Information" style="border-collapse: collapse; empty-cells: show; margin-left: 2em; width: 624px; color: rgb(0, 0, 0); font-family: 'Trebuchet MS', 'Arial Unicode MS', Arial, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);"> <tbody> <tr style="empty-cells: show; font-size: 11px;"> <td headers="descriptionCell" style="font-size: 12px; empty-cells: show; vertical-align: top;"><span class="BodyText" style="font-size: 11.5px;">This course presents a set of classical and modern flight control analysis and design tools. These tools will be combined to form a design process that will enable the development of flight control systems that are implementable in &ldquo;real world&rdquo; vehicles. These techniques will be used to design typical aeronautical vehicles&rsquo; lateral and longitudinal controllers.</span></td> </tr> </tbody> </table> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-401' role="dialog" data-modal-url='/as_learning_sma-as-exti-401' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-401_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Conceptual Design Of Unmanned Aircraft Systems</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-401</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-401_print','AS_Learning_SMA-AS-EXTI-401');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program,&nbsp;covers a conceptual approach to overall design of Unmanned Aircraft Systems, including concepts of operations, communications, payloads, control stations, air vehicles and support. It also includes requirements and architecture development, initial sizing, and conceptual-level parametric and spreadsheet assessment of major system elements.</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTI-401</p> <p><strong>Length</strong>: 32.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety engineers.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTW-301' role="dialog" data-modal-url='/as_learning_sma-as-extw-301' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTW-301_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Commercial Aircraft Safety Assessment and 1309 Design Analysis</h4>
+							<h5 class="modal-identity">SMA-AS-EXTW-301</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTW-301_print','AS_Learning_SMA-AS-EXTW-301');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This five-day course, part of &nbsp;the Safety and Mission Assurance Technical Excellence Program,&nbsp;covers safety assessment requirements of Federal Acquisition Regulations 23.1309, 25.1309, 27.1309 and 29.1309 from fundamental analysis techniques to system integration, including Function Hazard Assessments, Failure Mode Effects Analysis, Fault Tree Analysis and System Safety Assessments.&nbsp;</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-EXTW-301</p> <p><strong>Length</strong>: 28.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for NASA Aviation Safety engineers.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_Aviation_POCTable' role="dialog" data-modal-url='/aviation_poctable' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Aviation_POCTable_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Aviation Safety Points of Contact</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Aviation_POCTable_print','Aviation_POCTable');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-12"><p>Most NASA centers have an Aviation Safety Point of Contact (PoC). For more information, contact the PoC at your center.</p><h3>Aviation Safety Officers (ASOs)</h3><br /><table class="table modalPocTable k-table" style="height:869.333px;"><thead><tr style="height:23px;"><th data-role="resizable">Name</th><th>Email Address</th></tr></thead><tbody><tr class="PocCenter" style="height:27px;"><td colspan="2">Office of Safety and Mission Assurance, NASA Headquarters</td></tr><tr style="height:27px;"><td>Hernan Posada</td><td><a href="mailto:Hernan.D.Posada@nasa.gov">Hernan.D.Posada@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Ames Research Center</td></tr><tr style="height:27px;"><td>Hernan Posada</td><td><a href="mailto:Hernan.D.Posada@nasa.gov">Hernan.D.Posada@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Armstrong Flight Research Center</td></tr><tr style="height:27px;"><td>Mark Russell</td><td><a href="mailto:Mark.S.Russell@nasa.gov">Mark.S.Russell@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Glenn Research Center</td></tr><!-- end of office title -->
+ <tr style="height:27px;"><td>Mark Russell</td><td><a href="mailto:Mark.S.Russell@nasa.gov">Mark.S.Russell@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Goddard Space Flight Center</td></tr><!-- end of office title -->
+ <tr style="height:27px;"><td>John Baycura</td><td><a href="mailto:John.A.Baycura@nasa.gov">John.A.Baycura@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Johnson Space Center</td></tr><!-- end of office title -->
+ <tr style="height:27px;"><td>Justin Jones</td><td><a href="mailto: justin.p.jones@nasa.gov" data-sf-ec-immutable="">Justin.P.Jones@nasa.gov</a></td></tr><!-- office title here -->
+ <tr class="PocCenter" style="height:27px;"><td colspan="2">Kennedy Space Center</td></tr><!-- end of office title --><!-- office title here -->
+ <tr style="height:27px;"><td>Andre Karpowich</td><td><a href="mailto:Andre.A.Karpowich@nasa.gov">Andre.A.Karpowich@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Langley Research Center</td></tr><!-- end of office title -->
+ <tr style="height:27px;"><td>Christopher Swanson</td><td><a href="mailto:Christopher.R.Swanson@nasa.gov">Christopher.R.Swanson@nasa.gov</a><br /></td></tr><!-- office title here -->
+ <tr class="PocCenter" style="height:27px;"><td colspan="2">Marshall Space Flight Center/Michoud Flight Facility</td></tr><tr style="height:27px;"><td>Andre Karpowich</td><td><a href="mailto:Andre.A.Karpowich@nasa.gov">Andre.A.Karpowich@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td>Stennis Space Center</td></tr><tr style="height:27px;"><td>Andre Karpowich</td><td><a href="mailto:Andre.A.Karpowich@nasa.gov">Andre.A.Karpowich@nasa.gov</a></td></tr></tbody></table><p>&nbsp;</p></div></div><h3>Aviation Ground Safety Officers (AGSOs)</h3><table class="table modalPocTable k-table"><thead></thead><tbody><tr style="height:23px;"><th data-role="resizable">Name</th><th>Email Address</th></tr></tbody><tbody><tr class="PocCenter" style="height:27px;"><td colspan="2">Johnson Space Center</td></tr><tr style="height:27px;"><td>Brad Miller</td><td><a href="mailto:brad.miller-1@nasa.gov">Brad.Miller-1@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Kennedy Space Center</td></tr><tr style="height:27px;"><td>Joshua Perretta</td><td><a href="mailto:joshua.b.perretta@nasa.gov">Joshua.B.Perretta@nasa.gov</a></td></tr><tr class="PocCenter" style="height:27px;"><td colspan="2">Langley Research Center</td></tr><tr style="height:27px;"><td>Bryan Gerber</td><td><a href="mailto:bryan.a.gerber@nasa.gov">Bryan.A.Gerber@nasa.gov</a></td></tr></tbody></table> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Guidance_NPD7900_4' role="dialog" data-modal-url='/as_guidance_npd7900.4' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Guidance_NPD7900_4_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NPD 7900.4</h4>
+							<h5 class="modal-identity">NASA Aircraft Operations Management Directive</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Guidance_NPD7900_4_print','AS_Guidance_NPD7900_4');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This directive establishes policy for the management of NASA aircraft assets, aircraft operations, airworthiness, Aviation Safety, commercial aviation services and related matters.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&c=7900&s=4E" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NPD 7900.4
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Guidance_NPR8715' role="dialog" data-modal-url='/as_guidance_npr8715' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Guidance_NPR8715_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NPR 8715.3, Chapter 10</h4>
+							<h5 class="modal-identity">NASA Safety and Health Programs, Aviation Safety</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Guidance_NPR8715_print','AS_Guidance_NPR8715');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This chapter of NPR 8715.1 provides the procedural requirements for NASA Aviation Safety Program not covered by NPR 7900.3, Aircraft Operations Management.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8715_001B_&page_name=Chapter10" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NPR 8715.1
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Guidance_NPR7900_3' role="dialog" data-modal-url='/as_guidance_npr7900.3' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Guidance_NPR7900_3_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NPR 7900.3, Chapter 6</h4>
+							<h5 class="modal-identity">Aircraft Operations Management, Aviation Safety Management</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Guidance_NPR7900_3_print','AS_Guidance_NPR7900_3');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This NASA Procedural Requirements document establishes requirements, responsibilities and procedures that will assist NASA centers and other locations operating NASA aircraft to create local policies and procedures for the management of NASA aircraft resources, flight operations and related matters.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&c=7900&s=3D" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NPR 7900.3
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_GRC-3K0346' role="dialog" data-modal-url='/as_learning_grc-3k0346' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_GRC-3K0346_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">LC Wings: American Pride</h4>
+							<h5 class="modal-identity">GRC-3K0346</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_GRC-3K0346_print','AS_Learning_GRC-3K0346');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>From supersonic F-22 stealth fighters to deadly Apache helicopters to the newest unmanned combat aircraft, the United States possesses the most superior, technologically advanced Air Force in the world.</p> <p>Beginning with the Wright Brothers first flight in Kitty Hawk, North Carolina, &ldquo;The Ultimate Guide: Planes&rdquo; tells how aviation evolved to where it is today and shows how military air power has played an important role in improving the safety and speed of passenger flight.</p> <p>In &ldquo;Aircraft Stories: American Fighters,&rdquo; watch thrilling combat footage from World War II, Korea and Vietnam and learn why, even in today's modern military, expert piloting skills are still just as important as cutting-edge technology.</p> <p>The need for a balanced attack is illustrated again in &ldquo;Wings Over Afghanistan,&rdquo; which provides an inside look at guerrilla ground troops working together with heavily armed, high-tech aircraft to form an efficient, unified combat unit.</p> <p>Not all of the military's flying aces are involved in battle. &ldquo;Thunderbirds,&rdquo; discusses the U.S. Air Force's most elite pilots, a six-man team handpicked to showcase the supremacy of the American military in international air shows.</p> <p>Through these different examinations of aviation in this country, participants quickly will understand why the ability to conquer the sky has become a central element of American pride.&nbsp;</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-WBT-100</p> <p><strong>Length</strong>: 3.50 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for&nbsp;all interested employees.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_GRC-4R1218' role="dialog" data-modal-url='/as_learning_grc-4r1218' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_GRC-4R1218_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">LC Icing for General Aviation Pilots</h4>
+							<h5 class="modal-identity">GRC-4R1218</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_GRC-4R1218_print','AS_Learning_GRC-4R1218');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course presents practical information to help pilots avoid ice, detect ice, minimize exposure and safely exit icing conditions during each phase of flight. The effects of icing on an aircraft performance, control upsets (wing and tail stalls) and recovery procedures are discussed. A series of realistic scenarios are presented as two pilots are followed from preflight planning through the approach and landing phases of flight.</p> <ul> </ul> <p><strong>Course</strong>: GRC-4R1218</p> <p><strong>Length</strong>: 0.50 hour</p> <p><strong>Audience</strong>:&nbsp;This course is intended for&nbsp;any interested employee.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-SAFE-NSTC-0018A' role="dialog" data-modal-url='/as_learning_sma-safe-nstc-0018a' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-SAFE-NSTC-0018A_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Investigating Aircraft and Flight System Mishaps</h4>
+							<h5 class="modal-identity">SMA-SAFE-NSTC-0018A</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-SAFE-NSTC-0018A_print','AS_Learning_SMA-SAFE-NSTC-0018A');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course provides instruction in aviation and flight systems mishap investigation basics and policy. Topics discussed include NPR 8621.1 mishap investigation requirements and terminology, investigator qualifications, board composition, and field techniques. Evidence identification, recovery and protection, witness interviewing, and site mapping along with individual component systems and material failures are key areas discussed during sessions on field investigation. The course contains extensive accident investigation information generally applicable to aviation accidents, which can be applied to other areas of flight systems mishaps, such as Unmanned Aerial Vehicles, rockets, balloons and other space flight systems mishaps such as Genesis.</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-SAFE-NSTC-0018A</p> <p><strong>Length</strong>: 21.00 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended&nbsp;for personnel subject to being assigned to aircraft or flight system mishaps.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-304' role="dialog" data-modal-url='/as_learning_sma-as-exti-304' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-304_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Human Factors in Aviation Safety </h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-304</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-304_print','AS_Learning_SMA-AS-EXTI-304');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, provides an overview of NASA Aviation Safety Engineering and the role of the Safety and Mission Assurance Aviation Safety engineer, as well as Aviation Safety engineer qualifications and competencies and Aviation Safety engineer competencies in terms of the program and project life cycle.</p> <ul> </ul> <p><strong>Course</strong>: SMA-AS-EXTI-304</p> <p><strong>Length</strong>: 36.00 hours</p> <p><strong>Audience</strong>: This course is intended for NASA Aviation Safety Officers.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-EXTI-201' role="dialog" data-modal-url='/as_learning_sma-as-exti-201' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-EXTI-201_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Aviation Safety Management Systems (ASMS)</h4>
+							<h5 class="modal-identity">SMA-AS-EXTI-201</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-EXTI-201_print','AS_Learning_SMA-AS-EXTI-201');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"> <div class="col-sm-12"> <div class="courseInfo"> <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, is designed for the individual responsible for planning or directing an Aviation Safety program. Fundamentals in systems organization and structure provide the individual with the essential skills and methodology needed to plan and manage an effective Aviation Safety program. Emphasis is placed on understanding the principles of Risk Management, identifying program development strategies, audits, and applying the knowledge toward effective management systems and interoperability with Quality Assurance.</p> <p><strong>Course:&nbsp;</strong>SMA-AS-EXTI-201</p> <p><strong>Length: </strong>76.00 hours</p> <p><strong>Audience:&nbsp;</strong>This course is intended for NASA Aviation Safety Officers.</p> </div> </div> </div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_AS_Learning_SMA-AS-WBT-100' role="dialog" data-modal-url='/as_learning-sma-as-wbt-100' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_AS_Learning_SMA-AS-WBT-100_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Basics of Aviation Safety</h4>
+							<h5 class="modal-identity">SMA-AS-WBT-100</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_AS_Learning_SMA-AS-WBT-100_print','AS_Learning_SMA-AS-WBT-100');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course, part of the Safety and Mission Assurance Technical Excellence Program, provides an overview of NASA Aviation Safety Engineering and the role of the Safety and Mission Assurance Aviation Safety engineer, as well as Aviation Safety engineer qualifications and competencies and Aviation Safety engineer competencies in terms of the program and project life cycle.</p> <ul> </ul> <p><strong>Course</strong>:&nbsp;SMA-AS-WBT-100</p> <p><strong>Length</strong>: 1.50 hours</p> <p><strong>Audience</strong>:&nbsp;This course is intended for Safety and Mission Assurance personnel and anyone interested in learning more about this topic.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+          
+          
+	<input id="ctl00_cph_main_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_cph_main_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_cph_main_ctl00_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="FooterWrapper" class="sf_cols bkg_TexanBlue" style="height: 145px">
+					<div id="cpw_footerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<input id="SMADateSiteLastUpdated" type="hidden" value="August 6, 2026" />
+						<footer id="cpw_footer" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock'><div class="container tb_pad21"> <!-- meatball image -->
+<div class="col-sm-3 footer_description PowderGreyTxt" style="padding-bottom: 12px;"> <a href="https://www.nasa.gov/" target="_blank"><img src="/content/images/meatball.png" id="nasaMeatball" alt="National Aeronautics and Space Administration" class="img-responsive" style="max-width: 87px;"></a> </div>
+<!-- site details and contact -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+Site Last Updated: <span id="footerDateSiteLastUpdated" style="font-weight: normal;">September 10, 2014</span><br>
+Web Master: <span style="font-weight: normal;"><a href="/contact">Michael Bishop</a></span><br>
+NASA Official: <span style="font-weight: normal;"><a href="/contact">Sallie Keith</a></span><br>
+<a href="/site-map">OSMA Site Map</a>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/" target="_blank">Privacy Policy</a><br>
+<a href="https://www.nasa.gov/FOIA" target="_blank">FOIA</a><br>
+<a href="https://www.nasa.gov/offices/odeo/no-fear-act" target="_blank">No FEAR Act</a><br>
+<a href="https://www.nasa.gov/budgets-plans-and-reports/" target="_blank">Budget &amp; Annual Reports</a><br>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://oig.nasa.gov/" target="_blank">Office of the IG</a><br>
+<a href="https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/" target="_blank">Agency Financial Reports</a><br>
+<a href="/contact">Contact OSMA</a><br>
+<a href="https://www.nasa.gov/accessibility/" target="_blank">Accessibility</a>
+</div>
+</div>
+
+</div>
+						</footer>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		
+	    
+<script type="text/javascript">jQuery(document).ready(function(){
+	jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+		var divname = jQuery(this).attr('href');
+		if (jQuery(divname).length < 1){
+			jQuery(this).parent().hide();
+		}
+	});
+
+});
+
+(function($) {
+    function openModalFromPath() {
+        var path = window.location.pathname;
+        try {
+            path = window.location.pathname.split("/");
+            var modalId = path[path.length - 1];
+            $("[data-modal-url='/" + modalId + "']").each(function () {
+                try {
+                    $(this).modal('show');
+                } catch (e) {
+                    console.debug("Could not open modal with id: " + modald);
+                }
+            });
+        } catch (e) {
+            console.debug("Could not get modal id from path: " + path);
+        }
+    }
+
+	$(document).ready(function() {
+		try {
+			if (window.location.hash.length > 0 && $(window.location.hash).length > 0 && $(window.location.hash).hasClass("modal")) {
+				$(window.location.hash).modal('show');
+			} else {
+				openModalFromPath();
+			}
+		} catch(e) {
+			console.debug("Could not find modal with id: " + window.location.hash);
+		}
+	});
+})(jq);</script>
+	
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script><script type="text/javascript">
+jQuery('#questionList > li > div.collapse').on('shown.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-right fa-caret-down');
+});
+jQuery('#questionList > li > div.collapse').on('hidden.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-down fa-caret-right');
+});
+
+// remove stellar on mobile and tablet devices
+if (jQuery(window).width() <= 1023) {
+    jQuery('section').removeAttr('data-stellar-background-ratio');
+};</script><script type="text/javascript" src="/docs/default-source/javascript/jquery-stellar-min.js"></script><script type="text/javascript" src="/docs/default-source/javascript/stellar_init.js"></script><script type="text/javascript" src="/docs/default-source/javascript/more_less.js"></script><script type="text/javascript" src="/docs/default-source/javascript/readmore.js"></script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45912537-1', 'auto');
+ga('set', 'transport', 'beacon');
+if (document.querySelectorAll('meta[name="OrigDate"]').length > 0) {
+var origDate = document.querySelector('meta[name="OrigDate"]').content;
+if(origDate != ""){ga('set', 'dimension1', origDate);}}
+
+if (document.querySelectorAll('meta[name="GATopic"]').length > 0) {
+    var gaTopic = document.querySelector('meta[name="GATopic"]').content;
+if(gaTopic != ""){ga('set', 'dimension2', gaTopic);}}
+
+if (document.querySelectorAll('meta[name="GAProductType"]').length > 0) {
+    var gaProductType = document.querySelector('meta[name="GAProductType"]').content;
+if(gaProductType != ""){ga('set', 'dimension3', gaProductType);}}
+
+if (document.querySelectorAll('meta[name="GAType"]').length > 0) {
+    var gaType = document.querySelector('meta[name="GAType"]').content;
+if(gaType != ""){ga('set', 'dimension4', gaType);}}
+
+if (document.querySelectorAll('meta[name="GACenter"]').length > 0) {
+    var gaCenter = document.querySelector('meta[name="GACenter"]').content;
+if(gaCenter != ""){ga('set', 'dimension5', gaCenter);}}
+
+if (document.querySelectorAll('meta[name="GAVideos]').length > 0) {
+    var gaVideo = document.querySelector('meta[name="GAVideos"]').content;
+if(gaVideo != ""){ga('set', 'dimension6', gaVideo);}}
+
+if (document.querySelectorAll('meta[name="GAEvents"]').length > 0) {
+    var gaEvent = document.querySelector('meta[name="GAEvents"]').content;
+if(gaEvent != ""){ga('set', 'dimension7', gaEvent);}}
+
+ga('send', 'pageview');
+
+ga(function() {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        ga('send', 'event', {
+            'eventCategory': 'Modal',
+            'eventAction': 'Click',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">window.GAMeasurementId = 'G-KC5NT81F9E';
+(function(window, document, tagType, id) {
+    var f = document.getElementsByTagName(tagType)[0],
+        scriptTag = document.createElement(tagType);
+    scriptTag.async = true;
+    scriptTag.src =
+        'https://www.googletagmanager.com/gtag/js?id=' + id;
+    f.parentNode.insertBefore(scriptTag, f);
+})(window, document, 'script', window.GAMeasurementId);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+(function(measurementId) {
+  gtag('config', measurementId);
+
+  gtag('config', measurementId, {
+    'custom_map': {
+      'dimension1': 'OrigDate',
+      'dimension2': 'Topic',
+      'dimension3': 'ProductType',
+      'dimension4': 'Type',
+      'dimension5': 'Center',
+      'dimension6': 'Videos',
+      'dimension7': 'Events',
+    }
+  });
+
+  function GetMetaData(propertyName) {
+    var metaElement = document.querySelectorAll('meta[name="' + propertyName +'"]');
+    return metaElement.length > 0 ? metaElement[0].content : null;
+  }
+
+  window.GADimensions = {
+    'OrigDate': GetMetaData("OrigDate"),
+    'Topic': GetMetaData("GATopic"),
+    'ProductType': GetMetaData("GAProductType"),
+    'Type': GetMetaData("GAType"),
+    'Center': GetMetaData("GACenter"),
+    'Videos': GetMetaData("GAVideos"),
+    'Events': GetMetaData("GAEvents"),
+  };
+
+  gtag('event', 'pageview', window.GADimensions);
+})(window.GAMeasurementId);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        gtag('event', 'Click', {
+            'eventCategory': 'Modal',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">(function trackOutbounds() {
+	
+	var hitCallbackHandler = function(url,win) {
+	    if (win) {
+		    window.open(url, win);
+	    } else {
+        	window.location.href = url;
+        }
+    };
+    
+    var addEvent = function(el, eventName, handler) {
+    
+		if (el.addEventListener) {
+			el.addEventListener(eventName, handler);
+			} else {
+			el.attachEvent('on' + eventName, function(){
+				handler.call(el);
+		    });
+		}
+	}
+	
+	if (document.getElementsByTagName) {
+		var el = document.getElementsByTagName('a');
+		var getDomain = document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0];
+		
+		// Look thru each a element
+		for (var i=0; i < el.length;i++) {
+		
+			// Extract it's href attribute
+			var href = (typeof(el[i].getAttribute('href')) == 'string' ) ? el[i].getAttribute('href') : '';
+			
+			// Query the href for the top level domain (xxxxx.com)
+			var myDomain = href.match(getDomain);
+			
+			// If link is outbound and is not to this domain	
+			if ((href.match(/^(https?:|\/\/)/i)  && !myDomain) || href.match(/^mailto\:/i)) {
+			
+				// Add an event to click
+				addEvent(el[i],'click', function(e) {
+					var url = this.getAttribute('href'), win = (typeof(this.getAttribute('target')) == 'string') ? this.getAttribute('target') : '';
+							
+							console.log ("add event", url);
+					// Log even to Analytics, once done, go to the link
+					ga('send', 'event', 'outbound', 'click', url,
+						{'hitCallback': hitCallbackHandler(url,win)},
+						{'nonInteraction': 1}
+					);
+					
+					e.preventDefault();
+				});
+			}
+		}
+	}
+})();
+</script><script type="text/javascript">jq(document).ready(function() {
+	$(".mega-dropdown-menu .nav-tabs a").click(function(e) {
+		e.preventDefault();
+		jq(this).tab('show');
+		e.stopPropagation();
+	});
+
+	jQuery("#nav-disciplines-organizational li").sort(function(a, b) {
+		var an = jQuery(a).find("a").text(),
+		bn = jQuery(b).find("a").text();
+
+		if(an > bn) {
+			return 1;
+		}
+		if(an < bn) {
+			return -1;
+		}
+		return 0;
+	}).clone().appendTo(jQuery("#displayABC ul"));
+});</script><script type="text/javascript" src="/Content/Scripts/video.ga.js?ver=1"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"disableSuggestions":true,"indexCatalogue":"combined-indexes-5-16-19","language":null,"minSuggestLength":3,"resultsUrl":"/search","searchButton":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton"),"searchTextBox":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox"),"siteId":"118a9c25-c36c-4108-8a7e-aa18cc03ebda","suggestionFields":"Title,Content","suggestionsRoute":"/restapi/search/suggestions"}, null, null, $get("ContentHeaderSearch_T40EBA3A0054"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentNavigation$ctl00$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$ctl00$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_ctl00_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":25,"clientStateFieldID":"ctl00_cph_main_ctl00_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_ctl00_ctl00_ctl00_dynamicContentListView"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

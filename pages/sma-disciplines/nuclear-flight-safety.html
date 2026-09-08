@@ -1,0 +1,2903 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="https://sma.nasa.gov/"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Nuclear Flight Safety
+</title>
+		<link href="/Content/Images/favicon.ico" rel="shortcut icon" />
+		<link href="/Content/Styles/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_flat_ui_pro.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_navbar.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_toolbox.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_responsiveplaylist.css" rel="stylesheet"/>
+<link href="/Content/Styles/sma_custom.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+		<script src="/Content/Scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/Content/Scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="/Content/Scripts/bootstrap.min.js"></script>
+<script src="/Content/Scripts/bootstrap-select.js"></script>
+<script src="/Content/Scripts/bootstrap-switch.js"></script>
+<script src="/Content/Scripts/flatui-checkbox.js"></script>
+<script src="/Content/Scripts/flatui-radio.js"></script>
+<script src="/Content/Scripts/jquery.tagsinput.js"></script>
+<script src="/Content/Scripts/jquery.placeholder.js"></script>
+<script src="/Content/Scripts/jquery.dotdotdot.js"></script>
+<script src="/Content/Scripts/jquery.paging.js"></script>
+<script src="/Content/Scripts/sma-responsiveplaylist.js"></script>
+<script src="/Content/Scripts/sma-jquery.tablesorter.js"></script>
+<script src="/Content/Scripts/application.js"></script>
+<script src="/Content/Scripts/sma.js"></script>
+<script src="/Content/Scripts/sma-likes.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. -->
+		<!--[if lt IE 9]>
+			<script src="/Content/Scripts/html5shiv.js"></script>
+<script src="/Content/Scripts/respond.min.js"></script>
+
+		<![endif]-->
+		<script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GRC" id="_fed_an_ua_tag"></script> 
+	
+	<style type="text/css">
+	#HeaderWrapper {
+		height: 113px;
+	}
+
+	@media (min-width: 1200px) {
+		#HeaderWrapper {
+			height: 193px;
+		}
+	}
+	</style>
+<script type="text/javascript">jQuery(document).ready(function () {
+    jQuery('a[href*=".pdf"]').attr('target', '_blank');
+    jQuery('a[href^="http"]').not('a[href*=".nasa.gov"]').each(function () {
+        if (jQuery(this).parents(".rp_playlist").length == 0) {
+            jQuery(this).attr('target', '_blank');
+        }
+    });
+    jQuery('a[href*="satern.nasa.gov"]').each(function() {
+        jQuery(this).attr('href', 'https://satern.nasa.gov');
+    });
+  
+  jQuery('a[href*=".nasa.gov"]').each(function(){
+	var linkTarget = jQuery(this).attr('target');
+	if (linkTarget == undefined || linkTarget == "") {
+		var linkHref = jQuery(this).attr('href')
+		if ((linkHref.search('sma') != -1 && linkHref.search('nmis') == -1)|| linkHref.search('mailto') != -1 || jQuery(this).parents(".rp_playlist").length > 0) {
+			jQuery(this).attr('target', '_self');
+			}
+		else if (jQuery(this).attr("target") === undefined) {
+			jQuery(this).attr('target', '_blank');
+		}
+	}
+});
+});</script><meta name="Generator" content="Sitefinity 14.4.8152.0 DX" /><link rel="canonical" href="https://sma.nasa.gov/sma-disciplines/nuclear-flight-safety" /><link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nOb-o-hV0f4ju23IUDysEzCN3rFussDAyoaCyf7qMEQsWopHkOKp6NEsHcXB8MVS9b1qxgcvpCgojRolrlwuTK4cJEWRrO2eWV_N9JF16RZI0&amp;t=638840910637275692&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d14.4.8152.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a4fd8513a-4760-4c69-b716-de189eda8de6%3a7a90d6a" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/SMA/App_Themes/SMA/global/readme.css?v=639216412510738967" type="text/css" rel="stylesheet" /><link href="/Content/Styles/sma-discipline-core.min.css" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid {
+    display: flex;
+    padding: 0;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header {
+    padding-left: 30px;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .navbar-header a.navbar-brand {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse {
+    flex-grow: 1;
+    overflow: hidden!important;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav {
+    max-width: 100%;
+    display: flex;
+  	justify-content: space-between;
+  	visibility: hidden;
+}
+
+.navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav li a {
+	padding-left: 0;
+	padding-right: 0;
+}</style><style type="text/css" media="all">section[id*="jumbotron"] {
+  background: #000000 url("/images/default-source/discipline-pages/nuclear-flight-safety/jumbotronbkg_nuclearflightsafety.jpg?Status=Temp&sfvrsn=2");
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  position: relative;
+  background-size: cover;
+}
+.newsContainer div.container {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.newsContainer h2.sectionTitle {
+    padding-top: 59px;
+}
+
+.newsContainer .newsslider {
+    padding-bottom: 75px;
+}</style><style type="text/css" media="all">/* default text anchor link styling */
+a,
+a:link,
+a:visited,
+a:active {
+  font-weight: 700;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #095960;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 1px dotted #095960;
+}
+a.darkLink:hover,
+a.darkLink:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+a.darkLink:focus {
+  outline: 1px dotted #18d8ea;
+}
+/* styline for images on focus */
+a:focus > img {
+  outline: 1px dotted #095960;
+}
+/* nasa affinity styling */
+#hdrNasaAffinity a:focus,
+#hdrNasaAffinity a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* header link styles */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  text-decoration: none;
+}
+h1 a,
+h3 a,
+h5 a,
+h1 a:link,
+h3 a:link,
+h5 a:link,
+h1 a:visited,
+h3 a:visited,
+h5 a:visited,
+h1 a:active,
+h3 a:active,
+h5 a:active,
+h1 a:hover,
+h3 a:hover,
+h5 a:hover,
+h1 a:focus,
+h3 a:focus,
+h5 a:focus {
+  font-weight: 800;
+}
+h2 a,
+h4 a,
+h6 a,
+h2 a:link,
+h4 a:link,
+h6 a:link,
+h2 a:visited,
+h4 a:visited,
+h6 a:visited,
+h2 a:active,
+h4 a:active,
+h6 a:active,
+h2 a:hover,
+h4 a:hover,
+h6 a:hover,
+h2 a:focus,
+h4 a:focus,
+h6 a:focus {
+  font-weight: 100;
+}
+a[class*="btn-sma"],
+a[class*="btn-sma"]:link,
+a[class*="btn-sma"]:visited,
+a[class*="btn-sma"]:active,
+a[class*="btn-sma"]:hover,
+a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  outline: none;
+}
+a[class*="btn-sma-a"],
+a[class*="btn-sma-a"]:link,
+a[class*="btn-sma-a"]:visited,
+a[class*="btn-sma-a"]:active,
+a[class*="btn-sma-a"]:hover,
+a[class*="btn-sma-a"]:focus {
+  color: #162336;
+  outline: none;
+}
+/* navbar link styling */
+#navigationUl a:focus,
+nav[class*="subnavbar"] a:focus {
+  outline: 1px dotted #ffffff;
+}
+a.navbar-brand:focus {
+  outline: 1px dotted #ffffff;
+}
+/* news link styles */
+.liststyle_subtitle > a,
+.subsection_title > a,
+.liststyle_subtitle > a:link,
+.subsection_title > a:link,
+.liststyle_subtitle > a:visited,
+.subsection_title > a:visited,
+.liststyle_subtitle > a:active,
+.subsection_title > a:active,
+.liststyle_subtitle > a:hover,
+.subsection_title > a:hover,
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  font-weight: 800;
+  text-decoration: none;
+}
+.liststyle_subtitle > a:focus,
+.subsection_title > a:focus {
+  outline: 1px dotted #095960;
+}
+.news_detail + a:focus {
+  border: none;
+}
+/* safety messages styling */
+p.jumbotron_hero > a,
+p.jumbotron_hero > a:link,
+p.jumbotron_hero > a:visited,
+p.jumbotron_hero > a:active {
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+}
+p.jumbotron_hero > a:hover,
+p.jumbotron_hero > a:focus {
+  color: #18d8ea;
+  text-decoration: none;
+}
+.SafetyMessageArticle div[class*="col-sm-2"] a:focus {
+  border: none;
+}
+/* pagingation styling */
+.pagination a,
+.pagination a:link,
+.pagination a:visited,
+.pagination a:active,
+.pagination a:hover,
+.pagination a:focus {
+  text-decoration: none;
+}
+/* dark background link styles */
+footer a,
+#policyStatus a,
+.policy-table a,
+.WhiteTxt a,
+footer a:link,
+#policyStatus a:link,
+.policy-table a:link,
+.WhiteTxt a:link,
+footer a:visited footer a:active,
+footer a:visited #policyStatus a:active,
+footer a:visited .policy-table a:active,
+footer a:visited .WhiteTxt a:active,
+#policyStatus a:visited footer a:active,
+#policyStatus a:visited #policyStatus a:active,
+#policyStatus a:visited .policy-table a:active,
+#policyStatus a:visited .WhiteTxt a:active,
+.policy-table a:visited footer a:active,
+.policy-table a:visited #policyStatus a:active,
+.policy-table a:visited .policy-table a:active,
+.policy-table a:visited .WhiteTxt a:active,
+.WhiteTxt a:visited footer a:active,
+.WhiteTxt a:visited #policyStatus a:active,
+.WhiteTxt a:visited .policy-table a:active,
+.WhiteTxt a:visited .WhiteTxt a:active {
+  font-weight: 700;
+  color: #18d8ea;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+footer a:hover,
+#policyStatus a:hover,
+.policy-table a:hover,
+.WhiteTxt a:hover,
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+footer a:focus,
+#policyStatus a:focus,
+.policy-table a:focus,
+.WhiteTxt a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a[class*="btn-sma"],
+#policyStatus a[class*="btn-sma"],
+.policy-table a[class*="btn-sma"],
+.WhiteTxt a[class*="btn-sma"],
+footer a[class*="btn-sma"]:link,
+#policyStatus a[class*="btn-sma"]:link,
+.policy-table a[class*="btn-sma"]:link,
+.WhiteTxt a[class*="btn-sma"]:link,
+footer a[class*="btn-sma"]:visited,
+#policyStatus a[class*="btn-sma"]:visited,
+.policy-table a[class*="btn-sma"]:visited,
+.WhiteTxt a[class*="btn-sma"]:visited,
+footer a[class*="btn-sma"]:active,
+#policyStatus a[class*="btn-sma"]:active,
+.policy-table a[class*="btn-sma"]:active,
+.WhiteTxt a[class*="btn-sma"]:active,
+footer a[class*="btn-sma"]:hover,
+#policyStatus a[class*="btn-sma"]:hover,
+.policy-table a[class*="btn-sma"]:hover,
+.WhiteTxt a[class*="btn-sma"]:hover,
+footer a[class*="btn-sma"]:focus,
+#policyStatus a[class*="btn-sma"]:focus,
+.policy-table a[class*="btn-sma"]:focus,
+.WhiteTxt a[class*="btn-sma"]:focus {
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer a[class*="btnAdditionalDetails"],
+#policyStatus a[class*="btnAdditionalDetails"],
+.policy-table a[class*="btnAdditionalDetails"],
+.WhiteTxt a[class*="btnAdditionalDetails"],
+footer a[class*="btnAdditionalDetails"]:link,
+#policyStatus a[class*="btnAdditionalDetails"]:link,
+.policy-table a[class*="btnAdditionalDetails"]:link,
+.WhiteTxt a[class*="btnAdditionalDetails"]:link,
+footer a[class*="btnAdditionalDetails"]:visited,
+#policyStatus a[class*="btnAdditionalDetails"]:visited,
+.policy-table a[class*="btnAdditionalDetails"]:visited,
+.WhiteTxt a[class*="btnAdditionalDetails"]:visited,
+footer a[class*="btnAdditionalDetails"]:active,
+#policyStatus a[class*="btnAdditionalDetails"]:active,
+.policy-table a[class*="btnAdditionalDetails"]:active,
+.WhiteTxt a[class*="btnAdditionalDetails"]:active,
+footer a[class*="btnAdditionalDetails"]:hover,
+#policyStatus a[class*="btnAdditionalDetails"]:hover,
+.policy-table a[class*="btnAdditionalDetails"]:hover,
+.WhiteTxt a[class*="btnAdditionalDetails"]:hover,
+footer a[class*="btnAdditionalDetails"]:focus,
+#policyStatus a[class*="btnAdditionalDetails"]:focus,
+.policy-table a[class*="btnAdditionalDetails"]:focus,
+.WhiteTxt a[class*="btnAdditionalDetails"]:focus {
+  color: #162336;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+footer h1 a,
+#policyStatus h1 a,
+.policy-table h1 a,
+.WhiteTxt h1 a,
+footer h3 a,
+#policyStatus h3 a,
+.policy-table h3 a,
+.WhiteTxt h3 a,
+footer h5 a,
+#policyStatus h5 a,
+.policy-table h5 a,
+.WhiteTxt h5 a,
+footer h1 a:link,
+#policyStatus h1 a:link,
+.policy-table h1 a:link,
+.WhiteTxt h1 a:link,
+footer h3 a:link,
+#policyStatus h3 a:link,
+.policy-table h3 a:link,
+.WhiteTxt h3 a:link,
+footer h5 a:link,
+#policyStatus h5 a:link,
+.policy-table h5 a:link,
+.WhiteTxt h5 a:link,
+footer h1 a:visited,
+#policyStatus h1 a:visited,
+.policy-table h1 a:visited,
+.WhiteTxt h1 a:visited,
+footer h3 a:visited,
+#policyStatus h3 a:visited,
+.policy-table h3 a:visited,
+.WhiteTxt h3 a:visited,
+footer h5 a:visited,
+#policyStatus h5 a:visited,
+.policy-table h5 a:visited,
+.WhiteTxt h5 a:visited,
+footer h1 a:active,
+#policyStatus h1 a:active,
+.policy-table h1 a:active,
+.WhiteTxt h1 a:active,
+footer h3 a:active,
+#policyStatus h3 a:active,
+.policy-table h3 a:active,
+.WhiteTxt h3 a:active,
+footer h5 a:active,
+#policyStatus h5 a:active,
+.policy-table h5 a:active,
+.WhiteTxt h5 a:active {
+  font-weight: 800;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h1 a:hover,
+#policyStatus h1 a:hover,
+.policy-table h1 a:hover,
+.WhiteTxt h1 a:hover,
+footer h3 a:hover,
+#policyStatus h3 a:hover,
+.policy-table h3 a:hover,
+.WhiteTxt h3 a:hover,
+footer h5 a:hover,
+#policyStatus h5 a:hover,
+.policy-table h5 a:hover,
+.WhiteTxt h5 a:hover,
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h1 a:focus,
+#policyStatus h1 a:focus,
+.policy-table h1 a:focus,
+.WhiteTxt h1 a:focus,
+footer h3 a:focus,
+#policyStatus h3 a:focus,
+.policy-table h3 a:focus,
+.WhiteTxt h3 a:focus,
+footer h5 a:focus,
+#policyStatus h5 a:focus,
+.policy-table h5 a:focus,
+.WhiteTxt h5 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer h2 a,
+#policyStatus h2 a,
+.policy-table h2 a,
+.WhiteTxt h2 a,
+footer h4 a,
+#policyStatus h4 a,
+.policy-table h4 a,
+.WhiteTxt h4 a,
+footer h6 a,
+#policyStatus h6 a,
+.policy-table h6 a,
+.WhiteTxt h6 a,
+footer h2 a:link,
+#policyStatus h2 a:link,
+.policy-table h2 a:link,
+.WhiteTxt h2 a:link,
+footer h4 a:link,
+#policyStatus h4 a:link,
+.policy-table h4 a:link,
+.WhiteTxt h4 a:link,
+footer h6 a:link,
+#policyStatus h6 a:link,
+.policy-table h6 a:link,
+.WhiteTxt h6 a:link,
+footer h2 a:visited,
+#policyStatus h2 a:visited,
+.policy-table h2 a:visited,
+.WhiteTxt h2 a:visited,
+footer h4 a:visited,
+#policyStatus h4 a:visited,
+.policy-table h4 a:visited,
+.WhiteTxt h4 a:visited,
+footer h6 a:visited,
+#policyStatus h6 a:visited,
+.policy-table h6 a:visited,
+.WhiteTxt h6 a:visited,
+footer h2 a:active,
+#policyStatus h2 a:active,
+.policy-table h2 a:active,
+.WhiteTxt h2 a:active,
+footer h4 a:active,
+#policyStatus h4 a:active,
+.policy-table h4 a:active,
+.WhiteTxt h4 a:active,
+footer h6 a:active,
+#policyStatus h6 a:active,
+.policy-table h6 a:active,
+.WhiteTxt h6 a:active {
+  font-weight: 100;
+  color: #0f99a7;
+  transition: 0.2s;
+  text-decoration: none;
+}
+footer h2 a:hover,
+#policyStatus h2 a:hover,
+.policy-table h2 a:hover,
+.WhiteTxt h2 a:hover,
+footer h4 a:hover,
+#policyStatus h4 a:hover,
+.policy-table h4 a:hover,
+.WhiteTxt h4 a:hover,
+footer h6 a:hover,
+#policyStatus h6 a:hover,
+.policy-table h6 a:hover,
+.WhiteTxt h6 a:hover,
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  color: #18d8ea;
+  transition: 0.2s;
+}
+footer h2 a:focus,
+#policyStatus h2 a:focus,
+.policy-table h2 a:focus,
+.WhiteTxt h2 a:focus,
+footer h4 a:focus,
+#policyStatus h4 a:focus,
+.policy-table h4 a:focus,
+.WhiteTxt h4 a:focus,
+footer h6 a:focus,
+#policyStatus h6 a:focus,
+.policy-table h6 a:focus,
+.WhiteTxt h6 a:focus {
+  outline: 1px dotted #ffffff;
+}
+footer a:focus > img,
+#policyStatus a:focus > img,
+.policy-table a:focus > img,
+.WhiteTxt a:focus > img {
+  outline: 1px dotted #ffffff;
+}
+/* Dropdown styling for megamenu items */
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+  min-width: 650px;
+  left: -200px;
+  padding: 0;
+  color: #3e4856;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:link,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:hover,
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu h5 {
+  margin-bottom: 5px;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu div[class*="col-"] {
+  padding: 0;
+  margin: 0;
+}
+.columnLayout {
+  column-width: auto;
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  overflow: hidden;
+}
+.columnLayout a,
+.columnLayout a:link,
+.columnLayout a:visited,
+.columnLayout a:active {
+  display: block;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+  padding: 6px 9px;
+}
+.columnLayout a:hover,
+.columnLayout a:active {
+  background: #f5f5f5;
+  color: #3A5261;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+/* Dropdown styling for non-megamenu items */
+.navbar-inverse .navbar-nav > .open .dropdown-menu {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+  color: #3e4856;
+  font-weight: 700;
+  padding: 6px 9px;
+  background: #ffffff;
+  transition: 0.2s;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:link,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:visited,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:active {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0;
+  }
+}
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+  color: #3e4856;
+  font-weight: 700;
+  text-decoration: none;
+  background: #f5f5f5;
+  border-radius: 4px;
+  /* Responsive styling for dropdowns */
+}
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:focus {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    color: #abbd1a;
+    border-radius: 0;
+  }
+}
+
+footer .tb_pad21 {padding:21px 0 !important}
+
+.fancybox-title-float-wrap .child {
+    white-space: normal;
+}
+
+table .modalPocTable tbody tr.PocCenter { 
+    background-color: white;
+}
+
+table .modalPocTable tbody tr.PocCenter td {
+    font-weight: 700;
+}
+
+div[class*="modal-body"] span.modalBodyName {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 12px;
+}
+
+div[class*="modal-body"] span.modalBodyTitle {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+table.modalPocTable thead,
+table.modalPocTable tbody,
+table.modalPocTable th,
+table.modalPocTable td,
+table.modalPocTable tr,
+display: block;
+}
+table.modalPocTable thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+table.modalPocTable td {
+    position: relative;
+    padding-left: 50%;
+}
+table.modalPocTable td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+table.modalPocTable tbody > tr{
+    padding: 10px;
+}
+table.modalPocTable tbody > tr:nth-child(even),
+table.modalPocTable tbody > tr:nth-child(odd) {
+    border-bottom: 2px solid #ebebeb;
+}
+table.modalPocTable tbody > tr > td{
+    border: none;
+}
+table.modalPocTable tbody tr.PocCenter td {
+    font-weight: 700
+}
+
+.public a.privateLink {
+    color: inherit;
+    pointer-events: none;
+    cursor: default;
+}
+
+.public a.privateLink:hover, .public a.privateLink:focus {
+    text-decoration: none;
+}
+
+.public .privateContent {
+    display: none !important;
+}
+.public .publicContent {
+    display: block;
+}
+
+.publicContent {
+    display: none;
+}
+</style><style type="text/css" media="all">.dropdown-menu.mega-dropdown-menu .tab-container {
+    margin: -10px !important;
+    width: calc(100% + 20px);
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs {
+    background: #cfd3d5;
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li a {
+    border-width: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 15px 20px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:not(.active) a {
+    background: none;
+    color: #798088;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:first-child a {
+    border-top-left-radius: 5px !important;
+}
+.dropdown-menu.mega-dropdown-menu .tab-container .nav-tabs li:last-child a {
+    border-top-right-radius: 5px !important;
+}
+
+.dropdown-menu.mega-dropdown-menu .tab-container .tab-content {
+    border: none !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"] {
+    background: inherit !important;
+}
+
+.dropdown.mega-dropdown.active [data-toggle="dropdown"]:hover {
+    color: #bccd32;
+}
+.navbar-inverse .navbar-nav .open .mega-dropdown-menu {
+    min-width: 884px;
+}
+
+#nav-disciplines-organizational ul li a {
+    padding: 0;
+}
+
+
+#nav-disciplines-organizational ul  {
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+#nav-disciplines-organizational .section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #15c2d2;
+    font-size: 1.1em;
+}
+
+#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+}
+#displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}</style><link href="/Content/Styles/sma-discipline-color-goldenrod.min.css" type="text/css" rel="stylesheet" media="all" /><meta name="description" content="Nuclear power enables the exploration of the outer solar system.  " /></head>
+
+<body>
+	<form method="post" action="./nuclear-flight-safety?SMAInsidePortal=true" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl06_TSSM" id="ctl06_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="VE2YN/vDmuPbkthlVKcPlwublL++pECCMYwI635Ppv+PKUjjzSY1+p3s3sUOYpQX1dnKIAHmy905ViUiwAKAmBH03hnGbUAEFRq1rLygOeuCzTLiAFXdmJK0lj72A8rZZ1SUTNTmQ8NTEH1f9ai8WvoxyzgOELiX2DMbV9/IHrSrrui/rD09y+IJKudcEwH2WHc/hee25wgmRHxpDD/OMxKPqztWEGJoo2Qpk61PmX5uAPZr/yIXk9vTpLodTBE/cegqKZYQGMiWbV0Uo3G34Zu5vO9TIJOJxPaqXsh5NCUS/uOg4Wjferjiw40Bu1vHKfaPPBCgzFEQiuQ/16ki20WX0KSH9zXytoeXkuVf92VrOQJEJfY4boZYUb0C+9rnLpJVd9+6AsOG9jis2IQYRo97GtkjLh17sjzZWS2x959olVWHzws9LVA5HVMeBjlMOXWJDjgwizX+2e71d1qtMNKx7aa3nCgeO0MGF3y5enzRz0i1nI6n5Xbj25c4o9Gt+MnSW2PToDGTFAaqFLt3dv3SyB6PuVgzkLezBnhoqM8KaHez2evge2USvMX6+KM8MAaChhkgG2dad7VbbJJIn64aDXaq5YOeKk1+7KFfO6DniA93gF52N2KN36ldy+o7yW2vqzGsk+SGmBb8xXKDOB5MAgy3ACvriYElSRj+YGDB4bNqav28ZBgl5asjouPt1guN1dHidUksFMnf6/68lhzpz4kJMY8TSvoi7y+iKAiLlDgbc1Rq2UlfEFpSu4GH6hypJSi78yhNBjPV6pl+9atMBb2PqzXg/Ep6G4ZPSeR0TWrAEGg2VdlTRPr/yic/53Rcq5ZNLdyU3nGHeIE3LQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBeQL9FN26k7qxJmCXVl63Uh07YUPP75L5T8ig6z731I9NnlM7MjDVfOVnbtZyAU3Q2&amp;t=639190689332169432" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQpLQo2tZ2XWouq1So4gOUqY0KKe1EzOsTczU0xRl0n5eKfKyeAF-lJyrOfP3WtQdfN8uQSLy2uvSU1777I-PAjTI39EblEQcoFHdJ1_bkRMRpa7m_oc4zMLhs1EjXu0I2zcA9usuVgRscLWLf7Mojc81&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tYiZUsYt_xBTDhQir-ihv7ursUN-o4YtD6wK-167bi02KVsiSrYELyJM8lAirgk9xpOB-jbgvCBlmslMKNWBK111AaQ3ufAkF5xjVd6E1RNTjL3OSp0WHOd9vXkeF3iSmH-YGRNdMqgV_8y1oSE_CvgtEJWIWZalSP4KO44tgIzg0&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Sm_GGXofLw4C9Eu03fCPHLZnmAADl6c8Pfd7QRMevi3lkRnZYYdiqFNOO-IA-P4JQx4vFkzeq9L0nqitJbrR6rw1GfqJxgArvYeo97z146fon_cWcOn392XvlOA0g4AWyPzIj1kzuYZfZCQH9d6smtOV7OlFTfU15B5dPNShsoef8IHKvSLWio-eklbdrrWz0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pNnY3SPOXobYy0znCWU-ctfe8hwY_yv8qK6nYfdCqnzKZMiUVqn8oRSuarLDMNsnuUjtDm7iqEDiSBU7tL91fWRAn6HTdH1BuRay_IxRQWX4GZvSwbrjHVlDMT5wslhOjHvCBs_yME4F4SvwD9IiGoWwZ03BbYUJxtbQxED7X3KPipztbJf6UvAiH9sgvlaI0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=upAENvmeNxfpBioSkqBc6IhkjY-W-6n-nR3yD9QF_wzNpbbjXHAkEzpOGt_5HnXQMQGmRRMYa7teJ9tNqxZo0VQKKUr1ZTu39M1LIJo2PpPYZrN53sFK7lBrQYmeS5TUtz6yI6n1pBx1FjZHCzgnqZlAyKlEl_R7s9eBJhel8rxwsGOBpCZWSzQmGasXEX1K0&amp;t=6593801e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=QjBU5x4YUBggN3iKmsc12WFIGp7xng4Tn9KJHH0Y2ou7W5EgQzC5aKA0TZds1YuN5-VfpomPt0ZSe-82w9lOP9y9eRTN6-Aw1h9QSZMVuaRahyOXx2B_6QgygdKSrIl9IDiflA1MBEq4bRaiY1FffFv-x9UD5138REmcOKlZZYQ1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=tlTynJuwcuOdlotOppqvaL9Cs1bbUHKeURMSxzkBsQPdVl_ot4uEo16sjJxR4vCmbff8zMTIKZd676u7ozjfAyRT5Ctu5lfoSbbZ0cuejj7q77OCjxfhgxdOLkSUeXR3rK8Epcbu8Ot4INgA8UxaaclFAhZO_638n3etsdh8FPTZ4ELalfY6_3wp1BJFnTSs0&amp;t=764b716e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcPFeRGHus1rjoXNGzFNffL9wkKeeh_SeiIvShazIcUcYoZqcsD34qf064unxj4De8mkiZ7Nd1C0wkA4hwlQRwI5c1PfbqPACTzat1Gw8RCSR0&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcRR_RIomFXn-6OTVP7S7UTc4FJDbrgdUVP5cT3hlj7Gqn-oAc5ShKUg97jRJZZi4SHDf1BlDg1EPMpbplBlIl04D9GlhVFaF-fti23eZqMjPJYLhJOjZrUK_QYdhQkU9Kg2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LDxs7tI-ncIIKPgYq3uJynGIAutVQ5Lv09yYMkdUoWTtDIY55WSN2kCFwMjHc56bvoLqeRIH8Pj37QWZnQZ2I1dR12JIfbs3iNC9YGAeIdR-ho_XOLATuOwKX9eIDXDwNzVPDvVXjDuwQufloW1_FQ2&amp;t=2fee8f3f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DoEcOmAgUwAjHq4qvvgD1_OJqop35mKZ9LPboo_dHWURaPKavvTd9YfZbhWBf7Bfg4fR-U_9NCE_1jmm_964n1OpivVox-0sgw_50lxYAERSRy_XAMIPmDUG90jLfp8JB6s6g8Xn8xQm1JkWIEtL5hbCgp5ejm3kWY_dVIOr_YlScgHFqAGtf7ilCPocUwDU0&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=yAnkZTEOGwF2GXQ9ANOQMuFcHG-vuIXZJ6NTl-dM8FxT2GJwWXmK7Hx_lTsTckFhjce_4Qlz_ZboXlwF97Pz2u-EWINOvZ10rzvku8A_js7FwXNgjK4qIUtcti26WYmrG13Nnm5BEY1fWZwVTYH5y6J82MqTnh7R9tLSks_ik_Q1&amp;t=ffffffffab1e84de" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D202934F" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Nso33od6DYPMwKO/jfSutL/d1Xs41UVm2jwj3LsliaoXEb43dYjHaL2nAut1hZb1u1EE7+t5xFAy/F7yabfazeleMQGXqpv/PbCuy7L2+A3HiRvby9dpvyKsgKdoeFIwkITBepNKBTUZnBwvWNttwg==" />
+</div>
+	    
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<a href="#MainWrapper" class="btn" style="display: none;">Skip Navigation</a>
+		<div id="helperDiv1" class="SMAWindowMediaWidth" style="display:none;"></div> <!-- dummy divs to aid in detecting screen width -->
+		<div id="helperDiv2" class="SMAWindowMediaMaxWidth" style="display:none;"></div>
+		<div id="PublicWrapper" class="sfPublicWrapper">
+			<div class="SMAToolboxContent">
+
+				<section id="HeaderWrapper" class="sf_cols">
+					<div id="cpw_headerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<header id="cpw_header" class="sf_colsIn sf_1cols_1in_100">
+							<div id="navigation">
+								<nav class="navbar navbar-inverse navbar-lg navbar-fixed-top" role="navigation">
+									<div class="container-fluid nasa-header">
+										<div id="hdrNasaAffinity" class="row">
+											<div class="col-sm-9 col-xs-12">
+												<a href="https://www.nasa.gov" target="_blank"><img alt="NASA Meatball logo" class="logo" src="/Content/Images/meatball.png"></a>
+												<span>National Aeronautics and Space Administration</span>
+											</div>
+											<div class="col-sm-3 text-right hidden-xs">
+												<span><a href="https://www.nasa.gov" target="_blank">Visit nasa.gov</a></span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse navbar-collapse tabs">
+										<div class="tab-container">
+											<div class="site-toggle">
+												<div class="site-button current">
+													<a href="/" target="_self" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1e787b69-d2a8-65b9-a1a0-ff01003ca228"><img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance"></a>
+												</div>
+												
+												<div class="site-button">
+													<a href="https://nsc.nasa.gov/" target="_self" sfref="[41028969-d2a8-65b9-a1a0-ff05003ca228]bc038969-d2a8-65b9-a1a0-ff05003ca228"><img alt="NASA Safety Center Logo" src="/Content/Images/nsclogo.png"></a>
+												</div>
+												
+											</div>
+											<div id="SMAHeaderSearch" class="navbar-form navbar-right" role="search">
+												<div class="form-group">
+													
+<div id="ContentHeaderSearch_T40EBA3A0054">
+	
+
+<fieldset id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_main" class="sfsearchBox">
+    <input name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchTextBox" type="text" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox" class="sfsearchTxt" />
+    <input type="submit" name="ctl00$ContentHeaderSearch$T40EBA3A0054$ctl00$ctl00$searchButton" value="Search" onclick="return false;" id="ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton" class="sfsearchSubmit" />
+</fieldset>
+
+</div>
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container-fluid">
+										<div class="hidden-lg">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+											</button>
+											<a class="navbar-brand" href="/">
+												<img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance" class="img-responsive" />
+											</a>
+										</div>
+										<div class="collapse navbar-collapse" id="navbar-collapse-1">
+											
+
+
+<div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-lg" >
+	
+	
+	
+	
+	<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_navigationUl" class="nav navbar-nav">
+		
+						<li>
+							<a href="/news">News</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl00_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/news/articles">Articles</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/policies">Policies</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/policies/all-policies">All Policies</a>
+							
+						</li>
+					
+						<li>
+							<a href="/policies/policy-status">Policy Status</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines" class="sfSel">SMA Disciplines & Programs</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/accllp">ACCLLP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/aviation-safety">Aviation Operations and Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/fire-protection">Fire Protection</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-factors">Human Factors</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/human-rating">Human Rating</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nsrs">NSRS</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/nuclear-flight-safety" class="sfSel">Nuclear Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection">Planetary Protection</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop">Planetary Protection Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl01_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop">SMD Workshop</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl02_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/webinar-details">Supporting Documents</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall">SMD Workshop Fall</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/smd-workshop-fall/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii">2026 Metagenomics in Spaceflight: Establishing an Implementation Roadmap</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl04_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-iii/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii">Planetary Protection Workshop II</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl05_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/planetary-protection-workshop-ii/agenda">Agenda</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion">Metagenomics Technical Interface Meeting: Protocol Critique and Convergence</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl21_ctl06_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/home">Home</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/agenda">Agenda</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/register">Register</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/accommodations">Accommodations</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/planetary-protection/metagenomics-technical-interface-meeting-protocol-critique-and-conversion/contact-us">Contact Us</a>
+							
+						</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/quality">Quality </a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/risk-management">Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/safety-culture">Safety Culture</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl02_ctl27_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/sma-disciplines/safety-culture/safety-culture-survey">Safety Culture Survey</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/smsr">SMSR</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/system-safety">System Safety</a>
+							
+						</li>
+					
+						<li>
+							<a href="/sma-disciplines/workmanship">Workmanship</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/vids">Videos</a>
+							<ul id="ContentNavigation_T40EBA3A0071_ctl00_ctl00_ctl02_ctl03_childNodesContainer" class="dropdown-menu" role="menu">
+						<li>
+							<a href="/vids/allvideos">Video Library</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/feature-videos">Feature Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/safety-message-videos">Safety Message Videos</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/knowledge-bytes">Knowledge Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/policy-bytes">Policy Bytes</a>
+							
+						</li>
+					
+						<li>
+							<a href="/vids/event-videos">Event Videos</a>
+							
+						</li>
+					</ul>
+						</li>
+					
+						<li>
+							<a href="/about">About</a>
+							
+						</li>
+					
+						<li>
+							<a href="/test-page">Test Page</a>
+							
+						</li>
+					
+	</ul>
+</div>
+
+<script type="text/javascript">
+	(function ($) {
+		var navMenu = $("[id$='navigationUl']");
+		var ulElements = navMenu.find("li:has(ul) > a");
+		ulElements.attr("href", "javascript:void(0)");
+		ulElements.addClass("dropdown-toggle");
+		ulElements.attr("data-toggle", "dropdown");
+	})(jQuery);
+</script>
+<div>
+	
+<!-- 2023.3.1616.45 -->
+  <div class="sfNavWrp sfNavHorizontalDropDownWrp hidden-md hidden-sm hidden-xs">
+    <ul class="nav navbar-nav" id="navigationUl">
+      
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">News</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/news/articles">Articles</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/policies/all-policies">All Policies</a></li>
+<li><a href="/policies/policy-status">Policy Status Updates</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+      <li class="dropdown mega-dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown">SMA Disciplines &amp; Programs</a>				
+       <div class="dropdown-menu mega-dropdown-menu bkg_White">
+
+         <div class="col-sm-12 bkg_White" style="border-radius:4px;"><div id="displayABC" class="displayToggleBlock"><ul class="list-unstyled columnLayout"><li><a href="/sma-disciplines/accllp">ACCLLP</a></li><li><a href="/sma-disciplines/aviation-safety">Aviation Safety</a>
+ </li><li><a href="/sma-disciplines/eee-parts">EEEE Parts</a>
+ </li><li><a href="/sma-disciplines/electrical-safety">Electrical Safety</a>
+ </li><li><a href="/sma-disciplines/pyrotechnics-and-explosives-safety">Explosives and Pyrotechnics Safety</a>
+ </li><li><a href="/sma-disciplines/facility-system-safety">Facility Safety Management</a>
+ </li><li><a href="/sma-disciplines/fire-protection">Fire Protection</a>
+ </li><li><a href="/sma-disciplines/human-factors">Human Factors</a>
+ </li><li><a href="/sma-disciplines/human-rating">Human Rating</a>
+ </li><li><a href="/sma-disciplines/lifting-devices-and-equipment">Lifting Devices and Equipment</a>
+ </li><li><a href="/sma-disciplines/meteoroid-environments">Meteoroid Environment</a>
+ </li><li><a href="/sma-disciplines/metrology-and-calibration">Metrology and Calibration</a>
+ </li><li><a href="/sma-disciplines/mishap-investigation">Mishap Investigation</a>
+ </li><li><a href="/sma-disciplines/gidep">NASA Advisories and GIDEP</a>
+ </li><li><a href="/sma-disciplines/nondestructive-evaluation">Nondestructive Evaluation</a>
+ </li><li><a href="/sma-disciplines/nsrs">NSRS</a>
+ </li><li><a href="/sma-disciplines/nuclear-flight-safety">Nuclear Flight Safety</a>
+ </li><li><a href="/sma-disciplines/institutional-safety">Occupational Safety and Health</a>
+ </li><li><a href="/sma-disciplines/orbital-debris">Orbital Debris</a>
+ </li><li><a href="/sma-disciplines/elv-payload-safety">Payload Safety</a>
+ </li><li><a href="/sma-disciplines/planetary-protection">Planetary Protection</a></li><li><a href="/sma-disciplines/pressure-vessels-and-systems">Pressure Systems</a>
+ </li><li><a href="/sma-disciplines/quality">Quality</a>
+ </li><li><a href="/sma-disciplines/range-flight-safety">Range Flight Safety</a>
+ </li><li><a href="/sma-disciplines/reliability-and-maintainability">Reliability and Maintainability</a>
+ </li><li><a href="/sma-disciplines/risk-management">Risk Management</a>
+ </li><li><a href="/sma-disciplines/safety-culture">Safety Culture</a>
+ </li><li><a href="/sma-disciplines/smsr">SMSR</a>
+ </li><li><a href="/sma-disciplines/software-assurance-and-software-safety">Software Assurance and Software Safety</a>
+ </li><li><a href="/sma-disciplines/supply-chain-risk-management">Supply Chain Risk Management</a></li><li><a href="/sma-disciplines/system-safety">System Safety</a>
+ </li><li><a href="/sma-disciplines/workmanship">Workmanship</a>
+ </li></ul></div><div style="clear:both;">&nbsp;</div></div><style type="text/css">#displayABC ul {
+    column-count: 4;-webkit-column-count: 4;-moz-column-count: 4;
+    }
+    #displayABC ul li {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    }
+</style>
+
+       </div>				
+     </li>
+   
+
+
+  
+    
+    
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos</a>				
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/vids/allvideos">Video Library</a></li><li><a href="/vids/feature-videos">Feature Videos</a></li><li><a href="/vids/knowledge-bytes">Knowledge Bytes</a></li><li><a href="/vids/policy-bytes">Policy Bytes</a></li><li><a href="/vids/event-videos">Event Videos</a></li>
+        </ul>				
+      </li>
+    
+
+
+
+
+  
+    
+    
+
+      <li><a href='/about'>About</a></li>
+    
+
+
+
+
+    </ul>
+  </div>
+  <script type="text/javascript">
+   (function ($) {
+    var navMenu = $("[id$='navigationUl']");
+    var ulElements = navMenu.find("li:has(ul) > a");
+    ulElements.attr("href", "javascript:void(0)");
+    ulElements.addClass("dropdown-toggle");
+    ulElements.attr("data-toggle", "dropdown");
+
+  })(jQuery);
+
+</script>
+<script type="text/javascript">
+
+  jQuery(document).ready(function(){
+    jQuery('input[name="toggler"]').on("click", function(e){
+      if(jQuery(this).attr("value")=="Topic"){
+        jQuery("#displayABC").hide();
+        jQuery("#displayTopic").show();
+      }
+      if(jQuery(this).attr("value")=="ABC"){
+       jQuery("#displayTopic").hide();
+       jQuery("#displayABC").show();
+     }
+     SMASetMaxHeight(".displayToggleBlock");
+     e.stopPropagation();
+   });
+  });
+</script>
+<input id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+							<div id="toolbox" style="display:none;">
+								
+<script type="text/javascript">(function($) {
+	$(document).ready(function() {
+		var $nav = $(".navbar.navbar-osma.navbar-fixed-top.subnavbar-fixed-top.navbar-inverse .container-fluid .collapse.navbar-collapse ul.nav.navbar-nav");
+		$nav.width((function(){
+			var width = $nav.find("li").length * 42;
+			$nav.find("li").each(function() {
+				width += $(this).width() == 0 ? (function(elem) {
+					return $(elem).find("a").text().length * 7;
+				})(this) : $(this).width();
+			});
+			return width;
+		})());
+		$nav.css("visibility", "visible");
+	});
+})(jq);</script><script type="text/javascript">jQuery(document).ready(function(){
+jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+var divname = jQuery(this).attr('href');
+if (divname.match("^#") && jQuery(divname).length < 1){
+jQuery(this).parent().hide();
+}
+});
+});</script>
+							</div>
+						</header>
+					</div>
+				</section>
+
+				<section id="MainWrapper" class="sf_cols">
+					<div id="cpw_mainwrapper" class="sf_colsOut sf_1cols_1_100">
+						<article id="cpw_main" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock subnavSpacer SMAPrivateViewOnly hidden-xs hidden-sm hidden-md'><nav class="navbar navbar-osma navbar-fixed-top subnavbar-fixed-top navbar-inverse" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header"> <a href="#cpw_mainwrapper" class="navbar-brand hidden-sm">Nuclear Flight Safety</a> </div>
+<div class="collapse navbar-collapse" id="osma_navbar_collapse">
+<ul class="nav navbar-nav">
+    <li> <a href="#nuclearFlightSafety_news">News</a> </li>
+    <li> <a href="#nuclearFlightSafety_people">People</a> </li>
+    <li> <a href="#nuclearFlightSafety_learning">Learning</a> </li>
+    <li> <a href="#nuclearFlightSafety_guidance">Guidance</a> </li>
+    <li> <a href="#nuclearFlightSafety_spacePolicy">Space Policy</a> </li>
+    <li> <a href="#nuclearFlightSafety_reports">Reports</a> </li>
+    <li> <a href="#nuclearFlightSafety_importantLinks">Important Links</a> </li>
+</ul>
+</div>
+</div>
+</nav>
+
+</div><div class='sfContentBlock subnavSpacer'><section id="nuclearFlightSafety_jumbotron" data-stellar-background-ratio="0.5">
+<div class="container">
+<div class="row"> <!-- title and copy -->
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-7">
+<h1 class="jumbotronTitle">Nuclear Flight Safety</h1>
+<p>For the past half century, NASA has explored Earth and the solar system by employing vehicles and spacecraft in suborbital and high-altitude flight; in Earth orbit; in orbit around the sun, moon, Venus, Mars, Jupiter, and Saturn; in transit to Pluto, comets, and the solar system Heliopause; and on the surface of the moon and Mars.&nbsp;</p>
+<p>NASA periodically collaborates with others to perform scientific experiments that utilize radioactive sources, often leveraging NASA's Scientific Balloon Program and Sounding Rocket Program. Separately, when exploration missions require power or thermal control requirements that exceed that available from solar or chemical sources, NASA turns to radioactive sources. Nuclear power enables the exploration of the outer solar system -- missions supported by nuclear systems have resulted in</p>
+<ul>
+    <li>Twenty-one planetary encounters including all planets except Mercury</li>
+    <li>The examination of numerous planetary moons</li>
+    <li>Five Apollo missions</li>
+    <li>Mars landers and rovers</li>
+    <li>Polar and elliptical observations of the sun</li>
+    <li>Five missions beyond the edge of our solar system</li>
+</ul>
+<p>Nuclear systems include Radioisotope&nbsp;Thermoelectric&nbsp;Generators, Radioisotope Heater Units and Fission Reactors.</p>
+<p>NASA's Office of Safety and Mission Assurance works to assure that potential risks to the general public, workers, high-value assets and the environment associated with a planned launch of radioactive materials into space have been analyzed, evaluated and reviewed and that the required notifications and approvals have been made prior to launch.</p>
+<p><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8715_0026_&amp;page_name=main" title="" class="" target="">NPR 8715.26</a>, Nuclear Flight Safety describes the procedural requirements for characterizing and reporting potential risks associated with a planned launch of radioactive materials into space, on launch vehicles and spacecraft, and during normal or abnormal flight conditions.&nbsp;</p>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class="sf_cols newsContainer">
+    <div class="sf_colsOut " style="">
+        <div id="cph_main_C023_Col00" class="sf_colsIn sf_1col_1in_100">
+
+<div class="sf_cols row">
+    <div class="sf_colsOut container tbpad">
+        <div id="cph_main_C022_Col00" class="sf_colsIn"><div class='sfContentBlock'><section id="nuclearFlightSafety_news">
+<h2 class="sectionTitle"> <a href="/news/articles?taxonomy=categories&amp;propertyName=category&amp;taxon=/nuclear-flight-safety">Nuclear Flight Safety News</a> </h2>
+</section>
+
+</div>
+            <div class="newsslider row col-xs-12">
+                <ul>
+                            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="Nuclear Flight Safety Handbook Strengthens Available Guidance" href="../news/articles/newsitem/2023/08/09/nuclear-flight-safety-handbook-strengthens-available-guidance">
+                            <img src='https://sma.nasa.gov/images/default-source/events/nuclear-flight-safety_1.jpg?sfvrsn=b538c7f8_0&size=600' alt='nuclear flight safety_1' title='nuclear flight safety_1' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="Nuclear Flight Safety Handbook Strengthens Available Guidance" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2023/08/09/nuclear-flight-safety-handbook-strengthens-available-guidance">Nuclear Flight Safety Handbook Strengthens Available Guidance</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                August 09, 2023
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>NASA recently issued the new Nuclear Flight Safety Handbook, NASA-HDBK-8715.26, &ldquo;Information and Best Practices Related to NASA Nuclear Flight Safety for Space Flights Involving Space Nuclear Systems.&rdquo;&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ctrl0_FullStory" class="btn button-primary" href="../news/articles/newsitem/2023/08/09/nuclear-flight-safety-handbook-strengthens-available-guidance"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="Nuclear Flight Safety Paper Further Details Program’s Approach to Change" href="../news/articles/newsitem/2023/07/17/nuclear-flight-safety-paper-further-details-program-s-approach-to-change">
+                            <img src='https://sma.nasa.gov/images/default-source/events/nuclear-flight-safety_1.jpg?sfvrsn=b538c7f8_0&size=600' alt='nuclear flight safety_1' title='nuclear flight safety_1' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="Nuclear Flight Safety Paper Further Details Program’s Approach to Change" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2023/07/17/nuclear-flight-safety-paper-further-details-program-s-approach-to-change">Nuclear Flight Safety Paper Further Details Program’s Approach to Change</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                July 17, 2023
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>Recently, NASA personnel presented the paper, &ldquo;Exploring Digital Transformation for NASA Nuclear Flight Safety,&rdquo; at the&nbsp;<a href="https://www.iaass.org/">12th International Association for the Advancement of Space Safety Conference.</a></p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ctrl1_FullStory" class="btn button-primary" href="../news/articles/newsitem/2023/07/17/nuclear-flight-safety-paper-further-details-program-s-approach-to-change"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="NASA Issues New Nuclear Policy: NPR 8715.26" href="../news/articles/newsitem/2022/02/07/nasa-issues-new-nuclear-policy-npr-8715-26">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/hero771ba669d2a865b9a1a0ff0f003ca228.png?sfvrsn=5ab3c3f8_0&size=600' alt='Policies and Procedure' title='Policies and Procedure' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="NASA Issues New Nuclear Policy: NPR 8715.26" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2022/02/07/nasa-issues-new-nuclear-policy-npr-8715-26">NASA Issues New Nuclear Policy: NPR 8715.26</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                February 07, 2022
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>The Office of Safety and Mission Assurance recently released <a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8715_0026_&amp;page_name=main" title="" class="" target="">NPR 8715.26</a>,&nbsp;Nuclear Flight Safety, effective Feb. 3, 2022. The new NASA Procedural Requirements (NPR) follows the 2019 <a href="https://trumpwhitehouse.archives.gov/presidential-actions/presidential-memorandum-launch-spacecraft-containing-space-nuclear-systems/">National Security Presidential Memorandum-20</a> overhaul of the federal process for nuclear launch authorization of space nuclear systems and the 2020 release of &nbsp;<a href="https://trumpwhitehouse.archives.gov/presidential-actions/memorandum-national-strategy-space-nuclear-power-propulsion-space-policy-directive-6/">Space Policy Directive-6</a>, which established a national strategy to ensure the development and use of space nuclear power and propulsion systems, &ldquo;when appropriate to enable and achieve the scientific, exploration, national security, and commercial objectives of the United States.&rdquo; The NPR also brings NASA policy into alignment with present day practices.</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ctrl2_FullStory" class="btn button-primary" href="../news/articles/newsitem/2022/02/07/nasa-issues-new-nuclear-policy-npr-8715-26"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="Nuclear Flight Safety Paper Details Program’s Evolution to Meet Changing Needs" href="../news/articles/newsitem/2021/11/23/nuclear-flight-safety-paper-details-program-s-evolution-to-meet-changing-needs">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/nuclear-flight-safety-paper-details-program-s-evolution-to-meet-changing-needs-hero.png?sfvrsn=d546c0f8_0&size=600' alt='Document on laptop screen' title='Document on laptop screen' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="Nuclear Flight Safety Paper Details Program’s Evolution to Meet Changing Needs" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2021/11/23/nuclear-flight-safety-paper-details-program-s-evolution-to-meet-changing-needs">Nuclear Flight Safety Paper Details Program’s Evolution to Meet Changing Needs</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                November 23, 2021
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>Mission Assurance Standards and Capabilities Division Matt Forsbacka and Nuclear Flight Safety Assurance Manager Don Helton recently presented their paper &ldquo;<a href="https://ntrs.nasa.gov/citations/20210020806">Evolution of NASA&rsquo;s Nuclear Flight Safety Program to Meet Changing Needs</a>&rdquo; at the 11th International Association for the Advancement of Space Safety Conference.&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ctrl3_FullStory" class="btn button-primary" href="../news/articles/newsitem/2021/11/23/nuclear-flight-safety-paper-details-program-s-evolution-to-meet-changing-needs"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                  <li>
+            <div class="newsArticle">
+                    <div class="col-sm-6">
+                        <a title="What’s New: Nuclear Flight Safety Program Updates" href="../news/articles/newsitem/2021/05/12/what-s-new-nuclear-flight-safety-program-updates">
+                            <img src='https://sma.nasa.gov/images/default-source/news/posters/what-s-new-nuclear-flight-safety-program-updates-hero.png?sfvrsn=43fdc1f8_0&size=600' alt='What’s New Nuclear Flight Safety Program Updates' title='What’s New Nuclear Flight Safety Program Updates' class="img-responsive b_pad21"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="subtitleHeavy">
+                            <a title="What’s New: Nuclear Flight Safety Program Updates" data-sf-field="Title" data-sf-ftype="ShortText" href="../news/articles/newsitem/2021/05/12/what-s-new-nuclear-flight-safety-program-updates">What’s New: Nuclear Flight Safety Program Updates</a>
+                        </h3>
+                        <div class="news_detail">
+                            <span class="news_postdate">
+                                May 12, 2021
+                            </span>
+                            
+                        </div>
+                        <div class="contentDescription">
+                            <div class="sfnewsSummary sfsummary" ><p>The Office of Safety and Mission Assurance&rsquo;s Nuclear Flight Safety (NFS) program is currently responding to a number of process and policy changes that will affect how NASA approaches NFS going forward.&nbsp;&nbsp;</p></div>
+                                                  </div>
+                        <a id="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ctrl4_FullStory" class="btn button-primary" href="../news/articles/newsitem/2021/05/12/what-s-new-nuclear-flight-safety-program-updates"><i class='fa fa-list'></i> Read More</a>
+                    </div>
+                                          <div style="clear: both"></div>
+                </div>
+                    </li>
+            
+                </ul>
+            </div>  
+<style type="text/css" media="all">
+  .newsslider ul{position:relative; list-style:none;padding:0;margin:0;}
+ .newsslider ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden;display:none;}
+.newsslider li.bjqs-slide{position:absolute; display:none;}
+.newsslider ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+.newsslider ul.bjqs-controls.v-centered li a{position:absolute;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+.newsslider ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+.newsslider .bjqs-markers {
+    padding-left: 0;
+  text-align: center;
+  list-style: none;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  z-index: 15;
+ margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;    
+    position: relative;
+    top: auto;
+    right: auto;
+    line-height: 20px;
+}
+.newsslider .bjqs-markers li {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+    margin: 0 0 0 6px;
+  background-color: #a5a5a5;
+  border: none; 
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+.newsslider .bjqs-markers li.active-marker {
+    margin: 0 0 0 6px;
+        height: 20px;
+    width: 20px;
+    background-color: dimgray;
+    
+}
+.newsslider .bjqs-markers li a{
+    display:block;
+    width:100%;
+    color:#a5a5a5;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+  }
+.newsslider .bjqs-markers li.active-marker a{
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    color:dimgray;
+    
+  }
+  
+.newsslider p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+</style>
+<script src="/docs/default-source/default-library/bjqs-1-3.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+   
+ var slidecount = jQuery('div.newsslider>ul>li').length;
+    if(slidecount > 1){
+      SMASetMaxHeight("div.newsslider>ul>li");
+  var slideheight = jQuery('div.newsslider>ul>li').first().height();
+  var slidewidth = jQuery('div.newsslider').width();
+    
+  jQuery('div.newsslider>ul').addClass('bjqs');
+  
+    jQuery('.newsslider').bjqs({
+    animtype      : 'slide',
+    animduration : 500, // how fast the animation are
+    animspeed : 5000,
+    height: slideheight,
+    width: slidewidth,
+    responsive    : true,
+    showcontrols : false,
+    showmarkers : true,
+    randomstart   : false
+          });
+}
+     });
+  jQuery(window).resize(function () {
+    jQuery(".newsslider").css({"height": ""});
+    jQuery(".newsslider .bjqs-wrapper").css({"height": ""});
+    jQuery(".newsslider .bjqs").css({"height": ""});
+    jQuery(".newsslider .bjqs-slide").css({"height": ""});
+     SMASetMaxHeight(".newsslider .bjqs-slide");
+  
+     
+  });</script>
+
+        <input id="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ClientState" name="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ClientState" type="hidden" /><span id="ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList" style="display:none;"></span>
+
+
+
+<span></span>
+        </div>
+    </div>
+</div>
+
+            
+        </div>
+    </div>
+</div><div class='sfContentBlock'><!-- people -->
+<section id="nuclearFlightSafety_people">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<!-- title -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">People</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 text-center">
+<a href="#" data-toggle="modal" data-target="#modal_Nuclear_Bio_Helton">
+<img alt="" src="/images/default-source/bio-images/helton.png?sfvrsn=62c0d0f8_1" class="img-responsive img-circle center-block" title="Helton" data-displaymode="Original" style="vertical-align: middle;"></a>
+<h3 class="subtitleHeavy"><a href="#" data-toggle="modal" data-target="#modal_Nuclear_Bio_Helton">
+Don Helton</a>
+</h3>
+<h4 class="subtitleLight">Nuclear Flight Safety Officer</h4>
+<p class="text-center">Learn more about Nuclear Flight Safety Officer Don Helton.</p>
+<a href="#" class="btn button-alternate responsiveBtnSpace" data-toggle="modal" data-target="#modal_Nuclear_Bio_Helton"> <i class="fa fa-user"></i> Read More
+</a>
+</div>
+<div class="col-xs-12 col-sm-6 text-center">
+<!-- poc -->
+<a href="#" data-toggle="modal" data-target="#modal_NFS_PoCTable">
+<img alt="Points of Contact" src="/images/default-source/discipline-pages/poc.jpg" class="img-responsive img-circle center-block">
+</a>
+<h3 class="subtitleHeavy">
+<a href="#" data-toggle="modal" data-target="#modal_NFS_PoCTable">Points of Contact</a>
+</h3>
+<p class="text-center">For details on contacting a Nuclear Flight Safety Point of Contact (PoC),
+click below.</p>
+<a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_PoCTable">
+<i class="fa fa-users"></i> Find Your PoC
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><section id="nuclearFlightSafety_learning">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h1>Learning</h1>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="well_learning responsiveWellSpace">
+<span class="courseTitle">Introduction to Nuclear Flight Safety for SMA</span>
+<span class="courseSubTitle">SMA-STL-WBT-403</span>
+<p>
+This course is designed to provide NASA personnel with an overview of Nuclear Flight Safety and
+to increase knowledge across the programmatic, mission support and Technical Authority, with a
+focus on Safety and Mission Assurance personnel.
+</p>
+<a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_Learning_SMA-STL-WBT-403"> SMA-STL-WBT-403 Details </a>
+<a href="https://satern.nasa.gov" class="btn button-primary"> Launch SATERN </a>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="well_learning responsiveWellSpace">
+<span class="courseTitle">INSRB Outreach Materials</span>
+<p>
+The links below provide materials designed to quickly familiarize the un-initiated with the most basic information regarding the Interagency Nuclear Safety Review Board (INSRB). Links to the INSRB Charter and INSRB Playbook are contained under the &ldquo;Policy and Guidance&rdquo; section of this website.</p>
+<a style="margin-left: unset" href="/docs/default-source/news-documents/insrb-standard.pdf?sfvrsn=a327d5f8_4" class="btn button-primary" title="INSRB Standard Information">INSRB Standard Information</a>&nbsp;&nbsp;<a style="margin-left: unset" href="/docs/default-source/news-documents/insrb-pamphlet.pdf?sfvrsn=b227d5f8_6" class="btn button-primary" title="INSRB Pamphlet">INSRB Pamphlet</a>&nbsp; <a style="margin-left: unset" href="https://sma.nasa.gov/vids/video-item/insrb-virtual-open-house" class="btn button-primary" title="INSRB Standard Information" target="">INSRB Virtual Open House</a></div>
+</div>
+<div class="row">
+<div class="col-lg-12 privateContent">
+<div class="well_learning responsiveWellSpace">
+<span class="courseTitle">Radiation Safety Resources</span>
+<p> In addition to space nuclear systems, NASA personnel use small quantities of radioactive
+material to accomplish the agency&rsquo;s mission, and in some cases, this includes using this
+material in high-altitude flights and spaceflights. The resources immediately below highlight
+the importance of radiation protection and diligence when using these sources to provide
+familiarity or a refresher. More detailed information is available elsewhere on this page, on
+the NASA Safety Center&rsquo;s Radiation Safety site linked at the bottom of this page, and on
+<a style="margin-left: unset" href="https://nasa.sharepoint.com/sites/ohp/SitePages/Health-Physics.aspx"> OCHMO&rsquo;s Health Physics page </a>.
+</p>
+<div class="row">
+<div class="col-md-6">
+<a style="margin-left: unset" href="https://nsc.nasa.gov/resources/think-safety/think-safety-item/think-safety-periodic-incidents" class="btn button-primary"> Think Safety: Radioactive Material Awareness</a>
+<a style="margin-left: unset" href="https://nsc.nasa.gov/features/detail/remember-the-risks---radioactive-material-awareness" class="btn button-primary"> Remember the Risks: Radioactive Material Awareness Video </a>
+</div>
+<div class="col-md-6">
+<a style="margin-left: unset" href="https://nsc.nasa.gov/features/detail/60-second-safety---alara" class="btn button-primary"> 60-Second Safety: Reduce Radiation Exposure </a>
+<a style="margin-left: unset" href="https://nsc.nasa.gov/features/detail/more-to-know-about-mams" class="btn button-primary"> Knowledge Byte: More to Know About MAMS </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><section id="nuclearFlightSafety_guidance" data-stellar-background-ratio="0.5">
+<div class="guidanceGradient">
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Policy and Guidance</h2>
+<h3 class="subtitleLight">NASA and Interagency</h3>
+<table class="table-guidance tableML tablesorter" id="guidanceTable1">
+    <thead>
+        <tr>
+            <th>Policy</th>
+            <th>Title</th>
+            <th class="nonSort">Buttons</th>
+            <th class="nonSort">Buttons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>NPR 8715.26<br>
+            </td>
+            <td>Nuclear Flight Safety<br>
+            </td>
+            <td> <a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_Guidance_8715-26" title="" target="">NPR 8715.26 Details</a>&nbsp;</td>
+            <td> <a title="NPR-8715-26" class="btn button-primary" href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8715_0026_&amp;page_name=main" target="">See NPR 8715.26</a>
+            </td>
+        </tr>
+        <tr>
+            <td>INSRB Trial Use Playbook</td>
+            <td>Interagency Nuclear Safety Review Board (INSRB) Playbook, approved January 20, 2023&nbsp; &nbsp; &nbsp;</td>
+            <td> <a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_Guidance_Playbook">Playbook Details</a> </td>
+            <td> <a href="https://sma.nasa.gov/docs/default-source/sma-disciplines-and-programs/nuclear/insrb-playbook-rev2.pdf?sfvrsn=fd0fc3f8_4" class="btn button-primary">See Playbook</a><br>
+            <a href="/docs/default-source/sma-disciplines-and-programs/nuclear/insrb-document-feedback-form-508.pdf?sfvrsn=9986c2f8_0" class="btn button-alternate" title="Provide Feedback">Provide Feedback</a>
+            </td>
+        </tr>
+        <tr>
+            <td>INSRB Charter</td>
+            <td>Charter of the Interagency Nuclear Safety Review Board, approved June 14, 2022&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+            <td> <a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_Guidance_Charter">Charter Details</a> </td>
+            <td> <a href="https://sma.nasa.gov/docs/default-source/sma-disciplines-and-programs/nuclear/insrb-charter---508d.pdf?sfvrsn=7862c7f8_2" class="btn button-primary">See Charter</a><br>
+            <a href="/docs/default-source/sma-disciplines-and-programs/nuclear/insrb-document-feedback-form-508.pdf?sfvrsn=9986c2f8_0" class="btn button-alternate" title="Provide Feedback">Provide Feedback</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Categorial Relief Memo 1<br>
+            </td>
+            <td>Categorical Relief for Launches and Reentries Involving an A2 Mission Multiple Less Than 0.001<br>
+            </td>
+            <td> <a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_Guidance_memo">Memo Details</a> </td>
+            <td> <a href="/docs/default-source/sma-disciplines-and-programs/nuclear/2021-01-15-nfs-categorical-relief-no1-final-1--508.pdf?sfvrsn=e8c7c1f8_2" title="See Memo" class="btn button-primary">See Memo</a>&nbsp;<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Categorial Relief Memo 2<br>
+            </td>
+            <td>Categorical Relief for Launches and Reentries Involving an A2 Mission Multiple Less Than 0.001 (2023 Update)<br>
+            </td>
+            <td> <a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_Guidance_memo_2">Memo Details</a> </td>
+            <td> <a href="/docs/default-source/sma-disciplines-and-programs/nuclear/2023-cat-releif-memo-no2-final.pdf?sfvrsn=fe18c9f8_6" title="See Memo" class="btn button-primary">See Memo</a>&nbsp;<br>
+            </td>
+        </tr>
+        <tr>
+            <td>NASA-HDBK-8715.26 (Digital)</td>
+            <td>Information and Best Practices Related to NASA Nuclear Flight Safety for Space Flights Involving Space Nuclear Systems (Internal/Digital Version)</td>
+            <td> <a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_NASA_HDBK_8715-26_Digital" title="" target="">Handbook Details</a>&nbsp;</td>
+            <td> <a href="https://nasa.sharepoint.com/sites/OSMA-MASCD-nuclear-flight-safety/?OR=Teams-HL&amp;CT=1692966051332&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA3MDMwNzM0NiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&quot;" class="btn button-primary">See Digital NASA-HDBK-8715.26</a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>NASA-HDBK-8715.26</td>
+            <td>Information and Best Practices Related to NASA Nuclear Flight Safety for Space Flights Involving Space Nuclear Systems&nbsp;</td>
+            <td> <a href="#" class="btn button-alternate" data-toggle="modal" data-target="#modal_NFS_NASA_HDBK_8715-26" title="" target="">Handbook Details</a>&nbsp;</td>
+            <td> <a href="https://ntrs.nasa.gov/api/citations/20230008641/downloads/NASA-NFS-Handbook-Inaugural-2023-06-30.pdf" class="btn button-primary">See NASA-HDBK-8715.26</a><br>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock'><!-- space policy --> <section id="nuclearFlightSafety_spacePolicy" class="">
+<div id="" class="">
+<div id="" class="">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Federal Guidance on Launch of Spacecraft Containing Space Nuclear Systems</h2>
+<p style="margin-bottom:20px">The 2019&nbsp;<a href="https://trumpwhitehouse.archives.gov/presidential-actions/presidential-memorandum-launch-spacecraft-containing-space-nuclear-systems/" title="" class="" target="">Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems </a>(NSPM-20) revises the process for launches of spacecraft containing space nuclear systems, including Radioisotope Power Systems, Radioisotope Heater Units&nbsp;, and Fission Reactors. It states, &ldquo;The ability to use space nuclear systems safely and sustainably is vital to maintaining and advancing United States dominance and strategic leadership in space. For United States launches of space nuclear systems, the Federal Government must ensure a rigorous, risk informed safety analysis and launch authorization process.&rdquo; The memorandum covers both federal government launches and commercial launches and, among other things, it establishes a new set of safety guidelines, a revised launch authorization process and a standing Interagency Review Board.</p>
+<p>The 2020&nbsp;<a href="https://trumpwhitehouse.archives.gov/presidential-actions/memorandum-national-strategy-space-nuclear-power-propulsion-space-policy-directive-6/" title="" class="" target="">Space Policy Directive-6</a> outlines a government-wide strategy for space nuclear power and propulsion activities and provides greater clarity on how NASA&rsquo;s programmatic activities, as well as those of its inter-governmental, commercial and international partners, fit in to that overall strategy. It also codifies the expectations for safe disposal of Earth-orbiting spacecraft that use a space nuclear system.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock subnavSpacer SMAPrivateViewOnly'><section class="darkBlue" id="nuclearFlightSafety_reports" data-stellar-background-ratio="0.5">
+<div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Reports</h2>
+<table class="table-news tableML tablesorter" id="learningTable1">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Details</th>
+            <th>Report</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2023</td>
+            <td>Laying the Foundation for New and Advanced Nuclear Reactors in the United States</td>
+            <td>This National Academies&rsquo; study assesses the future of new and advanced nuclear reactor technologies and identifies the opportunities and barriers to commercialization. It operates in parallel with a congressionally mandated study on the fuel cycle and waste aspects of these advanced reactor designs.</td>
+            <td><a class="btn button-alternate" href="https://www.nationalacademies.org/our-work/laying-the-foundation-for-new-and-advanced-nuclear-reactors-in-the-united-states" title="See Report" target="">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2023&nbsp;</td>
+            <td>
+            Technical Basis Related to the Posture of NASA&rsquo;s Office of Safety and Mission Assurance for the Launch of Radioactive Material Other than Space Nuclear Systems: Volume 1&ndash;Overview of Analysis and Results
+            </td>
+            <td>
+            For over 50 years, NASA has launched and reentered payloads containing radioactive material. The isotopes, their quantity and form have varied significantly. The handling of this material prior to its integration into the spacecraft at the launch center (and after its return to Earth after flight, if applicable) falls under the purview of the Office of the Chief Health and Medical Officer. After the radioactive material is integrated into the spacecraft at the launch center, it falls under the purview of the Office of Safety and Mission Assurance&rsquo;s (OSMA) Nuclear Flight Safety Program. Historically, OSMA concurrence was required for any launch or reentry involving radioactive material. However, OSMA recently revisited this posture due to changes in the federal policy in this area, and the significant accrued experience. The current report represents the more quantitative study envisioned in the recent change in posture. More specifically, this document addresses the potential risks and other considerations associated with launching small quantities of radioactive material &mdash; below the level requiring the federally-mandated process in National Security Presidential Memorandum (NSPM) Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems (USG, 2019) &mdash;to provide the technical basis for when such activities require OSMA concurrence versus notification, as it relates to Nuclear Flight Safety.
+            </td>
+            <td><a class="btn button-alternate" href="https://ntrs.nasa.gov/citations/20230002528" title="See Report" target="">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2022</td>
+            <td>Report of the Interagency Space Reactor Standards Working Group<br>
+            </td>
+            <td>This report documents the consensus findings and recommendations of a U.S. governmental interagency space reactor Standards Working Group.<br>
+            </td>
+            <td><a class="btn button-alternate" href="https://ntrs.nasa.gov/api/citations/20220004191/downloads/20220004191a.pdf" title="See Report" target="">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2023&nbsp;</td>
+            <td>Annual NSPM-20 Section 6 Report (Dated May 4, 2023)</td>
+            <td>This letter fulfills NASA&rsquo;s annual reporting requirement under Section 6 of National Security Presidential Memorandum-20 and reports to the Office of Science and Technology Policy on the Dragonfly mission.</td>
+            <td><a class="btn button-alternate" href="/docs/default-source/news-documents/2023-05-04-nspm20-sect-6-letter-signed-final.pdf?sfvrsn=d3b4c9f8_2" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2022</td>
+            <td>Annual NSPM-20 Section 6 Report, (Dated May 3, 2022)<br>
+            </td>
+            <td>This letter fulfills NASA&rsquo;s annual reporting requirement under Section 6 of the National Security Presidential Memorandum-20 and reports to the Office of Science and Technology Policy on the Dragonfly mission.<br>
+            </td>
+            <td><a class="btn button-alternate" href="/docs/default-source/sma-disciplines-and-programs/nuclear/2022-05-03-nasa-nspm20-sect-6-letter_final.pdf?sfvrsn=50d3cdf8_2" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2023&nbsp;</td>
+            <td>Technical Basis Related to the Posture of NASA&rsquo;s Office of Safety and Mission Assurance for the Launch of Radioactive Material Other than Space: Volume 2-Details of New Analysis Performed</td>
+            <td>This second volume contains documentation of the new analysis performed as part of this overall effort, and forms the under-pinning of the summary information contained in the first volume of the same title.</td>
+            <td><a class="btn button-alternate" href="/docs/default-source/sma-disciplines-and-programs/nuclear/srs-tech-basis-volume-2_final.pdf" title="See Report" target="">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>Oct. 28, 2021 letter from R. DeLoach to J. Sullivan, RE: NSPM-20 Safety Guidelines for Space Reactors<br>
+            </td>
+            <td>This letter to the assistant to the president for National Security Affairs relays an interagency assessment in response to NSPM-20 concluding that no additional administration-level safety guidelines are needed at this time for space reactors.<br>
+            </td>
+            <td><a class="btn button-alternate" href="/docs/default-source/sma-disciplines-and-programs/nuclear/2021-10-28-frg-letter-to-sullivan-508d.pdf?sfvrsn=f46c0f8_0" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>Oct. 28, 2021 letter from R. DeLoach to E. Lander, RE: NSPM-20 Safety Guidelines for Space Reactors<br>
+            </td>
+            <td>This letter to the director of the Office of Science and Technology Policy&nbsp;relays an interagency assessment in response to NSPM-20 concluding that no additional administration-level safety guidelines are needed at this time for space reactors.<br>
+            </td>
+            <td><a class="btn button-alternate" href="/docs/default-source/sma-disciplines-and-programs/nuclear/2021-10-28-frg-letter-to-lander-508d.pdf?sfvrsn=1e46c0f8_0" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td> 2021</td>
+            <td>Annual NSPM-20 Section 6 Report, (Dated April 29, 2021)</td>
+            <td>This letter fulfills NASA&rsquo;s annual reporting requirement under Section 6 of the National Security Presidential Memorandum-20 and reports to the Office of Science and Technology Policy on the Dragonfly mission.</td>
+            <td><a class="btn button-alternate" href="/docs/default-source/sma-disciplines-and-programs/nuclear/2021-nspm20-sect6-sma-letter-to-ostp-signed-508.pdf?sfvrsn=9bd8c1f8_0" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>Assessment of Strategies for Managing Cancer Risks Associated With Radiation Exposure During Crewed Space Missions<br>
+            </td>
+            <td>The 2021 National Academies&rsquo; report providing recommendations and conclusions regarding an updated space radiation health standard, NASA's radiation risk communication strategies and a process for developing an ethics-informed waiver protocol for long-duration spaceflight missions.<br>
+            </td>
+            <td><a class="btn button-alternate" href="https://www.nationalacademies.org/our-work/assessment-of-strategies-for-managing-cancer-risks-associated-with-radiation-exposure-during-crewed-space-missions" title="See Report" target="">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>Space Nuclear Propulsion for Human Mars Exploration<br>
+            </td>
+            <td>The 2021 National Academies&rsquo; report identifying the primary technical and programmatic challenges, merits and risks for developing and demonstrating space nuclear propulsion technologies of interest to future exploration missions.</td>
+            <td><a class="btn button-alternate" href="https://www.nationalacademies.org/our-work/space-nuclear-propulsion-technologies" title="See Report" target="">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>Annual NSPM-20 Section 6 Report (Dated April 24, 2024)<br>
+            </td>
+            <td>This letter fulfills NASA's annual reporting requirement under Section 6 of National Security Presidential Memorandum-20 and reports to the Office of Science and Technology Policy on the Dragonfly mission.</td>
+            <td><a class="btn button-alternate" href="/docs/default-source/sma-disciplines-and-programs/nuclear/nspm20-sect-6-letter-signed-04-24-24.pdf?sfvrsn=ba9fd5f8_2" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2025</td>
+            <td>&nbsp;**Limited Distribution** Reference Information Related to U.S. Government Involvement in the Safe Use of Space Nuclear Systems</td>
+            <td>&nbsp;**Pre-decisional - Do not cite/This document provides information related to relevant government agencies' roles to facilitate future discussions about regulatory pathways for commercial or non-traditional government space nuclear systems and missions./Not for distribution outside the U.S. Government**</td>
+            <td><a class="btn button-alternate" href="mailto:Donald.M.Helton@nasa.gov" title="See Report" target="">Request Report</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;2025</td>
+            <td>&nbsp;Annual NSPM-20 Section 6 Report, (Dated May 27, 2025)</td>
+            <td>This letter fulfills NASA&rsquo;s annual reporting requirement under Section 6 of the National Security Presidential Memorandum-20 and reports to the Office of Science and Technology Policy on the Dragonfly mission.</td>
+            <td><a class="btn button-alternate" href="/docs/default-source/news-documents/2025-05-nspm20-sect-6-letter-final-signed.pdf?sfvrsn=a2c0d0f8_0" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;2026</td>
+            <td>&nbsp;Annual NSPM-20 Section 6 Report, (Dated May 7, 2026)</td>
+            <td>This letter fulfills NASA&rsquo;s annual reporting requirement under Section 6 of the National Security Presidential Memorandum-20 and reports to the Office of Science and Technology Policy on the Dragonfly mission.</td>
+            <td><a class="btn button-alternate" href="/docs/default-source/default-library/2026-nspm20-sect-6-letter-revd-nv-signed-final.pdf?sfvrsn=4145d3f8_0" title="See Report">See Report</a></td>
+        </tr>
+        <tr>
+            <td>2026</td>
+            <td>&nbsp;**Limited Distribution** Managing the Terrestrial and Spaceflight Jurisdictional Interface for Radioactive Material in Quantities Below the IAEA A2 Value &ndash; Product of an Informal Interagency Working Group</td>
+            <td>&nbsp;This report documents a collaborative conversation that occurred between NASA and several other Federal agencies over a period of several years regarding the handling of the terrestrial and spaceflight jurisdictional interface for the launch of relatively small quantities of radioactive material under novel circumstances, with an emphasis on situations involving the launch or this material under 14 CFR 450.</td>
+            <td><a class="btn button-alternate" href="mailto:Donald.M.Helton@nasa.gov" title="See Report" target="">Request Report</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div class='sfContentBlock SMAPrivateViewOnly'><!-- links --> <section id="nuclearFlightSafety_importantLinks" class="">
+<div id="" class="">
+<div id="" class="">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="sectionTitle">Important Links</h2>
+<div id="linkList">
+<dl>
+    <dt><a href="https://www.iaea.org/newscenter/nuclear-explained" title="" class="" target="_blank">International Atomic Energy Agency (IAEA)</a></dt>
+    <dd>IAEA web page providing podcasts and other resources related to understanding uses of nuclear technologies</dd>
+</dl>
+<dl>
+    <dt><a href="https://www1.grc.nasa.gov/space/science/lattice-confinement-fusion/" title="" class="" target="_blank">Lattice Confinement Fusion</a></dt>
+    <dd>Announcement of two papers on the method for triggering nuclear fusion in the space between the atoms of a metal solid</dd>
+</dl>
+<dl>
+    <dt><a href="https://nsc.nasa.gov/topics/radiation-safety" title="" class="" target="_blank">NASA Safety Center Radiation Safety Site</a></dt>
+    <dd>Internal&nbsp;NASA site related to Radiation Safety during center operations</dd>
+</dl>
+<dl>
+    <dt><a href="https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fteam%2F19%253ac2cfcacac98d46ae900414328dc4a980%2540thread.tacv2%2Fconversations%3FgroupId%3D5bc68b25-28cc-4fde-b940-9ea0227bd0f7%26tenantId%3D7005d458-45be-48ae-8140-d43da96dd17b&amp;data=04%7C01%7Ccassandra.barnes%40nasa.gov%7C5f8ebd0a15074263ae4008d9aada4dcd%7C7005d45845be48ae8140d43da96dd17b%7C0%7C0%7C637728676844799459%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=LtzlizfW1kuSf3qnEIEu9SfYn%2BsvnMxa4EbUNt8iu3w%3D&amp;reserved=0" title="" class="" target="_blank">Nuclear Flight Safety Teams Site</a>&nbsp;(Including <a href="https://nasa.sharepoint.com/:o:/r/teams/NuclearFlightSafety/_layouts/15/Doc.aspx?sourcedoc=%7BC0331818-C611-4A0D-BD74-A5A7D6B4BDAB%7D&amp;file=FAQs&amp;action=edit&amp;mobileredirect=true&amp;wdorigin=Sharepoint&amp;RootFolder=%2Fteams%2FNuclearFlightSafety%2FShared%20Documents%2FGeneral%2FFAQs%2FFAQs&amp;d=wc0331818c6114a0dbd74a5a7d6b4bdab&amp;csf=1&amp;web=1&amp;e=l7Cxgx&amp;CID=083749c4-08d1-4d87-b2fa-83f7b65aec46" title="" class="" target="">FAQs</a>&nbsp;and other information)</dt>
+    <dd>Request access from Nuclear Flight Safety Officer&nbsp;<a href="mailto:donald.m.helton@nasa.gov" title="" class="" target="">Don Helton</a>, if needed</dd>
+</dl>
+<dl>
+    <dt><a href="https://rps.nasa.gov/" title="" class="" target="_blank">Radioisotope Power Systems</a></dt>
+    <dd>NASA's home page for radioisotope power systems</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div><div>
+	
+
+
+          
+          <script src="/docs/default-source/javascript/printmodalcombined.js"></script>
+ <script>
+            function printThis(divId,docTitle){
+            if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+    jQuery('#'+divId).printElement({printMode:'popup',pageTitle:docTitle, overrideElementCSS:['/docs/default-source/style-sheets/sma_print.css']});
+}
+else {
+  printJS({printable: divId,type:'html',style:'.hidden-print {display:none!important;}',docTitle: docTitle});
+}
+            }
+          </script>
+          
+          <style>
+            @media print{
+  a[href]:after {
+    content: none !important;
+  }
+              .btn{display:none !important;}
+            
+            .hidden-print{display:none !important;}}</style>
+		
+<div tabindex="-1" class='modal fade ' id='modal_Nuclear_Bio_Helton' role="dialog" data-modal-url='/nuclear_bio_helton' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_Nuclear_Bio_Helton_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Don Helton</h4>
+							<h5 class="modal-identity">Nuclear Flight Safety Officer</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_Nuclear_Bio_Helton_print','Nuclear_Bio_Helton');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-3"><img sf-custom-thumbnail="true" src="/images/default-source/bio-images/helton.png?sfvrsn=62c0d0f8_1" sf-size="329819" class="img-responsive img-circle center-block" width="200" alt="" sf-constrain-proportions="true" /></div><div class="col-sm-9"><h3>Don Helton</h3><h4>Nuclear Flight Safety Officer</h4><p>Donald "Don" Helton is the Nuclear Flight Safety Officer and the acting Range Flight Safety program executive in the NASA Office of Safety and Mission Assurance.&nbsp;</p><p>As Nuclear Flight Safety Officer, Helton is responsible for reviewing the Nuclear Launch Safety Approval Requests submitted by programs and projects that plan to launch radioactive material in to space, in accordance with NASA directives and requirements. In this role, he also coordinates the Interagency Nuclear Safety Review Board, which evaluates the quality of the safety analysis associated with nuclear missions that meet criteria specified in NSPM-20, &ldquo;Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems.&rdquo;</p><p>As the acting Range Flight Safety program executive, Helton serves as the Point of Contact for all Range Safety activities for the agency.&nbsp;He&nbsp;is responsible for developing Range Safety policies; auditing centers to ensure compliance with these policies; working with the national Range Safety community including the Department of Defense and the Federal Aviation Administration to develop consistent policies; and maintaining Range Safety courses for the agency.</p><p>Prior to his current role, Helton was a senior reliability and risk analyst at the U.S. Nuclear Regulatory Commission (NRC). In this role, he performed risk assessment activities related to the significance determination of inspection findings and emergent conditions for operating commercial nuclear power plants, contributed to broad agency activities in Risk-Informed Decision Making, and supported the development of regulatory guidance relating to the use of risk-informed regulation. During his 18 years at the NRC, Helton developed and reviewed probabilistic safety assessments for spent fuel wet storage, including its use in both safety basis activities and National Environmental Policy Act activities; served as the NRC-appointed technical adviser for the nuclear launch safety review of the Mars 2020 Interagency Nuclear Safety Review; contributed to risk assessment consensus standard development; and served as a Subject Matter Expert in Level 2 Probabilistic Risk Assessment for an International Atomic Energy Agency review mission. Separately, Helton served in varying roles as a responder for the NRC&rsquo;s Emergency Operations Center. He was a recipient of the NRC's Meritorious Service Award.</p><p>Helton has a master&rsquo;s degree in nuclear engineering from Texas A&amp;M university, focused on the use of computational fluid dynamics in nuclear applications, including a traineeship at France&rsquo;s Le Commissariat a L&rsquo;Energie Atomique&rsquo;s Centre Saclay. He also holds a bachelor&rsquo;s degree in nuclear engineering from North Carolina State University, which included research in the area of reactor physics. He was born and raised in Union County, North Carolina.</p><p>Helton currently resides in Rockville, Maryland, with his wife and two daughters. He spends his free time fishing, biking, volunteering and playing guitar.</p></div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_NASA_HDBK_8715-26_Digital' role="dialog" data-modal-url='/nfs_nasa_hdbk_8715-26_digital' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_NASA_HDBK_8715-26_Digital_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA-HDBK-8715.26 (Digital)</h4>
+							<h5 class="modal-identity">Information and Best Practices Related to NASA Nuclear Flight Safety for Space Flights Involving Space Nuclear Systems</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_NASA_HDBK_8715-26_Digital_print','NFS_NASA_HDBK_8715-26_Digital');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This digital version of the handbook provides a routinely-updated and more navigable version of information and best practices associated with NASA&rsquo;s nuclear flight safety activities that fall within NASA&rsquo;s domain. It is managed by a small content management group based on observations and feedback about the Handbook&rsquo;s content and is intended for internal use. The updated content will be periodically rolled in to a new/approved external version of the Handbook.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nasa.sharepoint.com/sites/OSMA-MASCD-nuclear-flight-safety/?OR=Teams-HL&CT=1692966051332&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA3MDMwNzM0NiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NASA-HDBK-8715.26
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_NASA_HDBK_8715-26' role="dialog" data-modal-url='/nfs_nasa_hdbk_8715-26' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_NASA_HDBK_8715-26_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA-HDBK-8715.26</h4>
+							<h5 class="modal-identity">Information and Best Practices Related to NASA Nuclear Flight Safety for Space Flights Involving Space Nuclear Systems</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_NASA_HDBK_8715-26_print','NFS_NASA_HDBK_8715-26');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This handbook provides information and best practices associated with NASA&rsquo;s nuclear flight safety activities that fall within NASA&rsquo;s domain (as opposed to that of other Federal authorities). It applies specifically to space nuclear systems, which include radioisotope power systems and fission reactors. Its purpose is to facilitate a repeatable and robust process that promotes clear and effective interfaces between activities and stakeholders focused on meeting nuclear flight safety requirements within the context of NASA&rsquo;s broader nuclear-related activities and interfaces.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://ntrs.nasa.gov/api/citations/20230008641/downloads/NASA-NFS-Handbook-Inaugural-2023-06-30.pdf" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NASA-HDBK-8715.26
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_Guidance_memo_2' role="dialog" data-modal-url='/nfs_guidance_memo_2' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_Guidance_memo_2_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Categorial Relief Memo 2</h4>
+							<h5 class="modal-identity">Categorical Relief for Launches and Reentries Involving an A2 Mission Multiple Less Than 0.001</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_Guidance_memo_2_print','NFS_Guidance_memo_2');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This memo affirms that a categorical relief threshold corresponding to an A2 mission multiple of 0.001 is suitable for use in accordance with the definition of this process in NPR 8715.26, based on quantitative assessments performed since the initial January 2021 categorical relief memo.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://sma.nasa.gov/docs/default-source/sma-disciplines-and-programs/nuclear/2023-cat-releif-memo-no2-final.pdf" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See Memo
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_Learning_SMA-STL-WBT-403' role="dialog" data-modal-url='/nfs_learning_sma-stl-wbt-403' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_Learning_SMA-STL-WBT-403_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Introduction to Nuclear Flight Safety for SMA</h4>
+							<h5 class="modal-identity">SMA-STL-WBT-403</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_Learning_SMA-STL-WBT-403_print','NFS_Learning_SMA-STL-WBT-403');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This course is designed to provide NASA personnel with an overview of Nuclear Flight Safety and to increase knowledge across the programmatic, mission support and Technical Authority, with a focus on Safety and Mission Assurance personnel.&nbsp;</p>
+<p>Course Number:SMA-STL-WBT-403</p>
+<p>Length: 2 hours</p>
+<p>Audience:&nbsp;This course is intended for NASA Chief Safety and Mission Assurance Officers assigned to programs or projects using radioactive material, system and safety professionals, Reliability and Maintainability personnel, others who ensure Nuclear Flight Safety, the NASA Headquarters and local center Safety and Mission Assurance community, and program and project managers.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://satern.nasa.gov/" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  Launch SATERN
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_Guidance_8715-26' role="dialog" data-modal-url='/nfs_guidance_8715-26' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_Guidance_8715-26_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NPR 8715.26</h4>
+							<h5 class="modal-identity">Nuclear Flight Safety</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_Guidance_8715-26_print','NFS_Guidance_8715-26');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8715_0026_&amp;page_name=main" title="" class="" target="">NPR 8715.26 </a>addresses roles, responsibilities and requirements related to implementation of NASA&rsquo;s Nuclear Flight Safety Program. It follows the 2019 National Security Presidential Memorandum-20 overhaul of the federal process for nuclear launch authorization of space nuclear systems and the 2020 release of&nbsp; Space Policy Directive-6, which established a national strategy to ensure the development and use of space nuclear power and propulsion systems, &ldquo;when appropriate to enable and achieve the scientific, exploration, national security, and commercial objectives of the United States.&rdquo; The NPR also brings NASA policy into alignment with present day practices. It replaced NPR 8715.3D, Chapter 6.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8715_0026_&page_name=main" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NPR 8715.26
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_Guidance_Playbook' role="dialog" data-modal-url='/nfs_guidance_playbook' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_Guidance_Playbook_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">INSRB Trial Use Playbook</h4>
+							<h5 class="modal-identity">Interagency Nuclear Safety Review Board (INSRB) Playbook</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_Guidance_Playbook_print','NFS_Guidance_Playbook');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This document describes the Interagency Nuclear Safety Review Board's (INSRB) intent and functionality at a more detailed level. It is generally non-binding, but it sets expectations for how the board and INSRB Review Groups (IRGs) are likely to behave. It also addresses clarifications in governing policies when those are identified. Its primary function is to document expectations and boundaries for how INSRB will conduct business and how INSRB expects that mission owners and product recipients will interface with the board and IRGs, so as to promote openness and effectiveness in its activities. Revision 2 (January 2023) addresses limited feedback received since Revision 1 was issued; incorporates the recommendations of small group activities focused on upstream technical peer review interfaces and how the INSRB would be involved between the time of launch authorization and launch; adds INSRB &ldquo;intents&rdquo; to the document preamble; incorporates conforming changes with the 2022 INSRB Charter revision; and adds an IRG empanelment checklist.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://demo.sma.nasa.gov/docs/default-source/sma-disciplines-and-programs/nuclear/insrb-playbook-rev2.pdf?sfvrsn=fd0fc3f8_4" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See Playbook
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_Guidance_memo' role="dialog" data-modal-url='/nfs_guidance_memo' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_Guidance_memo_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Categorial Relief Memo</h4>
+							<h5 class="modal-identity">Categorical Relief for Launches and Reentries Involving an A2 Mission Multiple Less Than 0.001</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_Guidance_memo_print','NFS_Guidance_memo');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p><em>Invocation pending the 2021 update to the Nuclear Flight Safety NASA Procedural Requirements (NPR)</em></p>
+<hr>
+<p> This categorical relief covers launches and reentries (specifically referring to a planned return to Earth), which have a total A2 mission multiple (considering all radioactive materials onboard) of less than 0.1% (i.e., activity less than 0.001&times;A2), and which would otherwise require concurrence through the Office of Safety and Mission Assurance. The A2 mission multiple is to be calculated in accordance with the Nuclear Flight Safety NPR.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://sma.nasa.gov/docs/default-source/sma-disciplines-and-programs/nuclear/2021-01-15-nfs-categorical-relief-no1-final-1--508.pdf?sfvrsn=e8c7c1f8_2" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See Memo
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_Guidance_Charter' role="dialog" data-modal-url='/nfs_guidance_charter' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_Guidance_Charter_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Charter</h4>
+							<h5 class="modal-identity">Charter of the Interagency Nuclear Safety Review Board, approved June 14, 2022</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_Guidance_Charter_print','NFS_Guidance_Charter');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This charter outlines high-level governance aspects of the Interagency Nuclear Safety Review Board (INSRB), which was created in February 2020 in response to National Security Presidential Memorandum (NSPM)-20. The INSRB serves as the interagency nuclear safety review entity for government-sponsored launches of space nuclear systems in Tier II and Tier III, as defined in NSPM-20, and for commercial launches of space nuclear systems when requested by the secretary of transportation. The INSRB is administered by NASA&rsquo;s Office of Safety and Mission Assurance.</p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="https://sma.nasa.gov/docs/default-source/sma-disciplines-and-programs/nuclear/insrb-charter---508d.pdf?sfvrsn=7862c7f8_2" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See Charter
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_PoCTable' role="dialog" data-modal-url='/nfs_poctable' aria-hidden="true">
+					<div class='modal-dialog modal-lg'>
+						<div class="modal-content" id='modal_NFS_PoCTable_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">Nuclear Flight Safety Points of Contact</h4>
+							
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_PoCTable_print','NFS_PoCTable');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <div class="row"><div class="col-sm-12"><p>The Nuclear Flight Safety Points of Contact (PoCs) include:</p><table class="table modalPocTable k-table"><thead><tr><th data-role="resizable">Name</th><th>Email Address</th></tr></thead><tbody><!-- office title here -->
+ <tr class="PocCenter"><td colspan="2">Office of Safety and Mission Assurance</td></tr><!-- end of office title --><tr><td>Don Helton</td><td><a href="mailto:Donald.M.Helton@nasa.gov">Donald.M.Helton@nasa.gov</a><br /></td></tr><tr><td>Kuiana Carson*</td><td><a href="mailto:Kuiana.E.Carson@nasa.gov">Kuiana.E.Carson@nasa.gov</a></td></tr></tbody></table><p>*Detail</p></div></div> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+<div tabindex="-1" class='modal fade ' id='modal_NFS_Guidance_SP-2014-3705' role="dialog" data-modal-url='/nfs_guidance_sp-2014-3705' aria-hidden="true">
+					<div class='modal-dialog modal-md'>
+						<div class="modal-content" id='modal_NFS_Guidance_SP-2014-3705_print'>
+							<div class="modal-header">
+								<button type="button" class="close hidden-print" data-dismiss="modal"><span aria-hidden="true">&times;</span> <span class="sr-only">Close</span> </button>
+								<h4 class="modal-title">NASA/SP-2014-3705</h4>
+							<h5 class="modal-identity">NASA Space Flight Program and Project Management Handbook</h5>
+                                                          </div>
+							<div class="modal-body">
+                                                          <div style="text-align:right;">
+                                                            <a href="javascript:printThis('modal_NFS_Guidance_SP-2014-3705_print','NFS_Guidance_SP-2014-3705');">
+                                         			<i class="fa fa-print"></i> Print Version</a></div>
+								                        
+                                    <div>
+                                       <p>This handbook is&nbsp;the companion document to NPR 7120.5, NASA Space Flight Program and Project Management Requirements, and represents the accumulation of knowledge NASA gleaned on managing program and projects coming out of NASA&rsquo;s human, robotic and scientific missions of the last decade. </p> 
+                                    </div>
+							</div>
+							<div class="modal-footer">
+								<a href="http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150000400.pdf" target="_blank" style="vertical-align: top;" class="btn button-primary">
+									
+                                                                  See NASA/SP-2014-3705
+								</a>
+								<a style="vertical-align: top;" class="btn btn-default hidden-print" data-dismiss="modal">Close</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+          
+          
+	<input id="ctl00_cph_main_ctl04_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_cph_main_ctl04_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_cph_main_ctl04_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div>
+						</article>
+					</div>
+				</section>
+
+				<section id="FooterWrapper" class="sf_cols bkg_TexanBlue" style="height: 145px">
+					<div id="cpw_footerwrapper" class="sf_colsOut sf_1cols_1_100">
+						<input id="SMADateSiteLastUpdated" type="hidden" value="August 6, 2026" />
+						<footer id="cpw_footer" class="sf_colsIn sf_1cols_1in_100">
+							
+<div class='sfContentBlock'><div class="container tb_pad21"> <!-- meatball image -->
+<div class="col-sm-3 footer_description PowderGreyTxt" style="padding-bottom: 12px;"> <a href="https://www.nasa.gov/" target="_blank"><img src="/content/images/meatball.png" id="nasaMeatball" alt="National Aeronautics and Space Administration" class="img-responsive" style="max-width: 87px;"></a> </div>
+<!-- site details and contact -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+Site Last Updated: <span id="footerDateSiteLastUpdated" style="font-weight: normal;">September 10, 2014</span><br>
+Web Master: <span style="font-weight: normal;"><a href="/contact">Michael Bishop</a></span><br>
+NASA Official: <span style="font-weight: normal;"><a href="/contact">Sallie Keith</a></span><br>
+<a href="/site-map">OSMA Site Map</a>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/" target="_blank">Privacy Policy</a><br>
+<a href="https://www.nasa.gov/FOIA" target="_blank">FOIA</a><br>
+<a href="https://www.nasa.gov/offices/odeo/no-fear-act" target="_blank">No FEAR Act</a><br>
+<a href="https://www.nasa.gov/budgets-plans-and-reports/" target="_blank">Budget &amp; Annual Reports</a><br>
+</div>
+<!-- useful links -->
+<div class="col-sm-3 footer_description PowderGreyTxt">
+<a href="https://oig.nasa.gov/" target="_blank">Office of the IG</a><br>
+<a href="https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/" target="_blank">Agency Financial Reports</a><br>
+<a href="/contact">Contact OSMA</a><br>
+<a href="https://www.nasa.gov/accessibility/" target="_blank">Accessibility</a>
+</div>
+</div>
+
+</div>
+						</footer>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		
+	    
+<script type="text/javascript">jQuery(document).ready(function(){
+	jQuery('.subnavbar-fixed-top ul.navbar-nav>li>a').each(function(){
+		var divname = jQuery(this).attr('href');
+		if (jQuery(divname).length < 1){
+			jQuery(this).parent().hide();
+		}
+	});
+
+});
+
+(function($) {
+    function openModalFromPath() {
+        var path = window.location.pathname;
+        try {
+            path = window.location.pathname.split("/");
+            var modalId = path[path.length - 1];
+            $("[data-modal-url='/" + modalId + "']").each(function () {
+                try {
+                    $(this).modal('show');
+                } catch (e) {
+                    console.debug("Could not open modal with id: " + modald);
+                }
+            });
+        } catch (e) {
+            console.debug("Could not get modal id from path: " + path);
+        }
+    }
+
+	$(document).ready(function() {
+		try {
+			if (window.location.hash.length > 0 && $(window.location.hash).length > 0 && $(window.location.hash).hasClass("modal")) {
+				$(window.location.hash).modal('show');
+			} else {
+				openModalFromPath();
+			}
+		} catch(e) {
+			console.debug("Could not find modal with id: " + window.location.hash);
+		}
+	});
+})(jq);</script>
+	
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script><script type="text/javascript">
+jQuery('#questionList > li > div.collapse').on('shown.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-right fa-caret-down');
+});
+jQuery('#questionList > li > div.collapse').on('hidden.bs.collapse', function () {
+    jQuery(this).prev().children().children().toggleClass('fa-caret-down fa-caret-right');
+});
+
+// remove stellar on mobile and tablet devices
+if (jQuery(window).width() <= 1023) {
+    jQuery('section').removeAttr('data-stellar-background-ratio');
+};</script><script type="text/javascript" src="/docs/default-source/javascript/jquery-stellar-min.js"></script><script type="text/javascript" src="/docs/default-source/javascript/stellar_init.js"></script><script type="text/javascript" src="/docs/default-source/javascript/more_less.js"></script><script type="text/javascript" src="/docs/default-source/javascript/readmore.js"></script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45912537-1', 'auto');
+ga('set', 'transport', 'beacon');
+if (document.querySelectorAll('meta[name="OrigDate"]').length > 0) {
+var origDate = document.querySelector('meta[name="OrigDate"]').content;
+if(origDate != ""){ga('set', 'dimension1', origDate);}}
+
+if (document.querySelectorAll('meta[name="GATopic"]').length > 0) {
+    var gaTopic = document.querySelector('meta[name="GATopic"]').content;
+if(gaTopic != ""){ga('set', 'dimension2', gaTopic);}}
+
+if (document.querySelectorAll('meta[name="GAProductType"]').length > 0) {
+    var gaProductType = document.querySelector('meta[name="GAProductType"]').content;
+if(gaProductType != ""){ga('set', 'dimension3', gaProductType);}}
+
+if (document.querySelectorAll('meta[name="GAType"]').length > 0) {
+    var gaType = document.querySelector('meta[name="GAType"]').content;
+if(gaType != ""){ga('set', 'dimension4', gaType);}}
+
+if (document.querySelectorAll('meta[name="GACenter"]').length > 0) {
+    var gaCenter = document.querySelector('meta[name="GACenter"]').content;
+if(gaCenter != ""){ga('set', 'dimension5', gaCenter);}}
+
+if (document.querySelectorAll('meta[name="GAVideos]').length > 0) {
+    var gaVideo = document.querySelector('meta[name="GAVideos"]').content;
+if(gaVideo != ""){ga('set', 'dimension6', gaVideo);}}
+
+if (document.querySelectorAll('meta[name="GAEvents"]').length > 0) {
+    var gaEvent = document.querySelector('meta[name="GAEvents"]').content;
+if(gaEvent != ""){ga('set', 'dimension7', gaEvent);}}
+
+ga('send', 'pageview');
+
+ga(function() {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        ga('send', 'event', {
+            'eventCategory': 'Modal',
+            'eventAction': 'Click',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">window.GAMeasurementId = 'G-KC5NT81F9E';
+(function(window, document, tagType, id) {
+    var f = document.getElementsByTagName(tagType)[0],
+        scriptTag = document.createElement(tagType);
+    scriptTag.async = true;
+    scriptTag.src =
+        'https://www.googletagmanager.com/gtag/js?id=' + id;
+    f.parentNode.insertBefore(scriptTag, f);
+})(window, document, 'script', window.GAMeasurementId);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+(function(measurementId) {
+  gtag('config', measurementId);
+
+  gtag('config', measurementId, {
+    'custom_map': {
+      'dimension1': 'OrigDate',
+      'dimension2': 'Topic',
+      'dimension3': 'ProductType',
+      'dimension4': 'Type',
+      'dimension5': 'Center',
+      'dimension6': 'Videos',
+      'dimension7': 'Events',
+    }
+  });
+
+  function GetMetaData(propertyName) {
+    var metaElement = document.querySelectorAll('meta[name="' + propertyName +'"]');
+    return metaElement.length > 0 ? metaElement[0].content : null;
+  }
+
+  window.GADimensions = {
+    'OrigDate': GetMetaData("OrigDate"),
+    'Topic': GetMetaData("GATopic"),
+    'ProductType': GetMetaData("GAProductType"),
+    'Type': GetMetaData("GAType"),
+    'Center': GetMetaData("GACenter"),
+    'Videos': GetMetaData("GAVideos"),
+    'Events': GetMetaData("GAEvents"),
+  };
+
+  gtag('event', 'pageview', window.GADimensions);
+})(window.GAMeasurementId);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    jq(document).on("shown.bs.modal", ".modal", function() {
+        gtag('event', 'Click', {
+            'eventCategory': 'Modal',
+            'eventLabel': this.id,
+            'eventValue': 0
+        });
+    });
+});</script><script type="text/javascript">(function trackOutbounds() {
+	
+	var hitCallbackHandler = function(url,win) {
+	    if (win) {
+		    window.open(url, win);
+	    } else {
+        	window.location.href = url;
+        }
+    };
+    
+    var addEvent = function(el, eventName, handler) {
+    
+		if (el.addEventListener) {
+			el.addEventListener(eventName, handler);
+			} else {
+			el.attachEvent('on' + eventName, function(){
+				handler.call(el);
+		    });
+		}
+	}
+	
+	if (document.getElementsByTagName) {
+		var el = document.getElementsByTagName('a');
+		var getDomain = document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0];
+		
+		// Look thru each a element
+		for (var i=0; i < el.length;i++) {
+		
+			// Extract it's href attribute
+			var href = (typeof(el[i].getAttribute('href')) == 'string' ) ? el[i].getAttribute('href') : '';
+			
+			// Query the href for the top level domain (xxxxx.com)
+			var myDomain = href.match(getDomain);
+			
+			// If link is outbound and is not to this domain	
+			if ((href.match(/^(https?:|\/\/)/i)  && !myDomain) || href.match(/^mailto\:/i)) {
+			
+				// Add an event to click
+				addEvent(el[i],'click', function(e) {
+					var url = this.getAttribute('href'), win = (typeof(this.getAttribute('target')) == 'string') ? this.getAttribute('target') : '';
+							
+							console.log ("add event", url);
+					// Log even to Analytics, once done, go to the link
+					ga('send', 'event', 'outbound', 'click', url,
+						{'hitCallback': hitCallbackHandler(url,win)},
+						{'nonInteraction': 1}
+					);
+					
+					e.preventDefault();
+				});
+			}
+		}
+	}
+})();
+</script><script type="text/javascript">jq(document).ready(function() {
+	$(".mega-dropdown-menu .nav-tabs a").click(function(e) {
+		e.preventDefault();
+		jq(this).tab('show');
+		e.stopPropagation();
+	});
+
+	jQuery("#nav-disciplines-organizational li").sort(function(a, b) {
+		var an = jQuery(a).find("a").text(),
+		bn = jQuery(b).find("a").text();
+
+		if(an > bn) {
+			return 1;
+		}
+		if(an < bn) {
+			return -1;
+		}
+		return 0;
+	}).clone().appendTo(jQuery("#displayABC ul"));
+});</script><script type="text/javascript" src="/Content/Scripts/video.ga.js?ver=1"></script>
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl06_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=14.4.8152.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:4fd8513a-4760-4c69-b716-de189eda8de6:7a90d6a';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"disableSuggestions":true,"indexCatalogue":"combined-indexes-5-16-19","language":null,"minSuggestLength":3,"resultsUrl":"/search","searchButton":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchButton"),"searchTextBox":$get("ContentHeaderSearch_T40EBA3A0054_ctl00_ctl00_searchTextBox"),"siteId":"118a9c25-c36c-4108-8a7e-aa18cc03ebda","suggestionFields":"Title,Content","suggestionsRoute":"/restapi/search/suggestions"}, null, null, $get("ContentHeaderSearch_T40EBA3A0054"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentNavigation$ctl00$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_ContentNavigation_ctl00_ctl00_ctl00_dynamicContentListView"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$C013$newsFrontendList$ctl00$ctl00$NewsList","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ItemsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_C013_newsFrontendList_ctl00_ctl00_NewsList"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Web.UI.UserPreferences, {"_timeOffset":"0","_userBrowserSettingsForCalculatingDates":true,"timeZoneDisplayName":"UTC","timeZoneId":"UTC"}, null, null);
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cph_main$ctl04$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cph_main_ctl04_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":11,"clientStateFieldID":"ctl00_cph_main_ctl04_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_cph_main_ctl04_ctl00_ctl00_dynamicContentListView"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
