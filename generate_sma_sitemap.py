@@ -189,9 +189,10 @@ def prerender_sma_pages(session: requests.Session, sma_urls: list[str], output_d
             if "<base " not in html.lower():
                 html = re.sub(r'(<head[^>]*>)', r'\1\n  <base href="https://sma.nasa.gov/">', html, count=1, flags=re.IGNORECASE)
 
-            # Zero-churn sanitization: strip dynamic ASP.NET state tokens and ephemeral captcha image URLs
+            # Zero-churn sanitization: strip dynamic ASP.NET state tokens and ephemeral captcha image/audio GUIDs
             html = re.sub(r'<input[^>]*name=[\"\']__(?:VIEWSTATE|EVENTVALIDATION|VIEWSTATEGENERATOR)[\"\'][^>]*>\s*', '', html)
             html = re.sub(r'(<img[^>]*id=[\"\'][^\"\']*radCaptcha_CaptchaImageUP[\"\'][^>]*)src=[\"\'][^\"\']*[\"\']', r'\1src=""', html)
+            html = re.sub(r'guid=[a-f0-9\-]{36}', 'guid=STATIC_CAPTCHA_GUID', html)
 
             # Write only if content changed
             needs_write = True
