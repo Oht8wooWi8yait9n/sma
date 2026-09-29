@@ -40,5 +40,14 @@ jobs:
             echo "No changes in NASA SMA sitemap. Skipping commit."
           else
             git commit -m "chore(sync): weekly automated NASA SMA policies & mirrors update [skip ci]"
-            git push origin main
+            for attempt in {1..5}; do
+              echo "Pushing updates to origin main (attempt $attempt)..."
+              if git push origin main; then
+                echo "Successfully pushed updates to origin main."
+                break
+              fi
+              echo "Push failed (attempt $attempt/5). Waiting 5 seconds before retry..."
+              sleep 5
+              git pull --rebase origin main || true
+            done
           fi

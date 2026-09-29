@@ -25,6 +25,7 @@ import time
 import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional
 from urllib.parse import urljoin
 import xml.etree.ElementTree as ET
 
@@ -171,7 +172,7 @@ def url_to_rel_path(url: str) -> str:
 def prerender_sma_pages(session: requests.Session, sma_urls: list[str], output_dir: Path) -> dict[str, str]:
     """
     Fetch all sma.nasa.gov HTML pages, inject base href for assets,
-    and save them locally so GitHub Pages can host them.
+    sanitize dynamic ASP.NET state to prevent git churn, and save them locally so GitHub Pages can host them.
     Returns mapping: {live_url: github_pages_url}.
     """
     url_map = {}
@@ -187,8 +188,23 @@ def prerender_sma_pages(session: requests.Session, sma_urls: list[str], output_d
             # Inject <base href="https://sma.nasa.gov/"> right after <head> for clean asset loading
             if "<base " not in html.lower():
                 html = re.sub(r'(<head[^>]*>)', r'\1\n  <base href="https://sma.nasa.gov/">', html, count=1, flags=re.IGNORECASE)
-            with open(target_file, "w", encoding="utf-8") as f:
-                f.write(html)
+
+            # Zero-churn sanitization: strip dynamic ASP.NET state tokens and ephemeral captcha image URLs
+            html = re.sub(r'<input[^>]*name=[\"\']__(?:VIEWSTATE|EVENTVALIDATION|VIEWSTATEGENERATOR)[\"\'][^>]*>\s*', '', html)
+            html = re.sub(r'(<img[^>]*id=[\"\'][^\"\']*radCaptcha_CaptchaImageUP[\"\'][^>]*)src=[\"\'][^\"\']*[\"\']', r'\1src=""', html)
+
+            # Write only if content changed
+            needs_write = True
+            if target_file.exists():
+                try:
+                    with open(target_file, "r", encoding="utf-8") as f_in:
+                        if f_in.read() == html:
+                            needs_write = False
+                except Exception:
+                    pass
+            if needs_write:
+                with open(target_file, "w", encoding="utf-8") as f:
+                    f.write(html)
             gh_url = f"{GH_PAGES_BASE}/{rel_path}"
             url_map[u] = gh_url
             print(f"    [Pre-rendered] {u} -> {rel_path}")
@@ -198,18 +214,46 @@ def prerender_sma_pages(session: requests.Session, sma_urls: list[str], output_d
     return url_map
 
 
-def build_sitemap_xml(urls: list[str]) -> str:
-    """Construct well-formed XML sitemap according to sitemaps.org schema."""
+def load_existing_lastmod(sitemap_path: Optional[Path]) -> dict[str, str]:
+    mapping = {}
+    if sitemap_path and sitemap_path.exists():
+        try:
+            tree = ET.parse(sitemap_path)
+            for u in tree.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url"):
+                loc = u.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
+                lastmod = u.find("{http://www.sitemaps.org/schemas/sitemap/0.9}lastmod")
+                if loc is not None and loc.text and lastmod is not None and lastmod.text:
+                    mapping[loc.text.strip()] = lastmod.text.strip()
+        except Exception:
+            pass
+    return mapping
+
+
+def write_if_changed(file_path: Path, content: str):
+    if file_path.exists():
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                if f.read() == content:
+                    return
+        except Exception:
+            pass
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+
+def build_sitemap_xml(urls: list[str], existing_sitemap_path: Optional[Path] = None) -> str:
+    """Construct well-formed XML sitemap according to sitemaps.org schema with zero-churn lastmod."""
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    existing_lastmod = load_existing_lastmod(existing_sitemap_path) if existing_sitemap_path else {}
     urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
 
-    for url in urls:
+    for url in sorted(urls):
         url_elem = ET.SubElement(urlset, "url")
         loc_elem = ET.SubElement(url_elem, "loc")
         loc_elem.text = url
 
         lastmod_elem = ET.SubElement(url_elem, "lastmod")
-        lastmod_elem.text = today
+        lastmod_elem.text = existing_lastmod.get(url, today)
 
         changefreq_elem = ET.SubElement(url_elem, "changefreq")
         priority_elem = ET.SubElement(url_elem, "priority")
@@ -337,7 +381,8 @@ def main():
     print("=" * 70)
 
     # 1. Write Onyx Primary Sitemap (GitHub Pages for sma.nasa.gov HTML + Direct PDFs)
-    onyx_sitemap_xml = build_sitemap_xml(sorted_onyx_urls)
+    sitemap_path = repo_dir / "sma_sitemap.xml"
+    onyx_sitemap_xml = build_sitemap_xml(sorted_onyx_urls, existing_sitemap_path=sitemap_path)
     try:
         ET.fromstring(onyx_sitemap_xml.encode("utf-8"))
         print("[+] Primary XML sitemap validated successfully with ElementTree.")
@@ -345,27 +390,22 @@ def main():
         print(f"[!] FATAL: XML validation failed: {e}")
         sys.exit(1)
 
-    sitemap_path = repo_dir / "sma_sitemap.xml"
-    with open(sitemap_path, "w", encoding="utf-8") as f:
-        f.write(onyx_sitemap_xml)
-    print(f"[+] Successfully wrote: {sitemap_path}")
+    write_if_changed(sitemap_path, onyx_sitemap_xml)
+    print(f"[+] Successfully verified/wrote: {sitemap_path}")
 
     urls_txt_path = repo_dir / "sma_urls.txt"
-    with open(urls_txt_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(sorted_onyx_urls) + "\n")
-    print(f"[+] Successfully wrote: {urls_txt_path}")
+    write_if_changed(urls_txt_path, "\n".join(sorted_onyx_urls) + "\n")
+    print(f"[+] Successfully verified/wrote: {urls_txt_path}")
 
     # 2. Write Direct Sitemap (100% original URLs)
-    direct_sitemap_xml = build_sitemap_xml(sorted_direct_urls)
     direct_sitemap_path = repo_dir / "sma_direct_sitemap.xml"
-    with open(direct_sitemap_path, "w", encoding="utf-8") as f:
-        f.write(direct_sitemap_xml)
-    print(f"[+] Successfully wrote: {direct_sitemap_path}")
+    direct_sitemap_xml = build_sitemap_xml(sorted_direct_urls, existing_sitemap_path=direct_sitemap_path)
+    write_if_changed(direct_sitemap_path, direct_sitemap_xml)
+    print(f"[+] Successfully verified/wrote: {direct_sitemap_path}")
 
     direct_urls_txt_path = repo_dir / "sma_direct_urls.txt"
-    with open(direct_urls_txt_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(sorted_direct_urls) + "\n")
-    print(f"[+] Successfully wrote: {direct_urls_txt_path}")
+    write_if_changed(direct_urls_txt_path, "\n".join(sorted_direct_urls) + "\n")
+    print(f"[+] Successfully verified/wrote: {direct_urls_txt_path}")
 
 
 if __name__ == "__main__":

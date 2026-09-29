@@ -916,12 +916,11 @@ table.modalPocTable tbody tr.PocCenter td {
 }</style><link href="/Content/Styles/sma-discipline-color-goldenrod.min.css" type="text/css" rel="stylesheet" media="all" /><meta name="description" content="Meteoroid Environment" /><meta name="keywords" content="Meteoroid Environment" /></head>
 
 <body>
-	<form method="post" action="./meteoroid-environments" id="aspnetForm" class="public">
+	<form method="post" action="./meteoroid-environments?SMAInsidePortal=true" id="aspnetForm">
 <div class="aspNetHidden">
 <input type="hidden" name="ctl06_TSSM" id="ctl06_TSSM" value="" />
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="nGb6ea7U1E937CAxTwTljwrAdwxvEnfuvYuo2pWQ3cBCZg3e7T0YVPU6BwgxpRl1F/Zwo/L0SWQlQinYcqgJlByFTWHbU458bRT2aGUWPCL6jX9+JEMwJkhTUp/OGkyJVC1QstLZ9nuS1eIpezwROeJgRK7xJRunQjLCuHXV3WtBvY01U18+2bmcogtU68m4Q4rs4TVYM/mhearRDij3gMKTuT5rLhhKmLGJNM9iS4G4HEBhoOKL9PlsTJdgdeggFWFam0hbkDZxAxKowtaoV29XuWm3N1q7HEoRqWsdHt/2hTCLBIGjhxVkiupNuhwPmOa7jB7JObNRaLlvfMSdKveTlL784stqxmiCg1IbLIFPbyyBa1Vwo6dSvM5c+ZcOH2V0cLyqjHffCazuu2GYLlr9eKBErVQf+5CM6uaXEWlG3gIJB0MrPPnHNHZdCV1Kp0cm4ZZ8CMG215IB7JTSLSiAau7LBB2OozXufMKy/lMr1kx/JXq2U6YN2FqRASlfQP01hEhYLfJ/olQZ+j3dtBJ4ofNmLaAN4ZcgbU3oI5r38vplGj+/UoUoHtcA31fe7fMHam/juomvvYDhPHuXDhmXGKo1hBOfR5SQChcf6JHQfTuhEKIJamHJKwzNttufyNjYKzSyoyBaFQVLIGUwRtkYiz7L0HZGdevatitN87kuzgonQoxRR/e3QnZFGmaHmCdThMlHT64jRKor9amwysYqVritC/jz8vT8AIWF9irIsUYXFYe94ZJVGyQDMHJPTEbEO1aC5hWF/2awz745BvkQWEkfXRCQMMzx73ko9UQ/h8DmhteU2P/jcTIzReXjKbtMePSPjFX+AKJZ3YNIBnfMVVPZ0mfUKoNSh8mB7OcG708OzuduvrPnzVmyobzbgXyXE33pXv6bggAy8St6Z1wgKYRDwKCbx0bkREDqOTAl5gFb5zS2az/yyREFMGdWrvIjQUwhxAgu7x6vaF7M3FV4+K6lwoujWgnug1HGEACDxffSLEr4eyBRSdFqNr9rAlv96grQxoJmsfwz4zoMl6bjXWfh3IQepDkTTvSOBSDzX4XObdDcqqgUrNsORisQ" />
 </div>
 
 <script type="text/javascript">
@@ -962,9 +961,7 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
 <script src="/ScriptResource.axd?d=LDxs7tI-ncIIKPgYq3uJynGIAutVQ5Lv09yYMkdUoWTtDIY55WSN2kCFwMjHc56bvoLqeRIH8Pj37QWZnQZ2I1dR12JIfbs3iNC9YGAeIdR-ho_XOLATuOwKX9eIDXDwNzVPDvVXjDuwQufloW1_FQ2&amp;t=2fee8f3f" type="text/javascript"></script>
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="290D0949" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ZvvdISEe4DMZ6GWByl9eFsptbtj23NXQNWDcyw3Mbr2CX4QK0Prt6eh0bx0jztTfTYlvXICd66FyKuU6MAQ0sBAk/tUsDa+naKrxKhDcKXJVX5dSChH3CM/I7zbAdBpZRHyUGd69x5FF1Wu1J9Q2jg==" />
-</div>
+	</div>
 	    
 		<script type="text/javascript">
 //<![CDATA[
@@ -999,6 +996,10 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 											<div class="site-toggle">
 												<div class="site-button current">
 													<a href="/" target="_self" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1e787b69-d2a8-65b9-a1a0-ff01003ca228"><img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance"></a>
+												</div>
+												
+												<div class="site-button">
+													<a href="https://nsc.nasa.gov/" target="_self" sfref="[41028969-d2a8-65b9-a1a0-ff05003ca228]bc038969-d2a8-65b9-a1a0-ff05003ca228"><img alt="NASA Safety Center Logo" src="/Content/Images/nsclogo.png"></a>
 												</div>
 												
 											</div>
@@ -3378,8 +3379,9 @@ else {
                                                           <div style="text-align:right;">
                                                             <a href="javascript:printThis('modal_ME_Bio_Colon_print','ME_Bio_Colon');">
                                          			<i class="fa fa-print"></i> Print Version</a></div>
-								                        <div>
-                                      <div class="row">
+								                        
+                                    <div>
+                                       <div class="row">
 <div class="col-sm-3"> <span data-sfref="[images|OpenAccessDataProvider]69288169-d2a8-65b9-a1a0-ff01003ca228" class="sfImageWrapper"><span data-sfref="[images|OpenAccessDataProvider]cf7a7e69-d2a8-65b9-a1a0-ff01003ca228" class="sfImageWrapper"><img src="/images/default-source/bio-images/placeholder.png?sfvrsn=d2ff18f8_14" class="img-responsive img-circle center-block" alt="placeholder" title="Placeholder" data-displaymode="Original"></span></span> </div>
 <div class="col-sm-9">
 <h3>Alfredo Col&oacute;n&nbsp;</h3>
@@ -3391,9 +3393,8 @@ else {
 <p>Before joining NASA, he lead technical risk assessments for NASA, the Federal Aviation Administration (FAA), and industry of Air Traffic Management concepts and aerospace vehicles. Col&oacute;n assessed the impact of new aircraft concepts on the safety of the air transportation system and constraints placed on aircraft operations by the system and assessed the technical risk of multiple crewed space vehicles (Orbital Space Plane, Crew Rescue Vehicle, Crew Transfer Vehicle), launch vehicles and the International Space Station. As a contractor, Col&oacute;n also represented the FAA Air Traffic Organization on the multi-agency Joint Planning and Development Office's Safety Working Group and on the FAA/EUROCONTROL Joint Safety Action Plan.&nbsp;</p>
 <p>Col&oacute;n also designed and analyzed advanced aircraft and marine vehicles for the Defense Advanced Research Projects Agency and industry and served as an expert member on the Applied Vehicle Technology Panel of the North Atlantic Treaty Organization&rsquo;s Research and Technology Agency in support of the Wingship Technical Group. Col&oacute;n has a Bachelor of Science degree from the Massachusetts Institute of Technology.</p>
 </div>
-</div>
+</div> 
                                     </div>
-                                    
 							</div>
 							<div class="modal-footer">
 								
@@ -3415,15 +3416,15 @@ else {
                                                           <div style="text-align:right;">
                                                             <a href="javascript:printThis('modal_ME_Guidance_NPD-8700-1_print','ME_Guidance_NPD-8700-1');">
                                          			<i class="fa fa-print"></i> Print Version</a></div>
-								                        <div>
-                                      <!-- basic modal full width -->
+								                        
+                                    <div>
+                                       <!-- basic modal full width -->
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <p>This policy outlines NASA's responsibilities as they relate to safety and mission success.</p>
 </div>
-</div>
+</div> 
                                     </div>
-                                    
 							</div>
 							<div class="modal-footer">
 								<a href="http://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&c=8700&s=1E" target="_blank" style="vertical-align: top;" class="btn button-primary">
@@ -3448,10 +3449,10 @@ else {
                                                           <div style="text-align:right;">
                                                             <a href="javascript:printThis('modal_ME_PoCTable_print','ME_PoCTable');">
                                          			<i class="fa fa-print"></i> Print Version</a></div>
-								                        <div>
-                                      <p>For more information, contact the Meteoroid Environment Point of Contact (PoC) listed below.</p><table class="table k-table"><thead><tr><th>Name</th></tr></thead><tbody><tr><td colspan="3" class="bkg_WhiteSmoke"><span class="centerName">Office of Safety and Mission Assurance&nbsp;</span></td></tr><tr><td>Bill Cooke</td></tr></tbody></table>
+								                        
+                                    <div>
+                                       <p>For more information, contact the Meteoroid Environment Point of Contact (PoC) listed below.</p><table class="table k-table"><thead><tr><th data-role="resizable">Name</th><th>Email</th></tr></thead><tbody><tr><td colspan="4" class="bkg_WhiteSmoke"><span class="centerName">Office of Safety and Mission Assurance&nbsp;</span></td></tr><tr><td>Bill Cooke</td><td><a href="mailto:William.J.Cooke@nasa.gov">William.J.Cooke@nasa.gov</a><br /></td></tr></tbody></table> 
                                     </div>
-                                    
 							</div>
 							<div class="modal-footer">
 								
@@ -3473,8 +3474,9 @@ else {
                                                           <div style="text-align:right;">
                                                             <a href="javascript:printThis('modal_ME_Bio_Cooke_print','ME_Bio_Cooke');">
                                          			<i class="fa fa-print"></i> Print Version</a></div>
-								                        <div>
-                                      <div class="row">
+								                        
+                                    <div>
+                                       <div class="row">
 <div class="col-sm-3">
 <img src="/images/default-source/bio-images/cooke.jpg" class="img-responsive img-circle center-block" alt="William Cooke" title="William Cooke">
 </div>
@@ -3487,9 +3489,8 @@ else {
 <p>Cooke has a Bachelor of Science degree in physics and astronomy from Valdosta State College and a Doctorate of Philosophy in astronomy from the University of Florida. He is a member of the International Meteor Organization. Throughout his career, he has earned the Exceptional Service Medal, Silver Snoopy Award and Director&rsquo;s Commendation Award.</p>
 <p>Cooke has been an avid model rocketeer since 1968 and is very active in promoting hobby rocketry at local schools and organizations. On May 24, 2005, main belt asteroid 15058 was named Billcooke in honor of Cooke&rsquo;s contributions to the field of meteors. &nbsp;</p>
 </div>
-</div>
+</div> 
                                     </div>
-                                    
 							</div>
 							<div class="modal-footer">
 								

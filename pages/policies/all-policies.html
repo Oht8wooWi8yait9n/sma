@@ -912,12 +912,11 @@ table.modalPocTable tbody tr.PocCenter td {
 }</style></head>
 
 <body>
-	<form method="post" action="./all-policies" id="aspnetForm" class="public">
+	<form method="post" action="./all-policies?SMAInsidePortal=true" id="aspnetForm">
 <div class="aspNetHidden">
 <input type="hidden" name="ctl06_TSSM" id="ctl06_TSSM" value="" />
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="XG7BTjZ/zxHeLttoetvgeXqwEiUzuoeWgCCCfMp2lR1HmmMRfW0+pyfct0zixXeZR1G7L1QMQ5kdxE6SlUyeWYAjlbpbwgkGqrxiIyfD5ag+d1OkiK3Xz3n8sEH3mbUVQwnFErx0e0slrKGmNUkbY1hU3fL8snmOqTugKoPyqCZOzrRsjM9R9qAJJFLNQzbWZGEx4e+65dLzUbQ9oxNsUbNPzxCQUCTv/ptyKgr6lGMDWzAQpMR5zb5sNEhjGwzLoYq/NAOYgOitFFcoR5lqbnUN7QLLNF97GyeXk3jEhIJN2/mrTdOkVcmmtvJMnwbDRbTtXnYGGZExVqhKprlQEylOQZpZ0lL4DMrKLKe06FIFdXFbF88KltYjp95xKSwqlSNeJQu/As9akxZHMF6DW9gkXLWib7ntWwAfhBlthBlh5029JxOOK47eVqLfRSHi27Xq1Vit833GsT5Pb7IcfMkar7V50ibYNUBoTg4TTZyuBXXE+k40/PiPhImLK9+qnG7GuNogJAlEnwZP1YvtML2kpC3nonGVcNG+MsF6tQverBdd2gv4aW7eWTmvNWPdA07HxJieqrktp4CFPMjig+VpVoYf4kwmWRcrr1x+AiZInPYv2w4kT30W862RwLPQmex/28EPFuFI9rdP5s1zGXjiYAr4me1Q03qLbIK27onVBWUGkJ61Q9tKDxsK7Ym615cR1L2pgh4UAM4MiyiABDBKCHKiz3RuxYCmENk+7rGyXoimH6NbVxRBAWYM0cSgBArLB+/PAPkOLbayMZpLFKYS6N9VZdbg+o4go5lM7yF16YipnRS01ApuT94Xe7kRvpFefAmmBqXV9lAniICnGpeqgK7pkLoJiIHahKoSR9gS6/8xs8CLz8CuaOm9PKkqP2yhw/+8bbayql6IPHXRi9Jmau3XYiD2HwiZauhAJosudXP88m+ilMNYh4XVcY7G2ccUSqB77IQ3+21Ms2thQBOvw9dKTFCVIjX1nbJQhwnFY9q/frIvq9RZdIgz13YrDEWRYtfhcItmoxHaRCekm/GUqZ81EUuuaMDQdZsNO73oxZQYywvNHKrrO0SHdBpQ3UN3LqisP8X5yO4nfX1K/NHy6dkIX3BSD12BmFxE+SW9AKmhJu2EpMnImMghA5ilpW6oE4NWz0AsgbajhHD/nYLP5BqOWOwWpCxxBtPDCTkepRvDuYFnpEYm7093MSA6LwPWPNV7UU2izAUg3WgPCUJZZHhZTWlrXVz9Ob995iamCJK6blNnyZyX2NXpZ5GK6j/Ttdv1N/Ysc0GEk2NHqTA7V0fjwGssA0dbc2VIUMg=" />
 </div>
 
 <script type="text/javascript">
@@ -958,9 +957,7 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
 <script src="/ScriptResource.axd?d=LDxs7tI-ncIIKPgYq3uJynGIAutVQ5Lv09yYMkdUoWTtDIY55WSN2kCFwMjHc56bvoLqeRIH8Pj37QWZnQZ2I1dR12JIfbs3iNC9YGAeIdR-ho_XOLATuOwKX9eIDXDwNzVPDvVXjDuwQufloW1_FQ2&amp;t=2fee8f3f" type="text/javascript"></script>
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BEB197FC" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="f14qoqfOXaX8sGZKeAK6oHHQ1g3QHG12JJrt5eaY2J50JvhreacyVllk8Nbrngrs4EquKMhMJj9WBe0GcLProCB2T1PvUs/yOGreeX6nw6NPU1H7roZwCfijppybzdfzbeqyuu9RZ2z03yvb/uo08w==" />
-</div>
+	</div>
 	    
 		<script type="text/javascript">
 //<![CDATA[
@@ -995,6 +992,10 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 											<div class="site-toggle">
 												<div class="site-button current">
 													<a href="/" target="_self" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1e787b69-d2a8-65b9-a1a0-ff01003ca228"><img src="/content/images/osmalogo.png" alt="Office of Safety and Mission Assurance"></a>
+												</div>
+												
+												<div class="site-button">
+													<a href="https://nsc.nasa.gov/" target="_self" sfref="[41028969-d2a8-65b9-a1a0-ff05003ca228]bc038969-d2a8-65b9-a1a0-ff05003ca228"><img alt="NASA Safety Center Logo" src="/Content/Images/nsclogo.png"></a>
 												</div>
 												
 											</div>
