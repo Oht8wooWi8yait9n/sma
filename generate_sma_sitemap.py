@@ -191,6 +191,9 @@ def prerender_sma_pages(session: requests.Session, sma_urls: list[str], output_d
 
             # Zero-churn sanitization: strip dynamic ASP.NET state tokens, ephemeral axd scripts, and captcha GUIDs
             html = re.sub(r'<input[^>]*name=[\"\']__(?:VIEWSTATE|EVENTVALIDATION|VIEWSTATEGENERATOR|EVENTTARGET|EVENTARGUMENT)[\"\'][^>]*>\s*', '', html)
+            html = re.sub(r'<input[^>]*id=[\"\']SMADateSiteLastUpdated[\"\'][^>]*>\s*', '', html, flags=re.IGNORECASE)
+            html = re.sub(r'<input[^>]*name=[\"\']ctl\d+_TSSM[\"\'][^>]*>\s*', '', html, flags=re.IGNORECASE)
+            html = re.sub(r'<div class=[\"\']aspNetHidden[\"\']>\s*</div>\s*', '', html, flags=re.IGNORECASE)
             html = re.sub(r'<script[^>]*src=[\"\']/(?:WebResource|ScriptResource)\.axd[^\"\']*[\"\'][^>]*></script>\s*', '', html, flags=re.IGNORECASE)
             html = re.sub(r'(<img[^>]*id=[\"\'][^\"\']*radCaptcha_CaptchaImageUP[\"\'][^>]*)src=[\"\'][^\"\']*[\"\']', r'\1src=""', html)
             html = re.sub(r'guid=[a-f0-9\-]{36}', 'guid=STATIC_CAPTCHA_GUID', html)
