@@ -1018,11 +1018,34 @@ table.modalPocTable tbody tr.PocCenter td {
 	<form method="post" action="./policy-status" id="aspnetForm" class="public">
 <script type="text/javascript">
 //<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
 if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
 //]]>
 </script>
 
-<a href="#MainWrapper" class="btn" style="display: none;">Skip Navigation</a>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<a href="#MainWrapper" class="btn" style="display: none;">Skip Navigation</a>
 		<div id="helperDiv1" class="SMAWindowMediaWidth" style="display:none;"></div> <!-- dummy divs to aid in detecting screen width -->
 		<div id="helperDiv2" class="SMAWindowMediaMaxWidth" style="display:none;"></div>
 		<div id="PublicWrapper" class="sfPublicWrapper">
@@ -1679,10 +1702,45 @@ jQuery(this).parent().hide();
 </div>
 </section>
 
-</div><div class='sfContentBlock'><section class="statusUpdates"><div class="container"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- Recently Published Table -->
- <h3 class="subtitleLight IndianTurquoiseTxt hideOnPolicy"><a href="/policies/policy-status">Recently Published</a>&nbsp;</h3><table class="table-guidance tableML tablesorter k-table" id="guidanceTable1" data-sortlist="[[0],[2]]"><caption class="hideOnHome">Recently Published</caption>
- <thead><tr><th>Policy</th><th data-role="resizable">Title</th><th class="{sorter: 'datetime'}" data-role="resizable" style="width:99.6719px;">Effective Date</th><th class="nonSort" style="width:146.891px;">&nbsp;</th></tr></thead><tbody><tr><td>NPR 8705.6<br /></td><td>Safety and Mission Assurance (SMA) Audits, Reviews, and Assessments<br /></td><td style="width:99.6719px;">July 22, 2025</td><td style="width:146.891px;"><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8705&amp;s=6D" class="btn button-primary" data-sf-ec-immutable="">See NPR 8705.6</a></td></tr><tr><td>NPR 8715.26<br /></td><td>Nuclear Flight Safety<br /></td><td style="width:99.6719px;">July 28th, 2026</td><td style="width:146.891px;"><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8715&amp;s=26" class="btn button-primary" data-sf-ec-immutable="">See NPR 8715.26</a></td></tr></tbody></table><a class="hideOnPolicy moreupdates" href="/policies/policy-status">&raquo; More Policy Updates</a>
- </div></div></div></section>
+</div><div class='sfContentBlock'><section class="statusUpdates">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- Recently Published Table -->
+<h3 class="subtitleLight IndianTurquoiseTxt hideOnPolicy"><a href="/policies/policy-status">Recently Published</a>&nbsp;</h3>
+<table class="table-guidance tableML tablesorter k-table" id="guidanceTable1" data-sortlist="[[0],[2]]">
+    <caption class="hideOnHome">Recently Published</caption>
+    <thead>
+        <tr>
+            <th>Policy</th>
+            <th data-role="resizable">Title</th>
+            <th class="{sorter: 'datetime'}" data-role="resizable" style="width:99.6719px;">Effective Date</th>
+            <th class="nonSort" style="width:146.891px;">&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>NPR 8705.6<br>
+            </td>
+            <td>Safety and Mission Assurance (SMA) Audits, Reviews, and Assessments<br>
+            </td>
+            <td style="width:99.6719px;">July 22, 2025</td>
+            <td style="width:146.891px;"><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8705&amp;s=6D" class="btn button-primary" data-sf-ec-immutable="">See NPR 8705.6</a></td>
+        </tr>
+        <tr>
+            <td>NPR 8715.26<br>
+            </td>
+            <td>Nuclear Flight Safety<br>
+            </td>
+            <td style="width:99.6719px;">July 28, 2026</td>
+            <td style="width:146.891px;"><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPR&amp;c=8715&amp;s=26" class="btn button-primary" data-sf-ec-immutable="">See NPR 8715.26</a></td>
+        </tr>
+    </tbody>
+</table>
+<a class="hideOnPolicy moreupdates" href="/policies/policy-status">&raquo; More Policy Updates</a>
+</div>
+</div>
+</div>
+</section>
 
 </div><div class='sfContentBlock'><section class="statusUpdates"><div class="container"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- Currently in Review Table -->
  <h3 class="subtitleLight IndianTurquoiseTxt hideOnPolicy"><a href="/policies/policy-status">Currently in Review</a></h3><table class="table-guidance tableML tablesorter k-table" id="guidanceTable2"><caption class="hideOnHome">Currently in Review</caption>
