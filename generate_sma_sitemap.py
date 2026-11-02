@@ -184,7 +184,7 @@ def prerender_sma_pages(session: requests.Session, sma_urls: list[str], output_d
 
         resp = fetch_with_retry(session, u)
         if resp and resp.status_code == 200:
-            html = resp.text
+            html = resp.text.replace("\r\n", "\n").replace("\r", "\n")
             # Inject <base href="https://sma.nasa.gov/"> right after <head> for clean asset loading
             if "<base " not in html.lower():
                 html = re.sub(r'(<head[^>]*>)', r'\1\n  <base href="https://sma.nasa.gov/">', html, count=1, flags=re.IGNORECASE)
