@@ -37,7 +37,14 @@ jobs:
           git config user.email "aaron.b.sells@nasa.gov"
           git add pages/ sma_sitemap.xml sma_urls.txt sma_direct_sitemap.xml sma_direct_urls.txt
           if git diff --staged --quiet; then
-            echo "No changes in NASA SMA sitemap. Skipping commit."
+            DAYS_SINCE_COMMIT=$(( ($(date +%s) - $(git log -1 --format=%ct)) / 86400 ))
+            if [ "$DAYS_SINCE_COMMIT" -ge 45 ]; then
+              echo "No sitemap changes, but last commit was ${DAYS_SINCE_COMMIT} days ago (>= 45d). Pushing empty keepalive commit."
+              git commit --allow-empty -m "chore(ci): 45-day keepalive to prevent GitHub Actions 60-day schedule auto-disable [skip ci]"
+              git push
+            else
+              echo "No changes in NASA SMA sitemap. Skipping commit. (last commit ${DAYS_SINCE_COMMIT}d ago)."
+            fi
           else
             git commit -m "chore(sync): weekly automated NASA SMA policies & mirrors update [skip ci]"
             for attempt in {1..5}; do
