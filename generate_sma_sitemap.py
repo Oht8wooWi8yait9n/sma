@@ -198,6 +198,8 @@ def prerender_sma_pages(session: requests.Session, sma_urls: list[str], output_d
             html = re.sub(r'(<img[^>]*id=[\"\'][^\"\']*radCaptcha_CaptchaImageUP[\"\'][^>]*)src=[\"\'][^\"\']*[\"\']', r'\1src=""', html)
             html = re.sub(r'guid=[a-f0-9\-]{36}', 'guid=STATIC_CAPTCHA_GUID', html)
             html = re.sub(r'(\.axd\?[^\"\']*?[?&](?:amp;)?t=)[0-9a-fA-F\-]+', r'\1STATIC', html, flags=re.IGNORECASE)
+            html = re.sub(r'(\.axd\?(?:[^\"\']*?&(?:amp;)?)?d=)[A-Za-z0-9_\-%]+', r'\1STATIC', html, flags=re.IGNORECASE)
+            html = re.sub(r'(/Sitefinity/[^\"\']*?\.(?:css|js)\?v=)\d+', r'\1STATIC', html, flags=re.IGNORECASE)
 
             # Write only if content changed
             needs_write = True
