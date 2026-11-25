@@ -147,14 +147,15 @@ def resolve_standards_doc(session: requests.Session, link: str) -> set[str]:
 
 
 def resolve_nodis_doc(session: requests.Session, link: str) -> set[str]:
-    """Resolve NODIS directive page and discover master unified PDF."""
+    """Resolve NODIS directive page (upgrading legacy http:// to https://) and discover master unified PDF."""
+    link = re.sub(r'^http://', 'https://', link.strip(), flags=re.IGNORECASE)
     urls = set()
     urls.add(link)
     resp = fetch_with_retry(session, link)
     if not resp or resp.status_code != 200:
         return urls
     html = resp.text
-    master_pdf = re.search(r'href=[\"\']([^\"\']*OPD_docs/[^\"\']+\.pdf)[\"\']', html, re.IGNORECASE)
+    master_pdf = re.search(r'href=[\"\']([^\"\']*(?:OPD_docs|npg_img)/[^\"\']+\.pdf)[\"\']', html, re.IGNORECASE)
     if master_pdf:
         urls.add(urljoin("https://nodis3.gsfc.nasa.gov", master_pdf.group(1)))
     return urls
